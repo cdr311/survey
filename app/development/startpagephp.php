@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten" />
 
-  <link rel="stylesheet" href="linkpagestyle.css" />
+  <link rel="stylesheet" href="startpagestyle.css" />
   <link rel="icon" type="image/x-icon" href="https://media.istockphoto.com/vectors/question-mark-icon-flat-vector-illustration-design-vector-id1162198273" />
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
@@ -16,6 +16,26 @@
 </head>
 
 <body>
+  <?php
+  if( isset($_COOKIE['setCookieHinweis']) ) {
+    $showPopup = false;
+  } else {
+    $showPopup = true;
+  }
+?>
+
+<?php if($showPopup) { ?>
+  <div id="cookie-popup">
+    <div class="hinweis">
+      <p>Wir verwenden Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.</p>
+    </div>
+    <span class="more">
+      <a href="https://www.gesetze-bayern.de/Content/Document/BayDSG/" id="abstand1">Details</a>
+    </span>
+    <button onclick='cookieOk()' id="abstand2">Einverstanden</button>
+  </div>
+<?php  }; ?>
+
   <!--die obere Auswahlleiste-->
   <header>
     <section class="links">
@@ -34,62 +54,41 @@
         <th><a href="startpage.html" title="Home" class="unter"><span>Home</span></a></th>
         <th><a href="" title="Moduswechsel" class="unter">
             <svg width="30" height="30">
-              <circle cx="15" cy="15" r="11" fill="grey" onclick="circleklick()" />
+              <circle cx="15" cy="15" r="11" fill="black" />
               Sorry, your browser does not support inline SVG.
             </svg> </a>
         </th>
       </table>
+
     </section>
+
   </header>
 
+  <!--der linke Seitenkasten-->
+  <nav>
 
-  <main id="modus">
-    <h1><u>Links für genauere Details:</u></h1>
-    <article class="genauer">
-      <h1>Um mehr über unsere Hochschule zu erfahren: </h1>
-      <p>FH: <a href="https://www.hof-university.de/">Hochschule für Angewandte Wissenschaften Hof</a></p>
-      <p>HföD: <a href="https://www.aiv.hfoed.de/de/startseite.html">Hochschule für den öffentlichen Dienst</a></p>
-    </article>
-    <article class="genauer">
-      <h1>Für genauer Details zu unserem Studium:</h1>
-      <p>Duales Studium: <a href="https://www.verwaltungsinformatiker.de/de/startseite.html">Diplom-Verwaltungsinformatiker</a></p>
-    </article>
+  </nav>
+
+  <div>
+
+  </div>
+
+  <main>
+
   </main>
+
+  <aside class="">
+
+  </aside>
 
   <footer class="mittig">
     <p>Die Gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a>verwendet.</p>
     <p>copyright@2022</p>
+
   </footer>
 
-  <script type="text/javascript">
-    let circle = document.querySelector('circle')
-    // let bodyobjekt = document.querySelector('body');
-    let modus = document.getElementById('modus')
-
-    function circleklick() {
-      //document.getElementsByTagName('body').style.backgroundColor = 'grey';
-      //document.body.style.backgroundColor = 'grey';
-      // bodyobjekt.style.backgroundColor = 'grey';
-      //circle.style.fill = 'white';
-      //document.querySelector('body').setAttribute('background-color', 'grey');
-      //document.querySelector('header').parentNode.style.backgroundColor = 'grey'
-      //bodyobjekt.setAttribute('background-color', 'grey')
-      // document.body.style.background = color
-      // modus.parentNode.style.backgroundColor = 'black'
-      // document.querySelector('main').setAttribute('background-color', 'grey')
-      circle.setAttribute('fill', 'white')
-    }
-
-    circle.addEventListener("click", function() {
-      changeBackground('#424242')
-      circleklick()
-    })
-
-    function changeBackground(color) {
-      document.body.style.background = color
-    }
-  </script>
+    <script type="text/javascript" src="startpagescript.js"></script>
 
 </body>
 

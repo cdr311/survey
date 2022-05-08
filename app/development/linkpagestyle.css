@@ -1,32 +1,54 @@
+.base {
+  display: flex;
+}
+
 body{
   background-color: #E0ECF8;
   margin:0;
 }
 
+.darkmode{
+    background-color: grey;
+}
+
+button{
+  background-color: grey;
+  border-radius: 30px;
+  height: 30px;
+  weight: 10px;
+}
+
 header{
   background-color: lightgrey;
   position: absolute;
-  display:flex;
   flex-direction: row;
   height: 45px;
   width: 100%;
   padding-bottom: 5px;
 
 }
+
 section.links{
-  width: 15%;
+  width: 30%;
+  display: inline-flex;
 }
+
 section.mitte{
-  width: 35%;
+  padding-left: 100;
 }
 
 section.rechts{
+  display: inline-flex;
+  position: absolute;
   float: right;
-  width: 50%;
-  padding-left: 50%;
+  left: 75%;
+  width: 30%;
+  /* padding-left: 75%; */
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 div.ueberschrift{

@@ -3,6 +3,17 @@ body{
   margin:0;
 }
 
+.darkmode{
+    background-color: grey;
+}
+
+button{
+  background-color: grey;
+  border-radius: 30px;
+  height: 30px;
+  weight: 10px;
+}
+
 header{
   background-color: lightgrey;
   position: absolute;

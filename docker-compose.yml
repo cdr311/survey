@@ -11,18 +11,15 @@ services:
     build:
       context: ./
       dockerfile: PHP.Dockerfile
+    env_file: ./.env.mysql
     volumes:
       - ./app:/app
   mysql:
     image: mariadb:latest
-    environment:
-      MYSQL_ROOT_PASSWORD: 'secret'
-      MYSQL_USER: 'webdev'
-      MYSQL_PASSWORD: 'secret'
-      MYSQL_DATABASE: 'survey'
-    volumes:
-      - ./mysqldata:/var/lib/mysql
+    env_file: ./.env.mysql
     ports:
       - 3306:3306
+    volumes:
+      - ./mysqldata:/var/lib/mysql
 volumes:
   mysqldata: {}

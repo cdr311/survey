@@ -15,6 +15,11 @@
     $row = $query->fetch();
 
     echo 'MySQL version: ' . $row['Value'];
+
+    echo '<br />';
+    foreach($pdo -> query('SHOW DATABASES') as $row) {
+        print_r($row);
+    }
     ?>
   </body>
 </html>

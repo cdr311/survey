@@ -18,28 +18,6 @@ button{
   weight: 10px;
 }
 
-/* article{
-  background-color: lightgrey;
-  position: absolute;
-  display:flex;
-  flex-direction: row;
-  height: 80%;
-  width: 100%;
-  padding-bottom: 5px;
-}
-
-header{
-  /* background-color: lightgrey;
-  display:flex;
-  flex-direction: row; */
-  position: absolute;
-  height: 8%;
-  width: 100%;
-  /* padding-bottom: 5px; */
-
-}
-*/
-
 
 header{
   background-color: lightgrey;

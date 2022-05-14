@@ -2,18 +2,15 @@ body{
   background-color: #E0ECF8;
   margin:0;
 }
-
 .darkmode{
     background-color: grey;
 }
-
 button{
   background-color: grey;
   border-radius: 30px;
   height: 30px;
   weight: 10px;
 }
-
 header{
   background-color: lightgrey;
   position: absolute;
@@ -22,28 +19,23 @@ header{
   height: 45px;
   width: 100%;
   padding-bottom: 5px;
-
 }
-
 span.h1{
   background-color: #2E9AFE;
   border-radius: 4px;
   padding-top: 2px;
 }
-
 h2{
   font-family: cursive;
   text-align: center;
   text-shadow: 2px 2px 4px #58ACFA;
 }
-
 section.links{
   width: 15%;
 }
 section.mitte{
   width: 35%;
 }
-
 section.rechts{
   float: right;
   width: 50%;
@@ -52,7 +44,6 @@ section.rechts{
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 div.ueberschrift{
   float: left;
   font-family: monospace;
@@ -61,7 +52,6 @@ div.ueberschrift{
   text-align: center;
   justify-content: center;
 }
-
 main{
   border: 2px dotted black;
   border-radius: 5px;
@@ -84,11 +74,9 @@ a.quelle:hover{
 a.quelle:active{
   color: red;
 }
-
 a.unter{
   text-decoration: none;
 }
-
 footer{
   border-top: 1px solid black;
   border-radius: 20px;
@@ -99,28 +87,23 @@ footer{
   top: 100%;
   width: 100%;
 }
-
 span{
   background-color: white;
   font-size:30px;
 }
-
 th{
   text-align: right;
   width: 50em;
   padding-right: 7px;
 }
-
 td{
   text-align: left;
   width: 50em;
   padding-left: 7px;
 }
-
 .mittig {
   text-align: center;
 }
-
 .positionieren{
   padding-left: 5px;
   padding-right: 5px;

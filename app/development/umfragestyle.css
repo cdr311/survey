@@ -126,7 +126,7 @@ main{
   top: 10%;
   left: 25%;
   width: 70%;
-  height: 90%;
+  height: 100%;
 }
 div.main{
   border: 1px solid black;
@@ -151,7 +151,7 @@ div.auswahl2{
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
   left:5%;
-  top:20%;
+  top:23%;
   padding-bottom: 10px;
 }
 
@@ -160,7 +160,7 @@ div.auswahl3{
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
   left:5%;
-  top:38%;
+  top:52%;
   padding-bottom: 10px;
 }
 
@@ -169,7 +169,7 @@ div.auswahl4{
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
   left:5%;
-  top:56%;
+  top:67%;
   padding-bottom: 10px;
 }
 div.auswahl5{
@@ -177,7 +177,7 @@ div.auswahl5{
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
   left:5%;
-  top:72%;
+  top:80%;
   padding-bottom: 10px;
 }
 
@@ -190,7 +190,6 @@ div.auswahl5{
 label{
   font-size: 19px;
   font-family: monospace;
-  padding-right: 30px;
 }
 
 section.breite{
@@ -265,7 +264,7 @@ footer{
   padding-top: 4px;
   padding-bottom: 4px;
   position: absolute;
-  top: 110%;
+  top: 120%;
   width: 100%;
 }
 

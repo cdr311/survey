@@ -44,7 +44,7 @@ header{
   height: 8%;
   width: 100%;
   /* padding-bottom: 5px; */
-
+  z-index: 2;
 }
 
   menu{
@@ -128,23 +128,79 @@ main{
   width: 70%;
   height: 80%;
 }
+
 div.main{
   border: 1px solid black;
   top:70px;
   left: 25%;
+  /* left: 40%; */
   width: 100%;
   height: 100%;
   box-shadow: 8px 8px 8px 10px grey;
+  background-color: #A4A4A4;
+  /* text-align: center; */
 }
 
-div.auswahl{
+h2{
+  text-align: center;
+}
+
+div.auswahl1{
   position: absolute;
-  border: 5px solid black;
+  /* border: 5px solid black; */
+  /* left:20%; */
   left:5%;
   top:5%;
   padding-bottom: 10px;
+  /* text-align: center; */
+  /* justify-content: center; */
 }
 
+div.auswahl2{
+  position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
+  left:5%;
+  top:50%;
+  padding-bottom: 10px;
+  /* text-align: center; */
+}
+
+div.auswahl3{
+  position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
+  left:5%;
+  top:70%;
+  padding-bottom: 10px;
+  /* text-align: center; */
+}
+div.auswahl4{
+  display: none;
+  position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
+  left:50%;
+  top:50%;
+  padding-bottom: 10px;
+  /* text-align: center; */
+}
+div.auswahl5{
+  display: none;
+  position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
+  left:50%;
+  top:70%;
+  padding-bottom: 10px;
+  /* text-align: center; */
+}
+
+label{
+  font-size: 19px;
+  font-family: monospace;
+  padding-right: 20px;
+}
 
 /* section.links{
   width: 15%;

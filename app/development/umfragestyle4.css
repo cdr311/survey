@@ -43,6 +43,7 @@ header{
   position: fixed;
   height: 8%;
   width: 100%;
+  z-index: 2;
   /* padding-bottom: 5px; */
 
 }
@@ -126,23 +127,100 @@ main{
   top: 10%;
   left: 25%;
   width: 70%;
-  height: 80%;
+  height: 145%;
 }
 div.main{
   border: 1px solid black;
   top:70px;
   left: 25%;
+  /* left: 40%; */
   width: 100%;
-  height: 100%;
+  height: 145%;
   box-shadow: 8px 8px 8px 10px grey;
+  background-color: #A4A4A4;
+  /* text-align: center; */
 }
 
-div.auswahl{
+div.auswahl1{
   position: absolute;
-  border: 5px solid black;
+  /* border: 5px solid black; */
+  /* left:20%; */
   left:5%;
-  top:5%;
+  top:3%;
   padding-bottom: 10px;
+  /* text-align: center; */
+  /* justify-content: center; */
+}
+
+div.auswahl2{
+  position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
+  left:5%;
+  top:23%;
+  padding-bottom: 10px;
+  /* text-align: center; */
+}
+
+div.auswahl3{
+  position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
+  left:5%;
+  top:43%;
+  padding-bottom: 10px;
+  /* text-align: center; */
+}
+div.auswahl4{
+  position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
+  left:5%;
+  top:68%;
+  padding-bottom: 10px;
+  /* text-align: center; */
+}
+div.auswahl5{
+  position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
+  left:5%;
+  top:92%;
+  padding-bottom: 10px;
+  /* text-align: center; */
+}
+div.auswahl6{
+  position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
+  left:5%;
+  top:115%;
+  padding-bottom: 10px;
+  /* text-align: center; */
+}
+
+label{
+  font-size: 19px;
+  font-family: monospace;
+  padding-right: 20px;
+}
+div.vorher{
+  position: absolute;
+  /* left:5%; */
+  padding-bottom: 10px;
+  text-align: center;
+  top: 141%;
+  padding-left: 8px;
+  /* left: 5%; */
+}
+
+div.naechste{
+  position: absolute;
+  /* left:5%; */
+  padding-bottom: 10px;
+  text-align: center;
+  top: 141%;
+  left: 90%;
 }
 
 
@@ -213,7 +291,7 @@ footer{
   padding-top: 4px;
   padding-bottom: 4px;
   position: absolute;
-  top: 180%;
+  top: 228%;
   width: 100%;
 }
 

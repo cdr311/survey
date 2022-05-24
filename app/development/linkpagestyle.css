@@ -1,6 +1,6 @@
-.base {
+/* .base {
   display: flex;
-}
+} */
 
 body{
   background-color: #E0ECF8;
@@ -19,12 +19,61 @@ button{
 }
 
 
-header{
+
+
+
+
+
+article{
   background-color: lightgrey;
-  position: absolute;
-  flex-direction: row;
+  /* position: absolute; */
+  /* display:flex; */
+  /* flex-direction: row; */
   height: 45px;
   width: 100%;
+  padding-bottom: 5px;
+}
+
+header{
+  /* background-color: lightgrey;
+  display:flex;
+  flex-direction: row; */
+  position: absolute;
+  height: 8%;
+  width: 100%;
+  /* padding-bottom: 5px; */
+
+}
+section.links{
+  /* width: 15%; */
+  float: left;
+}
+section.mitte{
+  /* width: 35%; */
+}
+
+section.rechts{
+  float: right;
+  /* width: 50%; */
+  /* padding-left: 50%; */
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+/*
+ header{
+  background-color: lightgrey;
+  position: absolute;
+  flex-direction: row; */
+  /* height: 45px; */
+  /* width: 100%;
   padding-bottom: 5px;
 
 }
@@ -43,14 +92,14 @@ section.rechts{
   position: absolute;
   float: right;
   left: 75%;
-  width: 30%;
+  width: 30%; */
   /* padding-left: 75%; */
-  padding-right: 5px;
+  /* padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: auto;
   margin-right: 0;
-}
+} */
 
 div.ueberschrift{
   float: left;
@@ -69,19 +118,37 @@ main{
   top: 10%;
   left: 10%;
   width: 80%;
+  height: 50%;
   text-align:  center;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
-.genauer{
-  position:relative;
+.genauer1{
+  /* position:relative; */
+  position: absolute;
   border: 1px solid black;
   border-radius: 6px;
   background-color: #6E6E6E;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   width: 60%;
+  top: 25%;
   left: 20%;
+  height: 30%;
+  margin-top: 10px;
+}
+.genauer2{
+  /* position:relative; */
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #6E6E6E;
+  padding-bottom: 20px;
+  width: 60%;
+  top: 60%;
+  left: 20%;
+  height: 30%;
+  margin-top: 10px;
 }
 
 a.quelle:link{

@@ -16,6 +16,27 @@
 </head>
 
 <body id="aussen">
+
+  <?php
+if( isset($_COOKIE['setCookieHinweis']) ) {
+  $showPopup = false;
+} else {
+  $showPopup = true;
+}
+?>
+
+<?php if($showPopup) { ?>
+<div id="cookie-popup">
+  <div class="hinweis">
+    <p>Wir verwenden Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.</p>
+  </div>
+  <span class="more">
+    <a href="https://www.gesetze-bayern.de/Content/Document/BayDSG/" id="abstand1">Details</a>
+  </span>
+  <button onclick='cookieOk()' id="abstand2">Einverstanden</button>
+</div>
+<?php  }; ?>
+
   <!--die obere Auswahlleiste-->
   <header class="base">
     <article>

@@ -169,3 +169,33 @@ td.deta{
     padding-left: 5px;
     padding-right: 5px;
 }
+
+#cookie-popup {
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top: 0px;
+  left: 30%;
+  right: 30%;
+  width: 40%;
+  z-index: 9999;
+  font-size:17px;
+  line-height:20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+
+#cookie-popup.hidden {
+  display: none;
+}
+
+#abstand1{
+  padding-right: 5px;
+}
+
+#abstand2{
+  padding-right: 5px;
+  font-size: 20px;
+}

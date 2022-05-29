@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten" />
 
-  <link rel="stylesheet" href="linkpagestyle.css" />
+  <link rel="stylesheet" href="umfragestyle7.css" />
   <link rel="icon" type="image/x-icon" href="images/fragezeichen.png" />
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
@@ -16,16 +16,37 @@
 </head>
 
 <body id="aussen">
+
+  <?php
+if( isset($_COOKIE['setCookieHinweis']) ) {
+  $showPopup = false;
+} else {
+  $showPopup = true;
+}
+?>
+
+<?php if($showPopup) { ?>
+<div id="cookie-popup">
+  <div class="hinweis">
+    <p>Wir verwenden Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.</p>
+  </div>
+  <span class="more">
+    <a href="https://www.gesetze-bayern.de/Content/Document/BayDSG/" id="abstand1">Details</a>
+  </span>
+  <button onclick='cookieOk()' id="abstand2">Einverstanden</button>
+</div>
+<?php  }; ?>
+
   <!--die obere Auswahlleiste-->
-  <header class="base">
+  <header>
     <article>
       <section class="links">
-        <section>
+        <div>
           <div><img src="images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
-        </section>
       </section>
       <section class="mitte">
         <div class="ueberschrift">Umfrage</div>
+
       </section>
       <section class="rechts">
         <table>
@@ -41,29 +62,19 @@
     </article>
   </header>
 
-
-  <main>
-    <h1><u>Links für genauere Details:</u></h1>
-    <article class="genauer1">
-      <h1>Um mehr über unsere Hochschule zu erfahren: </h1>
-      <p>FH: <a href="https://www.hof-university.de/">Hochschule für Angewandte Wissenschaften Hof</a></p>
-      <p>HföD: <a href="https://www.aiv.hfoed.de/de/startseite.html">Hochschule für den öffentlichen Dienst</a></p>
-    </article>
-    <article class="genauer2">
-      <h1>Für genauer Details zu unserem Studium:</h1>
-      <p>Duales Studium: <a href="https://www.verwaltungsinformatiker.de/de/startseite.html">Diplom-Verwaltungsinformatiker</a></p>
-    </article>
-  </main>
+  <nav>
+    <h4>Sie haben die Umfrage erfolgreich abgeschlossen!</h4>
+    <img src="https://media.istockphoto.com/vectors/approval-symbol-check-mark-in-a-circle-drawn-by-hand-vector-green-ok-vector-id1094780808?s=612x612" alt="Korrekthaken" title="Korrekt" width="200px" height="220px" />
+    <h3>Vielen Dank für Ihre Teilnahme!</h3>
+  </nav>
 
   <footer class="mittig">
     <p>Die Gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a>verwendet.</p>
     <p>copyright@2022</p>
   </footer>
-
-  <script type="text/javascript" src="linkpagescript.js">
+  <script type="text/javascript" src="umfragescript.js">
   </script>
-
 </body>
 
 </html>

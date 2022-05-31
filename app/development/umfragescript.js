@@ -204,12 +204,3 @@ function closeNav() {
   document.getElementById('klein').style.display = 'block'
   document.getElementById('sidebar').style.display = 'none';
 }
-
-
-function privatVerschl1(){
-
-}
-function privatVerschl2(){
-
-
-}

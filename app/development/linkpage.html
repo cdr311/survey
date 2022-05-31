@@ -29,7 +29,7 @@
     <section class="rechts">
       <table>
         <th><a href="" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
-        <th><a href="infospage.html" title="Über Uns" class="unter"><span>Infos</span></a></th>
+        <th><a href="" title="Über Uns" class="unter"><span>Infos</span></a></th>
         <th><a href="linkpage.html" title="Links" class="unter"><span>Links</span></a></th>
         <th><a href="startpage.html" title="Home" class="unter"><span>Home</span></a></th>
         <th><a href="" title="Moduswechsel" class="unter">
@@ -43,8 +43,8 @@
   </header>
 
 
-  <main id="modus">
-    <h1><u>Links für genauere Details:</u></h1>
+  <main>
+    <h1>Links für genauere Details:</h1>
     <article class="genauer">
       <h1>Um mehr über unsere Hochschule zu erfahren: </h1>
       <p>FH: <a href="https://www.hof-university.de/">Hochschule für Angewandte Wissenschaften Hof</a></p>
@@ -63,31 +63,18 @@
   </footer>
 
   <script type="text/javascript">
-    let circle = document.querySelector('circle')
-    // let bodyobjekt = document.querySelector('body');
-    let modus = document.getElementById('modus')
+    let circle = document.querySelector('circle');
+    let bodyobjekt = document.querySelector('body');
 
     function circleklick() {
       //document.getElementsByTagName('body').style.backgroundColor = 'grey';
       //document.body.style.backgroundColor = 'grey';
-      // bodyobjekt.style.backgroundColor = 'grey';
+      bodyobjekt.style.backgroundColor = 'grey';
       //circle.style.fill = 'white';
       //document.querySelector('body').setAttribute('background-color', 'grey');
       //document.querySelector('header').parentNode.style.backgroundColor = 'grey'
       //bodyobjekt.setAttribute('background-color', 'grey')
-      // document.body.style.background = color
-      // modus.parentNode.style.backgroundColor = 'black'
-      // document.querySelector('main').setAttribute('background-color', 'grey')
       circle.setAttribute('fill', 'white')
-    }
-
-    circle.addEventListener("click", function() {
-      changeBackground('#424242')
-      circleklick()
-    })
-
-    function changeBackground(color) {
-      document.body.style.background = color
     }
   </script>
 

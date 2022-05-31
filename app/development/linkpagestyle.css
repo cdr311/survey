@@ -62,7 +62,7 @@ main{
 }
 
 a.quelle:link{
-  color: black;
+  color: blue;
 }
 a.quelle:visited{
   color: #DF7401;
@@ -80,7 +80,6 @@ a.unter{
 
 footer{
   border-top: 1px solid black;
-  border-radius: 20px;
   background-color: lightgray;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -90,7 +89,7 @@ footer{
 }
 
 span{
-  background-color: white;
+  background-color: green;
   font-size:30px;
 }
 

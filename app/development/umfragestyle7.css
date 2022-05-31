@@ -149,7 +149,7 @@ span{
   right: 30%;
   width: 40%;
   z-index: 9999;
-  font-size:17px;
+  font-size:14px;
   line-height:20px;
   padding: 20px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
@@ -167,7 +167,7 @@ span{
 
 #abstand2{
   padding-right: 5px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .meineSlides{

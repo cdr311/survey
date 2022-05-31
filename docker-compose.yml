@@ -15,7 +15,7 @@ services:
     volumes:
       - ./app:/app
   mysql:
-    image: mariadb:10.7.3
+    image: mariadb:10.7.4
     env_file: ./.env.mysql
     ports:
       - 3306:3306

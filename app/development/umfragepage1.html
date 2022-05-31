@@ -42,99 +42,19 @@
   </header>
 
   <!-- im Menü dann die übersicht machen welche thematik und die Fragen dann darunter mit DropDown bzw Liste darunter -->
-  <menu id="gross">
+  <menu>
     <div class="sidenav">
-      <p class="gliederung" id="kasten"><b>Übersicht:</b></p>
+      <p class="gliederung" id="kasten">Übersicht:</p>
       <ol type="1">
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenA()" class="dropdown drueber" id="kasten">Allgemein</button></li>
-        <ul id="infoAllgemein" class="ausklappbar">
-          <li class="drop"><span class="droppen">Geschlecht</span></li>
-          <li class="drop"><span class="droppen">Alter</span></li>
-          <li class="drop"><span class="droppen">Beruf</span></li>
-          <li class="drop"><span class="droppen">Familienstand</span></li>
-          <li class="drop"><span class="droppen">Bildung</span></li>
-        </ul>
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenG()" class="dropdown drueber" id="kasten">Gerätenutzung</button></li>
-        <ul id="infoGerat" class="ausklappbar">
-          <li class="drop"><span class="droppen">Geräte</span></li>
-          <li class="drop"><span class="droppen">Zweck&Nutzung</span></li>
-        </ul>
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenSo()" class="dropdown drueber" id="kasten">Software</button></li>
-        <ul id="infoSoftware" class="ausklappbar">
-          <li class="drop"><span class="droppen">Betriebssystem</span></li>
-          <li class="drop"><span class="droppen">Browser</span></li>
-        </ul>
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenSi()" class="dropdown drueber" id="kasten">Sicherheit</button></li>
-        <ul id="infoSicherheit" class="ausklappbar">
-          <li class="drop"><span class="droppen">E-Mail</span></li>
-          <li class="drop"><span class="droppen">Verschlüsselung</span></li>
-        </ul>
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenF()" class="dropdown drueber" id="kasten">Fazit</button></li>
-        <ul id="infoFazit" class="ausklappbar">
-          <li class="drop"><span class="droppen">Bewertung</span></li>
-          <li class="drop"><span class="droppen">Feedback</span></li>
-        </ul>
+        <li id="kasten">Allgemein</li>
+        <li id="kasten">Gerätenutzung</li>
+        <li id="kasten">Software</li>
+        <li id="kasten">Sicherheit</li>
+        <li id="kasten">Fazit</li>
       </ol>
+
     </div>
   </menu>
-
-  <nav id="klein">
-    <span class="kleiner" onclick="openNav()">&#9776;</span>
-  </nav>
-
-  <aside id="sidebar">
-    <div class="sidenav2">
-      <p><button onclick="closeNav()" class="Xrechts"><b>X</b></button></p>
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-      <p class="gliederung" id="kasten"><b>Übersicht:</b></p>
-      <ol type="1">
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenAA()" class="dropdown drueber" id="kasten">Allgemein</button></li>
-        <ul id="infoAllgemeinA" class="ausklappbar">
-          <li class="drop"><span class="droppen">Geschlecht</span></li>
-          <li class="drop"><span class="droppen">Alter</span></li>
-          <li class="drop"><span class="droppen">Beruf</span></li>
-          <li class="drop"><span class="droppen">Familienstand</span></li>
-          <li class="drop"><span class="droppen">Bildung</span></li>
-        </ul>
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenGG()" class="dropdown drueber" id="kasten">Gerätenutzung</button></li>
-        <ul id="infoGeratG" class="ausklappbar">
-          <li class="drop"><span class="droppen">Geräte</span></li>
-          <li class="drop"><span class="droppen">Zweck&Nutzung</span></li>
-        </ul>
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenSoSo()" class="dropdown drueber" id="kasten">Software</button></li>
-        <ul id="infoSoftwareSo" class="ausklappbar">
-          <li class="drop"><span class="droppen">Betriebssystem</span></li>
-          <li class="drop"><span class="droppen">Browser</span></li>
-        </ul>
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenSiSi()" class="dropdown drueber" id="kasten">Sicherheit</button></li>
-        <ul id="infoSicherheitSi" class="ausklappbar">
-          <li class="drop"><span class="droppen">E-Mail</span></li>
-          <li class="drop"><span class="droppen">Verschlüsselung</span></li>
-        </ul>
-        <li id="kasten"><button type="button" name="button" onclick="aufklappenFF()" class="dropdown drueber" id="kasten">Fazit</button></li>
-        <ul id="infoFazitF" class="ausklappbar">
-          <li class="drop"><span class="droppen">Bewertung</span></li>
-          <li class="drop"><span class="droppen">Feedback</span></li>
-        </ul>
-      </ol>
-    </div>
-  </aside>
-
-  <main>
-    <div class="main">
-      <div class="auswahl">
-        <h2>Mit welchem Geschlecht identifizieren Sie sich?</h2>
-        <section>
-          <input type="radio" name="maennlich" id="maen" value="M&aumlnnlich" />
-          <label for="maen">Männlich</label>
-          <input type="radio" name="weiblich" id="weibl" value="Weiblich" />
-          <label for="maen">Weiblich</label>
-          <input type="radio" name="divers" id="dive" value="Divers" />
-          <label for="maen">Divers</label>
-        </section>
-      </div>
-    </div>
-  </main>
 
 
 

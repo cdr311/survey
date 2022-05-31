@@ -14,18 +14,36 @@ button{
   weight: 10px;
 }
 
+/* article{
+  background-color: lightgrey;
+  position: absolute;
+  display:flex;
+  flex-direction: row;
+  height: 80%;
+  width: 100%;
+  padding-bottom: 5px;
+} */
+
 
 article{
   background-color: lightgrey;
+  /* position: absolute; */
+  /* display:flex; */
+  /* flex-direction: row; */
   height: 45px;
   width: 100%;
   padding-bottom: 5px;
 }
 
 header{
+  /* background-color: lightgrey;
+  display:flex;
+  flex-direction: row; */
+  /* position: absolute; */
   position: fixed;
   height: 8%;
   width: 100%;
+  /* padding-bottom: 5px; */
   z-index: 2;
 }
 
@@ -36,6 +54,7 @@ header{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     background-color: lightgrey;
+    /* top: 8%; */
     top: 60px;
     width: 20%;
     height:90%;
@@ -44,6 +63,7 @@ header{
   }
 
   nav{
+    /* border:5px solid black; */
     position: fixed;
     display: block;
     top: 60px;
@@ -53,6 +73,19 @@ header{
     margin: 0;
     padding: 0;
   }
+
+  /* #klein{
+    border:5px solid black;
+  display:none;
+    top: 60px;
+    left: 50%;
+    width: 20%;
+    height:20%;
+    margin: 0;
+    padding: 0;
+
+  } */
+
   aside{
     position: fixed;
     display:none;
@@ -61,7 +94,9 @@ header{
     border-bottom: 2px solid black;
     background-color: lightgrey;
     top: 60px;
+    /* width: 20%; */
     width: 225px;
+    /* height:90%; */
     height: 1800px;
     margin: 0;
     padding: 0;
@@ -70,6 +105,10 @@ header{
 
   .Xrechts{
     float: right;
+    /* padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px; */
     background-color: lightgrey;
     right: 10px;
   }
@@ -83,8 +122,10 @@ header{
 main{
   position: absolute;
   padding-top: 15px;
+  /* top: 80%; */
   top: 10%;
   left: 25%;
+  /* left: 40%; */
   width: 70%;
   height: 80%;
 }
@@ -92,6 +133,7 @@ div.main{
   border: 1px solid black;
   top:70px;
   left: 25%;
+  /* left: 40%; */
   width: 100%;
   height: 100%;
   box-shadow: 8px 8px 8px 10px grey;
@@ -101,14 +143,19 @@ div.main{
 
 div.auswahl1{
   position: absolute;
+  /* border: 5px solid black; */
+  /* left:20%; */
   left:5%;
   top:5%;
   padding-bottom: 10px;
   text-align: center;
+  /* justify-content: center; */
 }
 
 div.auswahl2{
   position: absolute;
+  /* border: 5px solid black; */
+  /* border-bottom: 1px dotted black; */
   left:5%;
   top:20%;
   padding-bottom: 10px;
@@ -117,10 +164,12 @@ div.auswahl2{
 
 div.vorher{
   position: absolute;
+  /* left:5%; */
   padding-bottom: 10px;
   text-align: center;
   top: 94%;
   padding-left: 8px;
+  /* left: 5%; */
 }
 
 .verschleiern{
@@ -129,6 +178,7 @@ div.vorher{
 
 div.naechste{
   position: absolute;
+  /* left:5%; */
   padding-bottom: 10px;
   text-align: center;
   top: 94%;
@@ -142,6 +192,7 @@ textarea{
 
 .abschluss{
   position: absolute;
+  /* left:5%; */
   padding-bottom: 10px;
   text-align: center;
   top: 85%;
@@ -154,14 +205,34 @@ label{
   padding-right: 20px;
 }
 
-section.links{
-  float: left;
+/* section.links{
+  width: 15%;
 }
 section.mitte{
+  width: 35%;
 }
 
 section.rechts{
   float: right;
+  width: 50%;
+  padding-left: 50%;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+} */
+
+section.links{
+  /* width: 15%; */
+  float: left;
+}
+section.mitte{
+  /* width: 35%; */
+}
+
+section.rechts{
+  float: right;
+  /* width: 50%; */
+  /* padding-left: 50%; */
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -197,6 +268,7 @@ a.unter{
 footer{
   border-top: 1px solid black;
   background-color: lightgray;
+  /* padding-top: 4px; */
   padding-top: 4px;
   padding-bottom: 4px;
   position: absolute;
@@ -247,7 +319,11 @@ span{
   width: 100%;
   position: absolute;
   z-index: 1;
+  /* top: 8px; */
+  /* background: #eee; */
   overflow-x: hidden;
+  /* padding: 8px 0; */
+  /* text-align: center; */
 }
 
 .gliederung{
@@ -256,6 +332,8 @@ span{
 }
 
 #kasten{
+  /* border-radius: 5px;
+  border:1px solid black; */
   font-size: 26px;
   padding-bottom: 4px;
 }

@@ -313,18 +313,3 @@ INSERT INTO BewertungKey VALUES (1, 'Gut');
 INSERT INTO BewertungKey VALUES (2, 'Mittelmäßig');
 INSERT INTO BewertungKey VALUES (3, 'Schlecht');
 INSERT INTO BewertungKey VALUES (4, 'Sehr schlecht');
-
-SELECT * FROM GeschlechtKey;
-SELECT * FROM AltersbereichKey;
-SELECT * FROM BerufsfeldKey;
-SELECT * FROM GeraeteartKey;
-SELECT * FROM NutzungsgebietKey;
-SELECT * FROM NutzungsdauerKey;
-SELECT * FROM BetriebssystemKey;
-SELECT * FROM LinuxDistributionKey;
-SELECT * FROM BSDVarianteKey;
-SELECT * FROM BrowserKey;
-SELECT * FROM MailclientKey;
-SELECT * FROM VerschluesselungKey;
-SELECT * FROM VerschluesselungsartKey;
-SELECT * FROM BewertungKey;

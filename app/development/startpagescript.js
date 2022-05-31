@@ -52,3 +52,28 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// var acc = document.getElementsByClassName("zugeordnet");
+// var foot = document.getElementById('footing');
+// var zaehler = 0;
+// var i;
+//
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//       zaehler -= 1;
+//       console.log(foot)
+//       foot.style.top = 120 + zaehler*35 + "%";
+//       console.log(foot)
+//     } else {
+//       panel.style.display = "block";
+//       zaehler +=1;
+//       console.log(foot)
+//       foot.style.top = 120 + zaehler*35 + "%";
+//       console.log(foot)
+//     }
+//   });
+// }

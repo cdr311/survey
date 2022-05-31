@@ -181,29 +181,6 @@ div.auswahl5{
   padding-bottom: 10px;
 }
 
-div.vorher{
-  position: absolute;
-  /* left:5%; */
-  padding-bottom: 10px;
-  text-align: center;
-  top: 94%;
-  padding-left: 8px;
-  /* left: 5%; */
-}
-
-.verschleiern{
-  opacity: 0.4;
-}
-
-div.naechste{
-  position: absolute;
-  /* left:5%; */
-  padding-bottom: 10px;
-  text-align: center;
-  top: 94%;
-  left: 90%;
-}
-
 .dropdown{
   height: 20px;
   weight: 50px;

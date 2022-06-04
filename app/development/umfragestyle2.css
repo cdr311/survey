@@ -152,6 +152,7 @@ div.auswahl1{
 }
 
 div.auswahl2{
+  display: none;
   position: absolute;
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
@@ -162,6 +163,7 @@ div.auswahl2{
 }
 
 div.auswahl3{
+  display: none;
   position: absolute;
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
@@ -171,6 +173,7 @@ div.auswahl3{
   /* text-align: center; */
 }
 div.auswahl4{
+  display: none;
   position: absolute;
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
@@ -180,6 +183,7 @@ div.auswahl4{
   /* text-align: center; */
 }
 div.auswahl5{
+  display: none;
   position: absolute;
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
@@ -189,6 +193,7 @@ div.auswahl5{
   /* text-align: center; */
 }
 div.auswahl6{
+  display: none;
   position: absolute;
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
@@ -198,6 +203,7 @@ div.auswahl6{
   /* text-align: center; */
 }
 div.auswahl7{
+  display: none;
   position: absolute;
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
@@ -207,6 +213,7 @@ div.auswahl7{
   /* text-align: center; */
 }
 div.auswahl8{
+  display: none;
   position: absolute;
   /* border: 5px solid black; */
   /* border-bottom: 1px dotted black; */
@@ -238,6 +245,7 @@ div.naechste{
   text-align: center;
   top: 128%;
   left: 90%;
+  padding-right: 8px;
 }
 
 

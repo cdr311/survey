@@ -146,23 +146,23 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welche der folgenden Geräte haben Sie schon benutzt?</h2>
         <section>
-          <input type="checkbox" name="gerat" id="pc" value="Desktop" />
+          <input type="checkbox" name="gerat" id="pc" value="Desktop" onclick="desktopCheck()"/>
           <label for="pc">Desktop PC</label><br />
-          <input type="checkbox" name="gerat" id="laptop" value="Laptop" />
+          <input type="checkbox" name="gerat" id="laptop" value="Laptop" onclick="laptopCheck()"/>
           <label for="laptop">Laptop</label><br />
-          <input type="checkbox" name="gerat" id="smartp" value="Smartphone" />
+          <input type="checkbox" name="gerat" id="smartp" value="Smartphone" onclick="smartphoneCheck()"/>
           <label for="smartp">Smartphone</label><br />
-          <input type="checkbox" name="gerat" id="tab" value="Tablet" />
+          <input type="checkbox" name="gerat" id="tab" value="Tablet" onclick="tabletCheck()"/>
           <label for="tab">Tablet</label><br />
-          <input type="checkbox" name="gerat" id="smartt" value="SmartTV" />
+          <input type="checkbox" name="gerat" id="smartt" value="SmartTV" onclick="smarttvCheck()"/>
           <label for="smartt">Smart TV</label><br />
-          <input type="checkbox" name="gerat" id="smartw" value="Smartwatch" />
+          <input type="checkbox" name="gerat" id="smartw" value="Smartwatch" onclick="smartwatchCheck()"/>
           <label for="smartw">Smartwatch</label><br />
-          <input type="checkbox" name="gerat" id="spiel" value="Spielekonsole" />
+          <input type="checkbox" name="gerat" id="spiel" value="Spielekonsole" onclick="spielekonsoleCheck()"/>
           <label for="spiel">Spielekonsole</label><br />
         </section>
       </div>
-      <div class="auswahl2">
+      <div class="auswahl2" id="a2">
         <h2>Für welche Tätigkeiten verwenden Sie ihren Desktop PC?</h2>
         <section>
           <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
@@ -179,7 +179,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="text" name="gerat" id="anderes" />
         </section>
       </div>
-      <div class="auswahl3">
+      <div class="auswahl3" id="a3">
         <h2>Für welche Tätigkeiten verwenden Sie ihren Laptop?</h2>
         <section>
           <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
@@ -196,7 +196,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="text" name="gerat" id="anderes" />
         </section>
       </div>
-      <div class="auswahl4">
+      <div class="auswahl4" id="a4">
         <h2>Für welche Tätigkeiten verwenden Sie ihr Smartphone?</h2>
         <section>
           <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
@@ -213,7 +213,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="text" name="gerat" id="anderes" />
         </section>
       </div>
-      <div class="auswahl5">
+      <div class="auswahl5" id="a5">
         <h2>Für welche Tätigkeiten verwenden Sie ihr Tablet?</h2>
         <section>
           <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
@@ -230,7 +230,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="text" name="gerat" id="anderes" />
         </section>
       </div>
-      <div class="auswahl6">
+      <div class="auswahl6"id="a6">
         <h2>Für welche Tätigkeiten verwenden Sie ihren Smart TV?</h2>
         <section>
           <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
@@ -247,7 +247,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="text" name="gerat" id="anderes" />
         </section>
       </div>
-      <div class="auswahl7">
+      <div class="auswahl7" id="a7">
         <h2>Für welche Tätigkeiten verwenden Sie ihre Smartwatch?</h2>
         <section>
           <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
@@ -266,7 +266,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="text" name="gerat" id="anderes" />
         </section>
       </div>
-      <div class="auswahl8">
+      <div class="auswahl8" id="a8">
         <h2>Für welche Tätigkeiten verwenden Sie ihre Spielekonsole?</h2>
         <section>
           <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
@@ -287,7 +287,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         <a href="umfragepagephp1.php" title="Vorherige Seite"><button type="button" name="umfrage" id="aendern">Vorherige Seite</button></a>
       </div>
       <div class="naechste">
-        <a href="umfragepagephp3.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern">Nächste Seite</button></a>
+        <a href="umfragepagephp3.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern" onclick="buttonNaechst()">Nächste Seite</button></a>
       </div>
     </div>
   </main>

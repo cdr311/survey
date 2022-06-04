@@ -140,6 +140,7 @@ div.naechste{
   text-align: center;
   top: 98%;
   left: 90%;
+  padding-right: 8px;
 }
 .dropdownfeld{
   height: 20px;

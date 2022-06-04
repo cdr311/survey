@@ -155,6 +155,7 @@ div.naechste{
   text-align: center;
   top: 142%;
   left: 90%;
+  padding-right: 8px;
 }
 section.links{
   float: left;

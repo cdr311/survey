@@ -143,7 +143,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 
   <main>
     <div class="main">
-      <div class="auswahl1">
+      <div class="auswahl1" id="aus1">
         <h2>Wie viel Stunden benutzen Sie ihren Desktop PC pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -161,7 +161,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl2">
+      <div class="auswahl2" id="aus2">
         <h2>Wie viel Stunden benutzen Sie ihren Laptop pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -179,7 +179,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl3">
+      <div class="auswahl3" id="aus3">
         <h2>Wie viel Stunden benutzen Sie ihr Smartphone pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -197,7 +197,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl4">
+      <div class="auswahl4"  id="aus4">
         <h2>Wie viel Stunden benutzen Sie ihr Tablet pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -215,7 +215,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl5">
+      <div class="auswahl5"  id="aus5">
         <h2>Wie viel Stunden benutzen Sie ihren SmartTV pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -233,7 +233,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl6">
+      <div class="auswahl6" id="aus6">
         <h2>Wie viel Stunden benutzen Sie ihr Smartwatch pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -251,7 +251,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl7">
+      <div class="auswahl7"  id="aus7">
         <h2>Wie viel Stunden benutzen Sie ihre Spielekonsole pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />

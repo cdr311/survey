@@ -133,6 +133,7 @@ div.naechste{
   text-align: center;
   top: 94%;
   left: 86%;
+  padding-right: 8px;
 }
 
 textarea{

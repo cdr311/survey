@@ -152,6 +152,18 @@ td.deta{
   font-size: 20px;
 }
 
+@media screen and (max-width:1800px){
+  main{
+    height: 95%;
+  }
+  section.inhalt{
+    height: 100%;
+  }
+  footer{
+    top: 115%;
+  }
+}
+
 @media screen and (max-width:1280px){
   main{
     height: 100%;
@@ -166,6 +178,30 @@ td.deta{
 
 @media screen and (max-width: 1100px) {
   main{
+    height: 105%;
+  }
+  section.inhalt{
+    height: 100%;
+  }
+  footer{
+    top: 125%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main{
+    height: 110%;
+  }
+  section.inhalt{
+    height: 100%;
+  }
+  footer{
+    top: 130%;
+  }
+}
+@media screen and (max-width: 850px) {
+  main{
+    top: 15%;
     height: 115%;
   }
   section.inhalt{
@@ -173,29 +209,5 @@ td.deta{
   }
   footer{
     top: 135%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  main{
-    height: 125%;
-  }
-  section.inhalt{
-    height: 100%;
-  }
-  footer{
-    top: 145%;
-  }
-}
-@media screen and (max-width: 850px) {
-  main{
-    top: 15%;
-    height: 135%;
-  }
-  section.inhalt{
-    height: 100%;
-  }
-  footer{
-    top: 155%;
   }
 }

@@ -160,17 +160,17 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       </div>
       <div class="auswahl2">
         <h2>Wir würden uns über Ihr Feedback freuen:</h2>
-        <textarea name="feedback" rows="20%" cols="90%">Feedback</textarea>
+        <textarea name="feedback" rows="20%" cols="90%" id="texteingabe" onclick="eingabeText()">Feedback</textarea>
       </div>
       <!-- <div class="abschluss">
         <a href="umfragepagephp7.php" title="Abschluss der Umfrage"><button type="button" name="umfrage">Umfrage abschließen</button></a>
       </div> -->
       <div class="vorher">
-        <a href="umfragepagephp1.php" title="Vorherige Seite"><button type="button" name="umfrage">Vorherige Seite</button></a>
+        <a href="umfragepagephp5.php" title="Vorherige Seite"><button type="button" name="umfrage" id="aendern">Vorherige Seite</button></a>
       </div>
       <div class="naechste">
         <!-- <a href="umfragepage3.html" title="Folgende Seite"><button type="button" name="umfrage">Nächste Seite</button></a> -->
-        <a href="umfragepagephp7.php" title="Abschluss der Umfrage"><button type="button" name="umfrage">Umfrage abschließen</button></a>
+        <a href="umfragepagephp7.php" title="Abschluss der Umfrage"><button type="button" name="umfrage" id="aendern">Umfrage abschließen</button></a>
         <!-- <button type="button" name="umfrage" class="verschleiern">Nächste Seite</button> -->
       </div>
     </div>

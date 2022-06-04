@@ -270,10 +270,10 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="vorher">
-        <a href="umfragepagephp2.php" title="Vorherige Seite"><button type="button" name="umfrage">Vorherige Seite</button></a>
+        <a href="umfragepagephp2.php" title="Vorherige Seite"><button type="button" name="umfrage" id="aendern">Vorherige Seite</button></a>
       </div>
       <div class="naechste">
-        <a href="umfragepagephp4.php" title="Folgende Seite"><button type="button" name="umfrage">Nächste Seite</button></a>
+        <a href="umfragepagephp4.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern">Nächste Seite</button></a>
       </div>
     </div>
   </main>

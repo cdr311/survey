@@ -90,7 +90,7 @@ div.main{
   top:70px;
   left: 25%;
   width: 100%;
-  height: 150%;
+  height: 154%;
   box-shadow: 8px 8px 8px 10px grey;
   background-color: #A4A4A4;
 }
@@ -150,7 +150,7 @@ div.vorher{
   position: absolute;
   padding-bottom: 10px;
   text-align: center;
-  top: 145%;
+  top: 148%;
   padding-left: 8px;
 }
 
@@ -158,7 +158,7 @@ div.naechste{
   position: absolute;
   padding-bottom: 10px;
   text-align: center;
-  top: 145%;
+  top: 148%;
   left: 90%;
 }
 section.links{
@@ -207,7 +207,7 @@ footer{
   padding-top: 4px;
   padding-bottom: 4px;
   position: absolute;
-  top: 212%;
+  top: 217%;
   width: 100%;
 }
 
@@ -288,4 +288,8 @@ span.droppen{
 
 .ausklappbar{
   display: none;
+}
+
+#aendern{
+  height: 100%;
 }

@@ -213,3 +213,10 @@ function privatVerschl2(){
 
 
 }
+
+function eingabeText(){
+  var eingabe = document.getElementById('texteingabe')
+  // eingabe.addEventListener('click', () => {
+    eingabe.innerText = ""
+  // })
+}

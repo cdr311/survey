@@ -133,7 +133,8 @@ footer{
   padding-top: 4px;;
   padding-bottom: 4px;
   position: absolute;
-  top: 180%;
+  /* top: 180%; */
+  top: 1000px;
   width: 100%;
 }
 
@@ -240,7 +241,7 @@ span{
   overflow: hidden;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   nav{
     left: 10%;
   }
@@ -304,4 +305,4 @@ span{
   footer{
     top: 330%;
   }
-}
+} */

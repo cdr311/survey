@@ -38,24 +38,7 @@ function carousel() {
   setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
-var acc = document.getElementsByClassName("zugeordnet");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
 // var acc = document.getElementsByClassName("zugeordnet");
-// var foot = document.getElementById('footing');
-// var zaehler = 0;
 // var i;
 //
 // for (i = 0; i < acc.length; i++) {
@@ -64,16 +47,47 @@ for (i = 0; i < acc.length; i++) {
 //     var panel = this.nextElementSibling;
 //     if (panel.style.display === "block") {
 //       panel.style.display = "none";
-//       zaehler -= 1;
-//       console.log(foot)
-//       foot.style.top = 120 + zaehler*35 + "%";
-//       console.log(foot)
 //     } else {
 //       panel.style.display = "block";
-//       zaehler +=1;
-//       console.log(foot)
-//       foot.style.top = 120 + zaehler*35 + "%";
-//       console.log(foot)
 //     }
 //   });
 // }
+
+var acc = document.getElementsByClassName("zugeordnet");
+var foot = document.getElementById('footing');
+var zaehler = 0;
+var i;
+let k = 1000;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      zaehler -= 1;
+      console.log(foot)
+      // foot.style.top = 120 + zaehler*35 + "%";
+      // foot.setAttribute("top", "2200px")
+      k -= 130;
+      foot.style['top'] = k + "px";
+      console.log(foot)
+    } else {
+      panel.style.display = "block";
+      zaehler +=1;
+      console.log(foot)
+      // foot.setAttribute("top", "2500px")
+      // foot.setProperty("top", "2500px")
+      // var zwsp = `${k} + 100`;
+      // foot.style['top'] = `${zwsp} px`;
+      k += 130;
+      foot.style['top'] = k + "px";
+      // foot.style['top'] = "2500px";
+      // foot.style.top = 120 + zaehler*35 + "%";
+      console.log(foot)
+    }
+  });
+}
+let var1 = 100;
+let var2 = 200;
+console.log(var1 + var2)

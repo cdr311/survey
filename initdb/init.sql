@@ -22,6 +22,18 @@ CREATE TABLE BerufsfeldKey (
 	PRIMARY KEY (ID)
 );
 
+CREATE TABLE FamilienstandKey (
+	ID INT NOT NULL,
+	FamilienstandName VARCHAR(11) NOT NULL,
+	PRIMARY KEY (ID)
+);
+
+CREATE TABLE BildungsstandKey (
+	ID INT NOT NULL,
+	BildungsstandName VARCHAR(34) NOT NULL,
+	PRIMARY KEY (ID)
+);
+
 CREATE TABLE GeraeteartKey (
 	ID INT NOT NULL,
 	GeraeteartName VARCHAR(13) NOT NULL,
@@ -96,10 +108,14 @@ CREATE TABLE TeilnehmerDaten (
 	Geschlecht INT NOT NULL,
 	Altersbereich INT NOT NULL,
 	Berufsfeld INT NOT NULL,
+	Familienstand INT NOT NULL,
+	Bildungsstand INT NOT NULL,
 	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (Geschlecht) REFERENCES GeschlechtKey(ID),
 	FOREIGN KEY (Altersbereich) REFERENCES AltersbereichKey(ID),
-	FOREIGN KEY (Berufsfeld) REFERENCES BerufsfeldKey(ID)
+	FOREIGN KEY (Berufsfeld) REFERENCES BerufsfeldKey(ID),
+	FOREIGN KEY (Familienstand) REFERENCES FamilienstandKey(ID),
+	FOREIGN KEY (Bildungsstand) REFERENCES BildungsstandKey(ID)
 );
 
 CREATE TABLE Geraeteart (
@@ -233,6 +249,22 @@ INSERT INTO BerufsfeldKey VALUES (12, 'Technik, Technologiefelder');
 INSERT INTO BerufsfeldKey VALUES (13, 'Verkehr, Logistik');
 INSERT INTO BerufsfeldKey VALUES (14, 'Wirtschaft, Verwaltung');
 INSERT INTO BerufsfeldKey VALUES (15, 'Sonstiges');
+INSERT INTO FamilienstandKey VALUES (0, 'Ledig');
+INSERT INTO FamilienstandKey VALUES (1, 'Getrennt');
+INSERT INTO FamilienstandKey VALUES (2, 'Geschieden');
+INSERT INTO FamilienstandKey VALUES (3, 'Verwitwet');
+INSERT INTO FamilienstandKey VALUES (4, 'Verheiratet');
+INSERT INTO BildungsstandKey VALUES (0, 'Kein Abschluss');
+INSERT INTO BildungsstandKey VALUES (1, 'Qualifizierter Hauptschulabschluss');
+INSERT INTO BildungsstandKey VALUES (2, 'Mittlere Reife');
+INSERT INTO BildungsstandKey VALUES (3, 'Fachabitur');
+INSERT INTO BildungsstandKey VALUES (4, 'Allgemeines Abitur');
+INSERT INTO BildungsstandKey VALUES (5, 'Studium ohne Abschluss');
+INSERT INTO BildungsstandKey VALUES (6, 'Bachelor');
+INSERT INTO BildungsstandKey VALUES (7, 'Diplom');
+INSERT INTO BildungsstandKey VALUES (8, 'Master');
+INSERT INTO BildungsstandKey VALUES (9, 'Promotion');
+INSERT INTO BildungsstandKey VALUES (10, 'Professur');
 INSERT INTO GeraeteartKey VALUES (0, 'Desktop PC');
 INSERT INTO GeraeteartKey VALUES (1, 'Laptop');
 INSERT INTO GeraeteartKey VALUES (2, 'Smartphone');

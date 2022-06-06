@@ -143,7 +143,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 
   <main>
     <div class="main">
-      <div class="auswahl1">
+      <div class="auswahl1" id="aus1">
         <h2>Wie viel Stunden benutzen Sie ihren Desktop PC pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -161,7 +161,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl2">
+      <div class="auswahl2" id="aus2">
         <h2>Wie viel Stunden benutzen Sie ihren Laptop pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -179,7 +179,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl3">
+      <div class="auswahl3" id="aus3">
         <h2>Wie viel Stunden benutzen Sie ihr Smartphone pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -197,7 +197,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl4">
+      <div class="auswahl4"  id="aus4">
         <h2>Wie viel Stunden benutzen Sie ihr Tablet pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -215,7 +215,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl5">
+      <div class="auswahl5"  id="aus5">
         <h2>Wie viel Stunden benutzen Sie ihren SmartTV pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -233,8 +233,8 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl6">
-        <h2>Wie viel Stunden benutzen Sie ihr Smartwatch pro Tag?</h2>
+      <div class="auswahl6" id="aus6">
+        <h2>Wie viel Stunden benutzen Sie ihre Smartwatch pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
           <label for="zwei">
@@ -251,7 +251,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
               <label for="lang">> 16</label>
         </section>
       </div>
-      <div class="auswahl7">
+      <div class="auswahl7"  id="aus7">
         <h2>Wie viel Stunden benutzen Sie ihre Spielekonsole pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
@@ -270,10 +270,10 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="vorher">
-        <a href="umfragepagephp2.php" title="Vorherige Seite"><button type="button" name="umfrage">Vorherige Seite</button></a>
+        <a href="umfragepagephp2.php" title="Vorherige Seite"><button type="button" name="umfrage" id="aendern">Vorherige Seite</button></a>
       </div>
       <div class="naechste">
-        <a href="umfragepagephp4.php" title="Folgende Seite"><button type="button" name="umfrage">Nächste Seite</button></a>
+        <a href="umfragepagephp4.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern">Nächste Seite</button></a>
       </div>
     </div>
   </main>
@@ -284,6 +284,67 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <p>copyright@2022</p>
   </footer>
   <script type="text/javascript" src="umfragescript.js">
+  </script>
+  <script type="text/javascript">
+
+//   for (let i=0; i < localStorage.length; i++) {
+//   let storageKey = localStorage.key(i);
+//   console.log(storageKey + ' : ' + localStorage.getItem(storageKey));
+// }
+
+  var desktop = false;
+  var laptop = false;
+  var smartphone = false;
+  var tablet = false;
+  var smarttv = false;
+  var smartwatch = false;
+  var spielekonsole = false;
+
+  desktop = window.localStorage.getItem('desktop');
+  if(desktop){
+      document.getElementById('aus1').style.display = 'block'
+  }
+  else {
+    document.getElementById('aus1').style.display = 'none'
+  }
+  laptop = window.localStorage.getItem('laptop');
+  if(laptop)
+    document.getElementById('aus2').style.display = 'block'
+  else {
+    document.getElementById('aus2').style.display = 'none'
+  }
+  smartphone = window.localStorage.getItem('smartphone');
+  if(smartphone)
+    document.getElementById('aus3').style.display = 'block'
+  else {
+    document.getElementById('aus3').style.display = 'none'
+  }
+  tablet = window.localStorage.getItem('tablet');
+  if(tablet)
+    document.getElementById('aus4').style.display = 'block'
+  else {
+    document.getElementById('aus4').style.display = 'none'
+  }
+  smarttv = window.localStorage.getItem('smarttv');
+  if(smarttv)
+    document.getElementById('aus5').style.display = 'block'
+  else{
+    document.getElementById('aus5').style.display = 'none'
+  }
+  smartwatch = window.localStorage.getItem('smartwatch');
+  if(smartwatch)
+    document.getElementById('aus6').style.display = 'block'
+  else {
+    document.getElementById('aus6').style.display = 'none'
+  }
+  spielekonsole = window.localStorage.getItem('spielekonsole');
+  if(spielekonsole)
+    document.getElementById('aus7').style.display = 'block'
+  else{
+    document.getElementById('aus7').style.display = 'none'
+  }
+
+  localStorage.clear();
   </script>
 </body>
 

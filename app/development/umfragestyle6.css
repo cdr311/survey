@@ -93,7 +93,7 @@ div.main{
   top:70px;
   left: 25%;
   width: 100%;
-  height: 100%;
+  height: 101%;
   box-shadow: 8px 8px 8px 10px grey;
   background-color: #A4A4A4;
   text-align: center;
@@ -132,7 +132,8 @@ div.naechste{
   padding-bottom: 10px;
   text-align: center;
   top: 94%;
-  left: 90%;
+  left: 86%;
+  padding-right: 8px;
 }
 
 textarea{
@@ -281,4 +282,14 @@ span.droppen{
 
 .ausklappbar{
   display: none;
+}
+
+#aendern{
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  div.naechste{
+    left:88%;
+  }
 }

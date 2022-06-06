@@ -224,10 +224,10 @@ $showPopup = true;
       </div>
       <div class="vorher">
         <!-- <a href="umfragepage1.html" title="Vorherige Seite"><button type="button" name="umfrage">Vorherige Seite</button></a> -->
-        <button type="button" name="umfrage" class="verschleiern">Vorherige Seite</button>
+        <button type="button" name="umfrage" class="verschleiern" id="aendern">Vorherige Seite</button>
       </div>
       <div class="naechste">
-        <a href="umfragepagephp2.php" title="Folgende Seite"><button type="button" name="umfrage">Nächste Seite</button></a>
+        <a href="umfragepagephp2.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern">Nächste Seite</button></a>
       </div>
     </div>
   </main>

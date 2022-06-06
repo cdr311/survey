@@ -205,11 +205,122 @@ function closeNav() {
   document.getElementById('sidebar').style.display = 'none';
 }
 
-
-function privatVerschl1(){
-
+function eingabeText(){
+  var eingabe = document.getElementById('texteingabe')
+  // eingabe.addEventListener('click', () => {
+    eingabe.innerText = ""
+  // })
 }
-function privatVerschl2(){
+
+var desktop = false;
+var laptop = false;
+var smartphone = false;
+var tablet = false;
+var smarttv = false;
+var smartwatch = false;
+var spielekonsole = false;
 
 
+// var acc = document.getElementsByClassName("main");
+// var foot = document.getElementById('footing');
+// var main = document.getElementById('main');
+// var mainmain = document.getElementById('mainmain');
+// var i;
+// let k = 1000;
+// let ke = 900;
+// let kee = 900;
+
+function desktopCheck(){
+  if(desktop){
+    document.getElementById('a2').style.display = 'none'
+    desktop = false;
+    // k -= 130;
+    // foot.style['top'] = k + "px";
+    // ke -= 130;
+    // main.style['height'] = ke + "px";
+    // kee -= 130;
+    // mainmain.style['height'] = kee + "px";
+  }
+  else {
+    document.getElementById('a2').style.display = 'block'
+    desktop = true;
+    // k += 130;
+    // foot.style['top'] = k + "px";
+    // ke += 130;
+    // main.style['main'] = ke + "px";
+    // kee -= 130;
+    // mainmain.style['height'] = kee + "px";
+  }
+}
+function laptopCheck(){
+  if(laptop){
+    document.getElementById('a3').style.display = 'none'
+    laptop = false;
+  }
+  else {
+    document.getElementById('a3').style.display = 'block'
+    laptop = true;
+  }
+}
+function smartphoneCheck(){
+  if(smartphone){
+    document.getElementById('a4').style.display = 'none'
+    smartphone = false;
+  }
+  else {
+    document.getElementById('a4').style.display = 'block'
+    smartphone = true;
+  }
+}
+function tabletCheck(){
+  if(tablet){
+    document.getElementById('a5').style.display = 'none'
+    tablet = false;
+  }
+  else {
+    document.getElementById('a5').style.display = 'block'
+    tablet = true;
+  }
+}
+function smarttvCheck(){
+  if(smarttv){
+    document.getElementById('a6').style.display = 'none'
+    smarttv = false;
+  }
+  else{
+    document.getElementById('a6').style.display = 'block'
+    smarttv = true;
+  }
+}
+function smartwatchCheck(){
+  if(smartwatch){
+    document.getElementById('a7').style.display = 'none'
+    smartwatch = false;
+  }
+  else {
+    document.getElementById('a7').style.display = 'block'
+    smartwatch = true;
+  }
+}
+function spielekonsoleCheck(){
+  if(spielekonsole){
+    document.getElementById('a8').style.display = 'none'
+    spielekonsole = false;
+  }
+  else {
+    document.getElementById('a8').style.display = 'block'
+    spielekonsole = true;
+  }
+}
+
+//hier diese Funktion speichert den Wert ob es auf der naechsten Seite die Nutzungsdauer dann auch anzeigen soll oder nicht.
+function buttonNaechst(){
+
+  window.localStorage.setItem('desktop', desktop);
+  window.localStorage.setItem('laptop', laptop);
+  window.localStorage.setItem('smartphone', smartphone);
+  window.localStorage.setItem('tablet', tablet);
+  window.localStorage.setItem('smarttv', smarttv);
+  window.localStorage.setItem('smartwatch', smartwatch);
+  window.localStorage.setItem('spielekonsole', spielekonsole);
 }

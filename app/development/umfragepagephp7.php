@@ -64,7 +64,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 
   <nav>
     <h4>Sie haben die Umfrage erfolgreich abgeschlossen!</h4>
-    <img src="https://media.istockphoto.com/vectors/approval-symbol-check-mark-in-a-circle-drawn-by-hand-vector-green-ok-vector-id1094780808?s=612x612" alt="Korrekthaken" title="Korrekt" width="200px" height="220px" />
+    <img src="images/Korrekthaken.png" alt="Korrekthaken" title="Korrekt" width="200px" height="220px" />
     <h3>Vielen Dank für Ihre Teilnahme!</h3>
   </nav>
 

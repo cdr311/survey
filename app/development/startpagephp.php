@@ -107,11 +107,10 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <a href="umfragepagephp1.php" title="Umfrage starten" class="unter"><button type="button" name="umfrage" class="umfrage">Umfrage</button></a>
   </aside>
 
-  <footer class="mittig">
+  <footer class="mittig" id="footing">
     <p>Die Gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a>verwendet.</p>
     <p>copyright@2022</p>
-
   </footer>
 
   <script type="text/javascript" src="startpagescript.js">

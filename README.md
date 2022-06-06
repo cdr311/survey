@@ -8,3 +8,9 @@ Danach wird per ```docker-compose up``` im Git-Verzeichnis die Umgebung gestarte
 
 Mit ```Ctrl + C``` kann die Umgebung wieder beendet werden.
 Alternativ, falls sie per ```docker-compose up -d``` im Hintergrund gestartet wurde, kann die Umgebung per ```docker-compose down``` beendet werden.
+
+Wenn die Umgebung zum ersten Mal gestartet wird, werden sämtliche Dateien in ```initdb/``` (in alphabetischer Reihenfolge) ausgeführt, siehe https://hub.docker.com/_/mariadb ("Initializing a fresh instance"). Dies beinhaltet auch die Datei ```init.sql```, welche die anfängliche Struktur der Datenbank erstellt.
+
+Die folgende Darstellung zeigt das Datenbankschema: \
+![survey](./survey.svg) \
+Der Übersichtlichkeit wegen verzichtet die Darstellung auf Pfeile.

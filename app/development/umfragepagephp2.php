@@ -141,8 +141,8 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     </div>
   </aside>
 
-  <main>
-    <div class="main">
+  <main id="mainmain">
+    <div class="main" id="main">
       <div class="auswahl1">
         <h2>Welche der folgenden Geräte haben Sie schon benutzt?</h2>
         <section>
@@ -292,7 +292,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     </div>
   </main>
 
-  <footer class="mittig">
+  <footer class="mittig" id="footing">
     <p>Die Gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a>verwendet.</p>
     <p>copyright@2022</p>

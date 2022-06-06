@@ -167,7 +167,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl2">
         <h2>Verschlüsseln Sie ihre <b>privaten</b> E-Mails?</h2>
         <section>
-          <input type="radio" name="ver1" id="ja" value="jaPrivat" onclick="privatVerschl1()" />
+          <input type="radio" name="ver1" id="ja" value="jaPrivat" />
           <label for="ja">Ja</label><br />
           <input type="radio" name="ver1" id="nein" value="neinPrivat" />
           <label for="nein">Nein</label><br />
@@ -187,7 +187,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl3">
         <h2>Verschlüsseln Sie ihre <b>dienstlichen</b> E-Mails?</h2>
         <section>
-          <input type="radio" name="ver2" id="ja" value="jaDienst" onclick="privatVerschl2()" />
+          <input type="radio" name="ver2" id="ja" value="jaDienst" />
           <label for="ja">Ja</label><br />
           <input type="radio" name="ver2" id="nein" value="neinDienst" />
           <label for="nein">Nein</label><br />

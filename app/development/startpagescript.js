@@ -88,6 +88,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-let var1 = 100;
-let var2 = 200;
-console.log(var1 + var2)

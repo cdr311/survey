@@ -234,7 +234,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl6" id="aus6">
-        <h2>Wie viel Stunden benutzen Sie ihr Smartwatch pro Tag?</h2>
+        <h2>Wie viel Stunden benutzen Sie ihre Smartwatch pro Tag?</h2>
         <section>
           <input type="radio" name="dauer" id="zwei" value="Zwei" />
           <label for="zwei">
@@ -286,6 +286,12 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   <script type="text/javascript" src="umfragescript.js">
   </script>
   <script type="text/javascript">
+
+//   for (let i=0; i < localStorage.length; i++) {
+//   let storageKey = localStorage.key(i);
+//   console.log(storageKey + ' : ' + localStorage.getItem(storageKey));
+// }
+
   var desktop = false;
   var laptop = false;
   var smartphone = false;
@@ -295,37 +301,31 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   var spielekonsole = false;
 
   desktop = window.localStorage.getItem('desktop');
-  console.log(desktop)
   if(desktop){
       document.getElementById('aus1').style.display = 'block'
   }
   else {
-    // document.getElementById('aus1').style.display = 'none'
-    document.getElementById('aus1').style.shadow = 0.5;
+    document.getElementById('aus1').style.display = 'none'
   }
   laptop = window.localStorage.getItem('laptop');
-  console.log(laptop)
   if(laptop)
     document.getElementById('aus2').style.display = 'block'
   else {
     document.getElementById('aus2').style.display = 'none'
   }
   smartphone = window.localStorage.getItem('smartphone');
-  console.log(smartphone)
   if(smartphone)
     document.getElementById('aus3').style.display = 'block'
   else {
     document.getElementById('aus3').style.display = 'none'
   }
   tablet = window.localStorage.getItem('tablet');
-  console.log(tablet)
   if(tablet)
     document.getElementById('aus4').style.display = 'block'
   else {
     document.getElementById('aus4').style.display = 'none'
   }
   smarttv = window.localStorage.getItem('smarttv');
-  console.log(smarttv)
   if(smarttv)
     document.getElementById('aus5').style.display = 'block'
   else{

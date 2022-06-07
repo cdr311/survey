@@ -1,10 +1,3 @@
-<?php
-
-  session_start();
-  echo "SESSION ID: ".$_SESSION['id'];
-
-?>
-
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
 

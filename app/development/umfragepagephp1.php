@@ -1,10 +1,6 @@
 <?php
 
-require_once 'dbfunctions.php';
-require_once 'sessionfunctions.php';
-
 session_start();
-generateSessionID();
 echo "SESSION ID: ".$_SESSION['id'];
 
 ?>

@@ -10,7 +10,7 @@ function generateSessionID(){
 function checkIfIdAlreadyUsed(){
   $tmp = $_SESSION['id'];
   $results = executeQuery("SELECT TeilnehmerID FROM TeilnehmerDaten WHERE TeilnehmerID = $tmp");
-  print_r($results);
+  //print_r($results);
   if ($results) {
     generateSessionID();
   }

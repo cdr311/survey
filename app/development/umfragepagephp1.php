@@ -154,6 +154,7 @@ $showPopup = true;
 
   <main>
     <div class="main">
+      <form method="post" action="umfragepagephp2.php">
       <div class="auswahl">
         <h2>Mit welchem Geschlecht identifizieren Sie sich?</h2>
         <section>
@@ -240,6 +241,11 @@ $showPopup = true;
       <div class="naechste">
         <a href="umfragepagephp2.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern">Nächste Seite</button></a>
       </div>
+
+      <div class="naechste">
+        <input type="submit" title="Folgende Seite" name="umfrage" id="aendern" />
+      </div>
+    </form>
     </div>
   </main>
 

@@ -47,7 +47,6 @@ $showPopup = true;
 </div>
 <?php  }; ?>
 
-  <!--die obere Auswahlleiste-->
   <header>
     <article>
       <section class="links">
@@ -72,7 +71,6 @@ $showPopup = true;
     </article>
   </header>
 
-  <!-- im Menü dann die übersicht machen welche thematik und die Fragen dann darunter mit DropDown bzw Liste darunter -->
   <menu id="gross">
     <div class="sidenav">
       <p class="gliederung" id="kasten"><b>Übersicht:</b></p>
@@ -116,7 +114,6 @@ $showPopup = true;
   <aside id="sidebar">
     <div class="sidenav2">
       <p><button onclick="closeNav()" class="Xrechts"><b>X</b></button></p>
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
       <p class="gliederung" id="kasten"><b>Übersicht:</b></p>
       <ol type="1">
         <li id="kasten"><button type="button" name="button" onclick="aufklappenAA()" class="dropdown drueber" id="kasten">Allgemein</button></li>
@@ -238,14 +235,11 @@ $showPopup = true;
         </section>
       </div>
       <div class="vorher">
-        <!-- <a href="umfragepage1.html" title="Vorherige Seite"><button type="button" name="umfrage">Vorherige Seite</button></a> -->
         <button type="button" name="umfrage" class="verschleiern" id="aendern">Vorherige Seite</button>
       </div>
       <div class="naechste">
         <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage2.php', 'form1')">Nächste Seite</button>
       </div>
-
-      <!-- <a href="umfragepagephp2.php" title="Folgende Seite"></a> -->
     </form>
     </div>
   </main>

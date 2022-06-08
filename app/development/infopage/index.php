@@ -36,8 +36,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   <button onclick='cookieOk()' id="abstand2">Einverstanden</button>
 </div>
 <?php  }; ?>
-
-  <!--die obere Auswahlleiste-->
   <header>
     <article class="header">
       <section class="links">

@@ -50,7 +50,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 </div>
 <?php  }; ?>
 
-  <!--die obere Auswahlleiste-->
   <header>
     <article>
       <section class="links">

@@ -1,8 +1,7 @@
 function cookieOk() {
-  var now = new Date(); // Variable für aktuelles Datum
-  var lifetime = now.getTime(); // Variable für Millisekunden seit 1970 bis aktuelles Datum
-  var deleteCookie = lifetime + 2592000000; // Macht den Cookie 30 Tage gültig.
-  // var deleteCookie = lifetime + 2;
+  var now = new Date();
+  var lifetime = now.getTime();
+  var deleteCookie = lifetime + 2592000000;
 
   now.setTime(deleteCookie);
   var enddate = now.toUTCString();
@@ -15,13 +14,6 @@ function circleklick() {
   var element = document.body
   element.classList.toggle("darkmode")
 }
-
-// document.getElementById('aussen').style.opacity = '0.5'
-// window.addEventListener('load', () =>{
-//   if(confirm("Unsere Website verwendet Cookies um ausgewählte Daten über Sie zu sammeln. Bevor Sie fortfahren, unsere Website zu nutzen, müssen Sie den Datenschutzbestimmungen zustimmen"))
-//       document.getElementById('aussen').style.opacity = '1.0';
-//   document.getElementById('aussen').style.opacity = '1.0';
-// })
 
 var gedruecktA = false;
 function aufklappenA(){
@@ -88,9 +80,6 @@ function aufklappenF(){
   }
 }
 
-
-
-
 var gedruecktAA = false;
 function aufklappenAA(){
   var klapp = document.getElementById("infoAllgemeinA");
@@ -156,46 +145,31 @@ function aufklappenFF(){
   }
 }
 
-
-// console.log(window)
-// console.log(document.body.clientWidth)
-
 var breite = window.innerWidth;
 if(breite<1100){
   document.getElementById('gross').style.display = 'none';
   document.getElementById('klein').style.display = 'block';
-  // document.getElementsByTagName('nav').style.display = 'block';
 }
 else{
   document.getElementById('gross').style.display = 'block';
   document.getElementById('klein').style.display = 'none';
-  // document.getElementsByTagName('nav').style.display = 'none';
 }
 
 window.addEventListener('resize', function(){
   breite = window.innerWidth
-  // console.log(window.innerWidth)
-  // console.log(typeof(window.innerWidth))
   if(breite<1100){
     document.getElementById('gross').style.display = 'none';
     document.getElementById('klein').style.display = 'block';
     document.getElementById('sidebar').style.display = 'none';
-    // document.getElementsByTagName('nav').style.display = 'block';
   }
   else{
     document.getElementById('gross').style.display = 'block';
     document.getElementById('klein').style.display = 'none';
     document.getElementById('sidebar').style.display = 'none';
-    // document.getElementsByTagName('nav').style.display = 'none';
   }
 })
-// window.onresize = (event) => {
-//   breite = window.innerHTML
-//   console.log(breite)
-// }
 
 function openNav() {
-  // document.getElementsByTagName('aside').style.width = "250px";
   document.getElementById('klein').style.display = 'none'
   document.getElementById('sidebar').style.display = 'block';
 }
@@ -207,9 +181,7 @@ function closeNav() {
 
 function eingabeText(){
   var eingabe = document.getElementById('texteingabe')
-  // eingabe.addEventListener('click', () => {
     eingabe.innerText = ""
-  // })
 }
 
 var desktop = false;

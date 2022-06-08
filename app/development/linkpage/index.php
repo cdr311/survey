@@ -37,7 +37,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 </div>
 <?php  }; ?>
 
-  <!--die obere Auswahlleiste-->
   <header class="base">
     <article>
       <section class="links">

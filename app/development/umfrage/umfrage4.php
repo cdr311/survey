@@ -45,7 +45,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 </div>
 <?php  }; ?>
 
-  <!--die obere Auswahlleiste-->
   <header>
     <article>
       <section class="links">
@@ -70,7 +69,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     </article>
   </header>
 
-  <!-- im Menü dann die übersicht machen welche thematik und die Fragen dann darunter mit DropDown bzw Liste darunter -->
   <menu id="gross">
     <div class="sidenav">
       <p class="gliederung" id="kasten"><b>Übersicht:</b></p>
@@ -114,7 +112,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   <aside id="sidebar">
     <div class="sidenav2">
       <p><button onclick="closeNav()" class="Xrechts"><b>X</b></button></p>
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
       <p class="gliederung" id="kasten"><b>Übersicht:</b></p>
       <ol type="1">
         <li id="kasten"><button type="button" name="button" onclick="aufklappenAA()" class="dropdown drueber" id="kasten">Allgemein</button></li>
@@ -277,11 +274,9 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="vorher">
-        <!-- <a href="umfragepagephp3.php" title="Vorherige Seite"><button type="button" name="umfrage" id="aendern">Vorherige Seite</button></a> -->
         <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage3.php', 'form4')">Vorherige Seite</button>
       </div>
       <div class="naechste">
-        <!-- <a href="umfragepagephp5.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern">Nächste Seite</button></a> -->
         <button type="button" name="umfrage" id="aendern" onclick="buttonNaechst(); submitForm('umfrage5.php', 'form4')">Nächste Seite</button>
       </div>
     </div>

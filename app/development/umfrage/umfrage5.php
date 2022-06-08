@@ -15,8 +15,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten" />
 
-  <link rel="stylesheet" href="umfragestyle5.css" />
-  <link rel="icon" type="image/x-icon" href="images/fragezeichen.png" />
+  <link rel="stylesheet" href="../stylesheets/umfrage5.css" />
+  <link rel="icon" type="image/x-icon" href="../images/fragezeichen.png" />
   <script src="changePage.js"></script>
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
@@ -50,7 +50,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <article>
       <section class="links">
         <div>
-          <div><img src="images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
+          <div><img src="../images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
       </section>
       <section class="mitte">
         <div class="ueberschrift">Umfrage</div>
@@ -58,10 +58,10 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       </section>
       <section class="rechts">
         <table>
-          <th><a href="umfragepagephp1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
-          <th><a href="infospagephp.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
-          <th><a href="linkpagephp.php" title="Links" class="unter"><span>Links</span></a></th>
-          <th><a href="startpagephp.php" title="Home" class="unter"><span>Home</span></a></th>
+          <th><a href="umfrage1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
+          <th><a href="../infopage/index.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
+          <th><a href="../linkpage/index.php" title="Links" class="unter"><span>Links</span></a></th>
+          <th><a href="../startpage/index.php" title="Home" class="unter"><span>Home</span></a></th>
           <th>
             <button onclick="circleklick()" title="Moduswechsel">M</button>
           </th>
@@ -215,11 +215,11 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       </div>
       <div class="vorher">
         <!-- <a href="umfragepagephp4.php" title="Vorherige Seite"><button type="button" name="umfrage" id="aendern">Vorherige Seite</button></a> -->
-        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfragepagephp4.php', 'form5')">Vorherige Seite</button>
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage4.php', 'form5')">Vorherige Seite</button>
       </div>
       <div class="naechste">
         <!-- <a href="umfragepagephp6.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern">Nächste Seite</button></a> -->
-        <button type="button" name="umfrage" id="aendern" onclick="buttonNaechst(); submitForm('umfragepagephp6.php', 'form5')">Nächste Seite</button>
+        <button type="button" name="umfrage" id="aendern" onclick="buttonNaechst(); submitForm('umfrage6.php', 'form5')">Nächste Seite</button>
       </div>
     </div>
   </form>
@@ -230,7 +230,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a>verwendet.</p>
     <p>copyright@2022</p>
   </footer>
-  <script type="text/javascript" src="umfragescript.js">
+  <script type="text/javascript" src="../scripte/umfrage.js">
   </script>
 </body>
 

@@ -1,3 +1,10 @@
+<?php
+
+  session_start();
+  echo "SESSION ID: ".$_SESSION['id'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
 
@@ -8,20 +15,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten" />
 
-  <link rel="stylesheet" href="umfragestyle6.css" />
-  <link rel="icon" type="image/x-icon" href="images/fragezeichen.png" />
+  <link rel="stylesheet" href="../stylesheets/umfrage6.css" />
+  <link rel="icon" type="image/x-icon" href="../images/fragezeichen.png" />
+  <script src="changePage.js"></script>
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
 
 </head>
 
 <body id="aussen">
+
+  <?php
+if( isset($_COOKIE['setCookieHinweis']) ) {
+  $showPopup = false;
+} else {
+  $showPopup = true;
+}
+?>
+
+<?php if($showPopup) { ?>
+<div id="cookie-popup">
+  <div class="hinweis">
+    <p>Wir verwenden Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.</p>
+  </div>
+  <span class="more">
+    <a href="https://www.gesetze-bayern.de/Content/Document/BayDSG/" id="abstand1">Details</a>
+  </span>
+  <button onclick='cookieOk()' id="abstand2">Einverstanden</button>
+</div>
+<?php  }; ?>
+
   <!--die obere Auswahlleiste-->
   <header>
     <article>
       <section class="links">
         <div>
-          <div><img src="images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
+          <div><img src="../images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
       </section>
       <section class="mitte">
         <div class="ueberschrift">Umfrage</div>
@@ -29,10 +58,10 @@
       </section>
       <section class="rechts">
         <table>
-          <th><a href="umfragepage1.html" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
-          <th><a href="infospage.html" title="Über Uns" class="unter"><span>Infos</span></a></th>
-          <th><a href="linkpage.html" title="Links" class="unter"><span>Links</span></a></th>
-          <th><a href="startpage.html" title="Home" class="unter"><span>Home</span></a></th>
+          <th><a href="umfrage1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
+          <th><a href="../infopage/index.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
+          <th><a href="../linkpage/index.php" title="Links" class="unter"><span>Links</span></a></th>
+          <th><a href="../startpage/index.php" title="Home" class="unter"><span>Home</span></a></th>
           <th>
             <button onclick="circleklick()" title="Moduswechsel">M</button>
           </th>
@@ -121,6 +150,7 @@
   </aside>
 
   <main>
+    <form method="post" id="form6">
     <div class="main">
       <div class="auswahl1">
         <h2>Wie würden Sie diese Umfrage bewerten?</h2>
@@ -139,19 +169,23 @@
       </div>
       <div class="auswahl2">
         <h2>Wir würden uns über Ihr Feedback freuen:</h2>
-        <textarea name="feedback" rows="20%" cols="90%">Feedback</textarea>
+        <textarea name="feedback" rows="20%" cols="90%" id="texteingabe" onclick="eingabeText()">Feedback</textarea>
       </div>
-      <div class="abschluss">
-        <a href="umfragepage7.html" title="Abschluss der Umfrage"><button type="button" name="umfrage">Umfrage abschließen</button></a>
-      </div>
+      <!-- <div class="abschluss">
+        <a href="umfragepagephp7.php" title="Abschluss der Umfrage"><button type="button" name="umfrage">Umfrage abschließen</button></a>
+      </div> -->
       <div class="vorher">
-        <a href="umfragepage1.html" title="Vorherige Seite"><button type="button" name="umfrage">Vorherige Seite</button></a>
+        <!-- <a href="umfragepagephp5.php" title="Vorherige Seite"><button type="button" name="umfrage" id="aendern">Vorherige Seite</button></a> -->
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage5.php', 'form6')">Vorherige Seite</button>
       </div>
       <div class="naechste">
         <!-- <a href="umfragepage3.html" title="Folgende Seite"><button type="button" name="umfrage">Nächste Seite</button></a> -->
-        <button type="button" name="umfrage" class="verschleiern">Nächste Seite</button>
+        <!-- <a href="umfragepagephp7.php" title="Abschluss der Umfrage"><button type="button" name="umfrage" id="aendern">Umfrage abschließen</button></a> -->
+        <button type="button" name="umfrage" id="aendern" onclick="buttonNaechst(); submitForm('umfrage7.php', 'form6')">Umfrage abschließen</button>
+        <!-- <button type="button" name="umfrage" class="verschleiern">Nächste Seite</button> -->
       </div>
     </div>
+    </form>
   </main>
 
   <footer class="mittig">
@@ -159,7 +193,7 @@
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a>verwendet.</p>
     <p>copyright@2022</p>
   </footer>
-  <script type="text/javascript" src="umfragescript.js">
+  <script type="text/javascript" src="../scripte/umfrage.js">
   </script>
 </body>
 

@@ -1,3 +1,12 @@
+<?php
+
+require_once 'sessionfunctions.php';
+
+session_start();
+printSessionVariables();
+
+?>
+
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
 
@@ -8,20 +17,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten" />
 
-  <link rel="stylesheet" href="umfragestyle5.css" />
-  <link rel="icon" type="image/x-icon" href="images/fragezeichen.png" />
+  <link rel="stylesheet" href="../stylesheets/umfrage1.css" />
+  <link rel="icon" type="image/x-icon" href="../images/fragezeichen.png" />
+  <script src="changePage.js"></script>
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
 
 </head>
 
 <body id="aussen">
+
+  <?php
+if( isset($_COOKIE['setCookieHinweis']) ) {
+$showPopup = false;
+} else {
+$showPopup = true;
+}
+?>
+
+<?php if($showPopup) { ?>
+<div id="cookie-popup">
+<div class="hinweis">
+  <p>Wir verwenden Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.</p>
+</div>
+<span class="more">
+  <a href="https://www.gesetze-bayern.de/Content/Document/BayDSG/" id="abstand1">Details</a>
+</span>
+<button onclick='cookieOk()' id="abstand2">Einverstanden</button>
+</div>
+<?php  }; ?>
+
   <!--die obere Auswahlleiste-->
   <header>
     <article>
       <section class="links">
         <div>
-          <div><img src="images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
+          <div><img src="../images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
       </section>
       <section class="mitte">
         <div class="ueberschrift">Umfrage</div>
@@ -29,10 +60,10 @@
       </section>
       <section class="rechts">
         <table>
-          <th><a href="umfragepage1.html" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
-          <th><a href="infospage.html" title="Über Uns" class="unter"><span>Infos</span></a></th>
-          <th><a href="linkpage.html" title="Links" class="unter"><span>Links</span></a></th>
-          <th><a href="startpage.html" title="Home" class="unter"><span>Home</span></a></th>
+          <th><a href="umfrage1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
+          <th><a href="../infopage/index.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
+          <th><a href="../linkpage/index.php" title="Links" class="unter"><span>Links</span></a></th>
+          <th><a href="../startpage/index.php" title="Home" class="unter"><span>Home</span></a></th>
           <th>
             <button onclick="circleklick()" title="Moduswechsel">M</button>
           </th>
@@ -122,82 +153,114 @@
 
   <main>
     <div class="main">
-      <div class="auswahl1">
-        <h2>Welche Mailprogramme benutzen Sie?</h2>
+      <form method="post" id="form1">
+      <div class="auswahl">
+        <h2>Mit welchem Geschlecht identifizieren Sie sich?</h2>
         <section>
-          <input type="checkbox" name="mail" id="outl" value="Outlook" />
-          <label for="outl">Microsoft Outlook</label><br />
-          <input type="checkbox" name="mail" id="inky" value="Inky" />
-          <label for="inky">Inky</label><br />
-          <input type="checkbox" name="mail" id="bird" value="Mailbird" />
-          <label for="bird">Mailbird</label><br />
-          <input type="checkbox" name="mail" id="thun" value="Thunderbird" />
-          <label for="thun">Mozilla Thunderbird</label><br />
-          <input type="checkbox" name="mail" id="spark" value="Spark" />
-          <label for="spark">Spark</label><br />
-          <input type="checkbox" name="mail" id="gmail" value="GMail" />
-          <label for="gmail">GoogleMail-App</label><br />
-          <input type="checkbox" name="mail" id="brow" value="Browser" />
-          <label for="brow">Browser</label><br />
-          <label for="sonst">Sonstige:</label>
-          <input type="text" name="mail" id="sonst" />
+          <input type="radio" name="geschlecht" id="maen" value="0" />
+          <label for="maen">Männlich</label><br />
+          <input type="radio" name="geschlecht" id="weibl" value="1" />
+          <label for="maen">Weiblich</label><br />
+          <input type="radio" name="geschlecht" id="dive" value="2" />
+          <label for="maen">Divers</label>
         </section>
       </div>
       <div class="auswahl2">
-        <h2>Verschlüsseln Sie ihre <b>privaten</b> E-Mails?</h2>
-        <section>
-          <input type="radio" name="ver1" id="ja" value="jaPrivat" onclick="privatVerschl1()" />
-          <label for="ja">Ja</label><br />
-          <input type="radio" name="ver1" id="nein" value="neinPrivat" />
-          <label for="nein">Nein</label><br />
-        </section>
-      </div>
-      <div class="auswahl4">
-        <h2>Welche Verschlüsselungsmethode verwenden Sie dazu?</h2>
-        <section>
-          <input type="radio" name="ver1ja" id="pgp" value="PGP" />
-          <label for="pgp">PGP</label><br />
-          <input type="radio" name="ver1ja" id="smime" value="SMIME" />
-          <label for="smime">S/MIME</label><br />
-          <input type="radio" name="ver1ja" id="prov" value="Provider" />
-          <label for="prov">Spezialisierter E-Mail-Provider</label>
+        <h2>In welchen Altersbereich befinden Sie sich?</h2>
+        <section class="breite">
+          <input type="radio" name="alter" id="jugend" value="0" />
+          <label for="jugend">17 oder jünger</label><br />
+          <input type="radio" name="alter" id="erwachsen1" value="1" />
+          <label for="erwachsen1">18-20</label><br />
+          <input type="radio" name="alter" id="erwachsen2" value="2" />
+          <label for="erwachsen2">21-29</label><br />
+          <input type="radio" name="alter" id="erwachsen3" value="3" />
+          <label for="erwachsen3">30-39</label><br />
+          <input type="radio" name="alter" id="erwachsen4" value="4" />
+          <label for="erwachsen4">40-49</label><br />
+          <input type="radio" name="alter" id="erwachsen5" value="5" />
+          <label for="erwachsen5">50-59</label><br />
+          <input type="radio" name="alter" id="erwachsen6" value="6" />
+          <label for="erwachsen6">60 oder älter</label>
         </section>
       </div>
       <div class="auswahl3">
-        <h2>Verschlüsseln Sie ihre <b>dienstlichen</b> E-Mails?</h2>
+        <h2>In welchen Berufsbereich sind Sie tätig?</h2>
         <section>
-          <input type="radio" name="ver2" id="ja" value="jaDienst" onclick="privatVerschl2()" />
-          <label for="ja">Ja</label><br />
-          <input type="radio" name="ver2" id="nein" value="neinDienst" />
-          <label for="nein">Nein</label><br />
+          <input type="radio" name="arbeit" id="labor" value="0" />
+          <label for="jugend">Laborberufe</label>
+          <input type="radio" name="arbeit" id="hand" value="1" />
+          <label for="hand">Handwerk</label>
+          <input type="radio" name="arbeit" id="technisch" value="2" />
+          <label for="technisch">IT und Elektronik</label>
+          <br>
+          <input type="radio" name="arbeit" id="kauf" value="3" />
+          <label for="kauf">Kaufmännische Berufe</label>
+          <input type="radio" name="arbeit" id="sozial" value="4" />
+          <label for="sozial">Gesundheit und Pflege</label>
+          <input type="radio" name="arbeit" id="sonstiges" value="5" />
+          <label for="sonstiges">Sonstiges</label>
+        </section>
+      </div>
+      <div class="auswahl4">
+        <h2>In welcher familiären Situation befinden Sie sich?</h2>
+        <section>
+          <input type="radio" name="familie" id="ledig" value="0" />
+          <label for="ledig">Ledig</label>
+          <input type="radio" name="familie" id="getrennt" value="1" />
+          <label for="getrennt">Getrennt</label>
+          <input type="radio" name="familie" id="geschieden" value="2" />
+          <label for="geschieden">Geschieden</label>
+          <input type="radio" name="familie" id="witwe" value="3" />
+          <label for="witwe">Verwitwet</label>
+          <input type="radio" name="familie" id="heirat" value="4" />
+          <label for="heirat">Verheiratet</label>
         </section>
       </div>
       <div class="auswahl5">
-        <h2>Welche Verschlüsselungsmethode verwenden Sie dazu?</h2>
+        <h2>Was ist ihr höchster Bildungssbschluss?</h2>
         <section>
-          <input type="radio" name="ver2ja" id="pgp" value="PGP" />
-          <label for="pgp">PGP</label><br />
-          <input type="radio" name="ver2ja" id="smime" value="SMIME" />
-          <label for="smime">S/MIME</label><br />
-          <input type="radio" name="ver2ja" id="prov" value="Provider" />
-          <label for="prov">Spezialisierter E-Mail-Provider</label>
+          <select name="bildung" class="dropdownfeld">
+            <option value="0">Keinen Abschluss</option>
+            <option value="1">Qualifizierter Hauptschulabschluss</option>
+            <option value="2">Mittlere Reife</option>
+            <option value="3">Fachabitur</option>
+            <option value="4">Allgemeines Abitur</option>
+            <option value="5">Studium ohne Abschluss</option>
+            <option value="6">Bachelor</option>
+            <option value="7">Diplom</option>
+            <option value="8">Master</option>
+            <option value="9">Promotion</option>
+            <option value="10">Professur</option>
+          </select>
+
+          </select>
         </section>
       </div>
       <div class="vorher">
-        <a href="umfragepage1.html" title="Vorherige Seite"><button type="button" name="umfrage">Vorherige Seite</button></a>
+        <!-- <a href="umfragepage1.html" title="Vorherige Seite"><button type="button" name="umfrage">Vorherige Seite</button></a> -->
+        <button type="button" name="umfrage" class="verschleiern" id="aendern">Vorherige Seite</button>
       </div>
       <div class="naechste">
-        <a href="umfragepage3.html" title="Folgende Seite"><button type="button" name="umfrage">Nächste Seite</button></a>
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage2.php', 'form1')">Nächste Seite</button>
       </div>
+
+      <!-- <a href="umfragepagephp2.php" title="Folgende Seite"></a> -->
+    </form>
     </div>
   </main>
+
+
 
   <footer class="mittig">
     <p>Die Gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a>verwendet.</p>
     <p>copyright@2022</p>
+
   </footer>
-  <script type="text/javascript" src="umfragescript.js">
+
+
+  <script type="text/javascript" src="../scripte/umfrage.js">
   </script>
 </body>
 

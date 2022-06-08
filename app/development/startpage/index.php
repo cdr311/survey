@@ -21,8 +21,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten" />
 
-  <link rel="stylesheet" href="startpagestyle.css" />
-  <link rel="icon" type="image/x-icon" href="images/fragezeichen.png" />
+  <link rel="stylesheet" href="../stylesheets/start.css" />
+  <link rel="icon" type="image/x-icon" href="../images/fragezeichen.png" />
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
 
@@ -54,7 +54,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   <header>
     <article>
       <section class="links">
-        <div><img src="images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
+        <div><img src="../images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
       </section>
       <section class="mitte">
         <div class="ueberschrift">Umfrage</div>
@@ -62,10 +62,10 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       </section>
       <section class="rechts">
         <table>
-          <th><a href="umfragepagephp1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
-          <th><a href="infospagephp.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
-          <th><a href="linkpagephp.php" title="Links" class="unter"><span>Links</span></a></th>
-          <th><a href="startpagephp.php" title="Home" class="unter"><span>Home</span></a></th>
+          <th><a href="../umfrage/umfrage1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
+          <th><a href="../infopage/index.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
+          <th><a href="../linkpage/index.php" title="Links" class="unter"><span>Links</span></a></th>
+          <th><a href="../startpage/index.php" title="Home" class="unter"><span>Home</span></a></th>
           <th>
             <button onclick="circleklick()" title="Moduswechsel">M</button>
           </th>
@@ -78,11 +78,11 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 
   <nav>
     <div class="bild-inhalt">
-      <img class="meineSlides" src="images/umfrage.png" alt="UmfrageBild1" />
-      <img class="meineSlides" src="images/fragen.png" alt="UmfrageBild2" />
-      <img class="meineSlides" src="images/smiley.png" alt="UmfrageBild3" />
-      <img class="meineSlides" src="images/holz.png" alt="UmfrageBild4" />
-      <img class="meineSlides" src="images/dunkel.png" alt="UmfrageBild5" />
+      <img class="meineSlides" src="../images/umfrage.png" alt="UmfrageBild1" />
+      <img class="meineSlides" src="../images/fragen.png" alt="UmfrageBild2" />
+      <img class="meineSlides" src="../images/smiley.png" alt="UmfrageBild3" />
+      <img class="meineSlides" src="../images/holz.png" alt="UmfrageBild4" />
+      <img class="meineSlides" src="../images/dunkel.png" alt="UmfrageBild5" />
       <h1 class="linksunten">Nutzung digitaler Geräte</h1>
     </div>
 
@@ -107,17 +107,17 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 
     <button class="zugeordnet">Wer will das wissen?</button>
     <div class="panel">
-      <p>Wenn Sie genauere Details über die Entwickler erfahren wollen, dann schauen Sie beim Info Tab vorbei oder klicken Sie <a href="infospage.html" title="Über Uns" alt="Infopage">hier</a>.</p>
+      <p>Wenn Sie genauere Details über die Entwickler erfahren wollen, dann schauen Sie beim Info Tab vorbei oder klicken Sie <a href="../infopage/index.php" title="Über Uns" alt="Infopage">hier</a>.</p>
     </div>
     <button class="zugeordnet">Ist die Umfrage anonym?</button>
     <div class="panel">
-      <p>Die Umfrage ist vollständig anonym. Es werden lediglich 4 allgemeine Fragen zu Beginn auftauchen, welche aber durch den Button "<em>Keine Angabe</em>" übersprungen werden können. </p>
-      <p>Jedoch wäre es für die Auswertung sehr hilfreich, wenn Sie auch hier was angeben würden.</p>
+      <p>Die Umfrage ist vollständig anonym. Es werden lediglich 5 allgemein persönliche Fragen zu Beginn auftauchen. </p>
+      <p>Es wäre für die Auswertung sehr hilfreich, wenn Sie auch hier was angeben würden.</p>
     </div>
   </main>
 
   <aside>
-    <a href="umfragepagephp1.php" title="Umfrage starten" class="unter"><button type="button" name="umfrage" class="umfrage">Umfrage</button></a>
+    <a href="../umfrage/umfrage1.php" title="Umfrage starten" class="unter"><button type="button" name="umfrage" class="umfrage">Umfrage</button></a>
   </aside>
 
   <footer class="mittig" id="footing">
@@ -126,7 +126,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <p>copyright@2022</p>
   </footer>
 
-  <script type="text/javascript" src="startpagescript.js">
+  <script type="text/javascript" src="../scripte/start.js">
 
   </script>
 

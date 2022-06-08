@@ -155,77 +155,79 @@ $showPopup = true;
       <div class="auswahl">
         <h2>Mit welchem Geschlecht identifizieren Sie sich?</h2>
         <section>
-          <input type="radio" name="geschlecht" id="maen" value="M&auml;nnlich" />
+          <input type="radio" name="geschlecht" id="maen" value="0" />
           <label for="maen">Männlich</label><br />
-          <input type="radio" name="geschlecht" id="weibl" value="Weiblich" />
+          <input type="radio" name="geschlecht" id="weibl" value="1" />
           <label for="maen">Weiblich</label><br />
-          <input type="radio" name="geschlecht" id="dive" value="Divers" />
+          <input type="radio" name="geschlecht" id="dive" value="2" />
           <label for="maen">Divers</label>
         </section>
       </div>
       <div class="auswahl2">
         <h2>In welchen Altersbereich befinden Sie sich?</h2>
         <section class="breite">
-          <input type="radio" name="alter" id="jugend" value="17" />
+          <input type="radio" name="alter" id="jugend" value="0" />
           <label for="jugend">17 oder jünger</label><br />
-          <input type="radio" name="alter" id="erwachsen1" value="20" />
+          <input type="radio" name="alter" id="erwachsen1" value="1" />
           <label for="erwachsen1">18-20</label><br />
-          <input type="radio" name="alter" id="erwachsen2" value="29" />
+          <input type="radio" name="alter" id="erwachsen2" value="2" />
           <label for="erwachsen2">21-29</label><br />
-          <input type="radio" name="alter" id="erwachsen3" value="39" />
+          <input type="radio" name="alter" id="erwachsen3" value="3" />
           <label for="erwachsen3">30-39</label><br />
-          <input type="radio" name="alter" id="erwachsen4" value="49" />
+          <input type="radio" name="alter" id="erwachsen4" value="4" />
           <label for="erwachsen4">40-49</label><br />
-          <input type="radio" name="alter" id="erwachsen5" value="59" />
+          <input type="radio" name="alter" id="erwachsen5" value="5" />
           <label for="erwachsen5">50-59</label><br />
-          <input type="radio" name="alter" id="erwachsen6" value="60" />
+          <input type="radio" name="alter" id="erwachsen6" value="6" />
           <label for="erwachsen6">60 oder älter</label>
         </section>
       </div>
       <div class="auswahl3">
         <h2>In welchen Altersbereich sind Sie tätig?</h2>
         <section>
-          <input type="radio" name="arbeit" id="labor" value="Labor" />
+          <input type="radio" name="arbeit" id="labor" value="0" />
           <label for="jugend">Laborberufe</label>
-          <input type="radio" name="arbeit" id="hand" value="Handwerk" />
+          <input type="radio" name="arbeit" id="hand" value="1" />
           <label for="hand">Handwerk</label>
-          <input type="radio" name="arbeit" id="technisch" value="Technisch" />
+          <input type="radio" name="arbeit" id="technisch" value="2" />
           <label for="technisch">IT und Elektronik</label>
           <br>
-          <input type="radio" name="arbeit" id="kauf" value="Kaufmännisch" />
+          <input type="radio" name="arbeit" id="kauf" value="3" />
           <label for="kauf">Kaufmännische Berufe</label>
-          <input type="radio" name="arbeit" id="sozial" value="Sozial" />
+          <input type="radio" name="arbeit" id="sozial" value="4" />
           <label for="sozial">Gesundheit und Pflege</label>
         </section>
       </div>
       <div class="auswahl4">
         <h2>In welcher familiären Situation befinden Sie sich?</h2>
         <section>
-          <input type="radio" name="familie" id="ledig" value="Ledig" />
+          <input type="radio" name="familie" id="ledig" value="0" />
           <label for="ledig">Ledig</label>
-          <input type="radio" name="familie" id="heirat" value="Verheiratet" />
-          <label for="heirat">Verheiratet</label>
-          <input type="radio" name="familie" id="geschieden" value="Geschieden" />
+          <input type="radio" name="familie" id="getrennt" value="1" />
+          <label for="getrennt">Getrennt</label>
+          <input type="radio" name="familie" id="geschieden" value="2" />
           <label for="geschieden">Geschieden</label>
-          <input type="radio" name="familie" id="witwe" value="Verwitwet" />
+          <input type="radio" name="familie" id="witwe" value="3" />
           <label for="witwe">Verwitwet</label>
+          <input type="radio" name="familie" id="heirat" value="4" />
+          <label for="heirat">Verheiratet</label>
         </section>
       </div>
       <div class="auswahl5">
         <h2>Was ist ihr höchster Bildungssbschluss?</h2>
         <section>
           <select name="bildung" class="dropdownfeld">
-            <option value="keinen">Keinen Abschluss</option>
-            <option value="quali">Qualifizierter Hauptschulabschluss</option>
-            <option value="mReife">Mittlere Reife</option>
-            <option value="fAbi">Fachabitur</option>
-            <option value="aAbi">Allgemeines Abitur</option>
-            <option value="SoA">Studium ohne Abschluss</option>
-            <option value="bachelor">Bachelor</option>
-            <option value="diplom">Diplom</option>
-            <option value="master">Master</option>
-            <option value="promo">Promotion</option>
-            <option value="prof">Professur</option>
+            <option value="0">Keinen Abschluss</option>
+            <option value="1">Qualifizierter Hauptschulabschluss</option>
+            <option value="2">Mittlere Reife</option>
+            <option value="3">Fachabitur</option>
+            <option value="4">Allgemeines Abitur</option>
+            <option value="5">Studium ohne Abschluss</option>
+            <option value="6">Bachelor</option>
+            <option value="7">Diplom</option>
+            <option value="8">Master</option>
+            <option value="9">Promotion</option>
+            <option value="10">Professur</option>
           </select>
 
           </select>

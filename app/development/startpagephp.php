@@ -4,6 +4,8 @@
   require_once 'sessionfunctions.php';
 
   session_start();
+  session_destroy();
+  session_start();
   generateSessionID();
   echo "SESSION ID: ".$_SESSION['id'];
 

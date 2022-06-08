@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-/* .base {
-  display: flex;
-} */
->>>>>>> feature/devenv
-
 body{
   background-color: #E0ECF8;
   margin:0;
@@ -21,113 +14,38 @@ button{
   weight: 10px;
 }
 
-<<<<<<< HEAD
 article{
   background-color: lightgrey;
-=======
-
-
-
-
-
-
-article{
-  background-color: lightgrey;
-  /* position: absolute; */
-  /* display:flex; */
-  /* flex-direction: row; */
->>>>>>> feature/devenv
   height: 45px;
   width: 100%;
   padding-bottom: 5px;
 }
 
 header{
-<<<<<<< HEAD
   position: absolute;
   height: 8%;
   width: 100%;
   z-index: 2;
-
 }
 section.links{
   float: left;
 }
 section.mitte{
-=======
-  /* background-color: lightgrey;
-  display:flex;
-  flex-direction: row; */
   position: absolute;
   height: 8%;
   width: 100%;
-  /* padding-bottom: 5px; */
-
 }
 section.links{
-  /* width: 15%; */
   float: left;
-}
-section.mitte{
-  /* width: 35%; */
->>>>>>> feature/devenv
 }
 
 section.rechts{
   float: right;
-<<<<<<< HEAD
-=======
-  /* width: 50%; */
-  /* padding-left: 50%; */
->>>>>>> feature/devenv
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-<<<<<<< HEAD
-=======
 
-
-
-
-
-
-
-/*
- header{
-  background-color: lightgrey;
-  position: absolute;
-  flex-direction: row; */
-  /* height: 45px; */
-  /* width: 100%;
-  padding-bottom: 5px;
-
-}
-
-section.links{
-  width: 30%;
-  display: inline-flex;
-}
-
-section.mitte{
-  padding-left: 100;
-}
-
-section.rechts{
-  display: inline-flex;
-  position: absolute;
-  float: right;
-  left: 75%;
-  width: 30%; */
-  /* padding-left: 75%; */
-  /* padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: auto;
-  margin-right: 0;
-} */
-
->>>>>>> feature/devenv
 div.ueberschrift{
   float: left;
   font-family: monospace;
@@ -152,10 +70,6 @@ main{
 }
 
 .genauer1{
-<<<<<<< HEAD
-=======
-  /* position:relative; */
->>>>>>> feature/devenv
   position: absolute;
   border: 1px solid black;
   border-radius: 6px;
@@ -168,7 +82,6 @@ main{
   margin-top: 10px;
 }
 .genauer2{
-  /* position:relative; */
   position: absolute;
   border: 1px solid black;
   border-radius: 6px;
@@ -247,8 +160,6 @@ span{
   padding-right: 5px;
   font-size: 20px;
 }
-<<<<<<< HEAD
-
 
 @media screen and (max-width: 1050px) {
   main{
@@ -281,5 +192,3 @@ span{
     top:100%;
   }
 }
-=======
->>>>>>> feature/devenv

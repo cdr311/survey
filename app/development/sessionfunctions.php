@@ -16,4 +16,23 @@ function checkIfIdAlreadyUsed(){
   }
 }
 
+function printSessionVariables(){
+  if(isset($_SESSION['id'])){
+    echo "SESSION ID: ".$_SESSION['id'];
+  }
+
+  if(isset($_SESSION['geschlecht'])){
+    echo "geschlecht: ".$_SESSION['geschlecht'];
+  }
+
+  if(isset($_SESSION['alter'])){
+    echo "alter: ".$_SESSION['alter'];
+  }
+
+  if(isset($_SESSION['arbeit'])){
+    echo "arbeit: ".$_SESSION['arbeit'];
+  }
+
+}
+
  ?>

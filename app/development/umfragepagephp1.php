@@ -1,7 +1,9 @@
 <?php
 
+require_once 'sessionfunctions.php';
+
 session_start();
-echo "SESSION ID: ".$_SESSION['id'];
+printSessionVariables();
 
 ?>
 

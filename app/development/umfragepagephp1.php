@@ -17,6 +17,7 @@ echo "SESSION ID: ".$_SESSION['id'];
 
   <link rel="stylesheet" href="umfragestyle.css" />
   <link rel="icon" type="image/x-icon" href="images/fragezeichen.png" />
+  <script src="changePage.js"></script>
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
 
@@ -150,7 +151,7 @@ $showPopup = true;
 
   <main>
     <div class="main">
-      <form method="post" action="umfragepagephp2.php">
+      <form method="post" id="form1">
       <div class="auswahl">
         <h2>Mit welchem Geschlecht identifizieren Sie sich?</h2>
         <section>
@@ -235,7 +236,7 @@ $showPopup = true;
         <button type="button" name="umfrage" class="verschleiern" id="aendern">Vorherige Seite</button>
       </div>
       <div class="naechste">
-        <button type="submit" name="umfrage" id="aendern" onclick="submitForm('umfragepage2php.php')">Nächste Seite</button>
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfragepagephp2.php', 'form1')">Nächste Seite</button>
       </div>
 
       <!-- <a href="umfragepagephp2.php" title="Folgende Seite"></a> -->

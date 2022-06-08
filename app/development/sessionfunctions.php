@@ -33,6 +33,34 @@ function printSessionVariables(){
     echo "arbeit: ".$_SESSION['arbeit'];
   }
 
+  if(isset($_SESSION['familie'])){
+    echo "familie: ".$_SESSION['familie'];
+  }
+
+  if(isset($_SESSION['bildung'])){
+    echo "bildung: ".$_SESSION['bildung'];
+  }
+
+}
+
+//-----------------------------------------
+
+function saveIntoSessionVariablesPage2(){
+  if(isset($_POST['geschlecht'])){
+  $_SESSION['geschlecht'] = $_POST['geschlecht'];
+  }
+  if(isset($_POST['alter'])){
+  $_SESSION['alter'] = $_POST['alter'];
+  }
+  if(isset($_POST['arbeit'])){
+  $_SESSION['arbeit'] = $_POST['arbeit'];
+  }
+  if(isset($_POST['familie'])){
+  $_SESSION['familie'] = $_POST['familie'];
+  }
+  if(isset($_POST['bildung'])){
+  $_SESSION['bildung'] = $_POST['bildung'];
+  }
 }
 
  ?>

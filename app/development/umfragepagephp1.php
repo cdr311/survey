@@ -239,10 +239,6 @@ $showPopup = true;
       </div>
 
       <!-- <a href="umfragepagephp2.php" title="Folgende Seite"></a> -->
-
-      <!-- <div class="naechste">
-        <input type="submit" title="Folgende Seite" name="umfrage" id="aendern" />
-      </div> -->
     </form>
     </div>
   </main>

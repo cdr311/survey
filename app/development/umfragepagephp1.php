@@ -185,7 +185,7 @@ $showPopup = true;
         </section>
       </div>
       <div class="auswahl3">
-        <h2>In welchen Altersbereich sind Sie tätig?</h2>
+        <h2>In welchen Berufsbereich sind Sie tätig?</h2>
         <section>
           <input type="radio" name="arbeit" id="labor" value="0" />
           <label for="jugend">Laborberufe</label>
@@ -198,6 +198,8 @@ $showPopup = true;
           <label for="kauf">Kaufmännische Berufe</label>
           <input type="radio" name="arbeit" id="sozial" value="4" />
           <label for="sozial">Gesundheit und Pflege</label>
+          <input type="radio" name="arbeit" id="sonstiges" value="5" />
+          <label for="sonstiges">Sonstiges</label>
         </section>
       </div>
       <div class="auswahl4">

@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="umfragestyle4.css" />
   <link rel="icon" type="image/x-icon" href="images/fragezeichen.png" />
+  <script src="changePage.js"></script>
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
 
@@ -149,6 +150,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   </aside>
 
   <main>
+    <form method="post" id="form4">
     <div class="main">
       <div class="auswahl1">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem Desktop PC?</h2>
@@ -275,12 +277,15 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="vorher">
-        <a href="umfragepagephp3.php" title="Vorherige Seite"><button type="button" name="umfrage" id="aendern">Vorherige Seite</button></a>
+        <!-- <a href="umfragepagephp3.php" title="Vorherige Seite"><button type="button" name="umfrage" id="aendern">Vorherige Seite</button></a> -->
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfragepagephp3.php', 'form4')">Vorherige Seite</button>
       </div>
       <div class="naechste">
-        <a href="umfragepagephp5.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern">Nächste Seite</button></a>
+        <!-- <a href="umfragepagephp5.php" title="Folgende Seite"><button type="button" name="umfrage" id="aendern">Nächste Seite</button></a> -->
+        <button type="button" name="umfrage" id="aendern" onclick="buttonNaechst(); submitForm('umfragepagephp5.php', 'form4')">Nächste Seite</button>
       </div>
     </div>
+    </form>
   </main>
 
   <footer class="mittig">

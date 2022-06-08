@@ -1,6 +1,6 @@
 <?php
 
-  require_once 'sessionfunctions.php';
+  require_once '../phpfunctions/sessionfunctions.php';
 
   session_start();
   saveIntoSessionVariablesPage2();

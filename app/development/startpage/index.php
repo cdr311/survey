@@ -1,7 +1,7 @@
 <?php
 
-  require_once 'dbfunctions.php';
-  require_once 'sessionfunctions.php';
+  require_once '../phpfunctions/dbfunctions.php';
+  require_once '../phpfunctions/sessionfunctions.php';
 
   session_start();
   session_destroy();

@@ -153,125 +153,125 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem Desktop PC?</h2>
         <section>
-          <input type="radio" name="bs" id="win" value="Windows" />
+          <input type="radio" name="OSDesktop" id="win" value="Windows" />
           <label for="bs">Windows</label><br />
-          <input type="radio" name="bs" id="mac" value="macOS" />
+          <input type="radio" name="OSDesktop" id="mac" value="macOS" />
           <label for="mac">macOS</label><br />
-          <input type="radio" name="bs" id="linux" value="Linux" />
+          <input type="radio" name="OSDesktop" id="linux" value="Linux" />
           <label for="linux">Linux -></label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="bs" value="" id="distri" /> <br />
-          <input type="radio" name="bs" id="bsd" value="BSD" />
+          <input type="text" name="OSDesktop" value="" id="distri" /> <br />
+          <input type="radio" name="OSDesktop" id="bsd" value="BSD" />
           <label for="bsd">BSD-Variante -></label>
           <label for="varia">Variante: </label>
-          <input type="text" name="bs" value="" id="varia" /> <br />
+          <input type="text" name="OSDesktop" value="" id="varia" /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="bs" value="" id="sonst" />
+          <input type="text" name="OSDesktop" value="" id="sonst" />
         </section>
       </div>
       <div class="auswahl2">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem Laptop?</h2>
         <section>
-          <input type="radio" name="bs" id="win" value="Windows" />
+          <input type="radio" name="OSLaptop" id="win" value="Windows" />
           <label for="bs">Windows</label><br />
-          <input type="radio" name="bs" id="mac" value="macOS" />
+          <input type="radio" name="OSLaptop" id="mac" value="macOS" />
           <label for="mac">macOS</label><br />
-          <input type="radio" name="bs" id="linux" value="Linux" />
+          <input type="radio" name="OSLaptop" id="linux" value="Linux" />
           <label for="linux">Linux -></label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="bs" value="" id="distri" /> <br />
-          <input type="radio" name="bs" id="bsd" value="BSD" />
+          <input type="text" name="OSLaptop" value="" id="distri" /> <br />
+          <input type="radio" name="OSLaptop" id="bsd" value="BSD" />
           <label for="bsd">BSD-Variante -></label>
           <label for="varia">Variante: </label>
-          <input type="text" name="bs" value="" id="varia" /> <br />
+          <input type="text" name="OSLaptop" value="" id="varia" /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="bs" value="" id="sonst" />
+          <input type="text" name="OSLaptop" value="" id="sonst" />
         </section>
       </div>
       <div class="auswahl3">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem Smartphone?</h2>
         <section>
-          <input type="radio" name="bs" id="and" value="Android" />
+          <input type="radio" name="OSSmartphone" id="and" value="Android" />
           <label for="and">Android</label><br />
-          <input type="radio" name="bs" id="iOS" value="iOS" />
+          <input type="radio" name="OSSmartphone" id="iOS" value="iOS" />
           <label for="iOS">iOS</label><br />
-          <input type="radio" name="bs" id="win" value="WindowsPhone" />
+          <input type="radio" name="OSSmartphone" id="win" value="WindowsPhone" />
           <label for="win">Windows Phone</label><br />
-          <input type="radio" name="bs" id="bb" value="BlackBerry" />
+          <input type="radio" name="OSSmartphone" id="bb" value="BlackBerry" />
           <label for="bb">BlackBerry</label><br />
-          <input type="radio" name="bs" id="chrome" value="ChromeOS" />
+          <input type="radio" name="OSSmartphone" id="chrome" value="ChromeOS" />
           <label for="chrome">Chrome OS</label><br />
-          <input type="radio" name="bs" id="linux" value="Linux" />
+          <input type="radio" name="OSSmartphone" id="linux" value="Linux" />
           <label for="linux">Linux</label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="bs" value="" id="distri" /> <br />
-          <input type="radio" name="bs" id="fire" value="Firefox" />
+          <input type="text" name="OSSmartphone" value="" id="distri" /> <br />
+          <input type="radio" name="OSSmartphone" id="fire" value="Firefox" />
           <label for="fire">Firefox OS</label><br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="bs" value="" id="sonst" />
+          <input type="text" name="OSSmartphone" value="" id="sonst" />
         </section>
       </div>
       <div class="auswahl4">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem Tablet?</h2>
         <section>
-          <input type="radio" name="bs" id="and" value="Android" />
+          <input type="radio" name="OSTablet" id="and" value="Android" />
           <label for="and">Android</label><br />
-          <input type="radio" name="bs" id="iOS" value="iOS" />
+          <input type="radio" name="OSTablet" id="iOS" value="iOS" />
           <label for="iOS">iOS</label><br />
-          <input type="radio" name="bs" id="win" value="WindowsPhone" />
+          <input type="radio" name="OSTablet" id="win" value="WindowsPhone" />
           <label for="win">Windows Phone</label><br />
-          <input type="radio" name="bs" id="bb" value="BlackBerry" />
+          <input type="radio" name="OSTablet" id="bb" value="BlackBerry" />
           <label for="bb">BlackBerry</label><br />
-          <input type="radio" name="bs" id="chrome" value="ChromeOS" />
+          <input type="radio" name="OSTablet" id="chrome" value="ChromeOS" />
           <label for="chrome">Chrome OS</label><br />
-          <input type="radio" name="bs" id="linux" value="Linux" />
+          <input type="radio" name="OSTablet" id="linux" value="Linux" />
           <label for="linux">Linux</label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="bs" value="" id="distri" /> <br />
+          <input type="text" name="OSTablet" value="" id="distri" /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="bs" value="" id="sonst" />
+          <input type="text" name="OSTablet" value="" id="sonst" />
         </section>
       </div>
       <div class="auswahl5">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem SmartTV?</h2>
         <section>
-          <input type="radio" name="bs" id="tiz" value="Tizen" />
+          <input type="radio" name="OSSmartTV" id="tiz" value="Tizen" />
           <label for="tiz">Tizen OS</label><br />
-          <input type="radio" name="bs" id="web" value="webOS" />
+          <input type="radio" name="OSSmartTV" id="web" value="webOS" />
           <label for="web">webOS</label><br />
-          <input type="radio" name="bs" id="andr" value="Android" />
+          <input type="radio" name="OSSmartTV" id="andr" value="Android" />
           <label for="andr">Android TV</label><br />
-          <input type="radio" name="bs" id="myhome" value="MyHomeScreen" />
+          <input type="radio" name="OSSmartTV" id="myhome" value="MyHomeScreen" />
           <label for="myhome">MyHomeScreen</label><br />
-          <input type="radio" name="bs" id="roku" value="Roku" />
+          <input type="radio" name="OSSmartTV" id="roku" value="Roku" />
           <label for="roku">Roku TV</label><br />
-          <input type="radio" name="bs" id="fire" value="Firefox" />
+          <input type="radio" name="OSSmartTV" id="fire" value="Firefox" />
           <label for="fire">Firefox OS</label><br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="bs" value="" id="sonst" />
+          <input type="text" name="OSSmartTV" value="" id="sonst" />
         </section>
       </div>
       <div class="auswahl6">
         <h2>Welche Browser benutzen Sie?</h2>
         <section>
-          <input type="radio" name="bs" id="edge" value="Edge" />
+          <input type="radio" name="Browser" id="edge" value="Edge" />
           <label for="edge">Microsoft Edge</label><br />
-          <input type="radio" name="bs" id="chrome" value="Chrome" />
+          <input type="radio" name="Browser" id="chrome" value="Chrome" />
           <label for="chrome">Google Chrome</label><br />
-          <input type="radio" name="bs" id="fire" value="Firefox" />
+          <input type="radio" name="Browser" id="fire" value="Firefox" />
           <label for="fire">Firefox</label><br />
-          <input type="radio" name="bs" id="chromium" value="Chromium" />
+          <input type="radio" name="Browser" id="chromium" value="Chromium" />
           <label for="chromium">Chromium</label><br />
-          <input type="radio" name="bs" id="brave" value="Brave" />
+          <input type="radio" name="Browser" id="brave" value="Brave" />
           <label for="brave">Brave</label><br />
-          <input type="radio" name="bs" id="safari" value="Safari" />
+          <input type="radio" name="Browser" id="safari" value="Safari" />
           <label for="safari">Safari</label><br />
-          <input type="radio" name="bs" id="tor" value="Tor" />
+          <input type="radio" name="Browser" id="tor" value="Tor" />
           <label for="tor">Tor</label><br />
-          <input type="radio" name="bs" id="opera" value="Opera" />
+          <input type="radio" name="Browser" id="opera" value="Opera" />
           <label for="opera">Opera</label><br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="bs" value="" id="sonst" />
+          <input type="text" name="Browser" value="" id="sonst" />
         </section>
       </div>
       <div class="vorher">

@@ -158,127 +158,127 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1" id="aus1">
         <h2>Wie viel Stunden benutzen Sie ihren Desktop PC pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitDesktop" id="zwei" value="Zwei" />
+          <input type="radio" name="nutzungszeitDesktop" id="zwei" value="0" />
           <label for="zwei">
-            < 2</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="vier" value="Vier" />
-              <label for="vier">2-4</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="acht" value="Acht" />
-              <label for="acht">4-8</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="zwoe" value="Zwoefl" />
-              <label for="zwoe">8-12</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="sechs" value="Sechzehn" />
-              <label for="sechs">12-16</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="lang" value="Lang" />
-              <label for="lang">> 16</label>
+             unter 1</label><br />
+              <input type="radio" name="nutzungszeitDesktop" id="vier" value="1" />
+              <label for="vier">1-3</label><br />
+              <input type="radio" name="nutzungszeitDesktop" id="acht" value="2" />
+              <label for="acht">3-5</label><br />
+              <input type="radio" name="nutzungszeitDesktop" id="zwoe" value="3" />
+              <label for="zwoe">5-7</label><br />
+              <input type="radio" name="nutzungszeitDesktop" id="sechs" value="4" />
+              <label for="sechs">7-8</label><br />
+              <input type="radio" name="nutzungszeitDesktop" id="lang" value="5" />
+              <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl2" id="aus2">
         <h2>Wie viel Stunden benutzen Sie ihren Laptop pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitLaptop" id="zwei" value="Zwei" />
+          <input type="radio" name="nutzungszeitLaptop" id="zwei" value="0" />
           <label for="zwei">
-            < 2</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="vier" value="Vier" />
-              <label for="vier">2-4</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="acht" value="Acht" />
-              <label for="acht">4-8</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="zwoe" value="Zwoefl" />
-              <label for="zwoe">8-12</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="sechs" value="Sechzehn" />
-              <label for="sechs">12-16</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="lang" value="Lang" />
-              <label for="lang">> 16</label>
+            unter 1</label><br />
+              <input type="radio" name="nutzungszeitLaptop" id="vier" value="1" />
+              <label for="vier">1-3</label><br />
+              <input type="radio" name="nutzungszeitLaptop" id="acht" value="2" />
+              <label for="acht">3-5</label><br />
+              <input type="radio" name="nutzungszeitLaptop" id="zwoe" value="3" />
+              <label for="zwoe">5-7</label><br />
+              <input type="radio" name="nutzungszeitLaptop" id="sechs" value="4" />
+              <label for="sechs">7-8</label><br />
+              <input type="radio" name="nutzungszeitLaptop" id="lang" value="5" />
+              <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl3" id="aus3">
         <h2>Wie viel Stunden benutzen Sie ihr Smartphone pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitSmartphone" id="zwei" value="Zwei" />
+          <input type="radio" name="nutzungszeitSmartphone" id="zwei" value="0" />
           <label for="zwei">
-            < 2</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="vier" value="Vier" />
-              <label for="vier">2-4</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="acht" value="Acht" />
-              <label for="acht">4-8</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="zwoe" value="Zwoefl" />
-              <label for="zwoe">8-12</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="sechs" value="Sechzehn" />
-              <label for="sechs">12-16</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="lang" value="Lang" />
-              <label for="lang">> 16</label>
+            unter 1</label><br />
+              <input type="radio" name="nutzungszeitSmartphone" id="vier" value="1" />
+              <label for="vier">1-3</label><br />
+              <input type="radio" name="nutzungszeitSmartphone" id="acht" value="2" />
+              <label for="acht">3-5</label><br />
+              <input type="radio" name="nutzungszeitSmartphone" id="zwoe" value="3" />
+              <label for="zwoe">5-7</label><br />
+              <input type="radio" name="nutzungszeitSmartphone" id="sechs" value="4" />
+              <label for="sechs">7-8</label><br />
+              <input type="radio" name="nutzungszeitSmartphone" id="lang" value="5" />
+              <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl4"  id="aus4">
         <h2>Wie viel Stunden benutzen Sie ihr Tablet pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitTablet" id="zwei" value="Zwei" />
+          <input type="radio" name="nutzungszeitTablet" id="zwei" value="0" />
           <label for="zwei">
-            < 2</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="vier" value="Vier" />
-              <label for="vier">2-4</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="acht" value="Acht" />
-              <label for="acht">4-8</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="zwoe" value="Zwoefl" />
-              <label for="zwoe">8-12</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="sechs" value="Sechzehn" />
-              <label for="sechs">12-16</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="lang" value="Lang" />
-              <label for="lang">> 16</label>
+            unter 1</label><br />
+              <input type="radio" name="nutzungszeitTablet" id="vier" value="1" />
+              <label for="vier">1-3</label><br />
+              <input type="radio" name="nutzungszeitTablet" id="acht" value="2" />
+              <label for="acht">3-5</label><br />
+              <input type="radio" name="nutzungszeitTablet" id="zwoe" value="3" />
+              <label for="zwoe">5-7</label><br />
+              <input type="radio" name="nutzungszeitTablet" id="sechs" value="4" />
+              <label for="sechs">7-8</label><br />
+              <input type="radio" name="nutzungszeitTablet" id="lang" value="5" />
+              <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl5"  id="aus5">
         <h2>Wie viel Stunden benutzen Sie ihren SmartTV pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitSmartTV" id="zwei" value="Zwei" />
+          <input type="radio" name="nutzungszeitSmartTV" id="zwei" value="0" />
           <label for="zwei">
-            < 2</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="vier" value="Vier" />
-              <label for="vier">2-4</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="acht" value="Acht" />
-              <label for="acht">4-8</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="zwoe" value="Zwoefl" />
-              <label for="zwoe">8-12</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="sechs" value="Sechzehn" />
-              <label for="sechs">12-16</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="lang" value="Lang" />
-              <label for="lang">> 16</label>
+            unter 1</label><br />
+              <input type="radio" name="nutzungszeitSmartTV" id="vier" value="1" />
+              <label for="vier">1-3</label><br />
+              <input type="radio" name="nutzungszeitSmartTV" id="acht" value="2" />
+              <label for="acht">3-5</label><br />
+              <input type="radio" name="nutzungszeitSmartTV" id="zwoe" value="3" />
+              <label for="zwoe">5-7</label><br />
+              <input type="radio" name="nutzungszeitSmartTV" id="sechs" value="4" />
+              <label for="sechs">7-8</label><br />
+              <input type="radio" name="nutzungszeitSmartTV" id="lang" value="5" />
+              <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl6" id="aus6">
         <h2>Wie viel Stunden benutzen Sie ihre Smartwatch pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitSmartwatch" id="zwei" value="Zwei" />
+          <input type="radio" name="nutzungszeitSmartwatch" id="zwei" value="0" />
           <label for="zwei">
-            < 2</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="vier" value="Vier" />
-              <label for="vier">2-4</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="acht" value="Acht" />
-              <label for="acht">4-8</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="zwoe" value="Zwoefl" />
-              <label for="zwoe">8-12</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="sechs" value="Sechzehn" />
-              <label for="sechs">12-16</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="lang" value="Lang" />
-              <label for="lang">> 16</label>
+            unter 1</label><br />
+              <input type="radio" name="nutzungszeitSmartwatch" id="vier" value="1" />
+              <label for="vier">1-3</label><br />
+              <input type="radio" name="nutzungszeitSmartwatch" id="acht" value="2" />
+              <label for="acht">3-5</label><br />
+              <input type="radio" name="nutzungszeitSmartwatch" id="zwoe" value="3" />
+              <label for="zwoe">5-7</label><br />
+              <input type="radio" name="nutzungszeitSmartwatch" id="sechs" value="4" />
+              <label for="sechs">7-8</label><br />
+              <input type="radio" name="nutzungszeitSmartwatch" id="lang" value="5" />
+              <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl7"  id="aus7">
         <h2>Wie viel Stunden benutzen Sie ihre Spielekonsole pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitSpielekonsole" id="zwei" value="Zwei" />
+          <input type="radio" name="nutzungszeitSpielekonsole" id="zwei" value="0" />
           <label for="zwei">
-            < 2</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="vier" value="Vier" />
-              <label for="vier">2-4</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="acht" value="Acht" />
-              <label for="acht">4-8</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="zwoe" value="Zwoefl" />
-              <label for="zwoe">8-12</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="sechs" value="Sechzehn" />
-              <label for="sechs">12-16</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="lang" value="Lang" />
-              <label for="lang">> 16</label>
+            unter 1</label><br />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="vier" value="1" />
+              <label for="vier">1-3</label><br />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="acht" value="2" />
+              <label for="acht">3-5</label><br />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="zwoe" value="3" />
+              <label for="zwoe">5-7</label><br />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="sechs" value="4" />
+              <label for="sechs">7-8</label><br />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="lang" value="5" />
+              <label for="lang">über 8</label>
         </section>
       </div>
       <div class="vorher">

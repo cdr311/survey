@@ -153,141 +153,141 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welche der folgenden Geräte haben Sie schon benutzt?</h2>
         <section>
-          <input type="checkbox" name="gerat" id="pc" value="Desktop" onclick="desktopCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="pc" value="Desktop" onclick="desktopCheck()"/>
           <label for="pc">Desktop PC</label><br />
-          <input type="checkbox" name="gerat" id="laptop" value="Laptop" onclick="laptopCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="laptop" value="Laptop" onclick="laptopCheck()"/>
           <label for="laptop">Laptop</label><br />
-          <input type="checkbox" name="gerat" id="smartp" value="Smartphone" onclick="smartphoneCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="smartp" value="Smartphone" onclick="smartphoneCheck()"/>
           <label for="smartp">Smartphone</label><br />
-          <input type="checkbox" name="gerat" id="tab" value="Tablet" onclick="tabletCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="tab" value="Tablet" onclick="tabletCheck()"/>
           <label for="tab">Tablet</label><br />
-          <input type="checkbox" name="gerat" id="smartt" value="SmartTV" onclick="smarttvCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="smartt" value="SmartTV" onclick="smarttvCheck()"/>
           <label for="smartt">Smart TV</label><br />
-          <input type="checkbox" name="gerat" id="smartw" value="Smartwatch" onclick="smartwatchCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="smartw" value="Smartwatch" onclick="smartwatchCheck()"/>
           <label for="smartw">Smartwatch</label><br />
-          <input type="checkbox" name="gerat" id="spiel" value="Spielekonsole" onclick="spielekonsoleCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="spiel" value="Spielekonsole" onclick="spielekonsoleCheck()"/>
           <label for="spiel">Spielekonsole</label><br />
         </section>
       </div>
       <div class="auswahl2" id="a2">
         <h2>Für welche Tätigkeiten verwenden Sie ihren Desktop PC?</h2>
         <section>
-          <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="arbeit" value="Arbeit" />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="gerat" id="surfen" value="Surfen" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="surfen" value="Surfen" />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="gerat" id="shop" value="Shopping" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="shop" value="Shopping" />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="gerat" id="film" value="Filme" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="film" value="Filme" />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="gerat" id="spiele" value="Spiele" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="spiele" value="Spiele" />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="gerat" id="anderes" />
+          <input type="text" name="taetigkeitenDesktop[]" id="anderes" />
         </section>
       </div>
       <div class="auswahl3" id="a3">
         <h2>Für welche Tätigkeiten verwenden Sie ihren Laptop?</h2>
         <section>
-          <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="arbeit" value="Arbeit" />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="gerat" id="surfen" value="Surfen" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="surfen" value="Surfen" />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="gerat" id="shop" value="Shopping" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="shop" value="Shopping" />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="gerat" id="film" value="Filme" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="film" value="Filme" />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="gerat" id="spiele" value="Spiele" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="spiele" value="Spiele" />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="gerat" id="anderes" />
+          <input type="text" name="taetigkeitenLaptop[]" id="anderes" />
         </section>
       </div>
       <div class="auswahl4" id="a4">
         <h2>Für welche Tätigkeiten verwenden Sie ihr Smartphone?</h2>
         <section>
-          <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="arbeit" value="Arbeit" />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="gerat" id="surfen" value="Surfen" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="surfen" value="Surfen" />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="gerat" id="shop" value="Shopping" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="shop" value="Shopping" />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="gerat" id="film" value="Filme" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="film" value="Filme" />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="gerat" id="spiele" value="Spiele" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="spiele" value="Spiele" />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="gerat" id="anderes" />
+          <input type="text" name="taetigkeitenSmartphone[]" id="anderes" />
         </section>
       </div>
       <div class="auswahl5" id="a5">
         <h2>Für welche Tätigkeiten verwenden Sie ihr Tablet?</h2>
         <section>
-          <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="arbeit" value="Arbeit" />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="gerat" id="surfen" value="Surfen" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="surfen" value="Surfen" />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="gerat" id="shop" value="Shopping" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="shop" value="Shopping" />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="gerat" id="film" value="Filme" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="film" value="Filme" />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="gerat" id="spiele" value="Spiele" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="spiele" value="Spiele" />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="gerat" id="anderes" />
+          <input type="text" name="taetigkeitenTablet[]" id="anderes" />
         </section>
       </div>
       <div class="auswahl6"id="a6">
         <h2>Für welche Tätigkeiten verwenden Sie ihren Smart TV?</h2>
         <section>
-          <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="arbeit" value="Arbeit" />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="gerat" id="surfen" value="Surfen" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="surfen" value="Surfen" />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="gerat" id="shop" value="Shopping" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="shop" value="Shopping" />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="gerat" id="film" value="Filme" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="film" value="Filme" />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="gerat" id="spiele" value="Spiele" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="spiele" value="Spiele" />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="gerat" id="anderes" />
+          <input type="text" name="taetigkeitenSmartTV[]" id="anderes" />
         </section>
       </div>
       <div class="auswahl7" id="a7">
         <h2>Für welche Tätigkeiten verwenden Sie ihre Smartwatch?</h2>
         <section>
-          <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="arbeit" value="Arbeit" />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="gerat" id="surfen" value="Surfen" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="surfen" value="Surfen" />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="gerat" id="shop" value="Shopping" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="shop" value="Shopping" />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="gerat" id="film" value="Filme" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="film" value="Filme" />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="gerat" id="spiele" value="Spiele" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="spiele" value="Spiele" />
           <label for="spiele">Spiele spielen</label><br />
-          <input type="checkbox" name="gerat" id="gesund" value="Gesundheit" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="gesund" value="Gesundheit" />
           <label for="gesund">Körperwerte kontollieren</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="gerat" id="anderes" />
+          <input type="text" name="taetigkeitenSmartwatch[]" id="anderes" />
         </section>
       </div>
       <div class="auswahl8" id="a8">
         <h2>Für welche Tätigkeiten verwenden Sie ihre Spielekonsole?</h2>
         <section>
-          <input type="checkbox" name="gerat" id="arbeit" value="Arbeit" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="arbeit" value="Arbeit" />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="gerat" id="surfen" value="Surfen" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="surfen" value="Surfen" />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="gerat" id="shop" value="Shopping" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="shop" value="Shopping" />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="gerat" id="film" value="Filme" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="film" value="Filme" />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="gerat" id="spiele" value="Spiele" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="spiele" value="Spiele" />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="gerat" id="anderes" />
+          <input type="text" name="taetigkeitenSpielekonsole[]" id="anderes" />
         </section>
       </div>
       <div class="vorher">

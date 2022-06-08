@@ -192,36 +192,14 @@ var smarttv = false;
 var smartwatch = false;
 var spielekonsole = false;
 
-
-// var acc = document.getElementsByClassName("main");
-// var foot = document.getElementById('footing');
-// var main = document.getElementById('main');
-// var mainmain = document.getElementById('mainmain');
-// var i;
-// let k = 1000;
-// let ke = 900;
-// let kee = 900;
-
 function desktopCheck(){
   if(desktop){
     document.getElementById('a2').style.display = 'none'
     desktop = false;
-    // k -= 130;
-    // foot.style['top'] = k + "px";
-    // ke -= 130;
-    // main.style['height'] = ke + "px";
-    // kee -= 130;
-    // mainmain.style['height'] = kee + "px";
   }
   else {
     document.getElementById('a2').style.display = 'block'
     desktop = true;
-    // k += 130;
-    // foot.style['top'] = k + "px";
-    // ke += 130;
-    // main.style['main'] = ke + "px";
-    // kee -= 130;
-    // mainmain.style['height'] = kee + "px";
   }
 }
 function laptopCheck(){
@@ -285,7 +263,6 @@ function spielekonsoleCheck(){
   }
 }
 
-//hier diese Funktion speichert den Wert ob es auf der naechsten Seite die Nutzungsdauer dann auch anzeigen soll oder nicht.
 function buttonNaechst(){
 
   window.localStorage.setItem('desktop', desktop);

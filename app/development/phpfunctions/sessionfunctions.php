@@ -160,6 +160,12 @@ function printSessionVariables(){
     echo "verschluesselungDienstlichMethode: ".$_SESSION['verschluesselungDienstlichMethode'];
   }
 
+  //Eigegeben auf Seite 6
+
+  if(isset($_SESSION['bewertung'])){
+    echo "bewertung: ".$_SESSION['bewertung'];
+  }
+
 }
 
 //-----------------------------------------
@@ -293,6 +299,16 @@ function saveIntoSessionVariablesPage6(){
   if(isset($_POST['verschluesselungDienstlichMethode'])){
   $_SESSION['verschluesselungDienstlichMethode'] = $_POST['verschluesselungDienstlichMethode'];
   }
+}
+
+function saveIntoSessionVariablesPage7(){
+
+  //Eigegeben auf Seite 6
+  if(isset($_POST['bewertung'])){
+  $_SESSION['bewertung'] = $_POST['bewertung'];
+  }
+
+
 }
 
  ?>

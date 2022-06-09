@@ -1,3 +1,13 @@
+<?php
+
+require_once '../phpfunctions/sessionfunctions.php';
+
+session_start();
+saveIntoSessionVariablesPage7();
+printSessionVariables();
+
+?>
+
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
 

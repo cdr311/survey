@@ -138,6 +138,28 @@ function printSessionVariables(){
     echo "Browser: ".$_SESSION['Browser'];
   }
 
+  //Eigegeben auf Seite 5
+
+  if(isset($_SESSION['mailprogramm'])){
+    printSessionArray($_SESSION['mailprogramm'], "mailprogramm");
+  }
+
+  if(isset($_SESSION['verschluesselungPrivat'])){
+    echo "verschluesselungPrivat: ".$_SESSION['verschluesselungPrivat'];
+  }
+
+  if(isset($_SESSION['verschluesselungPrivatMethode'])){
+    echo "verschluesselungPrivatMethode: ".$_SESSION['verschluesselungPrivatMethode'];
+  }
+
+  if(isset($_SESSION['verschluesselungDienstlich'])){
+    echo "verschluesselungDienstlich: ".$_SESSION['verschluesselungDienstlich'];
+  }
+
+  if(isset($_SESSION['verschluesselungDienstlichMethode'])){
+    echo "verschluesselungDienstlichMethode: ".$_SESSION['verschluesselungDienstlichMethode'];
+  }
+
 }
 
 //-----------------------------------------
@@ -250,6 +272,26 @@ function saveIntoSessionVariablesPage5(){
   }
   if(isset($_POST['Browser'])){
   $_SESSION['Browser'] = $_POST['Browser'];
+  }
+}
+
+function saveIntoSessionVariablesPage6(){
+
+  //Eigegeben auf Seite 5
+  if(isset($_POST['mailprogramm'])){
+  $_SESSION['mailprogramm'] = $_POST['mailprogramm'];
+  }
+  if(isset($_POST['verschluesselungPrivat'])){
+  $_SESSION['verschluesselungPrivat'] = $_POST['verschluesselungPrivat'];
+  }
+  if(isset($_POST['verschluesselungPrivatMethode'])){
+  $_SESSION['verschluesselungPrivatMethode'] = $_POST['verschluesselungPrivatMethode'];
+  }
+  if(isset($_POST['verschluesselungDienstlich'])){
+  $_SESSION['verschluesselungDienstlich'] = $_POST['verschluesselungDienstlich'];
+  }
+  if(isset($_POST['verschluesselungDienstlichMethode'])){
+  $_SESSION['verschluesselungDienstlichMethode'] = $_POST['verschluesselungDienstlichMethode'];
   }
 }
 

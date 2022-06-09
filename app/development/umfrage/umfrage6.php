@@ -1,7 +1,10 @@
 <?php
 
-  session_start();
-  echo "SESSION ID: ".$_SESSION['id'];
+require_once '../phpfunctions/sessionfunctions.php';
+
+session_start();
+saveIntoSessionVariablesPage6();
+printSessionVariables();
 
 ?>
 

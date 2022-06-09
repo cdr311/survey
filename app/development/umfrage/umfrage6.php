@@ -155,21 +155,21 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Wie würden Sie diese Umfrage bewerten?</h2>
         <section>
-          <input type="radio" name="bewertung" id="sgut" value="Sehrgut" />
+          <input type="radio" name="bewertung" id="sgut" value="0" />
           <label for="sgut">sehr gut</label>
-          <input type="radio" name="bewertung" id="gut" value="Gut" />
+          <input type="radio" name="bewertung" id="gut" value="1" />
           <label for="gut">gut</label>
-          <input type="radio" name="bewertung" id="befr" value="Befriedigend" />
+          <input type="radio" name="bewertung" id="befr" value="2" />
           <label for="befr">befriedigend</label>
-          <input type="radio" name="bewertung" id="schl" value="Schlecht" />
+          <input type="radio" name="bewertung" id="schl" value="3" />
           <label for="schl">schlecht</label>
-          <input type="radio" name="bewertung" id="unbr" value="Unbrauchbar" />
+          <input type="radio" name="bewertung" id="unbr" value="4" />
           <label for="unbr">unbrauchbar</label>
         </section>
       </div>
       <div class="auswahl2">
         <h2>Wir würden uns über Ihr Feedback freuen:</h2>
-        <textarea name="feedback" rows="20%" cols="90%" id="texteingabe" onclick="eingabeText()">Feedback</textarea>
+        <textarea name="feedbackText" rows="20%" cols="90%" id="texteingabe" onclick="eingabeText()">Feedback</textarea>
       </div>
       <div class="vorher">
         <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage5.php', 'form6')">Vorherige Seite</button>

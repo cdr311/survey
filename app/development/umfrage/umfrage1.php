@@ -156,63 +156,63 @@ $showPopup = true;
       <div class="auswahl">
         <h2>Mit welchem Geschlecht identifizieren Sie sich?</h2>
         <section>
-          <input type="radio" name="geschlecht" id="maen" value="0" />
+          <input type="radio" name="geschlecht" id="maen" value="0" <?php if(isset($_SESSION['geschlecht']) && $_SESSION['geschlecht'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="maen">Männlich</label><br />
-          <input type="radio" name="geschlecht" id="weibl" value="1" />
+          <input type="radio" name="geschlecht" id="weibl" value="1" <?php if(isset($_SESSION['geschlecht']) && $_SESSION['geschlecht'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="maen">Weiblich</label><br />
-          <input type="radio" name="geschlecht" id="dive" value="2" />
+          <input type="radio" name="geschlecht" id="dive" value="2" <?php if(isset($_SESSION['geschlecht']) && $_SESSION['geschlecht'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="maen">Divers</label>
         </section>
       </div>
       <div class="auswahl2">
         <h2>In welchen Altersbereich befinden Sie sich?</h2>
         <section class="breite">
-          <input type="radio" name="alter" id="jugend" value="0" />
+          <input type="radio" name="alter" id="jugend" value="0" <?php if(isset($_SESSION['alter']) && $_SESSION['alter'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="jugend">17 oder jünger</label><br />
-          <input type="radio" name="alter" id="erwachsen1" value="1" />
+          <input type="radio" name="alter" id="erwachsen1" value="1" <?php if(isset($_SESSION['alter']) && $_SESSION['alter'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="erwachsen1">18-20</label><br />
-          <input type="radio" name="alter" id="erwachsen2" value="2" />
+          <input type="radio" name="alter" id="erwachsen2" value="2" <?php if(isset($_SESSION['alter']) && $_SESSION['alter'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="erwachsen2">21-29</label><br />
-          <input type="radio" name="alter" id="erwachsen3" value="3" />
+          <input type="radio" name="alter" id="erwachsen3" value="3" <?php if(isset($_SESSION['alter']) && $_SESSION['alter'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="erwachsen3">30-39</label><br />
-          <input type="radio" name="alter" id="erwachsen4" value="4" />
+          <input type="radio" name="alter" id="erwachsen4" value="4" <?php if(isset($_SESSION['alter']) && $_SESSION['alter'] == "4"){echo "checked=\"checked\" ";} ?> />
           <label for="erwachsen4">40-49</label><br />
-          <input type="radio" name="alter" id="erwachsen5" value="5" />
+          <input type="radio" name="alter" id="erwachsen5" value="5" <?php if(isset($_SESSION['alter']) && $_SESSION['alter'] == "5"){echo "checked=\"checked\" ";} ?> />
           <label for="erwachsen5">50-59</label><br />
-          <input type="radio" name="alter" id="erwachsen6" value="6" />
+          <input type="radio" name="alter" id="erwachsen6" value="6" <?php if(isset($_SESSION['alter']) && $_SESSION['alter'] == "6"){echo "checked=\"checked\" ";} ?> />
           <label for="erwachsen6">60 oder älter</label>
         </section>
       </div>
       <div class="auswahl3">
         <h2>In welchen Berufsbereich sind Sie tätig?</h2>
         <section>
-          <input type="radio" name="arbeit" id="labor" value="0" />
+          <input type="radio" name="arbeit" id="labor" value="0" <?php if(isset($_SESSION['arbeit']) && $_SESSION['arbeit'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="jugend">Laborberufe</label>
-          <input type="radio" name="arbeit" id="hand" value="1" />
+          <input type="radio" name="arbeit" id="hand" value="1" <?php if(isset($_SESSION['arbeit']) && $_SESSION['arbeit'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="hand">Handwerk</label>
-          <input type="radio" name="arbeit" id="technisch" value="2" />
+          <input type="radio" name="arbeit" id="technisch" value="2" <?php if(isset($_SESSION['arbeit']) && $_SESSION['arbeit'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="technisch">IT und Elektronik</label>
           <br>
-          <input type="radio" name="arbeit" id="kauf" value="3" />
+          <input type="radio" name="arbeit" id="kauf" value="3" <?php if(isset($_SESSION['arbeit']) && $_SESSION['arbeit'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="kauf">Kaufmännische Berufe</label>
-          <input type="radio" name="arbeit" id="sozial" value="4" />
+          <input type="radio" name="arbeit" id="sozial" value="4" <?php if(isset($_SESSION['arbeit']) && $_SESSION['arbeit'] == "4"){echo "checked=\"checked\" ";} ?> />
           <label for="sozial">Gesundheit und Pflege</label>
-          <input type="radio" name="arbeit" id="sonstiges" value="5" />
+          <input type="radio" name="arbeit" id="sonstiges" value="5" <?php if(isset($_SESSION['arbeit']) && $_SESSION['arbeit'] == "5"){echo "checked=\"checked\" ";} ?> />
           <label for="sonstiges">Sonstiges</label>
         </section>
       </div>
       <div class="auswahl4">
         <h2>In welcher familiären Situation befinden Sie sich?</h2>
         <section>
-          <input type="radio" name="familie" id="ledig" value="0" />
+          <input type="radio" name="familie" id="ledig" value="0" <?php if(isset($_SESSION['familie']) && $_SESSION['familie'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="ledig">Ledig</label>
-          <input type="radio" name="familie" id="getrennt" value="1" />
+          <input type="radio" name="familie" id="getrennt" value="1" <?php if(isset($_SESSION['familie']) && $_SESSION['familie'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="getrennt">Getrennt</label>
-          <input type="radio" name="familie" id="geschieden" value="2" />
+          <input type="radio" name="familie" id="geschieden" value="2" <?php if(isset($_SESSION['familie']) && $_SESSION['familie'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="geschieden">Geschieden</label>
-          <input type="radio" name="familie" id="witwe" value="3" />
+          <input type="radio" name="familie" id="witwe" value="3" <?php if(isset($_SESSION['familie']) && $_SESSION['familie'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="witwe">Verwitwet</label>
-          <input type="radio" name="familie" id="heirat" value="4" />
+          <input type="radio" name="familie" id="heirat" value="4" <?php if(isset($_SESSION['familie']) && $_SESSION['familie'] == "4"){echo "checked=\"checked\" ";} ?> />
           <label for="heirat">Verheiratet</label>
         </section>
       </div>
@@ -220,17 +220,17 @@ $showPopup = true;
         <h2>Was ist ihr höchster Bildungssbschluss?</h2>
         <section>
           <select name="bildung" class="dropdownfeld">
-            <option value="0">Keinen Abschluss</option>
-            <option value="1">Qualifizierter Hauptschulabschluss</option>
-            <option value="2">Mittlere Reife</option>
-            <option value="3">Fachabitur</option>
-            <option value="4">Allgemeines Abitur</option>
-            <option value="5">Studium ohne Abschluss</option>
-            <option value="6">Bachelor</option>
-            <option value="7">Diplom</option>
-            <option value="8">Master</option>
-            <option value="9">Promotion</option>
-            <option value="10">Professur</option>
+            <option value="0" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "0"){echo "selected=\"selected\" ";} ?> >Keinen Abschluss</option>
+            <option value="1" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "1"){echo "selected=\"selected\" ";} ?> >Qualifizierter Hauptschulabschluss</option>
+            <option value="2" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "2"){echo "selected=\"selected\" ";} ?> >Mittlere Reife</option>
+            <option value="3" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "3"){echo "selected=\"selected\" ";} ?> >Fachabitur</option>
+            <option value="4" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "4"){echo "selected=\"selected\" ";} ?> >Allgemeines Abitur</option>
+            <option value="5" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "5"){echo "selected=\"selected\" ";} ?> >Studium ohne Abschluss</option>
+            <option value="6" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "6"){echo "selected=\"selected\" ";} ?> >Bachelor</option>
+            <option value="7" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "7"){echo "selected=\"selected\" ";} ?> >Diplom</option>
+            <option value="8" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "8"){echo "selected=\"selected\" ";} ?> >Master</option>
+            <option value="9" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "9"){echo "selected=\"selected\" ";} ?> >Promotion</option>
+            <option value="10" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "10"){echo "selected=\"selected\" ";} ?> >Professur</option>
           </select>
 
           </select>

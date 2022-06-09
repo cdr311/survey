@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
   <head>
-    <meta name="author" content="cdr311" charset="utf-8">
+    <meta name="author" content="cdr311" charset="utf-8"/>
+    <meta name="keywords" content="Umfrage, Digitale Nutzung"/>
+    <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>survey — Auswertung</title>
 
@@ -10,22 +13,34 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/evaluation.css"/>
   </head>
   <body>
-    <h1>Auswertung</h1>
-<?php
+    <header>
+      <article>
+        <section class="links">
+          <div><img src="../images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
+        </section>
+        <section class="mitte">
+          <div class="ueberschrift">Umfrage</div>
+        </section>
+        <section class="rechts">
+          <table>
+            <th><a href="../umfrage/umfrage1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
+            <th><a href="../infopage/index.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
+            <th><a href="../linkpage/index.php" title="Links" class="unter"><span>Links</span></a></th>
+            <th><a href="../startpage/index.php" title="Home" class="unter"><span>Home</span></a></th>
+            <th><button onclick="circleklick()" title="Moduswechsel">M</button></th>
+          </table>
+        </section>
+      </article>
+    </header>
+    <main>
+    <?php
 try {
   $dbh = new PDO('mysql:host=' . $_ENV['MYSQL_HOST'] . ';dbname=' . $_ENV['MYSQL_DATABASE'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD']);
-
-  /* foreach ($dbh->query('SELECT * FROM LinuxDistributionKey') as $row) {
-    print_r($row);
-  } */
-
-  //$dbh = null;
 } catch (PDOException $e) {
   print "Error!: " . $e->getMessage() . "<br/>";
   die();
 }
 ?>
-
 <?php
 // Persistente Verbindung, welche auch nach Ende des Skripts nicht geschlossen wird
 // Wenn die Verbindung öfter benötigt wird, resultiert dies in einer schnelleren Anwendung
@@ -54,7 +69,6 @@ foreach ($stmt as $row) {
   print_r($row);
 } */
 ?>
-
 <?php
 // Alle Tabellen in der Datenbank survey anzeigen
 /* $query = $dbh->query("SHOW TABLES;");
@@ -84,54 +98,110 @@ foreach ($query as $row) {
   print_r($row);
 } */
 ?>
-
 <?php
 // Anzahl der Teilnehmer ermitteln und anzeigen
 $num_participants = 0;
-echo "    <h3>Anzahl Teilnehmer:</h3>\n";
+
+echo "  <h3>Anzahl Teilnehmer:</h3>\n";
 $query = $dbh->query("SELECT COUNT(TeilnehmerID) FROM TeilnehmerDaten;");
 //print_r($query);
 foreach($query as $row) {
   //print_r($row);
   $num_participants = $row[0];
 }
-echo "    <p>$num_participants</p>\n";
+echo "      <p>$num_participants</p>\n";
 ?>
-
 <?php
 // Anzahl aller genutzten Geräte ermitteln
 $num_devices = 0;
+
 $query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart;");
 foreach ($query as $row) {
   $num_devices = $row[0];
 }
-echo "    <p>Gesamtanzahl aller genutzten Geräte: $num_devices";
+echo "      <p>Gesamtanzahl aller genutzten Geräte: $num_devices\n";
 
-// Anzahl der genutzten Smartphone anzeigen und ermitteln
-$num_smartphone_users = 0;
-echo "    <h3>Anzahl Smartphone-Benutzer:</h3>\n";
+// Anzahl der genutzten Smartphones anzeigen und ermitteln
+$num_smartphone = 0;
+
+echo "      <h3>Anzahl Smartphone-Benutzer:</h3>\n";
 $query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = 2;");
 foreach($query as $row) {
-  $num_smartphone_users = $row[0];
+  $num_smartphone = $row[0];
 }
-echo "    <p>$num_smartphone_users</p>\n";
+echo "      <p>$num_smartphone</p>\n";
 
 // Prozentsatz der Smartphones anteilsmäßig von allen Geräten
-$perc_smartphone = ($num_smartphone_users / $num_devices) * 100;
-echo "    <p>$perc_smartphone% der Teilnehmer benutzen ein Smartphone."
-?>
+if ($num_devices > 0) {
+  $perc_smartphone = ($num_smartphone / $num_devices) * 100;
 
-<?php
-// Gesamtanzahl benutzter Geräte
-echo "    <h3>So viele Geräte werden von allen Teilnehmern insgesamt benutzt:</h3>\n";
-$query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart;");
-foreach($query as $row) {
-  echo "    <p>$row[0]</p>\n";
+  echo "      <p>$perc_smartphone% der Teilnehmer benutzen ein Smartphone.\n";
+} else {
+  echo "      <p class='error'>Bisher hat niemand an dieser Umfrage teilgenommen, der ein digitales Gerät benutzt.</p>\n";
 }
 ?>
+<?php
+// Gesamtanzahl benutzter Geräte
+/* echo "    <h3>So viele Geräte werden von allen Teilnehmern insgesamt benutzt:</h3>\n";
+echo "    <p>$num_devices</p>";
+?>
+    <label for="device-names">So viele des folgenden Gerätetyps werden genutzt:</label>
+    <form method="post" id="device-names">
+      <select name="device-names">
+        <option value="0">Desktop PC</option>
+        <option value="1">Laptop</option>
+        <option value="2">Smartphone</option>
+        <option value="3">Tablet</option>
+        <option value="4">Smart TV</option>
+        <option value="5">Smartwatch</option>
+        <option value="6">Spielekonsole</option>
+      </select>
+      <input type="submit"/>
+    </form>
+<?php
+$device = 2;
 
+$stmt = $dbh->prepare("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = ?");
+$stmt->execute(["$device"]);
+foreach ($stmt as $row) {
+  print_r($row[0]);
+} */
+?>
+<?php
+// Anzahl und Anteil der Benutzer von Linux-Distributionen und BSD-Varianten ermitteln und anzeigen
+$num_linux = 0;
+$num_bsd = 0;
+$perc_linux = 0;
+$perc_bsd = 0;
+
+$query = $dbh->query("SELECT COUNT(DISTINCT TeilnehmerID) FROM LinuxDistribution WHERE LinuxDistribution IS NOT NULL;");
+foreach ($query as $row) {
+  $num_linux = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(DISTINCT TeilnehmerID) FROM BSDVariante WHERE BSDVariante IS NOT NULL;");
+foreach ($query as $row) {
+  $num_bsd = $row[0];
+}
+
+if ($num_devices > 0) {
+  $perc_linux = ($num_linux / $num_devices) * 100;
+  $perc_bsd = ($num_bsd / $num_devices) * 100;
+
+  echo "      <p>Linux-Benutzer: $num_linux / $perc_linux%</p>";
+  echo "      <p>BSD-Benutzer: $num_bsd / $perc_bsd%</p>";
+} else {
+  echo "      <p class='error'>Bisher hat niemand an dieser Umfrage teilgenommen, der ein digitales Gerät benutzt.</p>\n";
+}
+?>
+    </main>
+    <footer class="mittig" id="footing">
+      <p>Die gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
+      <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a> verwendet.</p>
+      <p>Copyright ©2022</p>
+    </footer>
 <?php
 $dbh = null;
 ?>
+    <script type="text/javascript" src="../scripte/start.js"></script>
   </body>
 </html>

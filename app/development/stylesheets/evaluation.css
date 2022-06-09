@@ -43,8 +43,10 @@ footer {
 }
 
 span {
-    background-color: white;
-    font-size: 30px;
+    background-color: #fffff0;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 section.links {
@@ -71,16 +73,20 @@ a.unter {
     text-decoration: none;
 }
 
-a.quelle:link {
+span:hover {
+    background-color: #62bcf5;
+}
+
+a.unter:link {
     color: black;
 }
-a.quelle:visited {
-    color: #DF7401;
+a.unter:visited {
+    color: black;
 }
-a.quelle:hover {
-    color: green;
+a.unter:hover {
+    color: white;
 }
-a.quelle:active {
+a.unter:active {
     color: red;
 }
 

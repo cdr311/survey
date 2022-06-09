@@ -155,62 +155,62 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welche Mailprogramme benutzen Sie?</h2>
         <section>
-          <input type="checkbox" name="mailprogramm[]" id="outl" value="Outlook" />
+          <input type="checkbox" name="mailprogramm[]" id="outl" value="7" />
           <label for="outl">Microsoft Outlook</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="inky" value="Inky" />
-          <label for="inky">Inky</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="bird" value="Mailbird" />
-          <label for="bird">Mailbird</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="thun" value="Thunderbird" />
+          <!-- <input type="checkbox" name="mailprogramm[]" id="inky" value="Inky" />
+          <label for="inky">Inky</label><br /> -->
+          <!-- <input type="checkbox" name="mailprogramm[]" id="bird" value="Mailbird" />
+          <label for="bird">Mailbird</label><br /> -->
+          <input type="checkbox" name="mailprogramm[]" id="thun" value="9" />
           <label for="thun">Mozilla Thunderbird</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="spark" value="Spark" />
+          <input type="checkbox" name="mailprogramm[]" id="spark" value="8" />
           <label for="spark">Spark</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="gmail" value="GMail" />
-          <label for="gmail">GoogleMail-App</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="brow" value="Browser" />
-          <label for="brow">Browser</label><br />
+          <!-- <input type="checkbox" name="mailprogramm[]" id="gmail" value="GMail" />
+          <label for="gmail">GoogleMail-App</label><br /> -->
+          <input type="checkbox" name="mailprogramm[]" id="brow" value="10" />
+          <label for="brow">Weboberfläche</label><br />
           <label for="sonst">Sonstige:</label>
-          <input type="text" name="mailprogramm[]" id="sonst" />
+          <input type="text" name="mailprogrammSonstiges" id="sonst" />
         </section>
       </div>
       <div class="auswahl2">
         <h2>Verschlüsseln Sie ihre <b>privaten</b> E-Mails?</h2>
         <section>
-          <input type="radio" name="verschluesselungPrivat" id="ja" value="jaPrivat" />
+          <input type="radio" name="verschluesselungPrivat" id="ja" value="1" />
           <label for="ja">Ja</label><br />
-          <input type="radio" name="verschluesselungPrivat" id="nein" value="neinPrivat" />
+          <input type="radio" name="verschluesselungPrivat" id="nein" value="0" />
           <label for="nein">Nein</label><br />
         </section>
       </div>
       <div class="auswahl4">
         <h2>Welche Verschlüsselungsmethode verwenden Sie dazu?</h2>
         <section>
-          <input type="radio" name="verschluesselungPrivatMethode" id="pgp" value="PGP" />
+          <input type="radio" name="verschluesselungPrivatMethode" id="pgp" value="0" />
           <label for="pgp">PGP</label><br />
-          <input type="radio" name="verschluesselungPrivatMethode" id="smime" value="SMIME" />
+          <input type="radio" name="verschluesselungPrivatMethode" id="smime" value="1" />
           <label for="smime">S/MIME</label><br />
-          <input type="radio" name="verschluesselungPrivatMethode" id="prov" value="Provider" />
-          <label for="prov">Spezialisierter E-Mail-Provider</label>
+          <!-- <input type="radio" name="verschluesselungPrivatMethode" id="prov" value="Provider" />
+          <label for="prov">Spezialisierter E-Mail-Provider</label> -->
         </section>
       </div>
       <div class="auswahl3">
         <h2>Verschlüsseln Sie ihre <b>dienstlichen</b> E-Mails?</h2>
         <section>
-          <input type="radio" name="verschluesselungDienstlich" id="ja" value="jaDienst" />
+          <input type="radio" name="verschluesselungDienstlich" id="ja" value="1" />
           <label for="ja">Ja</label><br />
-          <input type="radio" name="verschluesselungDienstlich" id="nein" value="neinDienst" />
+          <input type="radio" name="verschluesselungDienstlich" id="nein" value="0" />
           <label for="nein">Nein</label><br />
         </section>
       </div>
       <div class="auswahl5">
         <h2>Welche Verschlüsselungsmethode verwenden Sie dazu?</h2>
         <section>
-          <input type="radio" name="verschluesselungDienstlichMethode" id="pgp" value="PGP" />
+          <input type="radio" name="verschluesselungDienstlichMethode" id="pgp" value="0" />
           <label for="pgp">PGP</label><br />
-          <input type="radio" name="verschluesselungDienstlichMethode" id="smime" value="SMIME" />
+          <input type="radio" name="verschluesselungDienstlichMethode" id="smime" value="1" />
           <label for="smime">S/MIME</label><br />
-          <input type="radio" name="verschluesselungDienstlichMethode" id="prov" value="Provider" />
-          <label for="prov">Spezialisierter E-Mail-Provider</label>
+          <!-- <input type="radio" name="verschluesselungDienstlichMethode" id="prov" value="Provider" />
+          <label for="prov">Spezialisierter E-Mail-Provider</label> -->
         </section>
       </div>
       <div class="vorher">

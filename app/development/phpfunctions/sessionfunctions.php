@@ -108,6 +108,36 @@ function printSessionVariables(){
     echo "nutzungszeitSpielekonsole: ".$_SESSION['nutzungszeitSpielekonsole'];
   }
 
+  //Eigegeben auf Seite 4
+
+  if(isset($_SESSION['OSDesktop'])){
+    echo "OSDesktop: ".$_SESSION['OSDesktop'];
+  }
+
+  if(isset($_SESSION['OSLaptop'])){
+    echo "OSLaptop: ".$_SESSION['OSLaptop'];
+  }
+
+  if(isset($_SESSION['OSSmartphone'])){
+    echo "OSSmartphone: ".$_SESSION['OSSmartphone'];
+  }
+
+  if(isset($_SESSION['OSTablet'])){
+    echo "OSTablet: ".$_SESSION['OSTablet'];
+  }
+
+  if(isset($_SESSION['OSSmartTV'])){
+    echo "OSSmartTV: ".$_SESSION['OSSmartTV'];
+  }
+
+  if(isset($_SESSION['OSSmartwatch'])){
+    echo "OSSmartwatch: ".$_SESSION['OSSmartwatch'];
+  }
+
+  if(isset($_SESSION['Browser'])){
+    echo "Browser: ".$_SESSION['Browser'];
+  }
+
 }
 
 //-----------------------------------------
@@ -194,6 +224,32 @@ function saveIntoSessionVariablesPage4(){
   }
   if(isset($_POST['nutzungszeitSpielekonsole'])){
   $_SESSION['nutzungszeitSpielekonsole'] = $_POST['nutzungszeitSpielekonsole'];
+  }
+}
+
+function saveIntoSessionVariablesPage5(){
+
+  //Eigegeben auf Seite 4
+  if(isset($_POST['OSDesktop'])){
+  $_SESSION['OSDesktop'] = $_POST['OSDesktop'];
+  }
+  if(isset($_POST['OSLaptop'])){
+  $_SESSION['OSLaptop'] = $_POST['OSLaptop'];
+  }
+  if(isset($_POST['OSSmartphone'])){
+  $_SESSION['OSSmartphone'] = $_POST['OSSmartphone'];
+  }
+  if(isset($_POST['OSTablet'])){
+  $_SESSION['OSTablet'] = $_POST['OSTablet'];
+  }
+  if(isset($_POST['OSSmartTV'])){
+  $_SESSION['OSSmartTV'] = $_POST['OSSmartTV'];
+  }
+  if(isset($_POST['OSSmartwatch'])){
+  $_SESSION['OSSmartwatch'] = $_POST['OSSmartwatch'];
+  }
+  if(isset($_POST['Browser'])){
+  $_SESSION['Browser'] = $_POST['Browser'];
   }
 }
 

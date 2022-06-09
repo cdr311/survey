@@ -277,13 +277,29 @@ span.droppen{
   height: 100%;
 }
 
-@media screen and (max-width: 900px) {
-  div.naechste{
-    left:88%;
+@media screen and (max-height: 650px) {
+  div.auswahl2{
+    top:28%;
   }
-}
-@media screen and (max-height: 700px) {
   div.auswahl3{
-    padding-top: 7px;
+    top:67%;
+  }
+  div.auswahl4{
+    top:85%;
+  }
+  div.auswahl5{
+    top:99%;
+}
+  div.naechste{
+    top: 118%;
+  }
+  div.vorher{
+    top: 118%;
+  }
+  div.main{
+    height: 125%;
+  }
+  footer{
+    top:145%;
   }
 }

@@ -4,7 +4,7 @@
 
 function generateSessionID(){
   $_SESSION['id'] = rand(1000,1000000000);
-  // checkIfIdAlreadyUsed();
+  checkIfIdAlreadyUsed();
 }
 
 function checkIfIdAlreadyUsed(){

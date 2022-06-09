@@ -159,16 +159,12 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         <section>
           <input type="checkbox" name="mailprogramm[]" id="outl" value="7" />
           <label for="outl">Microsoft Outlook</label><br />
-          <!-- <input type="checkbox" name="mailprogramm[]" id="inky" value="Inky" />
-          <label for="inky">Inky</label><br /> -->
-          <!-- <input type="checkbox" name="mailprogramm[]" id="bird" value="Mailbird" />
-          <label for="bird">Mailbird</label><br /> -->
           <input type="checkbox" name="mailprogramm[]" id="thun" value="9" />
           <label for="thun">Mozilla Thunderbird</label><br />
           <input type="checkbox" name="mailprogramm[]" id="spark" value="8" />
           <label for="spark">Spark</label><br />
-          <!-- <input type="checkbox" name="mailprogramm[]" id="gmail" value="GMail" />
-          <label for="gmail">GoogleMail-App</label><br /> -->
+          <input type="checkbox" name="mailprogramm[]" id="gmail" value="GMail" />
+          <label for="gmail">GoogleMail-App</label><br />
           <input type="checkbox" name="mailprogramm[]" id="brow" value="10" />
           <label for="brow">Weboberfläche</label><br />
           <label for="sonst">Sonstige:</label>
@@ -191,8 +187,8 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <label for="pgp">PGP</label><br />
           <input type="radio" name="verschluesselungPrivatMethode" id="smime" value="1" />
           <label for="smime">S/MIME</label><br />
-          <!-- <input type="radio" name="verschluesselungPrivatMethode" id="prov" value="Provider" />
-          <label for="prov">Spezialisierter E-Mail-Provider</label> -->
+          <input type="radio" name="verschluesselungPrivatMethode" id="prov" value="Provider" />
+          <label for="prov">Spezialisierter E-Mail-Provider</label>
         </section>
       </div>
       <div class="auswahl3">
@@ -211,8 +207,8 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <label for="pgp">PGP</label><br />
           <input type="radio" name="verschluesselungDienstlichMethode" id="smime" value="1" />
           <label for="smime">S/MIME</label><br />
-          <!-- <input type="radio" name="verschluesselungDienstlichMethode" id="prov" value="Provider" />
-          <label for="prov">Spezialisierter E-Mail-Provider</label> -->
+          <input type="radio" name="verschluesselungDienstlichMethode" id="prov" value="Provider" />
+          <label for="prov">Spezialisierter E-Mail-Provider</label>
         </section>
       </div>
       <div class="vorher">

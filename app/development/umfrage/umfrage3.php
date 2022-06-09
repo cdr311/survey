@@ -314,44 +314,51 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 
   desktop = window.localStorage.getItem('desktop');
   if(desktop){
+      console.log(desktop)
       document.getElementById('aus1').style.display = 'block'
   }
   else {
     document.getElementById('aus1').style.display = 'none'
   }
   laptop = window.localStorage.getItem('laptop');
-  if(laptop)
+  if(laptop){
     document.getElementById('aus2').style.display = 'block'
+  }
   else {
     document.getElementById('aus2').style.display = 'none'
   }
   smartphone = window.localStorage.getItem('smartphone');
-  if(smartphone)
+  if(smartphone){
     document.getElementById('aus3').style.display = 'block'
+  }
   else {
     document.getElementById('aus3').style.display = 'none'
   }
   tablet = window.localStorage.getItem('tablet');
-  if(tablet)
+  if(tablet){
     document.getElementById('aus4').style.display = 'block'
+  }
   else {
     document.getElementById('aus4').style.display = 'none'
   }
   smarttv = window.localStorage.getItem('smarttv');
-  if(smarttv)
+  if(smarttv){
     document.getElementById('aus5').style.display = 'block'
+  }
   else{
     document.getElementById('aus5').style.display = 'none'
   }
   smartwatch = window.localStorage.getItem('smartwatch');
-  if(smartwatch)
+  if(smartwatch){
     document.getElementById('aus6').style.display = 'block'
+  }
   else {
     document.getElementById('aus6').style.display = 'none'
   }
   spielekonsole = window.localStorage.getItem('spielekonsole');
-  if(spielekonsole)
+  if(spielekonsole){
     document.getElementById('aus7').style.display = 'block'
+  }
   else{
     document.getElementById('aus7').style.display = 'none'
   }

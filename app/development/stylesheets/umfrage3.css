@@ -90,7 +90,7 @@ div.main{
   top:70px;
   left: 25%;
   width: 100%;
-  height: 154%;
+  height: 172%;
   box-shadow: 8px 8px 8px 10px grey;
   background-color: #A4A4A4;
 }
@@ -107,7 +107,7 @@ div.auswahl2{
   display: none;
   position: absolute;
   left:5%;
-  top:23%;
+  top:26%;
   padding-bottom: 10px;
 }
 
@@ -115,35 +115,35 @@ div.auswahl3{
   display: none;
   position: absolute;
   left:5%;
-  top:43%;
+  top:49%;
   padding-bottom: 10px;
 }
 div.auswahl4{
   display: none;
   position: absolute;
   left:5%;
-  top:63%;
+  top:72%;
   padding-bottom: 10px;
 }
 div.auswahl5{
   display: none;
   position: absolute;
   left:5%;
-  top:83%;
+  top:95%;
   padding-bottom: 10px;
 }
 div.auswahl6{
   display: none;
   position: absolute;
   left:5%;
-  top:103%;
+  top:118%;
   padding-bottom: 10px;
 }
 div.auswahl7{
   display: none;
   position: absolute;
   left:5%;
-  top:123%;
+  top:141%;
   padding-bottom: 10px;
 }
 
@@ -157,7 +157,7 @@ div.vorher{
   position: absolute;
   padding-bottom: 10px;
   text-align: center;
-  top: 148%;
+  top: 165%;
   padding-left: 8px;
 }
 
@@ -165,7 +165,7 @@ div.naechste{
   position: absolute;
   padding-bottom: 10px;
   text-align: center;
-  top: 148%;
+  top: 165%;
   left: 90%;
   padding-right: 8px;
 }
@@ -215,7 +215,7 @@ footer{
   padding-top: 4px;
   padding-bottom: 4px;
   position: absolute;
-  top: 217%;
+  top: 240%;
   width: 100%;
 }
 
@@ -300,4 +300,37 @@ span.droppen{
 
 #aendern{
   height: 100%;
+}
+
+@media screen and (max-height: 600px) {
+  div.auswahl2{
+    top:31%;
+  }
+  div.auswahl3{
+    top:59%;
+  }
+  div.auswahl4{
+    top:87%;
+  }
+  div.auswahl5{
+    top:115%;
+  }
+  div.auswahl6{
+    top:143%;
+  }
+  div.auswahl7{
+    top:171%;
+  }
+  div.naechste{
+    top: 205%;
+  }
+  div.vorher{
+    top: 205%;
+  }
+  div.main{
+    height: 214%;
+  }
+  footer{
+    top:300%;
+  }
 }

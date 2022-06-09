@@ -199,18 +199,12 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <label for="and">Android</label><br />
           <input type="radio" name="OSSmartphone" id="iOS" value="4" />
           <label for="iOS">iOS</label><br />
-          <!-- <input type="radio" name="OSSmartphone" id="win" value="WindowsPhone" />
-          <label for="win">Windows Phone</label><br /> -->
-          <!-- <input type="radio" name="OSSmartphone" id="bb" value="BlackBerry" />
-          <label for="bb">BlackBerry</label><br /> -->
-          <!-- <input type="radio" name="OSSmartphone" id="chrome" value="ChromeOS" />
-          <label for="chrome">Chrome OS</label><br /> -->
+          <input type="radio" name="OSSmartphone" id="win" value="WindowsPhone" />
+          <label for="win">Windows Phone</label><br />
           <input type="radio" name="OSSmartphone" id="linux" value="2" />
           <label for="linux">Linux</label>
           <label for="distri">Distribution: </label>
           <input type="text" name="OSSmartphoneLinuxDistroText" value="" id="distri" /> <br />
-          <!-- <input type="radio" name="OSSmartphone" id="fire" value="Firefox" />
-          <label for="fire">Firefox OS</label><br /> -->
           <label for="sonst">Sonstige: </label>
           <input type="text" name="OSSmartphoneSonstiges" value="" id="sonst" />
         </section>
@@ -221,13 +215,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="radio" name="OSTablet" id="and" value="6" />
           <label for="and">Android</label><br />
           <input type="radio" name="OSTablet" id="iOS" value="4" />
-          <label for="iOS">iOS</label><br />
-          <!-- <input type="radio" name="OSTablet" id="win" value="WindowsPhone" />
-          <label for="win">Windows Phone</label><br />
-          <input type="radio" name="OSTablet" id="bb" value="BlackBerry" />
-          <label for="bb">BlackBerry</label><br />
-          <input type="radio" name="OSTablet" id="chrome" value="ChromeOS" />
-          <label for="chrome">Chrome OS</label><br /> -->
+          <label for="iOS">iPadOS</label><br />
           <input type="radio" name="OSTablet" id="linux" value="2" />
           <label for="linux">Linux</label>
           <label for="distri">Distribution: </label>
@@ -239,18 +227,12 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl5">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem SmartTV?</h2>
         <section>
-          <!-- <input type="radio" name="OSSmartTV" id="tiz" value="Tizen" />
+          <input type="radio" name="OSSmartTV" id="tiz" value="Tizen" />
           <label for="tiz">Tizen OS</label><br />
-          <input type="radio" name="OSSmartTV" id="web" value="webOS" />
-          <label for="web">webOS</label><br /> -->
           <input type="radio" name="OSSmartTV" id="andr" value="6" />
           <label for="andr">Android TV</label><br />
-          <!-- <input type="radio" name="OSSmartTV" id="myhome" value="MyHomeScreen" />
-          <label for="myhome">MyHomeScreen</label><br />
-          <input type="radio" name="OSSmartTV" id="roku" value="Roku" />
-          <label for="roku">Roku TV</label><br />
           <input type="radio" name="OSSmartTV" id="fire" value="Firefox" />
-          <label for="fire">Firefox OS</label><br /> -->
+          <label for="fire">Firefox OS</label><br />
           <label for="sonst">Sonstige: </label>
           <input type="text" name="OSSmartTVSonstiges" value="" id="sonst" />
         </section>

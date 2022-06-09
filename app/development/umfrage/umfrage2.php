@@ -22,7 +22,7 @@
 
   <link rel="stylesheet" href="../stylesheets/umfrage2.css" />
   <link rel="icon" type="image/x-icon" href="../images/fragezeichen.png" />
-  <script src="changePage.js"></script>
+  <script src="../scripte/changePage.js"></script>
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
 

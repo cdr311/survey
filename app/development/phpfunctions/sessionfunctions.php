@@ -78,7 +78,35 @@ function printSessionVariables(){
     printSessionArray($_SESSION['taetigkeitenSpielekonsole'], "taetigkeitenSpielekonsole");
   }
 
+  //Eigegeben auf Seite 3
 
+  if(isset($_SESSION['nutzungszeitDesktop'])){
+    echo "nutzungszeitDesktop: ".$_SESSION['nutzungszeitDesktop'];
+  }
+
+  if(isset($_SESSION['nutzungszeitLaptop'])){
+    echo "nutzungszeitLaptop: ".$_SESSION['nutzungszeitLaptop'];
+  }
+
+  if(isset($_SESSION['nutzungszeitSmartphone'])){
+    echo "nutzungszeitSmartphone: ".$_SESSION['nutzungszeitSmartphone'];
+  }
+
+  if(isset($_SESSION['nutzungszeitTablet'])){
+    echo "nutzungszeitTablet: ".$_SESSION['nutzungszeitTablet'];
+  }
+
+  if(isset($_SESSION['nutzungszeitSmartTV'])){
+    echo "nutzungszeitSmartTV: ".$_SESSION['nutzungszeitSmartTV'];
+  }
+
+  if(isset($_SESSION['nutzungszeitSmartwatch'])){
+    echo "nutzungszeitSmartwatch: ".$_SESSION['nutzungszeitSmartwatch'];
+  }
+
+  if(isset($_SESSION['nutzungszeitSpielekonsole'])){
+    echo "nutzungszeitSpielekonsole: ".$_SESSION['nutzungszeitSpielekonsole'];
+  }
 
 }
 
@@ -140,6 +168,32 @@ function saveIntoSessionVariablesPage3(){
   }
   if(isset($_POST['taetigkeitenSpielekonsole'])){
   $_SESSION['taetigkeitenSpielekonsole'] = $_POST['taetigkeitenSpielekonsole'];
+  }
+}
+
+function saveIntoSessionVariablesPage4(){
+
+  //Eigegeben auf Seite 3
+  if(isset($_POST['nutzungszeitDesktop'])){
+  $_SESSION['nutzungszeitDesktop'] = $_POST['nutzungszeitDesktop'];
+  }
+  if(isset($_POST['nutzungszeitLaptop'])){
+  $_SESSION['nutzungszeitLaptop'] = $_POST['nutzungszeitLaptop'];
+  }
+  if(isset($_POST['nutzungszeitSmartphone'])){
+  $_SESSION['nutzungszeitSmartphone'] = $_POST['nutzungszeitSmartphone'];
+  }
+  if(isset($_POST['nutzungszeitTablet'])){
+  $_SESSION['nutzungszeitTablet'] = $_POST['nutzungszeitTablet'];
+  }
+  if(isset($_POST['nutzungszeitSmartTV'])){
+  $_SESSION['nutzungszeitSmartTV'] = $_POST['nutzungszeitSmartTV'];
+  }
+  if(isset($_POST['nutzungszeitSmartwatch'])){
+  $_SESSION['nutzungszeitSmartwatch'] = $_POST['nutzungszeitSmartwatch'];
+  }
+  if(isset($_POST['nutzungszeitSpielekonsole'])){
+  $_SESSION['nutzungszeitSpielekonsole'] = $_POST['nutzungszeitSpielekonsole'];
   }
 }
 

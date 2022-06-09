@@ -19,7 +19,9 @@ printSessionVariables();
   <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten" />
 
   <link rel="stylesheet" href="../stylesheets/umfrage5.css" />
-  <link rel="icon" type="image/x-icon" href="../images/fragezeichen.png" />
+  <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
+  <!-- Die Emoji-Grafik (https://github.com/twitter/twemoji/blob/master/assets/svg/1f4cb.svg) stammt vom Projekt Twemoji (https://twemoji.twitter.com/). Sie ist Copyright von Twitter und anderen Mitwirkenden und unter der CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) lizensiert. Es wurden keine Veränderungen am Material vorgenommen. -->
+
   <script src="../scripte/changePage.js"></script>
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>

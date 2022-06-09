@@ -180,7 +180,54 @@ function printSessionVariables(){
 
 //-----------------------------------------
 
+function saveIntoSessionVariablesPage1(){
+  saveFromPostIntoSessionFromPage2();
+}
+
 function saveIntoSessionVariablesPage2(){
+
+  saveFromPostIntoSessionFromPage1();
+  saveFromPostIntoSessionFromPage3();
+
+
+}
+
+function saveIntoSessionVariablesPage3(){
+
+  saveFromPostIntoSessionFromPage2();
+  saveFromPostIntoSessionFromPage4();
+
+}
+
+function saveIntoSessionVariablesPage4(){
+
+  saveFromPostIntoSessionFromPage3();
+  saveFromPostIntoSessionFromPage5();
+
+}
+
+function saveIntoSessionVariablesPage5(){
+
+  saveFromPostIntoSessionFromPage4();
+  saveFromPostIntoSessionFromPage6();
+
+}
+
+function saveIntoSessionVariablesPage6(){
+
+  saveFromPostIntoSessionFromPage5();
+
+}
+
+function saveIntoSessionVariablesPage7(){
+
+  saveFromPostIntoSessionFromPage6();
+
+}
+
+//-----------------------------------------
+
+function saveFromPostIntoSessionFromPage1(){
 
   //Eigegeben auf Seite 1
   if(isset($_POST['geschlecht'])){
@@ -198,9 +245,10 @@ function saveIntoSessionVariablesPage2(){
   if(isset($_POST['bildung'])){
     $_SESSION['bildung'] = $_POST['bildung'];
   }
+
 }
 
-function saveIntoSessionVariablesPage3(){
+function saveFromPostIntoSessionFromPage2(){
 
   //Eigegeben auf Seite 2
   if(isset($_POST['benutzteGeraete'])){
@@ -227,9 +275,10 @@ function saveIntoSessionVariablesPage3(){
   if(isset($_POST['taetigkeitenSpielekonsole'])){
   $_SESSION['taetigkeitenSpielekonsole'] = $_POST['taetigkeitenSpielekonsole'];
   }
+
 }
 
-function saveIntoSessionVariablesPage4(){
+function saveFromPostIntoSessionFromPage3(){
 
   //Eigegeben auf Seite 3
   if(isset($_POST['nutzungszeitDesktop'])){
@@ -253,9 +302,10 @@ function saveIntoSessionVariablesPage4(){
   if(isset($_POST['nutzungszeitSpielekonsole'])){
   $_SESSION['nutzungszeitSpielekonsole'] = $_POST['nutzungszeitSpielekonsole'];
   }
+
 }
 
-function saveIntoSessionVariablesPage5(){
+function saveFromPostIntoSessionFromPage4(){
 
   //Eigegeben auf Seite 4
   if(isset($_POST['OSDesktop'])){
@@ -279,9 +329,10 @@ function saveIntoSessionVariablesPage5(){
   if(isset($_POST['Browser'])){
   $_SESSION['Browser'] = $_POST['Browser'];
   }
+
 }
 
-function saveIntoSessionVariablesPage6(){
+function saveFromPostIntoSessionFromPage5(){
 
   //Eigegeben auf Seite 5
   if(isset($_POST['mailprogramm'])){
@@ -299,16 +350,17 @@ function saveIntoSessionVariablesPage6(){
   if(isset($_POST['verschluesselungDienstlichMethode'])){
   $_SESSION['verschluesselungDienstlichMethode'] = $_POST['verschluesselungDienstlichMethode'];
   }
+
 }
 
-function saveIntoSessionVariablesPage7(){
+function saveFromPostIntoSessionFromPage6(){
 
   //Eigegeben auf Seite 6
   if(isset($_POST['bewertung'])){
   $_SESSION['bewertung'] = $_POST['bewertung'];
   }
 
-
 }
+
 
  ?>

@@ -1,7 +1,7 @@
 <?php
 
-  require_once '../phpfunctions/dbfunctions.php';
-  require_once '../phpfunctions/sessionfunctions.php';
+  require_once './phpfunctions/dbfunctions.php';
+  require_once './phpfunctions/sessionfunctions.php';
 
   session_start();
   session_destroy();
@@ -54,7 +54,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   <header>
     <article>
       <section class="links">
-        <div><img src="../images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
+        <div><img src="./images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
       </section>
       <section class="mitte">
         <div class="ueberschrift">Umfrage</div>
@@ -62,10 +62,10 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       </section>
       <section class="rechts">
         <table>
-          <th><a href="../umfrage/umfrage1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
-          <th><a href="../infopage/index.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
-          <th><a href="../linkpage/index.php" title="Links" class="unter"><span>Links</span></a></th>
-          <th><a href="../startpage/index.php" title="Home" class="unter"><span>Home</span></a></th>
+          <th><a href="./umfrage/umfrage1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
+          <th><a href="./infopage/index.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
+          <th><a href="./linkpage/index.php" title="Links" class="unter"><span>Links</span></a></th>
+          <th><a href="./index.php" title="Home" class="unter"><span>Home</span></a></th>
           <th>
             <button onclick="circleklick()" title="Moduswechsel">M</button>
           </th>
@@ -78,11 +78,11 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 
   <nav>
     <div class="bild-inhalt">
-      <img class="meineSlides" src="../images/umfrage.png" alt="UmfrageBild1" />
-      <img class="meineSlides" src="../images/fragen.png" alt="UmfrageBild2" />
-      <img class="meineSlides" src="../images/smiley.png" alt="UmfrageBild3" />
-      <img class="meineSlides" src="../images/holz.png" alt="UmfrageBild4" />
-      <img class="meineSlides" src="../images/dunkel.png" alt="UmfrageBild5" />
+      <img class="meineSlides" src="./images/umfrage.png" alt="UmfrageBild1" />
+      <img class="meineSlides" src="./images/fragen.png" alt="UmfrageBild2" />
+      <img class="meineSlides" src="./images/smiley.png" alt="UmfrageBild3" />
+      <img class="meineSlides" src="./images/holz.png" alt="UmfrageBild4" />
+      <img class="meineSlides" src="./images/dunkel.png" alt="UmfrageBild5" />
       <h1 class="linksunten">Nutzung digitaler Geräte</h1>
     </div>
 
@@ -126,7 +126,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <p>copyright@2022</p>
   </footer>
 
-  <script type="text/javascript" src="../scripte/start.js">
+  <script type="text/javascript" src="./scripte/start.js">
 
   </script>
 

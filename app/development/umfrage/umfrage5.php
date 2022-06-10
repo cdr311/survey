@@ -163,7 +163,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <label for="thun">Mozilla Thunderbird</label><br />
           <input type="checkbox" name="mailprogramm[]" id="spark" value="8" />
           <label for="spark">Spark</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="gmail" value="GMail" />
+          <input type="checkbox" name="mailprogramm[]" id="gmail" value="6" />
           <label for="gmail">GoogleMail-App</label><br />
           <input type="checkbox" name="mailprogramm[]" id="brow" value="10" />
           <label for="brow">Weboberfläche</label><br />
@@ -187,7 +187,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <label for="pgp">PGP</label><br />
           <input type="radio" name="verschluesselungPrivatMethode" id="smime" value="1" />
           <label for="smime">S/MIME</label><br />
-          <input type="radio" name="verschluesselungPrivatMethode" id="prov" value="Provider" />
+          <input type="radio" name="verschluesselungPrivatMethode" id="prov" value="2" />
           <label for="prov">Spezialisierter E-Mail-Provider</label>
         </section>
       </div>
@@ -207,7 +207,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <label for="pgp">PGP</label><br />
           <input type="radio" name="verschluesselungDienstlichMethode" id="smime" value="1" />
           <label for="smime">S/MIME</label><br />
-          <input type="radio" name="verschluesselungDienstlichMethode" id="prov" value="Provider" />
+          <input type="radio" name="verschluesselungDienstlichMethode" id="prov" value="2" />
           <label for="prov">Spezialisierter E-Mail-Provider</label>
         </section>
       </div>

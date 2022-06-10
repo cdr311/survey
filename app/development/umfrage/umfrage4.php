@@ -199,7 +199,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <label for="and">Android</label><br />
           <input type="radio" name="OSSmartphone" id="iOS" value="4" />
           <label for="iOS">iOS</label><br />
-          <input type="radio" name="OSSmartphone" id="win" value="WindowsPhone" />
+          <input type="radio" name="OSSmartphone" id="win" value="8" />
           <label for="win">Windows Phone</label><br />
           <input type="radio" name="OSSmartphone" id="linux" value="2" />
           <label for="linux">Linux</label>
@@ -214,7 +214,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         <section>
           <input type="radio" name="OSTablet" id="and" value="6" />
           <label for="and">Android</label><br />
-          <input type="radio" name="OSTablet" id="iOS" value="4" />
+          <input type="radio" name="OSTablet" id="iOS" value="5" />
           <label for="iOS">iPadOS</label><br />
           <input type="radio" name="OSTablet" id="linux" value="2" />
           <label for="linux">Linux</label>
@@ -227,11 +227,11 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl5">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem SmartTV?</h2>
         <section>
-          <input type="radio" name="OSSmartTV" id="tiz" value="Tizen" />
+          <input type="radio" name="OSSmartTV" id="tiz" value="9" />
           <label for="tiz">Tizen OS</label><br />
           <input type="radio" name="OSSmartTV" id="andr" value="6" />
           <label for="andr">Android TV</label><br />
-          <input type="radio" name="OSSmartTV" id="fire" value="Firefox" />
+          <input type="radio" name="OSSmartTV" id="fire" value="7" />
           <label for="fire">Firefox OS</label><br />
           <label for="sonst">Sonstige: </label>
           <input type="text" name="OSSmartTVSonstiges" value="" id="sonst" />

@@ -52,7 +52,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <th><a href="../umfrage/umfrage1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
           <th><a href="../infopage/index.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
           <th><a href="../linkpage/index.php" title="Links" class="unter"><span>Links</span></a></th>
-          <th><a href="../startpage/index.php" title="Home" class="unter"><span>Home</span></a></th>
+          <th><a href="../index.php" title="Home" class="unter"><span>Home</span></a></th>
           <th>
             <button onclick="circleklick()" title="Moduswechsel">M</button>
           </th>

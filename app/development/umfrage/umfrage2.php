@@ -159,141 +159,141 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welche der folgenden Geräte haben Sie schon benutzt?</h2>
         <section>
-          <input type="checkbox" name="benutzteGeraete[]" id="pc" value="0" onclick="desktopCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="pc" value="0" onclick="desktopCheck()" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("0", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="pc">Desktop PC</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="laptop" value="1" onclick="laptopCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="laptop" value="1" onclick="laptopCheck()" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("1", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="laptop">Laptop</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="smartp" value="2" onclick="smartphoneCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="smartp" value="2" onclick="smartphoneCheck()" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("2", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="smartp">Smartphone</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="tab" value="3" onclick="tabletCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="tab" value="3" onclick="tabletCheck()" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("3", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="tab">Tablet</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="smartt" value="4" onclick="smarttvCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="smartt" value="4" onclick="smarttvCheck()" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("4", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="smartt">Smart TV</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="smartw" value="5" onclick="smartwatchCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="smartw" value="5" onclick="smartwatchCheck()" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("5", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="smartw">Smartwatch</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="spiel" value="6" onclick="spielekonsoleCheck()"/>
+          <input type="checkbox" name="benutzteGeraete[]" id="spiel" value="6" onclick="spielekonsoleCheck()" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("6", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiel">Spielekonsole</label><br />
         </section>
       </div>
       <div class="auswahl2" id="a2">
         <h2>Für welche Tätigkeiten verwenden Sie ihren Desktop PC?</h2>
         <section>
-          <input type="checkbox" name="taetigkeitenDesktop[]" id="arbeit" value="0" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenDesktop']) && in_array("0", $_SESSION['taetigkeitenDesktop'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="taetigkeitenDesktop[]" id="surfen" value="1" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="surfen" value="1" <?php if(isset($_SESSION['taetigkeitenDesktop']) && in_array("1", $_SESSION['taetigkeitenDesktop'])){echo "checked=\"checked\" ";} ?> />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="taetigkeitenDesktop[]" id="shop" value="2" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="shop" value="2" <?php if(isset($_SESSION['taetigkeitenDesktop']) && in_array("2", $_SESSION['taetigkeitenDesktop'])){echo "checked=\"checked\" ";} ?> />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="taetigkeitenDesktop[]" id="film" value="3" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="film" value="3" <?php if(isset($_SESSION['taetigkeitenDesktop']) && in_array("3", $_SESSION['taetigkeitenDesktop'])){echo "checked=\"checked\" ";} ?> />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="taetigkeitenDesktop[]" id="spiele" value="4" />
+          <input type="checkbox" name="taetigkeitenDesktop[]" id="spiele" value="4" <?php if(isset($_SESSION['taetigkeitenDesktop']) && in_array("4", $_SESSION['taetigkeitenDesktop'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="taetigkeitenDesktopSonstiges" id="anderes" />
+          <input type="text" name="taetigkeitenDesktopSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenDesktopSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenDesktopSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl3" id="a3">
         <h2>Für welche Tätigkeiten verwenden Sie ihren Laptop?</h2>
         <section>
-          <input type="checkbox" name="taetigkeitenLaptop[]" id="arbeit" value="0" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenLaptop']) && in_array("0", $_SESSION['taetigkeitenLaptop'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="taetigkeitenLaptop[]" id="surfen" value="1" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="surfen" value="1" <?php if(isset($_SESSION['taetigkeitenLaptop']) && in_array("1", $_SESSION['taetigkeitenLaptop'])){echo "checked=\"checked\" ";} ?> />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="taetigkeitenLaptop[]" id="shop" value="2" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="shop" value="2" <?php if(isset($_SESSION['taetigkeitenLaptop']) && in_array("2", $_SESSION['taetigkeitenLaptop'])){echo "checked=\"checked\" ";} ?> />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="taetigkeitenLaptop[]" id="film" value="3" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="film" value="3" <?php if(isset($_SESSION['taetigkeitenLaptop']) && in_array("3", $_SESSION['taetigkeitenLaptop'])){echo "checked=\"checked\" ";} ?> />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="taetigkeitenLaptop[]" id="spiele" value="4" />
+          <input type="checkbox" name="taetigkeitenLaptop[]" id="spiele" value="4" <?php if(isset($_SESSION['taetigkeitenLaptop']) && in_array("4", $_SESSION['taetigkeitenLaptop'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="taetigkeitenLaptopSonstiges" id="anderes" />
+          <input type="text" name="taetigkeitenLaptopSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenLaptopSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenLaptopSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl4" id="a4">
         <h2>Für welche Tätigkeiten verwenden Sie ihr Smartphone?</h2>
         <section>
-          <input type="checkbox" name="taetigkeitenSmartphone[]" id="arbeit" value="0" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenSmartphone']) && in_array("0", $_SESSION['taetigkeitenSmartphone'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="taetigkeitenSmartphone[]" id="surfen" value="1" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="surfen" value="1" <?php if(isset($_SESSION['taetigkeitenSmartphone']) && in_array("1", $_SESSION['taetigkeitenSmartphone'])){echo "checked=\"checked\" ";} ?> />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="taetigkeitenSmartphone[]" id="shop" value="2" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="shop" value="2" <?php if(isset($_SESSION['taetigkeitenSmartphone']) && in_array("2", $_SESSION['taetigkeitenSmartphone'])){echo "checked=\"checked\" ";} ?> />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="taetigkeitenSmartphone[]" id="film" value="3" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="film" value="3" <?php if(isset($_SESSION['taetigkeitenSmartphone']) && in_array("3", $_SESSION['taetigkeitenSmartphone'])){echo "checked=\"checked\" ";} ?> />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="taetigkeitenSmartphone[]" id="spiele" value="4" />
+          <input type="checkbox" name="taetigkeitenSmartphone[]" id="spiele" value="4" <?php if(isset($_SESSION['taetigkeitenSmartphone']) && in_array("4", $_SESSION['taetigkeitenSmartphone'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="taetigkeitenSmartphoneSonstiges" id="anderes" />
+          <input type="text" name="taetigkeitenSmartphoneSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenSmartphoneSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenSmartphoneSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl5" id="a5">
         <h2>Für welche Tätigkeiten verwenden Sie ihr Tablet?</h2>
         <section>
-          <input type="checkbox" name="taetigkeitenTablet[]" id="arbeit" value="0" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenTablet']) && in_array("0", $_SESSION['taetigkeitenTablet'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="taetigkeitenTablet[]" id="surfen" value="1" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="surfen" value="1" <?php if(isset($_SESSION['taetigkeitenTablet']) && in_array("1", $_SESSION['taetigkeitenTablet'])){echo "checked=\"checked\" ";} ?> />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="taetigkeitenTablet[]" id="shop" value="2" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="shop" value="2" <?php if(isset($_SESSION['taetigkeitenTablet']) && in_array("2", $_SESSION['taetigkeitenTablet'])){echo "checked=\"checked\" ";} ?> />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="taetigkeitenTablet[]" id="film" value="3" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="film" value="3" <?php if(isset($_SESSION['taetigkeitenTablet']) && in_array("3", $_SESSION['taetigkeitenTablet'])){echo "checked=\"checked\" ";} ?> />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="taetigkeitenTablet[]" id="spiele" value="4" />
+          <input type="checkbox" name="taetigkeitenTablet[]" id="spiele" value="4" <?php if(isset($_SESSION['taetigkeitenTablet']) && in_array("4", $_SESSION['taetigkeitenTablet'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="taetigkeitenTabletSonstiges" id="anderes" />
+          <input type="text" name="taetigkeitenTabletSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenTabletSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenTabletSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl6"id="a6">
         <h2>Für welche Tätigkeiten verwenden Sie ihren Smart TV?</h2>
         <section>
-          <input type="checkbox" name="taetigkeitenSmartTV[]" id="arbeit" value="0" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenSmartTV']) && in_array("0", $_SESSION['taetigkeitenSmartTV'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="taetigkeitenSmartTV[]" id="surfen" value="1" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="surfen" value="1" <?php if(isset($_SESSION['taetigkeitenSmartTV']) && in_array("1", $_SESSION['taetigkeitenSmartTV'])){echo "checked=\"checked\" ";} ?> />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="taetigkeitenSmartTV[]" id="shop" value="2" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="shop" value="2" <?php if(isset($_SESSION['taetigkeitenSmartTV']) && in_array("2", $_SESSION['taetigkeitenSmartTV'])){echo "checked=\"checked\" ";} ?> />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="taetigkeitenSmartTV[]" id="film" value="3" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="film" value="3" <?php if(isset($_SESSION['taetigkeitenSmartTV']) && in_array("3", $_SESSION['taetigkeitenSmartTV'])){echo "checked=\"checked\" ";} ?> />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="taetigkeitenSmartTV[]" id="spiele" value="4" />
+          <input type="checkbox" name="taetigkeitenSmartTV[]" id="spiele" value="4" <?php if(isset($_SESSION['taetigkeitenSmartTV']) && in_array("4", $_SESSION['taetigkeitenSmartTV'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="taetigkeitenSmartTVSonstiges" id="anderes" />
+          <input type="text" name="taetigkeitenSmartTVSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenSmartTVSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenSmartTVSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl7" id="a7">
         <h2>Für welche Tätigkeiten verwenden Sie ihre Smartwatch?</h2>
         <section>
-          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="arbeit" value="0" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenSmartwatch']) && in_array("0", $_SESSION['taetigkeitenSmartwatch'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="surfen" value="1" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="surfen" value="1" <?php if(isset($_SESSION['taetigkeitenSmartwatch']) && in_array("1", $_SESSION['taetigkeitenSmartwatch'])){echo "checked=\"checked\" ";} ?> />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="shop" value="2" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="shop" value="2" <?php if(isset($_SESSION['taetigkeitenSmartwatch']) && in_array("2", $_SESSION['taetigkeitenSmartwatch'])){echo "checked=\"checked\" ";} ?> />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="film" value="3" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="film" value="3" <?php if(isset($_SESSION['taetigkeitenSmartwatch']) && in_array("3", $_SESSION['taetigkeitenSmartwatch'])){echo "checked=\"checked\" ";} ?> />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="spiele" value="4" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="spiele" value="4" <?php if(isset($_SESSION['taetigkeitenSmartwatch']) && in_array("4", $_SESSION['taetigkeitenSmartwatch'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiele">Spiele spielen</label><br />
-          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="gesund" value="5" />
+          <input type="checkbox" name="taetigkeitenSmartwatch[]" id="gesund" value="5" <?php if(isset($_SESSION['taetigkeitenSmartwatch']) && in_array("5", $_SESSION['taetigkeitenSmartwatch'])){echo "checked=\"checked\" ";} ?> />
           <label for="gesund">Körperwerte kontollieren</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="taetigkeitenSmartwatchSonstiges" id="anderes" />
+          <input type="text" name="taetigkeitenSmartwatchSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenSmartwatchSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenSmartwatchSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl8" id="a8">
         <h2>Für welche Tätigkeiten verwenden Sie ihre Spielekonsole?</h2>
         <section>
-          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="arbeit" value="0" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenSpielekonsole']) && in_array("0", $_SESSION['taetigkeitenSpielekonsole'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
-          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="surfen" value="1" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="surfen" value="1" <?php if(isset($_SESSION['taetigkeitenSpielekonsole']) && in_array("1", $_SESSION['taetigkeitenSpielekonsole'])){echo "checked=\"checked\" ";} ?> />
           <label for="surfen">Surfen im Internet</label><br />
-          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="shop" value="2" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="shop" value="2" <?php if(isset($_SESSION['taetigkeitenSpielekonsole']) && in_array("2", $_SESSION['taetigkeitenSpielekonsole'])){echo "checked=\"checked\" ";} ?> />
           <label for="shop">Online Shopping</label><br />
-          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="film" value="3" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="film" value="3" <?php if(isset($_SESSION['taetigkeitenSpielekonsole']) && in_array("3", $_SESSION['taetigkeitenSpielekonsole'])){echo "checked=\"checked\" ";} ?> />
           <label for="film">Videos/Filme/Serien schauen</label><br />
-          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="spiele" value="4" />
+          <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="spiele" value="4" <?php if(isset($_SESSION['taetigkeitenSpielekonsole']) && in_array("4", $_SESSION['taetigkeitenSpielekonsole'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiele">Spiele spielen</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
-          <input type="text" name="taetigkeitenSpielekonsoleSonstiges" id="anderes" />
+          <input type="text" name="taetigkeitenSpielekonsoleSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenSpielekonsoleSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenSpielekonsoleSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="vorher">

@@ -157,126 +157,126 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1" id="aus1">
         <h2>Wie viel Stunden benutzen Sie ihren Desktop PC pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitDesktop" id="zwei" value="0" />
+          <input type="radio" name="nutzungszeitDesktop" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitDesktop']) && $_SESSION['nutzungszeitDesktop'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
              unter 1</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="vier" value="1" />
+              <input type="radio" name="nutzungszeitDesktop" id="vier" value="1" <?php if(isset($_SESSION['nutzungszeitDesktop']) && $_SESSION['nutzungszeitDesktop'] == "1"){echo "checked=\"checked\" ";} ?> />
               <label for="vier">1-3</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="acht" value="2" />
+              <input type="radio" name="nutzungszeitDesktop" id="acht" value="2" <?php if(isset($_SESSION['nutzungszeitDesktop']) && $_SESSION['nutzungszeitDesktop'] == "2"){echo "checked=\"checked\" ";} ?> />
               <label for="acht">3-5</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="zwoe" value="3" />
+              <input type="radio" name="nutzungszeitDesktop" id="zwoe" value="3" <?php if(isset($_SESSION['nutzungszeitDesktop']) && $_SESSION['nutzungszeitDesktop'] == "3"){echo "checked=\"checked\" ";} ?> />
               <label for="zwoe">5-7</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="sechs" value="4" />
+              <input type="radio" name="nutzungszeitDesktop" id="sechs" value="4" <?php if(isset($_SESSION['nutzungszeitDesktop']) && $_SESSION['nutzungszeitDesktop'] == "4"){echo "checked=\"checked\" ";} ?> />
               <label for="sechs">7-8</label><br />
-              <input type="radio" name="nutzungszeitDesktop" id="lang" value="5" />
+              <input type="radio" name="nutzungszeitDesktop" id="lang" value="5" <?php if(isset($_SESSION['nutzungszeitDesktop']) && $_SESSION['nutzungszeitDesktop'] == "5"){echo "checked=\"checked\" ";} ?> />
               <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl2" id="aus2">
         <h2>Wie viel Stunden benutzen Sie ihren Laptop pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitLaptop" id="zwei" value="0" />
+          <input type="radio" name="nutzungszeitLaptop" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitLaptop']) && $_SESSION['nutzungszeitLaptop'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
             unter 1</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="vier" value="1" />
+              <input type="radio" name="nutzungszeitLaptop" id="vier" value="1" <?php if(isset($_SESSION['nutzungszeitLaptop']) && $_SESSION['nutzungszeitLaptop'] == "1"){echo "checked=\"checked\" ";} ?> />
               <label for="vier">1-3</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="acht" value="2" />
+              <input type="radio" name="nutzungszeitLaptop" id="acht" value="2" <?php if(isset($_SESSION['nutzungszeitLaptop']) && $_SESSION['nutzungszeitLaptop'] == "2"){echo "checked=\"checked\" ";} ?> />
               <label for="acht">3-5</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="zwoe" value="3" />
+              <input type="radio" name="nutzungszeitLaptop" id="zwoe" value="3" <?php if(isset($_SESSION['nutzungszeitLaptop']) && $_SESSION['nutzungszeitLaptop'] == "3"){echo "checked=\"checked\" ";} ?> />
               <label for="zwoe">5-7</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="sechs" value="4" />
+              <input type="radio" name="nutzungszeitLaptop" id="sechs" value="4" <?php if(isset($_SESSION['nutzungszeitLaptop']) && $_SESSION['nutzungszeitLaptop'] == "4"){echo "checked=\"checked\" ";} ?> />
               <label for="sechs">7-8</label><br />
-              <input type="radio" name="nutzungszeitLaptop" id="lang" value="5" />
+              <input type="radio" name="nutzungszeitLaptop" id="lang" value="5" <?php if(isset($_SESSION['nutzungszeitLaptop']) && $_SESSION['nutzungszeitLaptop'] == "5"){echo "checked=\"checked\" ";} ?> />
               <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl3" id="aus3">
         <h2>Wie viel Stunden benutzen Sie ihr Smartphone pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitSmartphone" id="zwei" value="0" />
+          <input type="radio" name="nutzungszeitSmartphone" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitSmartphone']) && $_SESSION['nutzungszeitSmartphone'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
             unter 1</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="vier" value="1" />
+              <input type="radio" name="nutzungszeitSmartphone" id="vier" value="1" <?php if(isset($_SESSION['nutzungszeitSmartphone']) && $_SESSION['nutzungszeitSmartphone'] == "1"){echo "checked=\"checked\" ";} ?> />
               <label for="vier">1-3</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="acht" value="2" />
+              <input type="radio" name="nutzungszeitSmartphone" id="acht" value="2" <?php if(isset($_SESSION['nutzungszeitSmartphone']) && $_SESSION['nutzungszeitSmartphone'] == "2"){echo "checked=\"checked\" ";} ?> />
               <label for="acht">3-5</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="zwoe" value="3" />
+              <input type="radio" name="nutzungszeitSmartphone" id="zwoe" value="3" <?php if(isset($_SESSION['nutzungszeitSmartphone']) && $_SESSION['nutzungszeitSmartphone'] == "3"){echo "checked=\"checked\" ";} ?> />
               <label for="zwoe">5-7</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="sechs" value="4" />
+              <input type="radio" name="nutzungszeitSmartphone" id="sechs" value="4" <?php if(isset($_SESSION['nutzungszeitSmartphone']) && $_SESSION['nutzungszeitSmartphone'] == "4"){echo "checked=\"checked\" ";} ?> />
               <label for="sechs">7-8</label><br />
-              <input type="radio" name="nutzungszeitSmartphone" id="lang" value="5" />
+              <input type="radio" name="nutzungszeitSmartphone" id="lang" value="5" <?php if(isset($_SESSION['nutzungszeitSmartphone']) && $_SESSION['nutzungszeitSmartphone'] == "5"){echo "checked=\"checked\" ";} ?> />
               <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl4"  id="aus4">
         <h2>Wie viel Stunden benutzen Sie ihr Tablet pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitTablet" id="zwei" value="0" />
+          <input type="radio" name="nutzungszeitTablet" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitTablet']) && $_SESSION['nutzungszeitTablet'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
             unter 1</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="vier" value="1" />
+              <input type="radio" name="nutzungszeitTablet" id="vier" value="1" <?php if(isset($_SESSION['nutzungszeitTablet']) && $_SESSION['nutzungszeitTablet'] == "1"){echo "checked=\"checked\" ";} ?> />
               <label for="vier">1-3</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="acht" value="2" />
+              <input type="radio" name="nutzungszeitTablet" id="acht" value="2" <?php if(isset($_SESSION['nutzungszeitTablet']) && $_SESSION['nutzungszeitTablet'] == "2"){echo "checked=\"checked\" ";} ?> />
               <label for="acht">3-5</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="zwoe" value="3" />
+              <input type="radio" name="nutzungszeitTablet" id="zwoe" value="3" <?php if(isset($_SESSION['nutzungszeitTablet']) && $_SESSION['nutzungszeitTablet'] == "3"){echo "checked=\"checked\" ";} ?> />
               <label for="zwoe">5-7</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="sechs" value="4" />
+              <input type="radio" name="nutzungszeitTablet" id="sechs" value="4" <?php if(isset($_SESSION['nutzungszeitTablet']) && $_SESSION['nutzungszeitTablet'] == "4"){echo "checked=\"checked\" ";} ?> />
               <label for="sechs">7-8</label><br />
-              <input type="radio" name="nutzungszeitTablet" id="lang" value="5" />
+              <input type="radio" name="nutzungszeitTablet" id="lang" value="5" <?php if(isset($_SESSION['nutzungszeitTablet']) && $_SESSION['nutzungszeitTablet'] == "5"){echo "checked=\"checked\" ";} ?> />
               <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl5"  id="aus5">
         <h2>Wie viel Stunden benutzen Sie ihren SmartTV pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitSmartTV" id="zwei" value="0" />
+          <input type="radio" name="nutzungszeitSmartTV" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitSmartTV']) && $_SESSION['nutzungszeitSmartTV'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
             unter 1</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="vier" value="1" />
+              <input type="radio" name="nutzungszeitSmartTV" id="vier" value="1" <?php if(isset($_SESSION['nutzungszeitSmartTV']) && $_SESSION['nutzungszeitSmartTV'] == "1"){echo "checked=\"checked\" ";} ?> />
               <label for="vier">1-3</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="acht" value="2" />
+              <input type="radio" name="nutzungszeitSmartTV" id="acht" value="2" <?php if(isset($_SESSION['nutzungszeitSmartTV']) && $_SESSION['nutzungszeitSmartTV'] == "2"){echo "checked=\"checked\" ";} ?> />
               <label for="acht">3-5</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="zwoe" value="3" />
+              <input type="radio" name="nutzungszeitSmartTV" id="zwoe" value="3" <?php if(isset($_SESSION['nutzungszeitSmartTV']) && $_SESSION['nutzungszeitSmartTV'] == "3"){echo "checked=\"checked\" ";} ?> />
               <label for="zwoe">5-7</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="sechs" value="4" />
+              <input type="radio" name="nutzungszeitSmartTV" id="sechs" value="4" <?php if(isset($_SESSION['nutzungszeitSmartTV']) && $_SESSION['nutzungszeitSmartTV'] == "4"){echo "checked=\"checked\" ";} ?> />
               <label for="sechs">7-8</label><br />
-              <input type="radio" name="nutzungszeitSmartTV" id="lang" value="5" />
+              <input type="radio" name="nutzungszeitSmartTV" id="lang" value="5" <?php if(isset($_SESSION['nutzungszeitSmartTV']) && $_SESSION['nutzungszeitSmartTV'] == "5"){echo "checked=\"checked\" ";} ?> />
               <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl6" id="aus6">
         <h2>Wie viel Stunden benutzen Sie ihre Smartwatch pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitSmartwatch" id="zwei" value="0" />
+          <input type="radio" name="nutzungszeitSmartwatch" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitSmartwatch']) && $_SESSION['nutzungszeitSmartwatch'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
             unter 1</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="vier" value="1" />
+              <input type="radio" name="nutzungszeitSmartwatch" id="vier" value="1" <?php if(isset($_SESSION['nutzungszeitSmartwatch']) && $_SESSION['nutzungszeitSmartwatch'] == "1"){echo "checked=\"checked\" ";} ?> />
               <label for="vier">1-3</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="acht" value="2" />
+              <input type="radio" name="nutzungszeitSmartwatch" id="acht" value="2" <?php if(isset($_SESSION['nutzungszeitSmartwatch']) && $_SESSION['nutzungszeitSmartwatch'] == "2"){echo "checked=\"checked\" ";} ?> />
               <label for="acht">3-5</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="zwoe" value="3" />
+              <input type="radio" name="nutzungszeitSmartwatch" id="zwoe" value="3" <?php if(isset($_SESSION['nutzungszeitSmartwatch']) && $_SESSION['nutzungszeitSmartwatch'] == "3"){echo "checked=\"checked\" ";} ?> />
               <label for="zwoe">5-7</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="sechs" value="4" />
+              <input type="radio" name="nutzungszeitSmartwatch" id="sechs" value="4" <?php if(isset($_SESSION['nutzungszeitSmartwatch']) && $_SESSION['nutzungszeitSmartwatch'] == "4"){echo "checked=\"checked\" ";} ?> />
               <label for="sechs">7-8</label><br />
-              <input type="radio" name="nutzungszeitSmartwatch" id="lang" value="5" />
+              <input type="radio" name="nutzungszeitSmartwatch" id="lang" value="5" <?php if(isset($_SESSION['nutzungszeitSmartwatch']) && $_SESSION['nutzungszeitSmartwatch'] == "5"){echo "checked=\"checked\" ";} ?> />
               <label for="lang">über 8</label>
         </section>
       </div>
       <div class="auswahl7"  id="aus7">
         <h2>Wie viel Stunden benutzen Sie ihre Spielekonsole pro Tag?</h2>
         <section>
-          <input type="radio" name="nutzungszeitSpielekonsole" id="zwei" value="0" />
+          <input type="radio" name="nutzungszeitSpielekonsole" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitSpielekonsole']) && $_SESSION['nutzungszeitSpielekonsole'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
             unter 1</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="vier" value="1" />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="vier" value="1" <?php if(isset($_SESSION['nutzungszeitSpielekonsole']) && $_SESSION['nutzungszeitSpielekonsole'] == "1"){echo "checked=\"checked\" ";} ?> />
               <label for="vier">1-3</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="acht" value="2" />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="acht" value="2" <?php if(isset($_SESSION['nutzungszeitSpielekonsole']) && $_SESSION['nutzungszeitSpielekonsole'] == "2"){echo "checked=\"checked\" ";} ?> />
               <label for="acht">3-5</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="zwoe" value="3" />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="zwoe" value="3" <?php if(isset($_SESSION['nutzungszeitSpielekonsole']) && $_SESSION['nutzungszeitSpielekonsole'] == "3"){echo "checked=\"checked\" ";} ?> />
               <label for="zwoe">5-7</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="sechs" value="4" />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="sechs" value="4" <?php if(isset($_SESSION['nutzungszeitSpielekonsole']) && $_SESSION['nutzungszeitSpielekonsole'] == "4"){echo "checked=\"checked\" ";} ?> />
               <label for="sechs">7-8</label><br />
-              <input type="radio" name="nutzungszeitSpielekonsole" id="lang" value="5" />
+              <input type="radio" name="nutzungszeitSpielekonsole" id="lang" value="5" <?php if(isset($_SESSION['nutzungszeitSpielekonsole']) && $_SESSION['nutzungszeitSpielekonsole'] == "5"){echo "checked=\"checked\" ";} ?> />
               <label for="lang">über 8</label>
         </section>
       </div>

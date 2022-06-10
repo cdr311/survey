@@ -3,6 +3,7 @@
 require_once '../phpfunctions/sessionfunctions.php';
 
 session_start();
+saveIntoSessionVariablesPage1();
 printSessionVariables();
 
 ?>

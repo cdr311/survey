@@ -21,8 +21,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten" />
 
-  <link rel="stylesheet" href="../stylesheets/start.css" />
-  <link rel="icon" type="image/x-icon" href="../images/favicon.svg"/>
+  <link rel="stylesheet" href="./stylesheets/start.css" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.svg"/>
   <!-- Die Emoji-Grafik (https://github.com/twitter/twemoji/blob/master/assets/svg/1f4cb.svg) stammt vom Projekt Twemoji (https://twemoji.twitter.com/). Sie ist Copyright von Twitter und anderen Mitwirkenden und unter der CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) lizensiert. Es wurden keine Veränderungen am Material vorgenommen. -->
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
@@ -107,7 +107,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 
     <button class="zugeordnet">Wer will das wissen?</button>
     <div class="panel">
-      <p>Wenn Sie genauere Details über die Entwickler erfahren wollen, dann schauen Sie beim Info Tab vorbei oder klicken Sie <a href="../infopage/index.php" title="Über Uns" alt="Infopage">hier</a>.</p>
+      <p>Wenn Sie genauere Details über die Entwickler erfahren wollen, dann schauen Sie beim Info Tab vorbei oder klicken Sie <a href="./infopage/index.php" title="Über Uns" alt="Infopage">hier</a>.</p>
     </div>
     <button class="zugeordnet">Ist die Umfrage anonym?</button>
     <div class="panel">
@@ -121,9 +121,9 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   </aside>
 
   <footer class="mittig" id="footing">
-    <p>Die Gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
-    <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a>verwendet.</p>
-    <p>copyright@2022</p>
+    <p>Die gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
+    <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a> verwendet.</p>
+    <p>Copyright ©2022</p>
   </footer>
 
   <script type="text/javascript" src="./scripte/start.js">

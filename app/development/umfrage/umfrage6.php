@@ -184,9 +184,9 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   </main>
 
   <footer class="mittig">
-    <p>Die Gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
-    <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a>verwendet.</p>
-    <p>copyright@2022</p>
+    <p>Die gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
+    <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a> verwendet.</p>
+    <p>Copyright ©2022</p>
   </footer>
   <script type="text/javascript" src="../scripte/umfrage.js">
   </script>

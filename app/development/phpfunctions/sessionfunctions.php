@@ -248,34 +248,37 @@ function saveFromPostIntoSessionFromPage1(){
 
 }
 
+function saveFromPostIntoSessionCheckbox($checkboxId){
+
+  //keine Checkbox ausgewählt
+  // if(isset($_SESSION[$checkboxId]) && !isset($_POST[$checkboxId])){
+  //   unset($_SESSION[$checkboxId]);
+  //   echo "reset";
+  // }
+
+  //Checkboxauswahl hat sich geandert
+  if(isset($_POST[$checkboxId])){
+    unset($_SESSION[$checkboxId]);//Array leeren (wenn Checkbox abgewaehlt wird)
+    $_SESSION[$checkboxId] = $_POST[$checkboxId];
+  }
+}
+
 function saveFromPostIntoSessionFromPage2(){
 
   //Eigegeben auf Seite 2
-  if(isset($_POST['benutzteGeraete'])){
-    $_SESSION['benutzteGeraete'] = $_POST['benutzteGeraete'];
-  }
-  if(isset($_POST['taetigkeitenDesktop'])){
-  $_SESSION['taetigkeitenDesktop'] = $_POST['taetigkeitenDesktop'];
-  }
-  if(isset($_POST['taetigkeitenLaptop'])){
-  $_SESSION['taetigkeitenLaptop'] = $_POST['taetigkeitenLaptop'];
-  }
-  if(isset($_POST['taetigkeitenSmartphone'])){
-  $_SESSION['taetigkeitenSmartphone'] = $_POST['taetigkeitenSmartphone'];
-  }
-  if(isset($_POST['taetigkeitenTablet'])){
-  $_SESSION['taetigkeitenTablet'] = $_POST['taetigkeitenTablet'];
-  }
-  if(isset($_POST['taetigkeitenSmartTV'])){
-  $_SESSION['taetigkeitenSmartTV'] = $_POST['taetigkeitenSmartTV'];
-  }
-  if(isset($_POST['taetigkeitenSmartwatch'])){
-  $_SESSION['taetigkeitenSmartwatch'] = $_POST['taetigkeitenSmartwatch'];
-  }
-  if(isset($_POST['taetigkeitenSpielekonsole'])){
-  $_SESSION['taetigkeitenSpielekonsole'] = $_POST['taetigkeitenSpielekonsole'];
-  }
+  saveFromPostIntoSessionCheckbox('benutzteGeraete');
+  saveFromPostIntoSessionCheckbox('taetigkeitenDesktop');
+  saveFromPostIntoSessionCheckbox('taetigkeitenLaptop');
+  saveFromPostIntoSessionCheckbox('taetigkeitenSmartphone');
+  saveFromPostIntoSessionCheckbox('taetigkeitenTablet');
+  saveFromPostIntoSessionCheckbox('taetigkeitenSmartTV');
+  saveFromPostIntoSessionCheckbox('taetigkeitenSmartwatch');
+  saveFromPostIntoSessionCheckbox('taetigkeitenSpielekonsole');
 
+  //Sonstiges Textfelder
+  if(isset($_POST['taetigkeitenDesktopSonstiges'])){
+  $_SESSION['taetigkeitenDesktopSonstiges'] = $_POST['taetigkeitenDesktopSonstiges'];
+  }
 }
 
 function saveFromPostIntoSessionFromPage3(){
@@ -335,9 +338,7 @@ function saveFromPostIntoSessionFromPage4(){
 function saveFromPostIntoSessionFromPage5(){
 
   //Eigegeben auf Seite 5
-  if(isset($_POST['mailprogramm'])){
-  $_SESSION['mailprogramm'] = $_POST['mailprogramm'];
-  }
+  saveFromPostIntoSessionCheckbox('mailprogramm');
   if(isset($_POST['verschluesselungPrivat'])){
   $_SESSION['verschluesselungPrivat'] = $_POST['verschluesselungPrivat'];
   }

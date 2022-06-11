@@ -157,21 +157,21 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Wie würden Sie diese Umfrage bewerten?</h2>
         <section>
-          <input type="radio" name="bewertung" id="sgut" value="0" />
+          <input type="radio" name="bewertung" id="sgut" value="0" <?php if(isset($_SESSION['bewertung']) && $_SESSION['bewertung'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="sgut">sehr gut</label>
-          <input type="radio" name="bewertung" id="gut" value="1" />
+          <input type="radio" name="bewertung" id="gut" value="1" <?php if(isset($_SESSION['bewertung']) && $_SESSION['bewertung'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="gut">gut</label>
-          <input type="radio" name="bewertung" id="befr" value="2" />
+          <input type="radio" name="bewertung" id="befr" value="2" <?php if(isset($_SESSION['bewertung']) && $_SESSION['bewertung'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="befr">befriedigend</label>
-          <input type="radio" name="bewertung" id="schl" value="3" />
+          <input type="radio" name="bewertung" id="schl" value="3" <?php if(isset($_SESSION['bewertung']) && $_SESSION['bewertung'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="schl">schlecht</label>
-          <input type="radio" name="bewertung" id="unbr" value="4" />
+          <input type="radio" name="bewertung" id="unbr" value="4" <?php if(isset($_SESSION['bewertung']) && $_SESSION['bewertung'] == "4"){echo "checked=\"checked\" ";} ?> />
           <label for="unbr">unbrauchbar</label>
         </section>
       </div>
       <div class="auswahl2">
         <h2>Wir würden uns über Ihr Feedback freuen:</h2>
-        <textarea name="feedbackText" rows="20%" cols="90%" id="texteingabe" onclick="eingabeText()">Feedback</textarea>
+        <textarea name="feedbackText" rows="20%" cols="90%" id="texteingabe" onclick="eingabeText()" <?php if(isset($_SESSION['feedbackText']) ){echo 'value="'.$_SESSION['feedbackText'].'"';} ?> >Feedback</textarea>
       </div>
       <div class="vorher">
         <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage5.php', 'form6')">Vorherige Seite</button>

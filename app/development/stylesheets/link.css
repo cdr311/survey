@@ -173,6 +173,23 @@ span {
     top:95%;
   }
 }
+@media screen and (max-width: 800px) {
+  main{
+    top: 12%;
+    height: 80%;
+  }
+  .genauer1{
+    height: 30%;
+    top: 28%;
+  }
+  .genauer2{
+    top:65%;
+    height: 26%;
+  }
+  footer{
+    top:140%;
+  }
+}
 @media screen and (max-height: 600px) {
   main{
     height: 65%;
@@ -187,5 +204,39 @@ span {
   }
   footer{
     top:100%;
+  }
+}
+@media screen and (max-height: 450px) {
+  main{
+    top: 12%;
+    height: 80%;
+  }
+  .genauer1{
+    height: 30%;
+    top: 28%;
+  }
+  .genauer2{
+    top:65%;
+    height: 26%;
+  }
+  footer{
+    top:140%;
+  }
+}
+@media screen and (max-height: 800px) and (max-height:600px) {
+  main{
+    top: 12%;
+    height: 85%;
+  }
+  .genauer1{
+    height: 40%;
+    top: 28%;
+  }
+  .genauer2{
+    top:75%;
+    height: 30%;
+  }
+  footer{
+    top:150%;
   }
 }

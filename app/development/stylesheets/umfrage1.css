@@ -143,7 +143,6 @@ div.naechste{
 }
 .dropdownfeld{
   height: 20px;
-  weight: 50px;
   font-size: 17px;
 }
 label{
@@ -155,8 +154,6 @@ section.breite{
 }
 section.links{
   float: left;
-}
-section.mitte{
 }
 section.rechts{
   float: right;

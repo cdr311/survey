@@ -157,107 +157,107 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem Desktop PC?</h2>
         <section>
-          <input type="radio" name="OSDesktop" id="win" value="0" />
+          <input type="radio" name="OSDesktop" id="win" value="0" <?php if(isset($_SESSION['OSDesktop']) && $_SESSION['OSDesktop'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="bs">Windows</label><br />
-          <input type="radio" name="OSDesktop" id="mac" value="1" />
+          <input type="radio" name="OSDesktop" id="mac" value="1" <?php if(isset($_SESSION['OSDesktop']) && $_SESSION['OSDesktop'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="mac">macOS</label><br />
-          <input type="radio" name="OSDesktop" id="linux" value="2" />
+          <input type="radio" name="OSDesktop" id="linux" value="2" <?php if(isset($_SESSION['OSDesktop']) && $_SESSION['OSDesktop'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="linux">Linux -></label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="OSDesktopLinuxDistroText" value="" id="distri" /> <br />
-          <input type="radio" name="OSDesktop" id="bsd" value="3" />
+          <input type="text" name="OSDesktopLinuxDistroText" value="" id="distri" <?php if(isset($_SESSION['OSDesktopLinuxDistroText']) ){echo 'value="'.$_SESSION['OSDesktopLinuxDistroText'].'"';} ?> /> <br />
+          <input type="radio" name="OSDesktop" id="bsd" value="3" <?php if(isset($_SESSION['OSDesktop']) && $_SESSION['OSDesktop'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="bsd">BSD-Variante -></label>
           <label for="varia">Variante: </label>
-          <input type="text" name="OSDesktopBSDVariante" value="" id="varia" /> <br />
+          <input type="text" name="OSDesktopBSDVariante" value="" id="varia" <?php if(isset($_SESSION['OSDesktopBSDVariante']) ){echo 'value="'.$_SESSION['OSDesktopBSDVariante'].'"';} ?> /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSDesktopSonstiges" value="" id="sonst" />
+          <input type="text" name="OSDesktopSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSDesktopSonstiges']) ){echo 'value="'.$_SESSION['OSDesktopSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl2">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem Laptop?</h2>
         <section>
-          <input type="radio" name="OSLaptop" id="win" value="0" />
+          <input type="radio" name="OSLaptop" id="win" value="0" <?php if(isset($_SESSION['OSLaptop']) && $_SESSION['OSLaptop'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="bs">Windows</label><br />
-          <input type="radio" name="OSLaptop" id="mac" value="1" />
+          <input type="radio" name="OSLaptop" id="mac" value="1" <?php if(isset($_SESSION['OSLaptop']) && $_SESSION['OSLaptop'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="mac">macOS</label><br />
-          <input type="radio" name="OSLaptop" id="linux" value="2" />
+          <input type="radio" name="OSLaptop" id="linux" value="2" <?php if(isset($_SESSION['OSLaptop']) && $_SESSION['OSLaptop'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="linux">Linux -></label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="OSLaptopLinuxDistroText" value="" id="distri" /> <br />
-          <input type="radio" name="OSLaptop" id="bsd" value="3" />
+          <input type="text" name="OSLaptopLinuxDistroText" value="" id="distri" <?php if(isset($_SESSION['OSLaptopLinuxDistroText']) ){echo 'value="'.$_SESSION['OSLaptopLinuxDistroText'].'"';} ?> /> <br />
+          <input type="radio" name="OSLaptop" id="bsd" value="3" <?php if(isset($_SESSION['OSLaptop']) && $_SESSION['OSLaptop'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="bsd">BSD-Variante -></label>
           <label for="varia">Variante: </label>
-          <input type="text" name="OSLaptopBSDVariante" value="" id="varia" /> <br />
+          <input type="text" name="OSLaptopBSDVariante" value="" id="varia" <?php if(isset($_SESSION['OSLaptopBSDVariante']) ){echo 'value="'.$_SESSION['OSLaptopBSDVariante'].'"';} ?> /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSLaptopSonstiges" value="" id="sonst" />
+          <input type="text" name="OSLaptopSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSLaptopSonstiges']) ){echo 'value="'.$_SESSION['OSLaptopSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl3">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem Smartphone?</h2>
         <section>
-          <input type="radio" name="OSSmartphone" id="and" value="6" />
+          <input type="radio" name="OSSmartphone" id="and" value="6" <?php if(isset($_SESSION['OSSmartphone']) && $_SESSION['OSSmartphone'] == "6"){echo "checked=\"checked\" ";} ?> />
           <label for="and">Android</label><br />
-          <input type="radio" name="OSSmartphone" id="iOS" value="4" />
+          <input type="radio" name="OSSmartphone" id="iOS" value="4" <?php if(isset($_SESSION['OSSmartphone']) && $_SESSION['OSSmartphone'] == "4"){echo "checked=\"checked\" ";} ?> />
           <label for="iOS">iOS</label><br />
-          <input type="radio" name="OSSmartphone" id="win" value="8" />
+          <input type="radio" name="OSSmartphone" id="win" value="8" <?php if(isset($_SESSION['OSSmartphone']) && $_SESSION['OSSmartphone'] == "8"){echo "checked=\"checked\" ";} ?> />
           <label for="win">Windows Phone</label><br />
-          <input type="radio" name="OSSmartphone" id="linux" value="2" />
+          <input type="radio" name="OSSmartphone" id="linux" value="2" <?php if(isset($_SESSION['OSSmartphone']) && $_SESSION['OSSmartphone'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="linux">Linux</label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="OSSmartphoneLinuxDistroText" value="" id="distri" /> <br />
+          <input type="text" name="OSSmartphoneLinuxDistroText" value="" id="distri" <?php if(isset($_SESSION['OSSmartphoneLinuxDistroText']) ){echo 'value="'.$_SESSION['OSSmartphoneLinuxDistroText'].'"';} ?> /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSSmartphoneSonstiges" value="" id="sonst" />
+          <input type="text" name="OSSmartphoneSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSSmartphoneSonstiges']) ){echo 'value="'.$_SESSION['OSSmartphoneSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl4">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem Tablet?</h2>
         <section>
-          <input type="radio" name="OSTablet" id="and" value="6" />
+          <input type="radio" name="OSTablet" id="and" value="6" <?php if(isset($_SESSION['OSTablet']) && $_SESSION['OSTablet'] == "6"){echo "checked=\"checked\" ";} ?> />
           <label for="and">Android</label><br />
-          <input type="radio" name="OSTablet" id="iOS" value="5" />
+          <input type="radio" name="OSTablet" id="iOS" value="5" <?php if(isset($_SESSION['OSTablet']) && $_SESSION['OSTablet'] == "5"){echo "checked=\"checked\" ";} ?> />
           <label for="iOS">iPadOS</label><br />
-          <input type="radio" name="OSTablet" id="linux" value="2" />
+          <input type="radio" name="OSTablet" id="linux" value="2" <?php if(isset($_SESSION['OSTablet']) && $_SESSION['OSTablet'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="linux">Linux</label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="OSTabletLinuxDistroText" value="" id="distri" /> <br />
+          <input type="text" name="OSTabletLinuxDistroText" value="" id="distri" <?php if(isset($_SESSION['OSTabletLinuxDistroText']) ){echo 'value="'.$_SESSION['OSTabletLinuxDistroText'].'"';} ?> /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSTabletSonstiges" value="" id="sonst" />
+          <input type="text" name="OSTabletSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSTabletSonstiges']) ){echo 'value="'.$_SESSION['OSTabletSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl5">
         <h2>Welches Betriebssystem benutzen Sie auf ihrem SmartTV?</h2>
         <section>
-          <input type="radio" name="OSSmartTV" id="tiz" value="9" />
+          <input type="radio" name="OSSmartTV" id="tiz" value="9" <?php if(isset($_SESSION['OSSmartTV']) && $_SESSION['OSSmartTV'] == "9"){echo "checked=\"checked\" ";} ?> />
           <label for="tiz">Tizen OS</label><br />
-          <input type="radio" name="OSSmartTV" id="andr" value="6" />
+          <input type="radio" name="OSSmartTV" id="andr" value="6" <?php if(isset($_SESSION['OSSmartTV']) && $_SESSION['OSSmartTV'] == "6"){echo "checked=\"checked\" ";} ?> />
           <label for="andr">Android TV</label><br />
-          <input type="radio" name="OSSmartTV" id="fire" value="7" />
+          <input type="radio" name="OSSmartTV" id="fire" value="7" <?php if(isset($_SESSION['OSSmartTV']) && $_SESSION['OSSmartTV'] == "7"){echo "checked=\"checked\" ";} ?> />
           <label for="fire">Firefox OS</label><br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSSmartTVSonstiges" value="" id="sonst" />
+          <input type="text" name="OSSmartTVSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSSmartTVSonstiges']) ){echo 'value="'.$_SESSION['OSSmartTVSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl6">
         <h2>Welche Browser benutzen Sie?</h2>
         <section>
-          <input type="radio" name="Browser" id="edge" value="3" />
+          <input type="radio" name="Browser" id="edge" value="3" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="edge">Microsoft Edge</label><br />
-          <input type="radio" name="Browser" id="chrome" value="1" />
+          <input type="radio" name="Browser" id="chrome" value="1" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="chrome">Google Chrome</label><br />
-          <input type="radio" name="Browser" id="fire" value="5" />
+          <input type="radio" name="Browser" id="fire" value="5" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "5"){echo "checked=\"checked\" ";} ?> />
           <label for="fire">Firefox</label><br />
-          <input type="radio" name="Browser" id="chromium" value="2" />
+          <input type="radio" name="Browser" id="chromium" value="2" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="chromium">Chromium</label><br />
-          <input type="radio" name="Browser" id="brave" value="0" />
+          <input type="radio" name="Browser" id="brave" value="0" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="brave">Brave</label><br />
-          <input type="radio" name="Browser" id="safari" value="9" />
+          <input type="radio" name="Browser" id="safari" value="9" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "9"){echo "checked=\"checked\" ";} ?> />
           <label for="safari">Safari</label><br />
-          <input type="radio" name="Browser" id="tor" value="10" />
+          <input type="radio" name="Browser" id="tor" value="10" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "10"){echo "checked=\"checked\" ";} ?> />
           <label for="tor">Tor</label><br />
-          <input type="radio" name="Browser" id="opera" value="8" />
+          <input type="radio" name="Browser" id="opera" value="8" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "8"){echo "checked=\"checked\" ";} ?> />
           <label for="opera">Opera</label><br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="BrowserSonstiges" value="" id="sonst" />
+          <input type="text" name="BrowserSonstiges" value="" id="sonst" <?php if(isset($_SESSION['BrowserSonstiges']) ){echo 'value="'.$_SESSION['BrowserSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="vorher">

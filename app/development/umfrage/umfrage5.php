@@ -157,15 +157,15 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welche Mailprogramme benutzen Sie?</h2>
         <section>
-          <input type="checkbox" name="mailprogramm[]" id="outl" value="7" <?php if(isset($_SESSION['mailprogramm']) && in_array("7", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="mailprogramm[]" id="outl" value="8" <?php if(isset($_SESSION['mailprogramm']) && in_array("8", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="outl">Microsoft Outlook</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="thun" value="9" <?php if(isset($_SESSION['mailprogramm']) && in_array("9", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="mailprogramm[]" id="thun" value="10" <?php if(isset($_SESSION['mailprogramm']) && in_array("10", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="thun">Mozilla Thunderbird</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="spark" value="8" <?php if(isset($_SESSION['mailprogramm']) && in_array("8", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="mailprogramm[]" id="spark" value="9" <?php if(isset($_SESSION['mailprogramm']) && in_array("9", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="spark">Spark</label><br />
           <input type="checkbox" name="mailprogramm[]" id="gmail" value="6" <?php if(isset($_SESSION['mailprogramm']) && in_array("6", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="gmail">GoogleMail-App</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="brow" value="10" <?php if(isset($_SESSION['mailprogramm']) && in_array("10", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="mailprogramm[]" id="brow" value="11" <?php if(isset($_SESSION['mailprogramm']) && in_array("11", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="brow">Weboberfläche</label><br />
           <label for="sonst">Sonstige:</label>
           <input type="text" name="mailprogrammSonstiges" id="sonst" <?php if(isset($_SESSION['mailprogrammSonstiges']) ){echo 'value="'.$_SESSION['mailprogrammSonstiges'].'"';} ?> />

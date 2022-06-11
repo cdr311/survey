@@ -21,4 +21,96 @@
     closeDatabaseConnection($db);
   }
 
+//Convenience Funktionen
+
+  function printTable($tableName){
+    $results = executeQuery("SELECT * FROM $tableName;");
+
+    echo $tableName;
+    echo "<pre>";
+    print_r($results);
+    echo "<post>";
+  }
+
+  function insertTaetigkeitenSessionArrayIntoNutzungsgebiet($arrayName, $valueGeraeteart){
+    if(isset($_SESSION[$arrayName])){
+      foreach($_SESSION[$arrayName] as $val){
+        executeQuery("INSERT INTO Nutzungsgebiet VALUES ('{$_SESSION['id']}', '$val', '$valueGeraeteart');");
+      }
+    }
+  }
+
+  function insertNutzungszeitSessionValueIntoNutzungsdauer($sessionVariableName, $valueGeraeteart){
+    if(isset($_SESSION[$sessionVariableName])){
+      executeQuery("INSERT INTO Nutzungsdauer VALUES ('{$_SESSION['id']}', '{$_SESSION[$sessionVariableName]}', '$valueGeraeteart');");
+    }
+  }
+
+  function insertBetriebssystemSessionValueIntoBetriebssystem($sessionVariableName, $valueGeraeteart){
+    if(isset($_SESSION[$sessionVariableName])){
+      executeQuery("INSERT INTO Betriebssystem VALUES ('{$_SESSION['id']}', '{$_SESSION[$sessionVariableName]}', '$valueGeraeteart');");
+    }
+  }
+
+  function saveSessionVariablesIntoDB(){
+    fillTeilnehmerDaten();
+    fillGeraeteart();
+    fillNutzungsgebiet();
+    fillNutzungsdauer();
+    fillBetriebssystem();
+    fillBrowser();
+    fillMailclient();
+  }
+
+
+//----- Fuellmethoden fuer einzelne Tabellen
+
+  function fillTeilnehmerDaten(){
+    executeQuery("INSERT INTO TeilnehmerDaten VALUES ('{$_SESSION['id']}', '{$_SESSION['geschlecht']}', '{$_SESSION['alter']}', '{$_SESSION['arbeit']}', '{$_SESSION['familie']}', '{$_SESSION['bildung']}');");
+  }
+
+  function fillGeraeteart(){
+    foreach($_SESSION['benutzteGeraete'] as $val){
+      executeQuery("INSERT INTO Geraeteart VALUES ('{$_SESSION['id']}', '$val');");
+    }
+  }
+
+  function fillNutzungsgebiet(){
+    insertTaetigkeitenSessionArrayIntoNutzungsgebiet('taetigkeitenDesktop', '0');
+    insertTaetigkeitenSessionArrayIntoNutzungsgebiet('taetigkeitenLaptop', '1');
+    insertTaetigkeitenSessionArrayIntoNutzungsgebiet('taetigkeitenSmartphone', '2');
+    insertTaetigkeitenSessionArrayIntoNutzungsgebiet('taetigkeitenTablet', '3');
+    insertTaetigkeitenSessionArrayIntoNutzungsgebiet('taetigkeitenSmartTV', '4');
+    insertTaetigkeitenSessionArrayIntoNutzungsgebiet('taetigkeitenSmartwatch', '5');
+    insertTaetigkeitenSessionArrayIntoNutzungsgebiet('taetigkeitenSpielekonsole', '6');
+  }
+
+  function fillNutzungsdauer(){
+    insertNutzungszeitSessionValueIntoNutzungsdauer('nutzungszeitDesktop', '0');
+    insertNutzungszeitSessionValueIntoNutzungsdauer('nutzungszeitLaptop', '1');
+    insertNutzungszeitSessionValueIntoNutzungsdauer('nutzungszeitSmartphone', '2');
+    insertNutzungszeitSessionValueIntoNutzungsdauer('nutzungszeitTablet', '3');
+    insertNutzungszeitSessionValueIntoNutzungsdauer('nutzungszeitSmartTV', '4');
+    insertNutzungszeitSessionValueIntoNutzungsdauer('nutzungszeitSmartwatch', '5');
+    insertNutzungszeitSessionValueIntoNutzungsdauer('nutzungszeitSpielekonsole', '6');
+  }
+
+  function fillBetriebssystem(){
+    insertBetriebssystemSessionValueIntoBetriebssystem('OSDesktop', 0);
+    insertBetriebssystemSessionValueIntoBetriebssystem('OSLaptop', 1);
+    insertBetriebssystemSessionValueIntoBetriebssystem('OSSmartphone', 2);
+    insertBetriebssystemSessionValueIntoBetriebssystem('OSTablet', 3);
+    insertBetriebssystemSessionValueIntoBetriebssystem('OSSmartTV', 4);
+  }
+
+  function fillBrowser(){
+    executeQuery("INSERT INTO Browser VALUES ('{$_SESSION['id']}', '{$_SESSION['Browser']}');");
+  }
+
+  function fillMailclient(){
+    foreach($_SESSION['mailprogramm'] as $val){
+      executeQuery("INSERT INTO Mailclient VALUES ('{$_SESSION['id']}', '$val');");
+    }
+  }
+
 ?>

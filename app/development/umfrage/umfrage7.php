@@ -1,10 +1,21 @@
 <?php
 
 require_once '../phpfunctions/sessionfunctions.php';
+require_once '../phpfunctions/dbfunctions.php';
 
 session_start();
 saveIntoSessionVariablesPage7();
 printSessionVariables();
+
+saveSessionVariablesIntoDB();
+
+printTable("TeilnehmerDaten");
+printTable("Geraeteart");
+printTable("Nutzungsgebiet");
+printTable("Nutzungsdauer");
+printTable("Betriebssystem");
+printTable("Browser");
+printTable("Mailclient");
 
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 
-//Funktionen, die fuer das Session-Management benoetigt werden
+//Session-Management
 
 function generateSessionID(){
   $_SESSION['id'] = rand(1000,1000000000);
@@ -16,6 +16,7 @@ function checkIfIdAlreadyUsed(){
   }
 }
 
+//gibt alle Session-Variablen mit ihren Werten aus, ausser Freitexteingaben
 function printSessionVariables(){
 
   //Eigegeben auf Seite 1
@@ -170,13 +171,34 @@ function printSessionVariables(){
 
 //-----------------------------------------
 
-  function printSessionArray($sessionArray, $identifier){
-    echo $identifier." : {";
-    foreach($sessionArray as $val) {
-      echo $val.", ";
-    }
-    echo "}";
+function printSessionArray($sessionArray, $identifier){
+  echo $identifier." : {";
+  foreach($sessionArray as $val) {
+    echo $val.", ";
   }
+  echo "}";
+}
+
+function saveFromPostIntoSessionCheckbox($checkboxId){
+
+  //keine Checkbox ausgewählt
+  // if(isset($_SESSION[$checkboxId]) && !isset($_POST[$checkboxId])){
+  //   unset($_SESSION[$checkboxId]);
+  //   echo "reset";
+  // }
+
+  //Checkboxauswahl hat sich geandert
+  if(isset($_POST[$checkboxId])){
+    unset($_SESSION[$checkboxId]);//Array leeren (wenn Checkbox abgewaehlt wird)
+    $_SESSION[$checkboxId] = $_POST[$checkboxId];
+  }
+}
+
+function saveFromPostIntoSessionText($textId){
+  if(isset($_POST[$textId])){
+  $_SESSION[$textId] = $_POST[$textId];
+  }
+}
 
 //-----------------------------------------
 
@@ -248,37 +270,26 @@ function saveFromPostIntoSessionFromPage1(){
 
 }
 
-function saveFromPostIntoSessionCheckbox($checkboxId){
-
-  //keine Checkbox ausgewählt
-  // if(isset($_SESSION[$checkboxId]) && !isset($_POST[$checkboxId])){
-  //   unset($_SESSION[$checkboxId]);
-  //   echo "reset";
-  // }
-
-  //Checkboxauswahl hat sich geandert
-  if(isset($_POST[$checkboxId])){
-    unset($_SESSION[$checkboxId]);//Array leeren (wenn Checkbox abgewaehlt wird)
-    $_SESSION[$checkboxId] = $_POST[$checkboxId];
-  }
-}
-
 function saveFromPostIntoSessionFromPage2(){
 
   //Eigegeben auf Seite 2
   saveFromPostIntoSessionCheckbox('benutzteGeraete');
-  saveFromPostIntoSessionCheckbox('taetigkeitenDesktop');
-  saveFromPostIntoSessionCheckbox('taetigkeitenLaptop');
-  saveFromPostIntoSessionCheckbox('taetigkeitenSmartphone');
-  saveFromPostIntoSessionCheckbox('taetigkeitenTablet');
-  saveFromPostIntoSessionCheckbox('taetigkeitenSmartTV');
-  saveFromPostIntoSessionCheckbox('taetigkeitenSmartwatch');
-  saveFromPostIntoSessionCheckbox('taetigkeitenSpielekonsole');
 
-  //Sonstiges Textfelder
-  if(isset($_POST['taetigkeitenDesktopSonstiges'])){
-  $_SESSION['taetigkeitenDesktopSonstiges'] = $_POST['taetigkeitenDesktopSonstiges'];
-  }
+  saveFromPostIntoSessionCheckbox('taetigkeitenDesktop');
+  saveFromPostIntoSessionText('taetigkeitenDesktopSonstiges');
+  saveFromPostIntoSessionCheckbox('taetigkeitenLaptop');
+  saveFromPostIntoSessionText('taetigkeitenLaptopSonstiges');
+  saveFromPostIntoSessionCheckbox('taetigkeitenSmartphone');
+  saveFromPostIntoSessionText('taetigkeitenSmartphoneSonstiges');
+  saveFromPostIntoSessionCheckbox('taetigkeitenTablet');
+  saveFromPostIntoSessionText('taetigkeitenTabletSonstiges');
+  saveFromPostIntoSessionCheckbox('taetigkeitenSmartTV');
+  saveFromPostIntoSessionText('taetigkeitenSmartTVSonstiges');
+  saveFromPostIntoSessionCheckbox('taetigkeitenSmartwatch');
+  saveFromPostIntoSessionText('taetigkeitenSmartwatchSonstiges');
+  saveFromPostIntoSessionCheckbox('taetigkeitenSpielekonsole');
+  saveFromPostIntoSessionText('taetigkeitenSpielekonsoleSonstiges');
+
 }
 
 function saveFromPostIntoSessionFromPage3(){
@@ -314,24 +325,44 @@ function saveFromPostIntoSessionFromPage4(){
   if(isset($_POST['OSDesktop'])){
   $_SESSION['OSDesktop'] = $_POST['OSDesktop'];
   }
+  saveFromPostIntoSessionText('OSDesktopLinuxDistroText');
+  saveFromPostIntoSessionText('OSDesktopBSDVariante');
+  saveFromPostIntoSessionText('OSDesktopSonstiges');
+
   if(isset($_POST['OSLaptop'])){
   $_SESSION['OSLaptop'] = $_POST['OSLaptop'];
   }
+  saveFromPostIntoSessionText('OSLaptopLinuxDistroText');
+  saveFromPostIntoSessionText('OSLaptopBSDVariante');
+  saveFromPostIntoSessionText('OSLaptopSonstiges');
+
   if(isset($_POST['OSSmartphone'])){
   $_SESSION['OSSmartphone'] = $_POST['OSSmartphone'];
   }
+  saveFromPostIntoSessionText('OSSmartphoneLinuxDistroText');
+  saveFromPostIntoSessionText('OSSmartphoneSonstiges');
+
   if(isset($_POST['OSTablet'])){
   $_SESSION['OSTablet'] = $_POST['OSTablet'];
   }
+  saveFromPostIntoSessionText('OSTabletLinuxDistroText');
+  saveFromPostIntoSessionText('OSTabletSonstiges');
+
   if(isset($_POST['OSSmartTV'])){
   $_SESSION['OSSmartTV'] = $_POST['OSSmartTV'];
   }
-  if(isset($_POST['OSSmartwatch'])){
-  $_SESSION['OSSmartwatch'] = $_POST['OSSmartwatch'];
-  }
+  saveFromPostIntoSessionText('OSSmartTVSonstiges');
+
+
+  // if(isset($_POST['OSSmartwatch'])){
+  // $_SESSION['OSSmartwatch'] = $_POST['OSSmartwatch'];
+  // }
+
+
   if(isset($_POST['Browser'])){
   $_SESSION['Browser'] = $_POST['Browser'];
   }
+  saveFromPostIntoSessionText('BrowserSonstiges');
 
 }
 
@@ -339,6 +370,8 @@ function saveFromPostIntoSessionFromPage5(){
 
   //Eigegeben auf Seite 5
   saveFromPostIntoSessionCheckbox('mailprogramm');
+  saveFromPostIntoSessionText('mailprogrammSonstiges');
+
   if(isset($_POST['verschluesselungPrivat'])){
   $_SESSION['verschluesselungPrivat'] = $_POST['verschluesselungPrivat'];
   }
@@ -360,6 +393,8 @@ function saveFromPostIntoSessionFromPage6(){
   if(isset($_POST['bewertung'])){
   $_SESSION['bewertung'] = $_POST['bewertung'];
   }
+
+  saveFromPostIntoSessionText('feedbackText');
 
 }
 

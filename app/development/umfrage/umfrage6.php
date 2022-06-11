@@ -171,7 +171,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       </div>
       <div class="auswahl2">
         <h2>Wir würden uns über Ihr Feedback freuen:</h2>
-        <textarea name="feedbackText" rows="20%" cols="90%" id="texteingabe" onclick="eingabeText()" <?php if(isset($_SESSION['feedbackText']) ){echo 'value="'.$_SESSION['feedbackText'].'"';} ?> >Feedback</textarea>
+        <textarea name="feedbackText" rows="20%" cols="90%" id="texteingabe" onclick="eingabeText()" ><?php if(isset($_SESSION['feedbackText']) ){echo $_SESSION['feedbackText'];}else{echo "Feedback";} ?> </textarea>
       </div>
       <div class="vorher">
         <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage5.php', 'form6')">Vorherige Seite</button>

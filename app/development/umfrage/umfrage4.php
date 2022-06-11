@@ -164,13 +164,13 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="radio" name="OSDesktop" id="linux" value="2" <?php if(isset($_SESSION['OSDesktop']) && $_SESSION['OSDesktop'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="linux">Linux -></label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="OSDesktopLinuxDistroText" value="" id="distri" <?php if(isset($_SESSION['OSDesktopLinuxDistroText']) ){echo 'value="'.$_SESSION['OSDesktopLinuxDistroText'].'"';} ?> /> <br />
+          <input type="text" name="OSDesktopLinuxDistroText" id="distri" <?php if(isset($_SESSION['OSDesktopLinuxDistroText']) ){echo 'value="'.$_SESSION['OSDesktopLinuxDistroText'].'"';} ?> /> <br />
           <input type="radio" name="OSDesktop" id="bsd" value="3" <?php if(isset($_SESSION['OSDesktop']) && $_SESSION['OSDesktop'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="bsd">BSD-Variante -></label>
           <label for="varia">Variante: </label>
-          <input type="text" name="OSDesktopBSDVariante" value="" id="varia" <?php if(isset($_SESSION['OSDesktopBSDVariante']) ){echo 'value="'.$_SESSION['OSDesktopBSDVariante'].'"';} ?> /> <br />
+          <input type="text" name="OSDesktopBSDVariante" id="varia" <?php if(isset($_SESSION['OSDesktopBSDVariante']) ){echo 'value="'.$_SESSION['OSDesktopBSDVariante'].'"';} ?> /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSDesktopSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSDesktopSonstiges']) ){echo 'value="'.$_SESSION['OSDesktopSonstiges'].'"';} ?> />
+          <input type="text" name="OSDesktopSonstiges" id="sonst" <?php if(isset($_SESSION['OSDesktopSonstiges']) ){echo 'value="'.$_SESSION['OSDesktopSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl2">
@@ -183,13 +183,13 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="radio" name="OSLaptop" id="linux" value="2" <?php if(isset($_SESSION['OSLaptop']) && $_SESSION['OSLaptop'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="linux">Linux -></label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="OSLaptopLinuxDistroText" value="" id="distri" <?php if(isset($_SESSION['OSLaptopLinuxDistroText']) ){echo 'value="'.$_SESSION['OSLaptopLinuxDistroText'].'"';} ?> /> <br />
+          <input type="text" name="OSLaptopLinuxDistroText" id="distri" <?php if(isset($_SESSION['OSLaptopLinuxDistroText']) ){echo 'value="'.$_SESSION['OSLaptopLinuxDistroText'].'"';} ?> /> <br />
           <input type="radio" name="OSLaptop" id="bsd" value="3" <?php if(isset($_SESSION['OSLaptop']) && $_SESSION['OSLaptop'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="bsd">BSD-Variante -></label>
           <label for="varia">Variante: </label>
-          <input type="text" name="OSLaptopBSDVariante" value="" id="varia" <?php if(isset($_SESSION['OSLaptopBSDVariante']) ){echo 'value="'.$_SESSION['OSLaptopBSDVariante'].'"';} ?> /> <br />
+          <input type="text" name="OSLaptopBSDVariante" id="varia" <?php if(isset($_SESSION['OSLaptopBSDVariante']) ){echo 'value="'.$_SESSION['OSLaptopBSDVariante'].'"';} ?> /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSLaptopSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSLaptopSonstiges']) ){echo 'value="'.$_SESSION['OSLaptopSonstiges'].'"';} ?> />
+          <input type="text" name="OSLaptopSonstiges" id="sonst" <?php if(isset($_SESSION['OSLaptopSonstiges']) ){echo 'value="'.$_SESSION['OSLaptopSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl3">
@@ -204,9 +204,9 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="radio" name="OSSmartphone" id="linux" value="2" <?php if(isset($_SESSION['OSSmartphone']) && $_SESSION['OSSmartphone'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="linux">Linux</label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="OSSmartphoneLinuxDistroText" value="" id="distri" <?php if(isset($_SESSION['OSSmartphoneLinuxDistroText']) ){echo 'value="'.$_SESSION['OSSmartphoneLinuxDistroText'].'"';} ?> /> <br />
+          <input type="text" name="OSSmartphoneLinuxDistroText" id="distri" <?php if(isset($_SESSION['OSSmartphoneLinuxDistroText']) ){echo 'value="'.$_SESSION['OSSmartphoneLinuxDistroText'].'"';} ?> /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSSmartphoneSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSSmartphoneSonstiges']) ){echo 'value="'.$_SESSION['OSSmartphoneSonstiges'].'"';} ?> />
+          <input type="text" name="OSSmartphoneSonstiges" id="sonst" <?php if(isset($_SESSION['OSSmartphoneSonstiges']) ){echo 'value="'.$_SESSION['OSSmartphoneSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl4">
@@ -219,9 +219,9 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="radio" name="OSTablet" id="linux" value="2" <?php if(isset($_SESSION['OSTablet']) && $_SESSION['OSTablet'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="linux">Linux</label>
           <label for="distri">Distribution: </label>
-          <input type="text" name="OSTabletLinuxDistroText" value="" id="distri" <?php if(isset($_SESSION['OSTabletLinuxDistroText']) ){echo 'value="'.$_SESSION['OSTabletLinuxDistroText'].'"';} ?> /> <br />
+          <input type="text" name="OSTabletLinuxDistroText" id="distri" <?php if(isset($_SESSION['OSTabletLinuxDistroText']) ){echo 'value="'.$_SESSION['OSTabletLinuxDistroText'].'"';} ?> /> <br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSTabletSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSTabletSonstiges']) ){echo 'value="'.$_SESSION['OSTabletSonstiges'].'"';} ?> />
+          <input type="text" name="OSTabletSonstiges" id="sonst" <?php if(isset($_SESSION['OSTabletSonstiges']) ){echo 'value="'.$_SESSION['OSTabletSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl5">
@@ -234,7 +234,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="radio" name="OSSmartTV" id="fire" value="7" <?php if(isset($_SESSION['OSSmartTV']) && $_SESSION['OSSmartTV'] == "7"){echo "checked=\"checked\" ";} ?> />
           <label for="fire">Firefox OS</label><br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="OSSmartTVSonstiges" value="" id="sonst" <?php if(isset($_SESSION['OSSmartTVSonstiges']) ){echo 'value="'.$_SESSION['OSSmartTVSonstiges'].'"';} ?> />
+          <input type="text" name="OSSmartTVSonstiges" id="sonst" <?php if(isset($_SESSION['OSSmartTVSonstiges']) ){echo 'value="'.$_SESSION['OSSmartTVSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl6">
@@ -257,7 +257,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="radio" name="Browser" id="opera" value="8" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "8"){echo "checked=\"checked\" ";} ?> />
           <label for="opera">Opera</label><br />
           <label for="sonst">Sonstige: </label>
-          <input type="text" name="BrowserSonstiges" value="" id="sonst" <?php if(isset($_SESSION['BrowserSonstiges']) ){echo 'value="'.$_SESSION['BrowserSonstiges'].'"';} ?> />
+          <input type="text" name="BrowserSonstiges" id="sonst" <?php if(isset($_SESSION['BrowserSonstiges']) ){echo 'value="'.$_SESSION['BrowserSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="vorher">

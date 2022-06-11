@@ -176,6 +176,22 @@ div.ueberschrift{
   justify-content: center;
 }
 
+span:hover {
+  background-color: #62bcf5;
+}
+
+a.unter:link {
+  color: black;
+}
+a.unter:visited {
+  color: black;
+}
+a.unter:hover {
+  color: white;
+}
+a.unter:active {
+  color: red;
+}
 
 a.quelle:link{
   color: black;
@@ -204,9 +220,11 @@ footer{
   width: 100%;
 }
 
-span{
-  background-color: white;
-  font-size:30px;
+span {
+  background-color: #fffff0;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .mittig {

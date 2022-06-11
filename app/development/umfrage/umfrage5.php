@@ -157,57 +157,57 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welche Mailprogramme benutzen Sie?</h2>
         <section>
-          <input type="checkbox" name="mailprogramm[]" id="outl" value="7" />
+          <input type="checkbox" name="mailprogramm[]" id="outl" value="7" <?php if(isset($_SESSION['mailprogramm']) && in_array("7", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="outl">Microsoft Outlook</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="thun" value="9" />
+          <input type="checkbox" name="mailprogramm[]" id="thun" value="9" <?php if(isset($_SESSION['mailprogramm']) && in_array("9", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="thun">Mozilla Thunderbird</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="spark" value="8" />
+          <input type="checkbox" name="mailprogramm[]" id="spark" value="8" <?php if(isset($_SESSION['mailprogramm']) && in_array("8", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="spark">Spark</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="gmail" value="6" />
+          <input type="checkbox" name="mailprogramm[]" id="gmail" value="6" <?php if(isset($_SESSION['mailprogramm']) && in_array("6", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="gmail">GoogleMail-App</label><br />
-          <input type="checkbox" name="mailprogramm[]" id="brow" value="10" />
+          <input type="checkbox" name="mailprogramm[]" id="brow" value="10" <?php if(isset($_SESSION['mailprogramm']) && in_array("10", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="brow">Weboberfläche</label><br />
           <label for="sonst">Sonstige:</label>
-          <input type="text" name="mailprogrammSonstiges" id="sonst" />
+          <input type="text" name="mailprogrammSonstiges" id="sonst" <?php if(isset($_SESSION['mailprogrammSonstiges']) ){echo 'value="'.$_SESSION['mailprogrammSonstiges'].'"';} ?> />
         </section>
       </div>
       <div class="auswahl2">
         <h2>Verschlüsseln Sie ihre <b>privaten</b> E-Mails?</h2>
         <section>
-          <input type="radio" name="verschluesselungPrivat" id="ja" value="1" />
+          <input type="radio" name="verschluesselungPrivat" id="ja" value="1" <?php if(isset($_SESSION['verschluesselungPrivat']) && $_SESSION['verschluesselungPrivat'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="ja">Ja</label><br />
-          <input type="radio" name="verschluesselungPrivat" id="nein" value="0" />
+          <input type="radio" name="verschluesselungPrivat" id="nein" value="0" <?php if(isset($_SESSION['verschluesselungPrivat']) && $_SESSION['verschluesselungPrivat'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="nein">Nein</label><br />
         </section>
       </div>
       <div class="auswahl4">
         <h2>Welche Verschlüsselungsmethode verwenden Sie dazu?</h2>
         <section>
-          <input type="radio" name="verschluesselungPrivatMethode" id="pgp" value="0" />
+          <input type="radio" name="verschluesselungPrivatMethode" id="pgp" value="0" <?php if(isset($_SESSION['verschluesselungPrivatMethode']) && $_SESSION['verschluesselungPrivatMethode'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="pgp">PGP</label><br />
-          <input type="radio" name="verschluesselungPrivatMethode" id="smime" value="1" />
+          <input type="radio" name="verschluesselungPrivatMethode" id="smime" value="1" <?php if(isset($_SESSION['verschluesselungPrivatMethode']) && $_SESSION['verschluesselungPrivatMethode'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="smime">S/MIME</label><br />
-          <input type="radio" name="verschluesselungPrivatMethode" id="prov" value="2" />
+          <input type="radio" name="verschluesselungPrivatMethode" id="prov" value="2" <?php if(isset($_SESSION['verschluesselungPrivatMethode']) && $_SESSION['verschluesselungPrivatMethode'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="prov">Spezialisierter E-Mail-Provider</label>
         </section>
       </div>
       <div class="auswahl3">
         <h2>Verschlüsseln Sie ihre <b>dienstlichen</b> E-Mails?</h2>
         <section>
-          <input type="radio" name="verschluesselungDienstlich" id="ja" value="1" />
+          <input type="radio" name="verschluesselungDienstlich" id="ja" value="1" <?php if(isset($_SESSION['verschluesselungDienstlich']) && $_SESSION['verschluesselungDienstlich'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="ja">Ja</label><br />
-          <input type="radio" name="verschluesselungDienstlich" id="nein" value="0" />
+          <input type="radio" name="verschluesselungDienstlich" id="nein" value="0" <?php if(isset($_SESSION['verschluesselungDienstlich']) && $_SESSION['verschluesselungDienstlich'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="nein">Nein</label><br />
         </section>
       </div>
       <div class="auswahl5">
         <h2>Welche Verschlüsselungsmethode verwenden Sie dazu?</h2>
         <section>
-          <input type="radio" name="verschluesselungDienstlichMethode" id="pgp" value="0" />
+          <input type="radio" name="verschluesselungDienstlichMethode" id="pgp" value="0" <?php if(isset($_SESSION['verschluesselungDienstlichMethode']) && $_SESSION['verschluesselungDienstlichMethode'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="pgp">PGP</label><br />
-          <input type="radio" name="verschluesselungDienstlichMethode" id="smime" value="1" />
+          <input type="radio" name="verschluesselungDienstlichMethode" id="smime" value="1" <?php if(isset($_SESSION['verschluesselungDienstlichMethode']) && $_SESSION['verschluesselungDienstlichMethode'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="smime">S/MIME</label><br />
-          <input type="radio" name="verschluesselungDienstlichMethode" id="prov" value="2" />
+          <input type="radio" name="verschluesselungDienstlichMethode" id="prov" value="2" <?php if(isset($_SESSION['verschluesselungDienstlichMethode']) && $_SESSION['verschluesselungDienstlichMethode'] == "2"){echo "checked=\"checked\" ";} ?> />
           <label for="prov">Spezialisierter E-Mail-Provider</label>
         </section>
       </div>

@@ -238,7 +238,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl6">
-        <h2>Welche Browser benutzen Sie?</h2>
+        <h2>Welchen Browser benutzen Sie?</h2>
         <section>
           <input type="radio" name="Browser" id="edge" value="3" <?php if(isset($_SESSION['Browser']) && $_SESSION['Browser'] == "3"){echo "checked=\"checked\" ";} ?> />
           <label for="edge">Microsoft Edge</label><br />

@@ -54,7 +54,7 @@ CREATE TABLE NutzungsdauerKey (
 
 CREATE TABLE BetriebssystemKey (
 	ID INT NOT NULL,
-	BetriebssystemName VARCHAR(9) NOT NULL,
+	BetriebssystemName VARCHAR(15) NOT NULL,
 	PRIMARY KEY (ID)
 );
 
@@ -78,7 +78,7 @@ CREATE TABLE BrowserKey (
 
 CREATE TABLE MailclientKey (
 	ID INT NOT NULL,
-	MailclientName VARCHAR(14) NOT NULL,
+	MailclientName VARCHAR(20) NOT NULL,
 	PRIMARY KEY (ID)
 );
 
@@ -90,7 +90,7 @@ CREATE TABLE VerschluesselungKey (
 
 CREATE TABLE VerschluesselungsartKey (
 	ID INT NOT NULL,
-	VerschluesselungsartName VARCHAR(9) NOT NULL,
+	VerschluesselungsartName VARCHAR(35) NOT NULL,
 	PRIMARY KEY (ID)
 );
 

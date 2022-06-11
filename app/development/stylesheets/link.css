@@ -2,24 +2,20 @@ body{
   background-color: #E0ECF8;
   margin:0;
 }
-
 .darkmode{
     background-color: grey;
 }
-
 button{
   background-color: grey;
   border-radius: 30px;
   height: 30px;
 }
-
 article{
   background-color: lightgrey;
   height: 45px;
   width: 100%;
   padding-bottom: 5px;
 }
-
 header{
   position: absolute;
   height: 8%;
@@ -37,14 +33,12 @@ section.mitte{
 section.links{
   float: left;
 }
-
 section.rechts{
   float: right;
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 div.ueberschrift{
   float: left;
   font-family: monospace;
@@ -53,7 +47,6 @@ div.ueberschrift{
   text-align: center;
   justify-content: center;
 }
-
 main{
   background-color: #A4A4A4;
   border:2px double black;
@@ -67,7 +60,6 @@ main{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
 .genauer1{
   position: absolute;
   border: 1px solid black;
@@ -92,11 +84,9 @@ main{
   height: 30%;
   margin-top: 10px;
 }
-
 span:hover {
   background-color: #62bcf5;
 }
-
 a.unter:link {
   color: black;
 }
@@ -109,7 +99,6 @@ a.unter:hover {
 a.unter:active {
   color: red;
 }
-
 a.quelle:link{
   color: black;
 }
@@ -122,11 +111,9 @@ a.quelle:hover{
 a.quelle:active{
   color: red;
 }
-
 a.unter{
   text-decoration: none;
 }
-
 footer{
   border-top: 1px solid black;
   border-radius: 20px;
@@ -137,18 +124,15 @@ footer{
   top: 83%;
   width: 100%;
 }
-
 span {
   background-color: #fffff0;
   font-size: 25px;
   padding: 5px;
   border-radius: 10px;
 }
-
 .mittig {
   text-align: center;
 }
-
 #cookie-popup {
   text-align: center;
   background: #fff;
@@ -165,20 +149,16 @@ span {
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
   }
-
 #cookie-popup.hidden {
   display: none;
 }
-
 #abstand1{
   padding-right: 5px;
 }
-
 #abstand2{
   padding-right: 5px;
   font-size: 20px;
 }
-
 @media screen and (max-width: 1050px) {
   main{
     height: 65%;
@@ -193,7 +173,6 @@ span {
     top:95%;
   }
 }
-
 @media screen and (max-height: 600px) {
   main{
     height: 65%;

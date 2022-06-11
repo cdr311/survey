@@ -183,14 +183,3 @@ function eingabeText(){
   var eingabe = document.getElementById('texteingabe')
     eingabe.innerText = ""
 }
-
-function buttonNaechst(){
-
-  window.localStorage.setItem('desktop', desktop);
-  window.localStorage.setItem('laptop', laptop);
-  window.localStorage.setItem('smartphone', smartphone);
-  window.localStorage.setItem('tablet', tablet);
-  window.localStorage.setItem('smarttv', smarttv);
-  window.localStorage.setItem('smartwatch', smartwatch);
-  window.localStorage.setItem('spielekonsole', spielekonsole);
-}

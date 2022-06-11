@@ -284,7 +284,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage2.php', 'form3')">Vorherige Seite</button>
       </div>
       <div class="naechste">
-        <button type="button" name="umfrage" id="aendern" onclick="buttonNaechst(); submitForm('umfrage4.php', 'form3')">Nächste Seite</button>
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage4.php', 'form3')">Nächste Seite</button>
       </div>
     </div>
   </form>
@@ -296,74 +296,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <p>Copyright ©2022</p>
   </footer>
   <script type="text/javascript" src="../scripte/umfrage.js">
-  </script>
-  <script type="text/javascript">
-
-//   for (let i=0; i < localStorage.length; i++) {
-//   let storageKey = localStorage.key(i);
-//   console.log(storageKey + ' : ' + localStorage.getItem(storageKey));
-// }
-
-  var desktop = false;
-  var laptop = false;
-  var smartphone = false;
-  var tablet = false;
-  var smarttv = false;
-  var smartwatch = false;
-  var spielekonsole = false;
-
-  desktop = window.localStorage.getItem('desktop');
-  if(desktop){
-      console.log(desktop)
-      document.getElementById('aus1').style.display = 'block'
-  }
-  else {
-    document.getElementById('aus1').style.display = 'none'
-  }
-  laptop = window.localStorage.getItem('laptop');
-  if(laptop){
-    document.getElementById('aus2').style.display = 'block'
-  }
-  else {
-    document.getElementById('aus2').style.display = 'none'
-  }
-  smartphone = window.localStorage.getItem('smartphone');
-  if(smartphone){
-    document.getElementById('aus3').style.display = 'block'
-  }
-  else {
-    document.getElementById('aus3').style.display = 'none'
-  }
-  tablet = window.localStorage.getItem('tablet');
-  if(tablet){
-    document.getElementById('aus4').style.display = 'block'
-  }
-  else {
-    document.getElementById('aus4').style.display = 'none'
-  }
-  smarttv = window.localStorage.getItem('smarttv');
-  if(smarttv){
-    document.getElementById('aus5').style.display = 'block'
-  }
-  else{
-    document.getElementById('aus5').style.display = 'none'
-  }
-  smartwatch = window.localStorage.getItem('smartwatch');
-  if(smartwatch){
-    document.getElementById('aus6').style.display = 'block'
-  }
-  else {
-    document.getElementById('aus6').style.display = 'none'
-  }
-  spielekonsole = window.localStorage.getItem('spielekonsole');
-  if(spielekonsole){
-    document.getElementById('aus7').style.display = 'block'
-  }
-  else{
-    document.getElementById('aus7').style.display = 'none'
-  }
-
-  localStorage.clear();
   </script>
 </body>
 

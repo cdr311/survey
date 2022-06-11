@@ -121,7 +121,6 @@ CREATE TABLE TeilnehmerDaten (
 CREATE TABLE Geraeteart (
 	TeilnehmerID INT NOT NULL,
 	Geraeteart INT NOT NULL,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (Geraeteart) REFERENCES GeraeteartKey(ID)
 );
@@ -130,7 +129,6 @@ CREATE TABLE Nutzungsgebiet (
 	TeilnehmerID INT NOT NULL,
 	Nutzungsgebiet INT NOT NULL,
 	Geraeteart INT NOT NULL,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (Nutzungsgebiet) REFERENCES NutzungsgebietKey(ID),
 	FOREIGN KEY (Geraeteart) REFERENCES Geraeteart(Geraeteart)
@@ -140,7 +138,6 @@ CREATE TABLE Nutzungsdauer (
 	TeilnehmerID INT NOT NULL,
 	Nutzungsdauer INT NOT NULL,
 	Geraeteart INT NOT NULL,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (Nutzungsdauer) REFERENCES NutzungsdauerKey(ID),
 	FOREIGN KEY (Geraeteart) REFERENCES Geraeteart(Geraeteart)
@@ -150,7 +147,6 @@ CREATE TABLE Betriebssystem (
 	TeilnehmerID INT NOT NULL,
 	Betriebssystem INT NOT NULL,
 	Geraeteart INT NOT NULL,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (Betriebssystem) REFERENCES BetriebssystemKey(ID),
 	FOREIGN KEY (Geraeteart) REFERENCES Geraeteart(Geraeteart)
@@ -160,7 +156,6 @@ CREATE TABLE LinuxDistribution (
 	TeilnehmerID INT NOT NULL,
 	LinuxDistribution INT,
 	Geraeteart INT,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (LinuxDistribution) REFERENCES LinuxDistributionKey(ID),
 	FOREIGN KEY (Geraeteart) REFERENCES Geraeteart(Geraeteart)
@@ -170,7 +165,6 @@ CREATE TABLE BSDVariante (
 	TeilnehmerID INT NOT NULL,
 	BSDVariante INT,
 	Geraeteart INT,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (BSDVariante) REFERENCES BSDVarianteKey(ID),
 	FOREIGN KEY (Geraeteart) REFERENCES Geraeteart(Geraeteart)
@@ -179,7 +173,6 @@ CREATE TABLE BSDVariante (
 CREATE TABLE Browser (
 	TeilnehmerID INT NOT NULL,
 	Browser INT,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (Browser) REFERENCES BrowserKey(ID)
 );
@@ -187,7 +180,6 @@ CREATE TABLE Browser (
 CREATE TABLE Mailclient (
 	TeilnehmerID INT NOT NULL,
 	Mailclient INT,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (Mailclient) REFERENCES MailclientKey(ID)
 );

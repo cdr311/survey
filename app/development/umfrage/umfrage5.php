@@ -174,10 +174,10 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl2">
         <h2>Verschlüsseln Sie ihre <b>privaten</b> E-Mails?</h2>
         <section>
-          <input type="radio" name="verschluesselungPrivat" id="ja" value="1" <?php if(isset($_SESSION['verschluesselungPrivat']) && $_SESSION['verschluesselungPrivat'] == "1"){echo "checked=\"checked\" ";} ?> />
-          <label for="ja">Ja</label><br />
-          <input type="radio" name="verschluesselungPrivat" id="nein" value="0" <?php if(isset($_SESSION['verschluesselungPrivat']) && $_SESSION['verschluesselungPrivat'] == "0"){echo "checked=\"checked\" ";} ?> />
-          <label for="nein">Nein</label><br />
+          <input type="radio" name="verschluesselungPrivat" id="privatja" value="1" <?php if(isset($_SESSION['verschluesselungPrivat']) && $_SESSION['verschluesselungPrivat'] == "1"){echo "checked=\"checked\" ";} ?> />
+          <label for="privatja">Ja</label><br />
+          <input type="radio" name="verschluesselungPrivat" id="privatnein" value="0" <?php if(isset($_SESSION['verschluesselungPrivat']) && $_SESSION['verschluesselungPrivat'] == "0"){echo "checked=\"checked\" ";} ?> />
+          <label for="privatnein">Nein</label><br />
         </section>
       </div>
       <div class="auswahl4">
@@ -194,10 +194,10 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl3">
         <h2>Verschlüsseln Sie ihre <b>dienstlichen</b> E-Mails?</h2>
         <section>
-          <input type="radio" name="verschluesselungDienstlich" id="ja" value="1" <?php if(isset($_SESSION['verschluesselungDienstlich']) && $_SESSION['verschluesselungDienstlich'] == "1"){echo "checked=\"checked\" ";} ?> />
-          <label for="ja">Ja</label><br />
-          <input type="radio" name="verschluesselungDienstlich" id="nein" value="0" <?php if(isset($_SESSION['verschluesselungDienstlich']) && $_SESSION['verschluesselungDienstlich'] == "0"){echo "checked=\"checked\" ";} ?> />
-          <label for="nein">Nein</label><br />
+          <input type="radio" name="verschluesselungDienstlich" id="dienstja" value="1" <?php if(isset($_SESSION['verschluesselungDienstlich']) && $_SESSION['verschluesselungDienstlich'] == "1"){echo "checked=\"checked\" ";} ?> />
+          <label for="dienstja">Ja</label><br />
+          <input type="radio" name="verschluesselungDienstlich" id="dienstnein" value="0" <?php if(isset($_SESSION['verschluesselungDienstlich']) && $_SESSION['verschluesselungDienstlich'] == "0"){echo "checked=\"checked\" ";} ?> />
+          <label for="dienstnein">Nein</label><br />
         </section>
       </div>
       <div class="auswahl5">

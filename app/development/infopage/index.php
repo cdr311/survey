@@ -86,7 +86,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           </tr>
           <tr>
             <th class="det">
-              Übernahme:
+              voraussichtliche Übernahme:
             </th>
             <td class="deta">2023</td>
           </tr>
@@ -113,7 +113,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           </tr>
           <tr>
             <th class="det">
-              Übernahme:
+              voraussichtliche Übernahme:
             </th>
             <td class="deta">2023</td>
           </tr>
@@ -140,7 +140,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           </tr>
           <tr>
             <th class="det">
-              Übernahme:
+              voraussichtliche Übernahme:
             </th>
             <td class="deta">2023</td>
           </tr>

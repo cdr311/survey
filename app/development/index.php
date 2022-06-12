@@ -90,7 +90,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <div class="panel">
       <p>In dieser Umfrage werden insgesamt - je nach Auswahl - circa 10 bis 30 Fragen zum Thema: <b>Nutzung und Verwendung von digitalen Geräten</b> auf Sie zukommen.</p>
       <p>Dabei geht es von den verschiedenen Geräten, die von Ihnen in Nutzung sind, über den Zweck, bis hin zur Nutzungszeit.</p>
-      <p>Des Weiteren erwarten Sie Fragen zur Nutzung von ausgewählen Programmen/Softwaren.</p>
+      <p>Des Weiteren erwarten Sie Fragen zur Nutzung von ausgewählten Programmen/Softwaren.</p>
     </div>
 
     <button class="zugeordnet">Warum sollten Sie teilnehmen?</button>
@@ -108,7 +108,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     </div>
     <button class="zugeordnet">Ist die Umfrage anonym?</button>
     <div class="panel">
-      <p>Die Umfrage ist vollständig anonym. Es werden lediglich 5 allgemein persönliche Fragen zu Beginn auftauchen. </p>
+      <p>Die Umfrage ist vollständig anonym. Es werden lediglich 5 allgemein persönliche Fragen zu Beginn auftauchen.</p>
       <p>Bitte füllen Sie auch hier die Felder aus. Dies wäre für die Auswertung hilfreich.</p>
     </div>
   </main>

@@ -272,7 +272,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="checkbox" name="taetigkeitenSmartwatch[]" id="spiele" value="4" <?php if(isset($_SESSION['taetigkeitenSmartwatch']) && in_array("4", $_SESSION['taetigkeitenSmartwatch'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiele">Spiele spielen</label><br />
           <input type="checkbox" name="taetigkeitenSmartwatch[]" id="gesund" value="5" <?php if(isset($_SESSION['taetigkeitenSmartwatch']) && in_array("5", $_SESSION['taetigkeitenSmartwatch'])){echo "checked=\"checked\" ";} ?> />
-          <label for="gesund">Körperwerte kontollieren</label><br />
+          <label for="gesund">Körperwerte kontrollieren</label><br />
           <label for="anderes">Andere Verwendungszwecke:</label>
           <input type="text" name="taetigkeitenSmartwatchSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenSmartwatchSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenSmartwatchSonstiges'].'"';} ?> />
         </section>

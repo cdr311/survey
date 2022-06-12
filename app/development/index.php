@@ -26,7 +26,6 @@
   <!-- Die Emoji-Grafik (https://github.com/twitter/twemoji/blob/master/assets/svg/1f4cb.svg) stammt vom Projekt Twemoji (https://twemoji.twitter.com/). Sie ist Copyright von Twitter und anderen Mitwirkenden und unter der CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) lizensiert. Es wurden keine Veränderungen am Material vorgenommen. -->
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
-
 </head>
 
 <body id="aussen">
@@ -70,7 +69,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
             <button onclick="circleklick()" title="Moduswechsel">M</button>
           </th>
         </table>
-
       </section>
     </article>
 
@@ -85,7 +83,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <img class="meineSlides" src="./images/dunkel.png" alt="UmfrageBild5" />
       <h1 class="linksunten">Nutzung digitaler Geräte</h1>
     </div>
-
   </nav>
 
   <main>
@@ -93,7 +90,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <div class="panel">
       <p>In dieser Umfrage werden insgesamt - je nach Auswahl - circa 10 bis 30 Fragen zum Thema: <b>Nutzung und Verwendung von digitalen Geräten</b> auf Sie zukommen.</p>
       <p>Dabei geht es von den verschiedenen Geräten, die von Ihnen in Nutzung sind, über den Zweck, bis hin zur Nutzungszeit.</p>
-      <p>Des Weiteren erwarten Sie Fragen zur Nutzung von ausgewählen Programmen/Softwaren.</p>
+      <p>Des Weiteren erwarten Sie Fragen zur Nutzung von ausgewählten Programmen/Softwaren.</p>
     </div>
 
     <button class="zugeordnet">Warum sollten Sie teilnehmen?</button>
@@ -111,8 +108,8 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     </div>
     <button class="zugeordnet">Ist die Umfrage anonym?</button>
     <div class="panel">
-      <p>Die Umfrage ist vollständig anonym. Es werden lediglich 5 allgemein persönliche Fragen zu Beginn auftauchen. </p>
-      <p>Es wäre für die Auswertung sehr hilfreich, wenn Sie auch hier was angeben würden.</p>
+      <p>Die Umfrage ist vollständig anonym. Es werden lediglich 5 allgemein persönliche Fragen zu Beginn auftauchen.</p>
+      <p>Bitte füllen Sie auch hier die Felder aus. Dies wäre für die Auswertung hilfreich.</p>
     </div>
   </main>
 
@@ -126,10 +123,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <p>Copyright ©2022</p>
   </footer>
 
-  <script type="text/javascript" src="./scripte/start.js">
-
-  </script>
+  <script type="text/javascript" src="./scripte/start.js"></script>
 
 </body>
-
 </html>

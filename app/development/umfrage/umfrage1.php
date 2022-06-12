@@ -25,7 +25,6 @@ printSessionVariables();
   <script src="../scripte/changePage.js"></script>
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
-
 </head>
 
 <body id="aussen">
@@ -58,7 +57,6 @@ $showPopup = true;
       </section>
       <section class="mitte">
         <div class="ueberschrift">Umfrage</div>
-
       </section>
       <section class="rechts">
         <table>
@@ -233,8 +231,6 @@ $showPopup = true;
             <option value="9" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "9"){echo "selected=\"selected\" ";} ?> >Promotion</option>
             <option value="10" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "10"){echo "selected=\"selected\" ";} ?> >Professur</option>
           </select>
-
-          </select>
         </section>
       </div>
       <div class="vorher">
@@ -247,17 +243,13 @@ $showPopup = true;
     </div>
   </main>
 
-
-
   <footer class="mittig">
     <p>Die gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a> verwendet.</p>
     <p>Copyright ©2022</p>
   </footer>
 
-
-  <script type="text/javascript" src="../scripte/umfrage.js">
-  </script>
+  <script type="text/javascript" src="../scripte/umfrage.js"></script>
+  
 </body>
-
 </html>

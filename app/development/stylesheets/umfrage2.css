@@ -81,7 +81,7 @@ div.main{
   top:70px;
   left: 25%;
   width: 100%;
-  height: 131%;
+  height: 133%;
   box-shadow: 8px 8px 8px 10px grey;
   background-color: #A4A4A4;
 }
@@ -315,7 +315,7 @@ span.droppen{
     top: 165%;
   }
   div.main{
-    height: 170%;
+    height: 172%;
   }
   footer{
     top:360%;

@@ -280,7 +280,7 @@ span.droppen{
 #aendern{
   height: 100%;
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 650px) {
   div.auswahl2{
     top:31%;
   }

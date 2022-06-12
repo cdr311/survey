@@ -10,7 +10,6 @@ function cookieOk() {
   document.getElementById("cookie-popup").classList.add("hidden");
 }
 
-
 function circleklick() {
   var element = document.body
   element.classList.toggle("darkmode")

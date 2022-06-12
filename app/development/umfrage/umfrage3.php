@@ -281,10 +281,10 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="vorher">
-        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage2.php', 'form3')">Vorherige Seite</button>
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage2.php', 'form3', 3)">Vorherige Seite</button>
       </div>
       <div class="naechste">
-        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage4.php', 'form3')">Nächste Seite</button>
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage4.php', 'form3', 3)">Nächste Seite</button>
       </div>
     </div>
   </form>

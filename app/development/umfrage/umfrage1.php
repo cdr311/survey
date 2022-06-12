@@ -241,7 +241,7 @@ $showPopup = true;
         <button type="button" name="umfrage" class="verschleiern" id="aendern">Vorherige Seite</button>
       </div>
       <div class="naechste">
-        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage2.php', 'form1')">Nächste Seite</button>
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage2.php', 'form1', 1)">Nächste Seite</button>
       </div>
     </form>
     </div>

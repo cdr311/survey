@@ -30,9 +30,6 @@ section.mitte{
   height: 8%;
   width: 100%;
 }
-section.links{
-  float: left;
-}
 section.rechts{
   float: right;
   padding-right: 5px;

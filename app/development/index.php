@@ -109,7 +109,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <button class="zugeordnet">Ist die Umfrage anonym?</button>
     <div class="panel">
       <p>Die Umfrage ist vollständig anonym. Es werden lediglich 5 allgemein persönliche Fragen zu Beginn auftauchen. </p>
-      <p>Es wäre für die Auswertung sehr hilfreich, wenn Sie auch hier was angeben würden.</p>
+      <p>Bitte füllen Sie auch hier die Felder aus. Dies wäre für die Auswertung hilfreich.</p>
     </div>
   </main>
 

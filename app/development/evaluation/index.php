@@ -134,7 +134,7 @@ echo "      <p>$num_smartphone</p>\n";
 
 // Prozentsatz der Smartphones anteilsmäßig von allen Geräten
 if ($num_devices > 0) {
-  $perc_smartphone = ($num_smartphone / $num_devices) * 100;
+  $perc_smartphone = round(($num_smartphone / $num_devices) * 100, 2);
 
   echo "      <p>$perc_smartphone% der Teilnehmer benutzen ein Smartphone.\n";
 } else {
@@ -185,8 +185,8 @@ foreach ($query as $row) {
 }
 
 if ($num_devices > 0) {
-  $perc_linux = ($num_linux / $num_devices) * 100;
-  $perc_bsd = ($num_bsd / $num_devices) * 100;
+  $perc_linux = round(($num_linux / $num_devices) * 100, 2);
+  $perc_bsd = round(($num_bsd / $num_devices) * 100, 2);
 
   echo "      <p>Linux-Benutzer: $num_linux / $perc_linux%</p>";
   echo "      <p>BSD-Benutzer: $num_bsd / $perc_bsd%</p>";

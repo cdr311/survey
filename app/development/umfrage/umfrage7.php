@@ -87,6 +87,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <h4>Sie haben die Umfrage erfolgreich abgeschlossen!</h4>
     <img src="../images/Korrekthaken.png" alt="Korrekthaken" title="Korrekt" width="200px" height="220px" />
     <h3>Vielen Dank für Ihre Teilnahme!</h3>
+    <p><a href="../evaluation/">Hier</a> gelangen Sie zur Auswertung.</p>
   </nav>
 
   <footer class="mittig">

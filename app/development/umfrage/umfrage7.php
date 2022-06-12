@@ -9,6 +9,8 @@ printSessionVariables();
 
 saveSessionVariablesIntoDB();
 
+session_destroy();
+
 printTable("TeilnehmerDaten");
 printTable("Geraeteart");
 printTable("Nutzungsgebiet");

@@ -188,7 +188,6 @@ CREATE TABLE VerschluesselungPrivat (
 	TeilnehmerID INT NOT NULL,
 	VerschluesselungPrivat INT NOT NULL,
 	Art INT,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (VerschluesselungPrivat) REFERENCES VerschluesselungKey(ID),
 	FOREIGN KEY (Art) REFERENCES VerschluesselungsartKey(ID)
@@ -198,7 +197,6 @@ CREATE TABLE VerschluesselungDienstlich (
 	TeilnehmerID INT NOT NULL,
 	VerschluesselungDienstlich INT NOT NULL,
 	Art INT,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (VerschluesselungDienstlich) REFERENCES VerschluesselungKey(ID),
 	FOREIGN KEY (Art) REFERENCES VerschluesselungsartKey(ID)
@@ -207,7 +205,6 @@ CREATE TABLE VerschluesselungDienstlich (
 CREATE TABLE Bewertung (
 	TeilnehmerID INT NOT NULL,
 	Bewertung INT,
-	PRIMARY KEY (TeilnehmerID),
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (Bewertung) REFERENCES BewertungKey(ID)
 );

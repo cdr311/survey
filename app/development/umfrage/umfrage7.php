@@ -39,7 +39,6 @@ printTable("Bewertung");
   <!-- Die Emoji-Grafik (https://github.com/twitter/twemoji/blob/master/assets/svg/1f4cb.svg) stammt vom Projekt Twemoji (https://twemoji.twitter.com/). Sie ist Copyright von Twitter und anderen Mitwirkenden und unter der CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) lizensiert. Es wurden keine Veränderungen am Material vorgenommen. -->
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
-
 </head>
 
 <body id="aussen">
@@ -72,7 +71,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       </section>
       <section class="mitte">
         <div class="ueberschrift">Umfrage</div>
-
       </section>
       <section class="rechts">
         <table>
@@ -100,8 +98,8 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a> verwendet.</p>
     <p>Copyright ©2022</p>
   </footer>
-  <script type="text/javascript" src="../scripte/umfrage.js">
-  </script>
-</body>
 
+  <script type="text/javascript" src="../scripte/umfrage.js"></script>
+
+</body>
 </html>

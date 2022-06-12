@@ -27,7 +27,6 @@
   <script src="../scripte/changePage.js"></script>
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
-
 </head>
 
 <body id="aussen">
@@ -311,8 +310,8 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a> verwendet.</p>
     <p>Copyright ©2022</p>
   </footer>
-  <script type="text/javascript" src="../scripte/umfrage.js">
-  </script>
-</body>
 
+  <script type="text/javascript" src="../scripte/umfrage.js"></script>
+
+</body>
 </html>

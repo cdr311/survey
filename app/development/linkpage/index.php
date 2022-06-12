@@ -13,7 +13,6 @@
   <!-- Die Emoji-Grafik (https://github.com/twitter/twemoji/blob/master/assets/svg/1f4cb.svg) stammt vom Projekt Twemoji (https://twemoji.twitter.com/). Sie ist Copyright von Twitter und anderen Mitwirkenden und unter der CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) lizensiert. Es wurden keine Veränderungen am Material vorgenommen. -->
 
   <title>Umfrage zur Nutzung digitaler Geräte</title>
-
 </head>
 
 <body id="aussen">
@@ -62,7 +61,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     </article>
   </header>
 
-
   <main>
     <h1><u>Links für genauere Details:</u></h1>
     <article class="genauer1">
@@ -82,9 +80,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <p>Copyright ©2022</p>
   </footer>
 
-  <script type="text/javascript" src="../scripte/link.js">
-  </script>
+  <script type="text/javascript" src="../scripte/link.js"></script>
 
 </body>
-
 </html>

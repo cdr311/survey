@@ -422,6 +422,8 @@ function validateLeavingPage4(){
 }
 
 function validateLeavingPage5(){
+  const verschluesselungPrivatMethode = document.getElementById("privatJa");
+  const verschluesselungDienstlichMethode = document.getElementById("dienstlichJa");
   var mailprogrammCheckboxes = document.getElementsByName("mailprogramm[]");
   var mailprogrammSelected = false;
 
@@ -459,8 +461,18 @@ function validateLeavingPage5(){
     return false;
   }
 
+  if (verschluesselungPrivatSelected && !verschluesselungPrivatMethode.checked) {
+    alert("Bitte geben Sie die Verschlüsselungsart Ihrer privaten E-Mails an.");
+    return false;
+  }
+
   if(!verschluesselungDienstlichSelected){
     alert("Verschlüsselung (Dienstlich) fehlt");
+    return false;
+  }
+
+  if (verschluesselungDienstlichSelected && !verschluesselungDienstlichMethode.checked) {
+    alert("Bitte geben Sie die Verschlüsselungsart Ihrer dienstlichen E-Mails an.");
     return false;
   }
 

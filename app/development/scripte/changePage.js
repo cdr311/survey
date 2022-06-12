@@ -89,6 +89,118 @@ function validateLeavingPage1(){
 }
 
 function validateLeavingPage2(){
+  const pcChecks = document.getElementsByName("taetigkeitenDesktop[]");
+  const laptopChecks = document.getElementsByName("taetigkeitenLaptop[]");
+  const smartpChecks = document.getElementsByName("taetigkeitenSmartphone[]");
+  const tabChecks = document.getElementsByName("taetigkeitenTablet[]");
+  const smarttChecks = document.getElementsByName("taetigkeitenSmartTV[]");
+  const smartwChecks = document.getElementsByName("taetigkeitenSmartwatch[]");
+  const spielChecks = document.getElementsByName("taetigkeitenSpielekonsole[]");
+  let pcSelected = false;
+  let laptopSelected = false;
+  let smartpSelected = false;
+  let tabSelected = false;
+  let smarttSelected = false;
+  let smartwSelected = false;
+  let spielSelected = false;
+
+  for (let i = 0; i < pcChecks.length; i++) {
+    if (pcChecks[i].checked) {
+      pcSelected = true;
+    }
+  }
+  
+  for (let i = 0; i < laptopChecks.length; i++) {
+    if (laptopChecks[i].checked) {
+      laptopSelected = true;
+      break;
+    }
+  }
+  
+  for (let i = 0; i < smartpChecks.length; i++) {
+    if (smartpChecks[i].checked) {
+      smartpSelected = true;
+      break;
+    }
+  }
+
+  for (let i = 0; i < tabChecks.length; i++) {
+    if (tabChecks[i].checked) {
+      tabSelected = true;
+      break;
+    }
+  }
+
+  for (let i = 0; i < smarttChecks.length; i++) {
+    if (smarttChecks[i].checked) {
+      smarttSelected = true;
+      break;
+    }
+  }
+
+  for (let i = 0; i < smartwChecks.length; i++) {
+    if (smartwChecks[i].checked) {
+      smartwSelected = true;
+      break;
+    }
+  }
+
+  for (let i = 0; i < spielChecks.length; i++) {
+    if (spielChecks[i].checked) {
+      spielSelected = true;
+      break;
+    }
+  }
+
+  if (sessionStorage.getItem("pc")) {
+    if (!pcSelected) {
+      alert("Bitte geben Sie mindestens ein Nutzungsgebiet für Ihren Desktop PC an.");
+      return false;
+    }
+  }
+
+  if (sessionStorage.getItem("laptop")) {
+    if (!laptopSelected) {
+      alert("Bitte geben Sie mindestens ein Nutzungsgebiet für Ihren Laptop an.");
+      return false;
+    }
+  }
+
+  if (sessionStorage.getItem("smartp")) {
+    if (!smartpSelected) {
+      alert("Bitte geben Sie mindestens ein Nutzungsgebiet für Ihr Smartphone an.");
+      return false;
+    }
+  }
+
+  if (sessionStorage.getItem("tab")) {
+    if (!tabSelected) {
+      alert("Bitte geben Sie mindestens ein Nutzungsgebiet für Ihr Tablet an.");
+      return false;
+    }
+  }
+
+  if (sessionStorage.getItem("smartt")) {
+    if (!smarttSelected) {
+      alert("Bitte geben Sie mindestens ein Nutzungsgebiet für Ihr Smart TV an.");
+      return false;
+    }
+  }
+
+  if (sessionStorage.getItem("smartw")) {
+    if (!smartwSelected) {
+      alert("Bitte geben Sie mindestens ein Nutzungsgebiet für Ihre Smartwatch an.");
+      return false;
+    }
+  }
+
+  if (sessionStorage.getItem("spiel")) {
+    if (!spielSelected) {
+      alert("Bitte geben Sie mindestens ein Nutzungsgebiet für Ihre Spielekonsole an.");
+      return false;
+    }
+  }
+
   return true;
 }
 
@@ -176,4 +288,12 @@ function validateLeavingPage6(){
   }
 
   return true;
+}
+
+function writeToSessionStorage(obj, name, bool) {
+  if (obj.checked) {
+    sessionStorage.setItem(name, bool);
+  } else {
+    sessionStorage.removeItem(name);
+  }
 }

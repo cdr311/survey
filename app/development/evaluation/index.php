@@ -1,3 +1,12 @@
+<?php
+// Datenbankverbindung öffnen
+try {
+  $dbh = new PDO('mysql:host=' . $_ENV['MYSQL_HOST'] . ';dbname=' . $_ENV['MYSQL_DATABASE'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD']);
+} catch (PDOException $e) {
+  print "Error!: " . $e->getMessage() . "<br/>";
+  die();
+}
+?>
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
   <head>
@@ -33,14 +42,6 @@
       </article>
     </header>
     <main>
-    <?php
-try {
-  $dbh = new PDO('mysql:host=' . $_ENV['MYSQL_HOST'] . ';dbname=' . $_ENV['MYSQL_DATABASE'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD']);
-} catch (PDOException $e) {
-  print "Error!: " . $e->getMessage() . "<br/>";
-  die();
-}
-?>
 <?php
 // Persistente Verbindung, welche auch nach Ende des Skripts nicht geschlossen wird
 // Wenn die Verbindung öfter benötigt wird, resultiert dies in einer schnelleren Anwendung
@@ -200,6 +201,7 @@ if ($num_devices > 0) {
       <p>Copyright ©2022</p>
     </footer>
 <?php
+// Datenbankverbindung schließen
 $dbh = null;
 ?>
     <script type="text/javascript" src="../scripte/start.js"></script>

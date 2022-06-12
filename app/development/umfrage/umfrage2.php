@@ -296,8 +296,12 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="text" name="taetigkeitenSpielekonsoleSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenSpielekonsoleSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenSpielekonsoleSonstiges'].'"';} ?> />
         </section>
       </div>
-      <button type="button" name="umfrage" class="vorher" onclick="submitForm('umfrage1.php', 'form2', 2)">Vorherige Seite</button>
-      <button type="button" name="umfrage" class="naechste" onclick="submitForm('umfrage3.php', 'form2', 2)">Nächste Seite</button>
+      <div class="vorher">
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage1.php', 'form2', 2)">Vorherige Seite</button>
+      </div>
+      <div class="naechste">
+        <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage3.php', 'form2', 2)">Nächste Seite</button>
+      </div>
     </div>
   </form>
   </main>

@@ -25,16 +25,6 @@ header{
 section.links{
   float: left;
 }
-<<<<<<< HEAD
-section.links{
-  float: left;
-=======
-section.mitte{
-  position: absolute;
-  height: 8%;
-  width: 100%;
->>>>>>> c34f6ee932994fbb9b1ff328df53c0d612685999
-}
 section.rechts{
   float: right;
   padding-right: 5px;

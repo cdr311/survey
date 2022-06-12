@@ -107,6 +107,7 @@ function validateLeavingPage2(){
   for (let i = 0; i < pcChecks.length; i++) {
     if (pcChecks[i].checked) {
       pcSelected = true;
+      break;
     }
   }
   

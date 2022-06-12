@@ -184,21 +184,21 @@ CREATE TABLE Mailclient (
 	FOREIGN KEY (Mailclient) REFERENCES MailclientKey(ID)
 );
 
-CREATE TABLE VerschluesselungDienstlich (
-	TeilnehmerID INT NOT NULL,
-	VerschluesselungDienstlich INT NOT NULL,
-	Art INT,
-	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
-	FOREIGN KEY (VerschluesselungDienstlich) REFERENCES VerschluesselungKey(ID),
-	FOREIGN KEY (Art) REFERENCES VerschluesselungsartKey(ID)
-);
-
 CREATE TABLE VerschluesselungPrivat (
 	TeilnehmerID INT NOT NULL,
 	VerschluesselungPrivat INT NOT NULL,
 	Art INT,
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (VerschluesselungPrivat) REFERENCES VerschluesselungKey(ID),
+	FOREIGN KEY (Art) REFERENCES VerschluesselungsartKey(ID)
+);
+
+CREATE TABLE VerschluesselungDienstlich (
+	TeilnehmerID INT NOT NULL,
+	VerschluesselungDienstlich INT NOT NULL,
+	Art INT,
+	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
+	FOREIGN KEY (VerschluesselungDienstlich) REFERENCES VerschluesselungKey(ID),
 	FOREIGN KEY (Art) REFERENCES VerschluesselungsartKey(ID)
 );
 

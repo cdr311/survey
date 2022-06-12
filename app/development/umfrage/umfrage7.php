@@ -16,6 +16,9 @@ printTable("Nutzungsdauer");
 printTable("Betriebssystem");
 printTable("Browser");
 printTable("Mailclient");
+printTable("VerschluesselungPrivat");
+printTable("VerschluesselungDienstlich");
+printTable("Bewertung");
 
 ?>
 

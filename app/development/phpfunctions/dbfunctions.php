@@ -60,6 +60,9 @@
     fillBetriebssystem();
     fillBrowser();
     fillMailclient();
+    fillVerschluesselungPrivat();
+    fillVerschluesselungDienstlich();
+    fillBewertung();
   }
 
 
@@ -111,6 +114,26 @@
     foreach($_SESSION['mailprogramm'] as $val){
       executeQuery("INSERT INTO Mailclient VALUES ('{$_SESSION['id']}', '$val');");
     }
+  }
+
+  function fillVerschluesselungPrivat(){
+    if($_SESSION['verschluesselungPrivat'] == 1){
+      executeQuery("INSERT INTO VerschluesselungPrivat VALUES ('{$_SESSION['id']}', '{$_SESSION['verschluesselungPrivat']}', '{$_SESSION['verschluesselungPrivatMethode']}');");
+    }else{
+      executeQuery("INSERT INTO VerschluesselungPrivat VALUES ('{$_SESSION['id']}', '{$_SESSION['verschluesselungPrivat']}', NULL);");
+    }
+  }
+
+  function fillVerschluesselungDienstlich(){
+    if($_SESSION['verschluesselungDienstlich'] == 1){
+      executeQuery("INSERT INTO VerschluesselungDienstlich VALUES ('{$_SESSION['id']}', '{$_SESSION['verschluesselungDienstlich']}', '{$_SESSION['verschluesselungDienstlichMethode']}');");
+    }else{
+      executeQuery("INSERT INTO VerschluesselungDienstlich VALUES ('{$_SESSION['id']}', '{$_SESSION['verschluesselungDienstlich']}', NULL);");
+    }
+  }
+
+  function fillBewertung(){
+    executeQuery("INSERT INTO Bewertung VALUES ('{$_SESSION['id']}', '{$_SESSION['bewertung']}');");
   }
 
 ?>

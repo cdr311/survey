@@ -92,49 +92,56 @@ div.auswahl1{
   padding-bottom: 10px;
 }
 div.auswahl2{
-  display: block;
+  /* display: block; */
+  display: none;
   position: absolute;
   left:5%;
   top:20%;
   padding-bottom: 10px;
 }
 div.auswahl3{
-  display: block;
+  /* display: block; */
+  display: none;
   position: absolute;
   left:5%;
   top:35%;
   padding-bottom: 10px;
 }
 div.auswahl4{
-  display: block;
+  /* display: block; */
+  display: none;
   position: absolute;
   left:5%;
   top:50%;
   padding-bottom: 10px;
 }
 div.auswahl5{
-  display: block;
+  /* display: block; */
+  display: none;
   position: absolute;
   left:5%;
   top:65%;
   padding-bottom: 10px;
 }
 div.auswahl6{
-  display: block;
+  /* display: block; */
+  display: none;
   position: absolute;
   left:5%;
   top:80%;
   padding-bottom: 10px;
 }
 div.auswahl7{
-  display: block;
+  /* display: block; */
+  display: none;
   position: absolute;
   left:5%;
   top:95%;
   padding-bottom: 10px;
 }
 div.auswahl8{
-  display: block;
+  /* display: block; */
+  display: none;
   position: absolute;
   left:5%;
   top:112%;

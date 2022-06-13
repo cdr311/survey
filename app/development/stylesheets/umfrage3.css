@@ -86,7 +86,6 @@ div.main{
   background-color: #A4A4A4;
 }
 div.auswahl1{
-  /* display: block; */
   display: none;
   position: absolute;
   left:5%;
@@ -94,7 +93,6 @@ div.auswahl1{
   padding-bottom: 10px;
 }
 div.auswahl2{
-  /* display: block; */
   display: none;
   position: absolute;
   left:5%;
@@ -102,7 +100,6 @@ div.auswahl2{
   padding-bottom: 10px;
 }
 div.auswahl3{
-  /* display: block; */
   display: none;
   position: absolute;
   left:5%;
@@ -110,7 +107,6 @@ div.auswahl3{
   padding-bottom: 10px;
 }
 div.auswahl4{
-  /* display: block; */
   display: none;
   position: absolute;
   left:5%;
@@ -118,7 +114,6 @@ div.auswahl4{
   padding-bottom: 10px;
 }
 div.auswahl5{
-  /* display: block; */
   display: none;
   position: absolute;
   left:5%;
@@ -126,7 +121,6 @@ div.auswahl5{
   padding-bottom: 10px;
 }
 div.auswahl6{
-  /* display: block; */
   display: none;
   position: absolute;
   left:5%;
@@ -134,7 +128,6 @@ div.auswahl6{
   padding-bottom: 10px;
 }
 div.auswahl7{
-  /* display: block; */
   display: none;
   position: absolute;
   left:5%;

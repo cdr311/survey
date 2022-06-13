@@ -42,12 +42,23 @@ span {
     padding: 5px;
     border-radius: 10px;
 }
+p {
+    font-size: 19px;
+}
 span:hover {
     background-color: #62bcf5;
 }
 details::first-line {
-    font-size: large;
+    font-size: 25px;
     font-weight: bold;
+}
+details {
+    font-size: 19px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: fit-content;
 }
 section.links {
     float: left;

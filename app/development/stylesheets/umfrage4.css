@@ -74,64 +74,50 @@ main{
   top: 10%;
   left: 25%;
   width: 70%;
-  /* height: 145%; */
 }
 div.main{
   border: 1px solid black;
   top:70px;
   left: 25%;
   width: 100%;
-  /* height: 135%; */
   box-shadow: 8px 8px 8px 10px grey;
   background-color: #A4A4A4;
   padding-bottom: 25px;
 }
 div.auswahl1{
   display: none;
-  /* position: absolute; */
   position: relative;
   left:5%;
-  /* top:3%; */
   padding-bottom: 10px;
 }
 div.auswahl2{
   display: none;
-  /* position: absolute; */
   position: relative;
   left:5%;
-  /* top:23%; */
   padding-bottom: 10px;
 }
 div.auswahl3{
   display: none;
-  /* position: absolute; */
   position: relative;
   left:5%;
-  /* top:43%; */
   padding-bottom: 10px;
 }
 div.auswahl4{
   display: none;
-  /* position: absolute; */
   position: relative;
   left:5%;
-  /* top:63%; */
   padding-bottom: 10px;
 }
 div.auswahl5{
   display: none;
-  /* position: absolute; */
   position: relative;
   left:5%;
-  /* top:80%; */
   padding-bottom: 10px;
 }
 div.auswahl6{
   display: block;
-  /* position: absolute; */
   position: relative;
   left:5%;
-  /* top:98%; */
   padding-bottom: 10px;
 }
 label{
@@ -141,22 +127,14 @@ label{
 }
 div.vorher{
   float: left;
-  /* position: absolute; */
-  /* position: relative; */
   padding-bottom: 10px;
   text-align: center;
-  /* left: -10%; */
-  /* top: 130%; */
   padding-left: 8px;
 }
 div.naechste{
   float: right;
-  /* position: absolute; */
-  /* position: relative; */
   padding-bottom: 10px;
   text-align: center;
-  /* top: 130%; */
-  /* left: 30%; */
   padding-right: 8px;
 }
 section.links{
@@ -212,10 +190,6 @@ footer{
   padding-top: 4px;
   padding-bottom: 4px;
   position: absolute;
-  /* position: relative; */
-  /* display: table-row; */
-  /* bottom: 0; */
-  /* top: 220%; */
   top:700px;
   width: 100%;
 }
@@ -288,33 +262,4 @@ span.droppen{
 }
 #aendern{
   height: 100%;
-}
-@media screen and (max-height: 600px) {
-  div.auswahl2{
-    top:28%;
-  }
-  div.auswahl3{
-    top:53%;
-  }
-  div.auswahl4{
-    top:78%;
-  }
-  div.auswahl5{
-    top:103%;
-  }
-  div.auswahl6{
-    top:125%;
-  }
-  div.naechste{
-    top: 159%;
-  }
-  div.vorher{
-    top: 159%;
-  }
-  div.main{
-    height: 165%;
-  }
-  footer{
-    top:260%;
-  }
 }

@@ -679,33 +679,6 @@ if ($num_devices > 0) {
 }
 ?>
 <?php
-// Gesamtanzahl benutzter Geräte
-/* echo "    <h3>So viele Geräte werden von allen Teilnehmern insgesamt benutzt:</h3>\n";
-echo "    <p>$num_devices</p>";
-?>
-    <label for="device-names">So viele des folgenden Gerätetyps werden genutzt:</label>
-    <form method="post" id="device-names">
-      <select name="device-names">
-        <option value="0">Desktop PC</option>
-        <option value="1">Laptop</option>
-        <option value="2">Smartphone</option>
-        <option value="3">Tablet</option>
-        <option value="4">Smart TV</option>
-        <option value="5">Smartwatch</option>
-        <option value="6">Spielekonsole</option>
-      </select>
-      <input type="submit"/>
-    </form>
-<?php
-$device = 2;
-
-$stmt = $dbh->prepare("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = ?");
-$stmt->execute(["$device"]);
-foreach ($stmt as $row) {
-  print_r($row[0]);
-} */
-?>
-<?php
 // Anzahl und Anteil der Benutzer von Linux-Distributionen und BSD-Varianten ermitteln und anzeigen
 $perc_linux = 0;
 $perc_bsd = 0;

@@ -277,6 +277,12 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   </footer>
 
   <script type="text/javascript" src="../scripte/umfrage.js"></script>
-
+  <script type="text/javascript">
+    if (sessionStorage.getItem("pc"))     { document.getElementsByClassName("auswahl1")[0].style.display = "block"; }
+    if (sessionStorage.getItem("laptop")) { document.getElementsByClassName("auswahl2")[0].style.display = "block"; }
+    if (sessionStorage.getItem("smartp")) { document.getElementsByClassName("auswahl3")[0].style.display = "block"; }
+    if (sessionStorage.getItem("tab"))    { document.getElementsByClassName("auswahl4")[0].style.display = "block"; }
+    if (sessionStorage.getItem("smartt")) { document.getElementsByClassName("auswahl5")[0].style.display = "block"; }
+  </script>
 </body>
 </html>

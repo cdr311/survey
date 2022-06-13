@@ -42,6 +42,8 @@ try {
       </article>
     </header>
     <main>
+      <h1>Auswertung</h1>
+      <p>Auf dieser Seite finden Sie einige interessante Statistiken zur Umfrage.</p>
 <?php
 // Persistente Verbindung, welche auch nach Ende des Skripts nicht geschlossen wird
 // Wenn die Verbindung öfter benötigt wird, resultiert dies in einer schnelleren Anwendung

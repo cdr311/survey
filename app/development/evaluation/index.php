@@ -100,43 +100,580 @@ foreach ($query as $row) {
 } */
 ?>
 <?php
-// Anzahl der Teilnehmer ermitteln und anzeigen
-$num_participants = 0;
+$num_geschlecht_0 = 0;
+$num_geschlecht_1 = 0;
+$num_geschlecht_2 = 0;
+$num_altersbereich_0 = 0;
+$num_altersbereich_1 = 0;
+$num_altersbereich_2 = 0;
+$num_altersbereich_3 = 0;
+$num_altersbereich_4 = 0;
+$num_altersbereich_5 = 0;
+$num_altersbereich_6 = 0;
+$num_berufsfeld_0 = 0;
+$num_berufsfeld_1 = 0;
+$num_berufsfeld_2 = 0;
+$num_berufsfeld_3 = 0;
+$num_berufsfeld_4 = 0;
+$num_berufsfeld_5 = 0;
+$num_familienstand_0 = 0;
+$num_familienstand_1 = 0;
+$num_familienstand_2 = 0;
+$num_familienstand_3 = 0;
+$num_familienstand_4 = 0;
+$num_bildungsstand_0 = 0;
+$num_bildungsstand_1 = 0;
+$num_bildungsstand_2 = 0;
+$num_bildungsstand_3 = 0;
+$num_bildungsstand_4 = 0;
+$num_bildungsstand_5 = 0;
+$num_bildungsstand_6 = 0;
+$num_bildungsstand_7 = 0;
+$num_bildungsstand_8 = 0;
+$num_bildungsstand_9 = 0;
+$num_bildungsstand_10 = 0;
+$num_geraeteart_0 = 0;
+$num_geraeteart_1 = 0;
+$num_geraeteart_2 = 0;
+$num_geraeteart_3 = 0;
+$num_geraeteart_4 = 0;
+$num_geraeteart_5 = 0;
+$num_geraeteart_6 = 0;
+$num_nutzungsgebiet_0 = 0;
+$num_nutzungsgebiet_1 = 0;
+$num_nutzungsgebiet_2 = 0;
+$num_nutzungsgebiet_3 = 0;
+$num_nutzungsgebiet_4 = 0;
+$num_nutzungsgebiet_5 = 0;
+$num_nutzungsdauer_0 = 0;
+$num_nutzungsdauer_1 = 0;
+$num_nutzungsdauer_2 = 0;
+$num_nutzungsdauer_3 = 0;
+$num_nutzungsdauer_4 = 0;
+$num_nutzungsdauer_5 = 0;
+$num_betriebssystem_0 = 0;
+$num_betriebssystem_1 = 0;
+$num_betriebssystem_2 = 0;
+$num_betriebssystem_3 = 0;
+$num_betriebssystem_4 = 0;
+$num_betriebssystem_5 = 0;
+$num_betriebssystem_6 = 0;
+$num_betriebssystem_7 = 0;
+$num_betriebssystem_8 = 0;
+$num_betriebssystem_9 = 0;
+$num_betriebssystem_10 = 0;
+$num_browser_0 = 0;
+$num_browser_1 = 0;
+$num_browser_2 = 0;
+$num_browser_3 = 0;
+$num_browser_4 = 0;
+$num_browser_5 = 0;
+$num_browser_6 = 0;
+$num_browser_7 = 0;
+$num_browser_8 = 0;
+$num_browser_9 = 0;
+$num_browser_10 = 0;
+$num_browser_11 = 0;
+$num_browser_12 = 0;
+$num_mailclient_0 = 0;
+$num_mailclient_1 = 0;
+$num_mailclient_2 = 0;
+$num_mailclient_3 = 0;
+$num_mailclient_4 = 0;
+$num_mailclient_5 = 0;
+$num_mailclient_6 = 0;
+$num_mailclient_7 = 0;
+$num_mailclient_8 = 0;
+$num_mailclient_9 = 0;
+$num_mailclient_10 = 0;
+$num_mailclient_11 = 0;
+$num_mailclient_12 = 0;
+$num_verschluesselungprivat = 0;
+$num_verschluesselungdienstlich = 0;
+$num_verschluesselungsartprivat_0 = 0;
+$num_verschluesselungsartprivat_1 = 0;
+$num_verschluesselungsartprivat_2 = 0;
+$num_verschluesselungsartprivat_3 = 0;
+$num_verschluesselungsartdienstlich_0 = 0;
+$num_verschluesselungsartdienstlich_1 = 0;
+$num_verschluesselungsartdienstlich_2 = 0;
+$num_verschluesselungsartdienstlich_3 = 0;
+$num_bewertung_0 = 0;
+$num_bewertung_1 = 0;
+$num_bewertung_2 = 0;
+$num_bewertung_3 = 0;
+$num_bewertung_4 = 0;
 
-echo "  <h3>Anzahl Teilnehmer:</h3>\n";
-$query = $dbh->query("SELECT COUNT(TeilnehmerID) FROM TeilnehmerDaten;");
-//print_r($query);
-foreach($query as $row) {
-  //print_r($row);
-  $num_participants = $row[0];
-}
-echo "      <p>$num_participants</p>\n";
+$num_participants = 0;
+$num_devices = 0;
+$num_verschluesselungsart_0 = 0;
+$num_verschluesselungsart_1 = 0;
+$num_verschluesselungsart_2 = 0;
+$num_verschluesselungsart_3 = 0;
 ?>
 <?php
-// Anzahl aller genutzten Geräte ermitteln
-$num_devices = 0;
+// Anzahlen ermitteln
+$query = $dbh->query("SELECT COUNT(DISTINCT TeilnehmerID) FROM TeilnehmerDaten;");
+foreach ($query as $row) {
+  $num_participants = $row[0];
+}
 
 $query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart;");
 foreach ($query as $row) {
   $num_devices = $row[0];
 }
+
+$query = $dbh->query("SELECT COUNT(Geschlecht) FROM TeilnehmerDaten WHERE Geschlecht = 0");
+foreach ($query as $row) {
+  $num_geschlecht_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Geschlecht) FROM TeilnehmerDaten WHERE Geschlecht = 1");
+foreach ($query as $row) {
+  $num_geschlecht_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Geschlecht) FROM TeilnehmerDaten WHERE Geschlecht = 2");
+foreach ($query as $row) {
+  $num_geschlecht_2 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Altersbereich) FROM TeilnehmerDaten WHERE Altersbereich = 0");
+foreach ($query as $row) {
+  $num_altersbereich_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Altersbereich) FROM TeilnehmerDaten WHERE Altersbereich = 1");
+foreach ($query as $row) {
+  $num_altersbereich_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Altersbereich) FROM TeilnehmerDaten WHERE Altersbereich = 2");
+foreach ($query as $row) {
+  $num_altersbereich_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Altersbereich) FROM TeilnehmerDaten WHERE Altersbereich = 3");
+foreach ($query as $row) {
+  $num_altersbereich_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Altersbereich) FROM TeilnehmerDaten WHERE Altersbereich = 4");
+foreach ($query as $row) {
+  $num_altersbereich_4 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Altersbereich) FROM TeilnehmerDaten WHERE Altersbereich = 5");
+foreach ($query as $row) {
+  $num_altersbereich_5 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Altersbereich) FROM TeilnehmerDaten WHERE Altersbereich = 6");
+foreach ($query as $row) {
+  $num_altersbereich_6 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Berufsfeld) FROM TeilnehmerDaten WHERE Berufsfeld = 0");
+foreach ($query as $row) {
+  $num_berufsfeld_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Berufsfeld) FROM TeilnehmerDaten WHERE Berufsfeld = 1");
+foreach ($query as $row) {
+  $num_berufsfeld_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Berufsfeld) FROM TeilnehmerDaten WHERE Berufsfeld = 2");
+foreach ($query as $row) {
+  $num_berufsfeld_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Berufsfeld) FROM TeilnehmerDaten WHERE Berufsfeld = 3");
+foreach ($query as $row) {
+  $num_berufsfeld_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Berufsfeld) FROM TeilnehmerDaten WHERE Berufsfeld = 4");
+foreach ($query as $row) {
+  $num_berufsfeld_4 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Berufsfeld) FROM TeilnehmerDaten WHERE Berufsfeld = 5");
+foreach ($query as $row) {
+  $num_berufsfeld_5 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Familienstand) FROM TeilnehmerDaten WHERE Familienstand = 0");
+foreach ($query as $row) {
+  $num_familienstand_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Familienstand) FROM TeilnehmerDaten WHERE Familienstand = 1");
+foreach ($query as $row) {
+  $num_familienstand_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Familienstand) FROM TeilnehmerDaten WHERE Familienstand = 2");
+foreach ($query as $row) {
+  $num_familienstand_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Familienstand) FROM TeilnehmerDaten WHERE Familienstand = 3");
+foreach ($query as $row) {
+  $num_familienstand_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Familienstand) FROM TeilnehmerDaten WHERE Familienstand = 4");
+foreach ($query as $row) {
+  $num_familienstand_4 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 0");
+foreach ($query as $row) {
+  $num_bildungsstand_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 1");
+foreach ($query as $row) {
+  $num_bildungsstand_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 2");
+foreach ($query as $row) {
+  $num_bildungsstand_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 3");
+foreach ($query as $row) {
+  $num_bildungsstand_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 4");
+foreach ($query as $row) {
+  $num_bildungsstand_4 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 5");
+foreach ($query as $row) {
+  $num_bildungsstand_5 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 6");
+foreach ($query as $row) {
+  $num_bildungsstand_6 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 7");
+foreach ($query as $row) {
+  $num_bildungsstand_7 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 8");
+foreach ($query as $row) {
+  $num_bildungsstand_8 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 9");
+foreach ($query as $row) {
+  $num_bildungsstand_9 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bildungsstand) FROM TeilnehmerDaten WHERE Bildungsstand = 10");
+foreach ($query as $row) {
+  $num_bildungsstand_10 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = 0");
+foreach ($query as $row) {
+  $num_geraeteart_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = 1");
+foreach ($query as $row) {
+  $num_geraeteart_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = 2");
+foreach ($query as $row) {
+  $num_geraeteart_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = 3");
+foreach ($query as $row) {
+  $num_geraeteart_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = 4");
+foreach ($query as $row) {
+  $num_geraeteart_4 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = 5");
+foreach ($query as $row) {
+  $num_geraeteart_5 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = 6");
+foreach ($query as $row) {
+  $num_geraeteart_6 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Nutzungsgebiet) FROM Nutzungsgebiet WHERE Nutzungsgebiet = 0");
+foreach ($query as $row) {
+  $num_nutzungsgebiet_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsgebiet) FROM Nutzungsgebiet WHERE Nutzungsgebiet = 1");
+foreach ($query as $row) {
+  $num_nutzungsgebiet_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsgebiet) FROM Nutzungsgebiet WHERE Nutzungsgebiet = 2");
+foreach ($query as $row) {
+  $num_nutzungsgebiet_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsgebiet) FROM Nutzungsgebiet WHERE Nutzungsgebiet = 3");
+foreach ($query as $row) {
+  $num_nutzungsgebiet_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsgebiet) FROM Nutzungsgebiet WHERE Nutzungsgebiet = 4");
+foreach ($query as $row) {
+  $num_nutzungsgebiet_4 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsgebiet) FROM Nutzungsgebiet WHERE Nutzungsgebiet = 5");
+foreach ($query as $row) {
+  $num_nutzungsgebiet_5 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Nutzungsdauer) FROM Nutzungsdauer WHERE Nutzungsdauer = 0");
+foreach ($query as $row) {
+  $num_nutzungsdauer_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsdauer) FROM Nutzungsdauer WHERE Nutzungsdauer = 1");
+foreach ($query as $row) {
+  $num_nutzungsdauer_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsdauer) FROM Nutzungsdauer WHERE Nutzungsdauer = 2");
+foreach ($query as $row) {
+  $num_nutzungsdauer_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsdauer) FROM Nutzungsdauer WHERE Nutzungsdauer = 3");
+foreach ($query as $row) {
+  $num_nutzungsdauer_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsdauer) FROM Nutzungsdauer WHERE Nutzungsdauer = 4");
+foreach ($query as $row) {
+  $num_nutzungsdauer_4 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Nutzungsdauer) FROM Nutzungsdauer WHERE Nutzungsdauer = 5");
+foreach ($query as $row) {
+  $num_nutzungsdauer_5 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 0");
+foreach ($query as $row) {
+  $num_betriebssystem_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 1");
+foreach ($query as $row) {
+  $num_betriebssystem_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 2");
+foreach ($query as $row) {
+  $num_betriebssystem_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 3");
+foreach ($query as $row) {
+  $num_betriebssystem_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 4");
+foreach ($query as $row) {
+  $num_betriebssystem_4 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 5");
+foreach ($query as $row) {
+  $num_betriebssystem_5 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 6");
+foreach ($query as $row) {
+  $num_betriebssystem_6 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 7");
+foreach ($query as $row) {
+  $num_betriebssystem_7 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 8");
+foreach ($query as $row) {
+  $num_betriebssystem_8 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 9");
+foreach ($query as $row) {
+  $num_betriebssystem_9 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 10");
+foreach ($query as $row) {
+  $num_betriebssystem_10 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 0");
+foreach ($query as $row) {
+  $num_browser_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 1");
+foreach ($query as $row) {
+  $num_browser_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 2");
+foreach ($query as $row) {
+  $num_browser_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 3");
+foreach ($query as $row) {
+  $num_browser_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 4");
+foreach ($query as $row) {
+  $num_browser_4 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 5");
+foreach ($query as $row) {
+  $num_browser_5 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 6");
+foreach ($query as $row) {
+  $num_browser_6 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 7");
+foreach ($query as $row) {
+  $num_browser_7 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 8");
+foreach ($query as $row) {
+  $num_browser_8 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 9");
+foreach ($query as $row) {
+  $num_browser_9 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 10");
+foreach ($query as $row) {
+  $num_browser_10 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 11");
+foreach ($query as $row) {
+  $num_browser_11 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 12");
+foreach ($query as $row) {
+  $num_browser_12 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 0");
+foreach ($query as $row) {
+  $num_mailclient_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 1");
+foreach ($query as $row) {
+  $num_mailclient_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 2");
+foreach ($query as $row) {
+  $num_mailclient_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 3");
+foreach ($query as $row) {
+  $num_mailclient_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 4");
+foreach ($query as $row) {
+  $num_mailclient_4 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 5");
+foreach ($query as $row) {
+  $num_mailclient_5 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 6");
+foreach ($query as $row) {
+  $num_mailclient_6 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 7");
+foreach ($query as $row) {
+  $num_mailclient_7 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 8");
+foreach ($query as $row) {
+  $num_mailclient_8 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 9");
+foreach ($query as $row) {
+  $num_mailclient_9 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 10");
+foreach ($query as $row) {
+  $num_mailclient_10 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 11");
+foreach ($query as $row) {
+  $num_mailclient_11 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 12");
+foreach ($query as $row) {
+  $num_mailclient_12 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(DISTINCT TeilnehmerID) FROM VerschluesselungPrivat WHERE VerschluesselungPrivat = 1");
+foreach ($query as $row) {
+  $num_verschluesselungprivat = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(DISTINCT TeilnehmerID) FROM VerschluesselungDienstlich WHERE VerschluesselungDienstlich = 1");
+foreach ($query as $row) {
+  $num_verschluesselungdienstlich = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungPrivat WHERE Art = 0");
+foreach ($query as $row) {
+  $num_verschluesselungsartprivat_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungPrivat WHERE Art = 1");
+foreach ($query as $row) {
+  $num_verschluesselungsartprivat_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungPrivat WHERE Art = 2");
+foreach ($query as $row) {
+  $num_verschluesselungsartprivat_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungPrivat WHERE Art = 3");
+foreach ($query as $row) {
+  $num_verschluesselungsartprivat_3 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungDienstlich WHERE Art = 0");
+foreach ($query as $row) {
+  $num_verschluesselungsartdienstlich_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungDienstlich WHERE Art = 1");
+foreach ($query as $row) {
+  $num_verschluesselungsartdienstlich_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungDienstlich WHERE Art = 2");
+foreach ($query as $row) {
+  $num_verschluesselungsartdienstlich_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungDienstlich WHERE Art = 3");
+foreach ($query as $row) {
+  $num_verschluesselungsartdienstlich_3 = $row[0];
+}
+
+$query = $dbh->query("SELECT COUNT(Bewertung) FROM Bewertung WHERE Bewertung = 0");
+foreach ($query as $row) {
+  $num_bewertung_0 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bewertung) FROM Bewertung WHERE Bewertung = 1");
+foreach ($query as $row) {
+  $num_bewertung_1 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bewertung) FROM Bewertung WHERE Bewertung = 2");
+foreach ($query as $row) {
+  $num_bewertung_2 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bewertung) FROM Bewertung WHERE Bewertung = 3");
+foreach ($query as $row) {
+  $num_bewertung_3 = $row[0];
+}
+$query = $dbh->query("SELECT COUNT(Bewertung) FROM Bewertung WHERE Bewertung = 4");
+foreach ($query as $row) {
+  $num_bewertung_4 = $row[0];
+}
+
+$num_verschluesselungsart_0 = $num_verschluesselungsartprivat_0 + $num_verschluesselungsartdienstlich_0;
+$num_verschluesselungsart_1 = $num_verschluesselungsartprivat_1 + $num_verschluesselungsartdienstlich_1;
+$num_verschluesselungsart_2 = $num_verschluesselungsartprivat_2 + $num_verschluesselungsartdienstlich_2;
+$num_verschluesselungsart_3 = $num_verschluesselungsartprivat_3 + $num_verschluesselungsartdienstlich_3;
+?>
+<?php
+// Anzahl der Teilnehmer ermitteln und anzeigen
+echo "  <h3>Anzahl Teilnehmer:</h3>\n";
+echo "      <p>$num_participants</p>\n";
+?>
+<?php
+// Anzahl aller genutzten Geräte ermitteln
 echo "      <p>Gesamtanzahl aller genutzten Geräte: $num_devices\n";
 
 // Anzahl der genutzten Smartphones anzeigen und ermitteln
-$num_smartphone = 0;
-
 echo "      <h3>Anzahl Smartphone-Benutzer:</h3>\n";
-$query = $dbh->query("SELECT COUNT(Geraeteart) FROM Geraeteart WHERE Geraeteart = 2;");
-foreach($query as $row) {
-  $num_smartphone = $row[0];
-}
-echo "      <p>$num_smartphone</p>\n";
+echo "      <p>$num_geraeteart_2</p>\n";
 
 // Prozentsatz der Smartphones anteilsmäßig von allen Geräten
 if ($num_devices > 0) {
-  $perc_smartphone = round(($num_smartphone / $num_devices) * 100, 2);
+  $perc_geraeteart_2 = round(($num_geraeteart_2 / $num_devices) * 100, 2);
 
-  echo "      <p>$perc_smartphone% der Teilnehmer benutzen ein Smartphone.\n";
+  echo "      <p>$perc_geraeteart_2% der Teilnehmer benutzen ein Smartphone.\n";
 } else {
   echo "      <p class='error'>Bisher hat niemand an dieser Umfrage teilgenommen, der ein digitales Gerät benutzt.</p>\n";
 }
@@ -170,26 +707,15 @@ foreach ($stmt as $row) {
 ?>
 <?php
 // Anzahl und Anteil der Benutzer von Linux-Distributionen und BSD-Varianten ermitteln und anzeigen
-$num_linux = 0;
-$num_bsd = 0;
 $perc_linux = 0;
 $perc_bsd = 0;
 
-$query = $dbh->query("SELECT COUNT(DISTINCT TeilnehmerID) FROM LinuxDistribution WHERE LinuxDistribution IS NOT NULL;");
-foreach ($query as $row) {
-  $num_linux = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(DISTINCT TeilnehmerID) FROM BSDVariante WHERE BSDVariante IS NOT NULL;");
-foreach ($query as $row) {
-  $num_bsd = $row[0];
-}
-
 if ($num_devices > 0) {
-  $perc_linux = round(($num_linux / $num_devices) * 100, 2);
-  $perc_bsd = round(($num_bsd / $num_devices) * 100, 2);
+  $perc_linux = round(($num_betriebssystem_2 / $num_devices) * 100, 2);
+  $perc_bsd = round(($num_betriebssystem_3 / $num_devices) * 100, 2);
 
-  echo "      <p>Linux-Benutzer: $num_linux / $perc_linux%</p>";
-  echo "      <p>BSD-Benutzer: $num_bsd / $perc_bsd%</p>";
+  echo "      <p>Linux-Benutzer: $num_betriebssystem_2 / $perc_linux%</p>";
+  echo "      <p>BSD-Benutzer: $num_betriebssystem_3 / $perc_bsd%</p>";
 } else {
   echo "      <p class='error'>Bisher hat niemand an dieser Umfrage teilgenommen, der ein digitales Gerät benutzt.</p>\n";
 }

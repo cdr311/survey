@@ -306,7 +306,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     if (sessionStorage.getItem("smartw")) { document.getElementById("aus6").style.display = "block"; schieben();}
     if (sessionStorage.getItem("spiel"))  { document.getElementById("aus7").style.display = "block"; schieben();}
 
-    // let k = 200;
     function schieben(){
       let foot = document.getElementById('footing');
       let k = 220;

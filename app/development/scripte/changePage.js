@@ -422,8 +422,8 @@ function validateLeavingPage4(){
 }
 
 function validateLeavingPage5(){
-  const verschluesselungPrivatMethode = document.getElementById("privatJa");
-  const verschluesselungDienstlichMethode = document.getElementById("dienstlichJa");
+  const verschluesselungPrivatMethode = document.getElementById("privatja");
+  const verschluesselungDienstlichMethode = document.getElementById("dienstja");
   var mailprogrammCheckboxes = document.getElementsByName("mailprogramm[]");
   var mailprogrammSelected = false;
 

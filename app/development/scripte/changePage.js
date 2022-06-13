@@ -454,6 +454,7 @@ function validateLeavingPage5(){
   for (let i = 0; i < verschluesselungPrivatMethodeRadios.length; i++) {
     if (verschluesselungPrivatMethodeRadios[i].checked) {
       verschluesselungPrivatMethodeSelected = true;
+      break;
     }
   }
 
@@ -469,6 +470,7 @@ function validateLeavingPage5(){
   for (let i = 0; i < verschluesselungDienstlichMethodeRadios.length; i++) {
     if (verschluesselungDienstlichMethodeRadios[i].checked) {
       verschluesselungDienstlichMethodeSelected = true;
+      break;
     }
   }
 

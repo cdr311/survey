@@ -353,12 +353,6 @@ function saveFromPostIntoSessionFromPage4(){
   }
   saveFromPostIntoSessionText('OSSmartTVSonstiges');
 
-
-  // if(isset($_POST['OSSmartwatch'])){
-  // $_SESSION['OSSmartwatch'] = $_POST['OSSmartwatch'];
-  // }
-
-
   if(isset($_POST['Browser'])){
   $_SESSION['Browser'] = $_POST['Browser'];
   }

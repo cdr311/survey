@@ -202,6 +202,11 @@ function validateLeavingPage2(){
     }
   }
 
+  if (!pcSelected && !laptopSelected && !smartpSelected && !tabSelected && !smarttSelected && !smartwSelected && !spielSelected) {
+    alert("Bitte wählen Sie mindestens ein Gerät.");
+    return false;
+  }
+
   return true;
 }
 
@@ -422,10 +427,14 @@ function validateLeavingPage4(){
 }
 
 function validateLeavingPage5(){
-  const verschluesselungPrivatMethode = document.getElementById("privatja");
-  const verschluesselungDienstlichMethode = document.getElementById("dienstja");
+  const verschluesselungPrivatYes = document.getElementById("privatja");
+  const verschluesselungDienstlichYes = document.getElementById("dienstja");
+  const verschluesselungPrivatMethodeRadios = document.getElementsByName("verschluesselungPrivatMethode");
+  const verschluesselungDienstlichMethodeRadios = document.getElementsByName("verschluesselungDienstlichMethode");
   var mailprogrammCheckboxes = document.getElementsByName("mailprogramm[]");
   var mailprogrammSelected = false;
+  let verschluesselungPrivatMethodeSelected = false;
+  let verschluesselungDienstlichMethodeSelected = false;
 
   for (var i = 0; i < mailprogrammCheckboxes.length; i++) {
     if (mailprogrammCheckboxes[i].checked) {
@@ -442,6 +451,12 @@ function validateLeavingPage5(){
     }
   };
 
+  for (let i = 0; i < verschluesselungPrivatMethodeRadios.length; i++) {
+    if (verschluesselungPrivatMethodeRadios[i].checked) {
+      verschluesselungPrivatMethodeSelected = true;
+    }
+  }
+
   var verschluesselungDienstlichRadios = document.getElementsByName("verschluesselungDienstlich");
   var verschluesselungDienstlichSelected = false;
 
@@ -450,6 +465,12 @@ function validateLeavingPage5(){
       verschluesselungDienstlichSelected = true;
     }
   };
+
+  for (let i = 0; i < verschluesselungDienstlichMethodeRadios.length; i++) {
+    if (verschluesselungDienstlichMethodeRadios[i].checked) {
+      verschluesselungDienstlichMethodeSelected = true;
+    }
+  }
 
   if(!mailprogrammSelected){
     alert("mindestens 1 Mailprogramm auswählen");
@@ -461,7 +482,7 @@ function validateLeavingPage5(){
     return false;
   }
 
-  if (verschluesselungPrivatSelected && !verschluesselungPrivatMethode.checked) {
+  if (verschluesselungPrivatYes.checked && !verschluesselungPrivatMethodeSelected) {
     alert("Bitte geben Sie die Verschlüsselungsart Ihrer privaten E-Mails an.");
     return false;
   }
@@ -471,7 +492,7 @@ function validateLeavingPage5(){
     return false;
   }
 
-  if (verschluesselungDienstlichSelected && !verschluesselungDienstlichMethode.checked) {
+  if (verschluesselungDienstlichYes.checked && !verschluesselungDienstlichMethodeSelected) {
     alert("Bitte geben Sie die Verschlüsselungsart Ihrer dienstlichen E-Mails an.");
     return false;
   }

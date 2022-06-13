@@ -126,6 +126,8 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   </footer>
 
   <script type="text/javascript" src="./scripte/start.js"></script>
-
+  <script type="text/javascript">
+    sessionStorage.clear();
+  </script>
 </body>
 </html>

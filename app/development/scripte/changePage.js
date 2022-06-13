@@ -520,10 +520,12 @@ function validateLeavingPage6(){
   return true;
 }
 
-function writeToSessionStorage(obj, name, bool) {
+function writeToSessionStorage(obj, name, bool, target) {
   if (obj.checked) {
     sessionStorage.setItem(name, bool);
+    document.getElementById(target).style.display = "block";
   } else {
     sessionStorage.removeItem(name);
+    document.getElementById(target).style.display = "none";
   }
 }

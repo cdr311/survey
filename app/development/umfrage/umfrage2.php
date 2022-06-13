@@ -313,6 +313,14 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   </footer>
 
   <script type="text/javascript" src="../scripte/umfrage.js"></script>
-
+  <script type="text/javascript">
+    if (sessionStorage.getItem("pc"))     { document.getElementById("a2").style.display = "block"; }
+    if (sessionStorage.getItem("laptop")) { document.getElementById("a3").style.display = "block"; }
+    if (sessionStorage.getItem("smartp")) { document.getElementById("a4").style.display = "block"; }
+    if (sessionStorage.getItem("tab"))    { document.getElementById("a5").style.display = "block"; }
+    if (sessionStorage.getItem("smartt")) { document.getElementById("a6").style.display = "block"; }
+    if (sessionStorage.getItem("smartw")) { document.getElementById("a7").style.display = "block"; }
+    if (sessionStorage.getItem("spiel"))  { document.getElementById("a8").style.display = "block"; }
+  </script>
 </body>
 </html>

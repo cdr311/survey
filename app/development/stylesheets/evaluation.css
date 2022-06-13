@@ -42,6 +42,13 @@ span {
     padding: 5px;
     border-radius: 10px;
 }
+span:hover {
+    background-color: #62bcf5;
+}
+details::first-line {
+    font-size: large;
+    font-weight: bold;
+}
 section.links {
     float: left;
 }
@@ -61,9 +68,6 @@ div.ueberschrift {
 }
 a.unter {
     text-decoration: none;
-}
-span:hover {
-    background-color: #62bcf5;
 }
 a.unter:link {
     color: black;

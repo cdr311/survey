@@ -42,17 +42,13 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.display === "block") {
       panel.style.display = "none";
       zaehler -= 1;
-      console.log(foot)
       k -= 130;
       foot.style['top'] = k + "px";
-      console.log(foot)
     } else {
       panel.style.display = "block";
       zaehler +=1;
-      console.log(foot)
       k += 130;
       foot.style['top'] = k + "px";
-      console.log(foot)
     }
   });
 }

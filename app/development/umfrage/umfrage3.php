@@ -297,6 +297,14 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   </footer>
 
   <script type="text/javascript" src="../scripte/umfrage.js"></script>
-
+  <script type="text/javascript">
+    if (sessionStorage.getItem("pc"))     { document.getElementById("aus1").style.display = "block"; }
+    if (sessionStorage.getItem("laptop")) { document.getElementById("aus2").style.display = "block"; }
+    if (sessionStorage.getItem("smartp")) { document.getElementById("aus3").style.display = "block"; }
+    if (sessionStorage.getItem("tab"))    { document.getElementById("aus4").style.display = "block"; }
+    if (sessionStorage.getItem("smartt")) { document.getElementById("aus5").style.display = "block"; }
+    if (sessionStorage.getItem("smartw")) { document.getElementById("aus6").style.display = "block"; }
+    if (sessionStorage.getItem("spiel"))  { document.getElementById("aus7").style.display = "block"; }
+  </script>
 </body>
 </html>

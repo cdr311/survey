@@ -180,13 +180,6 @@ function printSessionArray($sessionArray, $identifier){
 }
 
 function saveFromPostIntoSessionCheckbox($checkboxId){
-
-  //keine Checkbox ausgewählt
-  // if(isset($_SESSION[$checkboxId]) && !isset($_POST[$checkboxId])){
-  //   unset($_SESSION[$checkboxId]);
-  //   echo "reset";
-  // }
-
   //Checkboxauswahl hat sich geandert
   if(isset($_POST[$checkboxId])){
     unset($_SESSION[$checkboxId]);//Array leeren (wenn Checkbox abgewaehlt wird)

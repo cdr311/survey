@@ -76,6 +76,11 @@ main{
   width: 70%;
   height: 100%;
 }
+.hinweis{
+  text-align: center;
+  color: red;
+  font-size: 16px;
+}
 div.main{
   border: 1px solid black;
   top:70px;

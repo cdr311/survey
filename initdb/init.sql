@@ -58,18 +58,6 @@ CREATE TABLE BetriebssystemKey (
 	PRIMARY KEY (ID)
 );
 
-CREATE TABLE LinuxDistributionKey (
-	ID INT NOT NULL,
-	LinuxDistributionName VARCHAR(10) NOT NULL,
-	PRIMARY KEY (ID)
-);
-
-CREATE TABLE BSDVarianteKey (
-	ID INT NOT NULL,
-	BSDVarianteName VARCHAR(10) NOT NULL,
-	PRIMARY KEY (ID)
-);
-
 CREATE TABLE BrowserKey (
 	ID INT NOT NULL,
 	BrowserName VARCHAR(20) NOT NULL,
@@ -149,24 +137,6 @@ CREATE TABLE Betriebssystem (
 	Geraeteart INT NOT NULL,
 	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
 	FOREIGN KEY (Betriebssystem) REFERENCES BetriebssystemKey(ID),
-	FOREIGN KEY (Geraeteart) REFERENCES Geraeteart(Geraeteart)
-);
-
-CREATE TABLE LinuxDistribution (
-	TeilnehmerID INT NOT NULL,
-	LinuxDistribution INT,
-	Geraeteart INT,
-	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
-	FOREIGN KEY (LinuxDistribution) REFERENCES LinuxDistributionKey(ID),
-	FOREIGN KEY (Geraeteart) REFERENCES Geraeteart(Geraeteart)
-);
-
-CREATE TABLE BSDVariante (
-	TeilnehmerID INT NOT NULL,
-	BSDVariante INT,
-	Geraeteart INT,
-	FOREIGN KEY (TeilnehmerID) REFERENCES TeilnehmerDaten(TeilnehmerID),
-	FOREIGN KEY (BSDVariante) REFERENCES BSDVarianteKey(ID),
 	FOREIGN KEY (Geraeteart) REFERENCES Geraeteart(Geraeteart)
 );
 
@@ -277,22 +247,6 @@ INSERT INTO BetriebssystemKey VALUES (7, 'Firefox OS');
 INSERT INTO BetriebssystemKey VALUES (8, 'Windows Phone');
 INSERT INTO BetriebssystemKey VALUES (9, 'Tizen OS');
 INSERT INTO BetriebssystemKey VALUES (10, 'Sonstiges');
-INSERT INTO LinuxDistributionKey VALUES (0, 'Arch Linux');
-INSERT INTO LinuxDistributionKey VALUES (1, 'Debian');
-INSERT INTO LinuxDistributionKey VALUES (2, 'elementary');
-INSERT INTO LinuxDistributionKey VALUES (3, 'Fedora');
-INSERT INTO LinuxDistributionKey VALUES (4, 'Linux Mint');
-INSERT INTO LinuxDistributionKey VALUES (5, 'Manjaro');
-INSERT INTO LinuxDistributionKey VALUES (6, 'MX Linux');
-INSERT INTO LinuxDistributionKey VALUES (7, 'openSUSE');
-INSERT INTO LinuxDistributionKey VALUES (8, 'Pop!_OS');
-INSERT INTO LinuxDistributionKey VALUES (9, 'Ubuntu');
-INSERT INTO LinuxDistributionKey VALUES (10, 'Sonstiges');
-INSERT INTO BSDVarianteKey VALUES (0, 'FreeBSD');
-INSERT INTO BSDVarianteKey VALUES (1, 'OpenBSD');
-INSERT INTO BSDVarianteKey VALUES (2, 'NetBSD');
-INSERT INTO BSDVarianteKey VALUES (3, 'GhostBSD');
-INSERT INTO BSDVarianteKey VALUES (4, 'Sonstiges');
 INSERT INTO BrowserKey VALUES (0, 'Brave');
 INSERT INTO BrowserKey VALUES (1, 'Chrome');
 INSERT INTO BrowserKey VALUES (2, 'Chromium');

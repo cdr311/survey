@@ -270,19 +270,28 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     </form>
   </main>
 
-  <footer class="mittig">
+  <footer class="mittig" id="footing">
     <p>Die gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>
     <p>Images werden von <a class="quelle" href="https://www.istockphoto.com/de" title="iStock">iStock</a> verwendet.</p>
     <p>Copyright ©2022</p>
   </footer>
 
   <script type="text/javascript" src="../scripte/umfrage.js"></script>
+
   <script type="text/javascript">
-    if (sessionStorage.getItem("pc"))     { document.getElementsByClassName("auswahl1")[0].style.display = "block"; }
-    if (sessionStorage.getItem("laptop")) { document.getElementsByClassName("auswahl2")[0].style.display = "block"; }
-    if (sessionStorage.getItem("smartp")) { document.getElementsByClassName("auswahl3")[0].style.display = "block"; }
-    if (sessionStorage.getItem("tab"))    { document.getElementsByClassName("auswahl4")[0].style.display = "block"; }
-    if (sessionStorage.getItem("smartt")) { document.getElementsByClassName("auswahl5")[0].style.display = "block"; }
+    if (sessionStorage.getItem("pc"))     { document.getElementsByClassName("auswahl1")[0].style.display = "block"; schieben();}
+    if (sessionStorage.getItem("laptop")) { document.getElementsByClassName("auswahl2")[0].style.display = "block"; schieben();}
+    if (sessionStorage.getItem("smartp")) { document.getElementsByClassName("auswahl3")[0].style.display = "block"; schieben();}
+    if (sessionStorage.getItem("tab"))    { document.getElementsByClassName("auswahl4")[0].style.display = "block"; schieben();}
+    if (sessionStorage.getItem("smartt")) { document.getElementsByClassName("auswahl5")[0].style.display = "block"; schieben();}
+
+    function schieben(){
+      let foot = document.getElementById('footing');
+      let k = 700;
+      k += 620;
+      foot.style['top'] = k + "px";
+    }
   </script>
+
 </body>
 </html>

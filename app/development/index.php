@@ -59,7 +59,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       </section>
       <section class="mitte">
         <div class="ueberschrift">Umfrage</div>
-
       </section>
       <section class="rechts">
         <table>

@@ -54,7 +54,6 @@ $showPopup = true;
   <header>
     <article>
       <section class="links">
-        <div>
           <div><img src="../images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
       </section>
       <section class="mitte">

@@ -782,17 +782,28 @@ $perc_bewertung_3 = round(($num_bewertung_3 / $num_bewertung) * 100, 2);
 $perc_bewertung_4 = round(($num_bewertung_4 / $num_bewertung) * 100, 2);
 ?>
 <?php
+echo "      <p>Bisher haben insgesamt <em>$num_participants</em> Personen teilgenommen, mit einer Gesamtzahl von <em>$num_devices</em> Geräten.";
 echo "      <details id='infos-teilnehmer' open>\n";
+echo "        <hr />\n";
 echo "        <summary>Infos zu den Teilnehmern</summary>\n";
 echo "        Männlich: $perc_geschlecht_0%<br />\n";
 echo "        Weiblich: $perc_geschlecht_1%<br />\n";
 echo "        Divers: $perc_geschlecht_2%\n";
 echo "      </details>\n";
+
+echo "      <details id='infos-altersbereiche'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zu den Altersbereichen</summary>\n";
+echo "        Minderjährig: $perc_altersbereich_0%<br />\n";
+echo "        18 – 20 Jahre: $perc_altersbereich_1%<br />\n";
+echo "        21 – 29 Jahre: $perc_altersbereich_2%<br />\n";
+echo "        30 – 39 Jahre: $perc_altersbereich_3%<br />\n";
+echo "        40 – 49 Jahre: $perc_altersbereich_4%<br />\n";
+echo "        50 – 59 Jahre: $perc_altersbereich_5%<br />\n";
+echo "        60 Jahre oder älter: $perc_altersbereich_6%<br />\n";
+echo "      </details>\n";
 ?>
 <?php
-// Anzahl aller genutzten Geräte ermitteln
-echo "      <p>Gesamtanzahl aller genutzten Geräte: $num_devices\n";
-
 // Anzahl der genutzten Smartphones anzeigen und ermitteln
 echo "      <h3>Anzahl Smartphone-Benutzer:</h3>\n";
 echo "      <p>$num_geraeteart_2</p>\n";

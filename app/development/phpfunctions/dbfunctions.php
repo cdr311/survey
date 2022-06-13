@@ -33,22 +33,28 @@
   }
 
   function insertTaetigkeitenSessionArrayIntoNutzungsgebiet($arrayName, $valueGeraeteart){
-    if(isset($_SESSION[$arrayName])){
-      foreach($_SESSION[$arrayName] as $val){
-        executeQuery("INSERT INTO Nutzungsgebiet VALUES ('{$_SESSION['id']}', '$val', '$valueGeraeteart');");
+    if(in_array($valueGeraeteart, $_SESSION['benutzteGeraete'])){ //Taetigkeiten ausgefuellt aber danach Geraet entfernt -> ignoriert Taetigkeiten
+      if(isset($_SESSION[$arrayName])){
+        foreach($_SESSION[$arrayName] as $val){
+          executeQuery("INSERT INTO Nutzungsgebiet VALUES ('{$_SESSION['id']}', '$val', '$valueGeraeteart');");
+        }
       }
     }
   }
 
   function insertNutzungszeitSessionValueIntoNutzungsdauer($sessionVariableName, $valueGeraeteart){
-    if(isset($_SESSION[$sessionVariableName])){
-      executeQuery("INSERT INTO Nutzungsdauer VALUES ('{$_SESSION['id']}', '{$_SESSION[$sessionVariableName]}', '$valueGeraeteart');");
+    if(in_array($valueGeraeteart, $_SESSION['benutzteGeraete'])){ //Nutzungszeit ausgefuellt aber danach Geraet entfernt -> ignoriert Nutzungszeit
+      if(isset($_SESSION[$sessionVariableName])){
+        executeQuery("INSERT INTO Nutzungsdauer VALUES ('{$_SESSION['id']}', '{$_SESSION[$sessionVariableName]}', '$valueGeraeteart');");
+      }
     }
   }
 
   function insertBetriebssystemSessionValueIntoBetriebssystem($sessionVariableName, $valueGeraeteart){
-    if(isset($_SESSION[$sessionVariableName])){
-      executeQuery("INSERT INTO Betriebssystem VALUES ('{$_SESSION['id']}', '{$_SESSION[$sessionVariableName]}', '$valueGeraeteart');");
+    if(in_array($valueGeraeteart, $_SESSION['benutzteGeraete'])){ //Betriebssystem ausgefuellt aber danach Geraet entfernt -> ignoriert Betriebssystem
+      if(isset($_SESSION[$sessionVariableName])){
+        executeQuery("INSERT INTO Betriebssystem VALUES ('{$_SESSION['id']}', '{$_SESSION[$sessionVariableName]}', '$valueGeraeteart');");
+      }
     }
   }
 

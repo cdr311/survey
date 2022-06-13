@@ -53,6 +53,7 @@ details::first-line {
     font-weight: bold;
 }
 details {
+    background-color: #ccc;
     font-size: 19px;
     border: 1px solid black;
     border-radius: 5px;

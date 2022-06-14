@@ -43,23 +43,23 @@ span {
     border-radius: 10px;
 }
 p {
-    font-size: 19px;
-}
-span:hover {
-    background-color: #62bcf5;
-}
-details::first-line {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 1.18em;
 }
 details {
     background-color: #ccc;
-    font-size: 19px;
+    font-size: 1.2em;
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 5px;
     width: fit-content;
+}
+summary {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+span:hover {
+    background-color: #62bcf5;
 }
 section.links {
     float: left;

@@ -310,6 +310,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   </footer>
 
   <script type="text/javascript" src="../scripte/umfrage.js"></script>
+  
   <script type="text/javascript">
 
     if (sessionStorage.getItem("pc"))     { document.getElementById("a2").style.display = "block"; }

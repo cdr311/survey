@@ -85,30 +85,38 @@ div.main{
   box-shadow: 8px 8px 8px 10px grey;
   background-color: #A4A4A4;
   text-align: center;
+  padding-bottom: 25px;
 }
 div.auswahl1{
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
+  display: block;
   left:5%;
   top:5%;
   padding-bottom: 10px;
   text-align: center;
 }
 div.auswahl2{
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
+  display: block;
+  width: 85%;
   left:5%;
   top:20%;
   padding-bottom: 10px;
   text-align: center;
 }
 div.vorher{
-  position: absolute;
+  /* position: absolute; */
+  float: left;
   padding-bottom: 10px;
   text-align: center;
   top: 94%;
   padding-left: 8px;
 }
 div.naechste{
-  position: absolute;
+  /* position: absolute; */
+  float: right;
   padding-bottom: 10px;
   text-align: center;
   top: 94%;

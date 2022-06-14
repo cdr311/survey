@@ -163,28 +163,16 @@ $num_betriebssystem_6 = 0;
 $num_betriebssystem_7 = 0;
 $num_betriebssystem_8 = 0;
 $num_betriebssystem_9 = 0;
-$num_betriebssystem_10 = 0;
 $num_browser_0 = 0;
 $num_browser_1 = 0;
 $num_browser_2 = 0;
 $num_browser_3 = 0;
-$num_browser_4 = 0;
 $num_browser_5 = 0;
-$num_browser_6 = 0;
-$num_browser_7 = 0;
 $num_browser_8 = 0;
 $num_browser_9 = 0;
 $num_browser_10 = 0;
-$num_browser_11 = 0;
 $num_browser_12 = 0;
-$num_mailclient_0 = 0;
-$num_mailclient_1 = 0;
-$num_mailclient_2 = 0;
-$num_mailclient_3 = 0;
-$num_mailclient_4 = 0;
-$num_mailclient_5 = 0;
 $num_mailclient_6 = 0;
-$num_mailclient_7 = 0;
 $num_mailclient_8 = 0;
 $num_mailclient_9 = 0;
 $num_mailclient_10 = 0;
@@ -195,11 +183,9 @@ $num_verschluesselungdienstlich = 0;
 $num_verschluesselungsartprivat_0 = 0;
 $num_verschluesselungsartprivat_1 = 0;
 $num_verschluesselungsartprivat_2 = 0;
-$num_verschluesselungsartprivat_3 = 0;
 $num_verschluesselungsartdienstlich_0 = 0;
 $num_verschluesselungsartdienstlich_1 = 0;
 $num_verschluesselungsartdienstlich_2 = 0;
-$num_verschluesselungsartdienstlich_3 = 0;
 $num_bewertung_0 = 0;
 $num_bewertung_1 = 0;
 $num_bewertung_2 = 0;
@@ -477,10 +463,6 @@ $query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Bet
 foreach ($query as $row) {
   $num_betriebssystem_9 = $row[0];
 }
-$query = $dbh->query("SELECT COUNT(Betriebssystem) FROM Betriebssystem WHERE Betriebssystem = 10");
-foreach ($query as $row) {
-  $num_betriebssystem_10 = $row[0];
-}
 
 $query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 0");
 foreach ($query as $row) {
@@ -498,21 +480,9 @@ $query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 3");
 foreach ($query as $row) {
   $num_browser_3 = $row[0];
 }
-$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 4");
-foreach ($query as $row) {
-  $num_browser_4 = $row[0];
-}
 $query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 5");
 foreach ($query as $row) {
   $num_browser_5 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 6");
-foreach ($query as $row) {
-  $num_browser_6 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 7");
-foreach ($query as $row) {
-  $num_browser_7 = $row[0];
 }
 $query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 8");
 foreach ($query as $row) {
@@ -526,46 +496,10 @@ $query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 10");
 foreach ($query as $row) {
   $num_browser_10 = $row[0];
 }
-$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 11");
-foreach ($query as $row) {
-  $num_browser_11 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Browser) FROM Browser WHERE Browser = 12");
-foreach ($query as $row) {
-  $num_browser_12 = $row[0];
-}
 
-$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 0");
-foreach ($query as $row) {
-  $num_mailclient_0 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 1");
-foreach ($query as $row) {
-  $num_mailclient_1 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 2");
-foreach ($query as $row) {
-  $num_mailclient_2 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 3");
-foreach ($query as $row) {
-  $num_mailclient_3 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 4");
-foreach ($query as $row) {
-  $num_mailclient_4 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 5");
-foreach ($query as $row) {
-  $num_mailclient_5 = $row[0];
-}
 $query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 6");
 foreach ($query as $row) {
   $num_mailclient_6 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 7");
-foreach ($query as $row) {
-  $num_mailclient_7 = $row[0];
 }
 $query = $dbh->query("SELECT COUNT(Mailclient) FROM Mailclient WHERE Mailclient = 8");
 foreach ($query as $row) {
@@ -610,10 +544,6 @@ $query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungPrivat WHERE Art = 
 foreach ($query as $row) {
   $num_verschluesselungsartprivat_2 = $row[0];
 }
-$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungPrivat WHERE Art = 3");
-foreach ($query as $row) {
-  $num_verschluesselungsartprivat_3 = $row[0];
-}
 
 $query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungDienstlich WHERE Art = 0");
 foreach ($query as $row) {
@@ -626,10 +556,6 @@ foreach ($query as $row) {
 $query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungDienstlich WHERE Art = 2");
 foreach ($query as $row) {
   $num_verschluesselungsartdienstlich_2 = $row[0];
-}
-$query = $dbh->query("SELECT COUNT(Art) FROM VerschluesselungDienstlich WHERE Art = 3");
-foreach ($query as $row) {
-  $num_verschluesselungsartdienstlich_3 = $row[0];
 }
 
 $query = $dbh->query("SELECT COUNT(Bewertung) FROM Bewertung WHERE Bewertung = 0");
@@ -656,16 +582,15 @@ foreach ($query as $row) {
 $num_verschluesselungsart_0 = $num_verschluesselungsartprivat_0 + $num_verschluesselungsartdienstlich_0;
 $num_verschluesselungsart_1 = $num_verschluesselungsartprivat_1 + $num_verschluesselungsartdienstlich_1;
 $num_verschluesselungsart_2 = $num_verschluesselungsartprivat_2 + $num_verschluesselungsartdienstlich_2;
-$num_verschluesselungsart_3 = $num_verschluesselungsartprivat_3 + $num_verschluesselungsartdienstlich_3;
 ?>
 <?php
 // Jeweilige Gesamtanzahlen ermitteln
 $sum_geraeteart = $num_geraeteart_0 + $num_geraeteart_1 + $num_geraeteart_2 + $num_geraeteart_3 + $num_geraeteart_4 + $num_geraeteart_5 + $num_geraeteart_6;
 $sum_nutzungsgebiet = $num_nutzungsgebiet_0 + $num_nutzungsgebiet_1 + $num_nutzungsgebiet_2 + $num_nutzungsgebiet_3 + $num_nutzungsgebiet_4 + $num_nutzungsgebiet_5;
 $sum_nutzungsdauer = $num_nutzungsdauer_0 + $num_nutzungsdauer_1 + $num_nutzungsdauer_2 + $num_nutzungsdauer_3 + $num_nutzungsdauer_4 + $num_nutzungsdauer_5;
-$sum_betriebssystem = $num_betriebssystem_0 + $num_betriebssystem_1 + $num_betriebssystem_2 + $num_betriebssystem_3 + $num_betriebssystem_4 + $num_betriebssystem_5 + $num_betriebssystem_6 + $num_betriebssystem_7 + $num_betriebssystem_8 + $num_betriebssystem_9 + $num_betriebssystem_10;
-$sum_browser = $num_browser_0 + $num_browser_1 + $num_browser_2 + $num_browser_3 + $num_browser_4 + $num_browser_5 + $num_browser_6 + $num_browser_7 + $num_browser_8 + $num_browser_9 + $num_browser_10 + $num_browser_11 + $num_browser_12;
-$sum_mailclient = $num_mailclient_0 + $num_mailclient_1 + $num_mailclient_2 + $num_mailclient_3 + $num_mailclient_4 + $num_mailclient_5 + $num_mailclient_6 + $num_mailclient_7 + $num_mailclient_8 + $num_mailclient_9 + $num_mailclient_10 + $num_mailclient_11 + $num_mailclient_12;
+$sum_betriebssystem = $num_betriebssystem_0 + $num_betriebssystem_1 + $num_betriebssystem_2 + $num_betriebssystem_3 + $num_betriebssystem_4 + $num_betriebssystem_5 + $num_betriebssystem_6 + $num_betriebssystem_7 + $num_betriebssystem_8 + $num_betriebssystem_9;
+$sum_browser = $num_browser_0 + $num_browser_1 + $num_browser_2 + $num_browser_3 + $num_browser_5 + $num_browser_8 + $num_browser_9 + $num_browser_10;
+$sum_mailclient = $num_mailclient_6 + $num_mailclient_8 + $num_mailclient_9 + $num_mailclient_10 + $num_mailclient_11;
 $sum_verschluesselungsartprivat = $num_verschluesselungsartprivat_0 + $num_verschluesselungsartprivat_1 + $num_verschluesselungsartprivat_2;
 $sum_verschluesselungsartdienstlich = $num_verschluesselungsartdienstlich_0 + $num_verschluesselungsartdienstlich_1 + $num_verschluesselungsartdienstlich_2;
 $sum_bewertung = $num_bewertung_0 + $num_bewertung_1 + $num_bewertung_2 + $num_bewertung_3 + $num_bewertung_4;
@@ -741,35 +666,21 @@ $perc_betriebssystem_6 = round(($num_betriebssystem_6 / $sum_betriebssystem) * 1
 $perc_betriebssystem_7 = round(($num_betriebssystem_7 / $sum_betriebssystem) * 100, 2);
 $perc_betriebssystem_8 = round(($num_betriebssystem_8 / $sum_betriebssystem) * 100, 2);
 $perc_betriebssystem_9 = round(($num_betriebssystem_9 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_10 = round(($num_betriebssystem_10 / $sum_betriebssystem) * 100, 2);
 
 $perc_browser_0 = round(($num_browser_0 / $sum_browser) * 100, 2);
 $perc_browser_1 = round(($num_browser_1 / $sum_browser) * 100, 2);
 $perc_browser_2 = round(($num_browser_2 / $sum_browser) * 100, 2);
 $perc_browser_3 = round(($num_browser_3 / $sum_browser) * 100, 2);
-$perc_browser_4 = round(($num_browser_4 / $sum_browser) * 100, 2);
 $perc_browser_5 = round(($num_browser_5 / $sum_browser) * 100, 2);
-$perc_browser_6 = round(($num_browser_6 / $sum_browser) * 100, 2);
-$perc_browser_7 = round(($num_browser_7 / $sum_browser) * 100, 2);
 $perc_browser_8 = round(($num_browser_8 / $sum_browser) * 100, 2);
 $perc_browser_9 = round(($num_browser_9 / $sum_browser) * 100, 2);
 $perc_browser_10 = round(($num_browser_10 / $sum_browser) * 100, 2);
-$perc_browser_11 = round(($num_browser_11 / $sum_browser) * 100, 2);
-$perc_browser_12 = round(($num_browser_12 / $sum_browser) * 100, 2);
 
-$perc_mailclient_0 = round(($num_mailclient_0 / $sum_mailclient) * 100, 2);
-$perc_mailclient_1 = round(($num_mailclient_1 / $sum_mailclient) * 100, 2);
-$perc_mailclient_2 = round(($num_mailclient_2 / $sum_mailclient) * 100, 2);
-$perc_mailclient_3 = round(($num_mailclient_3 / $sum_mailclient) * 100, 2);
-$perc_mailclient_4 = round(($num_mailclient_4 / $sum_mailclient) * 100, 2);
-$perc_mailclient_5 = round(($num_mailclient_5 / $sum_mailclient) * 100, 2);
 $perc_mailclient_6 = round(($num_mailclient_6 / $sum_mailclient) * 100, 2);
-$perc_mailclient_7 = round(($num_mailclient_7 / $sum_mailclient) * 100, 2);
 $perc_mailclient_8 = round(($num_mailclient_8 / $sum_mailclient) * 100, 2);
 $perc_mailclient_9 = round(($num_mailclient_9 / $sum_mailclient) * 100, 2);
 $perc_mailclient_10 = round(($num_mailclient_10 / $sum_mailclient) * 100, 2);
 $perc_mailclient_11 = round(($num_mailclient_11 / $sum_mailclient) * 100, 2);
-$perc_mailclient_12 = round(($num_mailclient_12 / $sum_mailclient) * 100, 2);
 
 $perc_verschluesselungprivat = round(($num_verschluesselungprivat / $num_participants) * 100, 2);
 $perc_verschluesselungdienstlich = round(($num_verschluesselungdienstlich / $num_participants) * 100, 2);
@@ -777,12 +688,10 @@ $perc_verschluesselungdienstlich = round(($num_verschluesselungdienstlich / $num
 $perc_verschluesselungsartprivat_0 = round(($num_verschluesselungsartprivat_0 / $sum_verschluesselungsartprivat) * 100, 2);
 $perc_verschluesselungsartprivat_1 = round(($num_verschluesselungsartprivat_1 / $sum_verschluesselungsartprivat) * 100, 2);
 $perc_verschluesselungsartprivat_2 = round(($num_verschluesselungsartprivat_2 / $sum_verschluesselungsartprivat) * 100, 2);
-$perc_verschluesselungsartprivat_3 = round(($num_verschluesselungsartprivat_3 / $num_participants) * 100, 2);
 
 $perc_verschluesselungsartdienstlich_0 = round(($num_verschluesselungsartdienstlich_0 / $sum_verschluesselungsartdienstlich) * 100, 2);
 $perc_verschluesselungsartdienstlich_1 = round(($num_verschluesselungsartdienstlich_1 / $sum_verschluesselungsartdienstlich) * 100, 2);
 $perc_verschluesselungsartdienstlich_2 = round(($num_verschluesselungsartdienstlich_2 / $sum_verschluesselungsartdienstlich) * 100, 2);
-$perc_verschluesselungsartdienstlich_3 = round(($num_verschluesselungsartdienstlich_3 / $num_participants) * 100, 2);
 
 $perc_bewertung_0 = round(($num_bewertung_0 / $sum_bewertung) * 100, 2);
 $perc_bewertung_1 = round(($num_bewertung_1 / $sum_bewertung) * 100, 2);
@@ -922,27 +831,16 @@ echo "        Brave: $perc_browser_0%<br />\n";
 echo "        Chrome: $perc_browser_1%<br />\n";
 echo "        Chromium: $perc_browser_2%<br />\n";
 echo "        Edge: $perc_browser_3%<br />\n";
-echo "        Epiphany (GNOME Web): $perc_browser_4%<br />\n";
 echo "        Firefox: $perc_browser_5%<br />\n";
-echo "        Internet Explorer: $perc_browser_6%<br />\n";
-echo "        Konqueror: $perc_browser_7%<br />\n";
 echo "        Opera: $perc_browser_8%<br />\n";
 echo "        Safari: $perc_browser_9%<br />\n";
 echo "        Tor Browser: $perc_browser_10%<br />\n";
-echo "        Vivaldi: $perc_browser_11%\n";
 echo "      </details>\n";
 
 echo "      <details id='infos-mailclients'>\n";
 echo "        <hr />\n";
 echo "        <summary>Infos zu den Mailclients</summary>\n";
-echo "        Apple Mail: $perc_mailclient_0%<br />\n";
-echo "        Claws Mail: $perc_mailclient_1%<br />\n";
-echo "        eM Client: $perc_mailclient_2%<br />\n";
-echo "        Evolution: $perc_mailclient_3%<br />\n";
-echo "        FairEmail: $perc_mailclient_4%<br />\n";
-echo "        Geary: $perc_mailclient_5%<br />\n";
 echo "        Google Mail-App: $perc_mailclient_6%<br />\n";
-echo "        K-9 Mail: $perc_mailclient_7%<br />\n";
 echo "        Outlook: $perc_mailclient_8%<br />\n";
 echo "        Spark: $perc_mailclient_9%<br />\n";
 echo "        Thunderbird: $perc_mailclient_10%<br />\n";

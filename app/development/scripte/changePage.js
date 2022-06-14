@@ -10,7 +10,7 @@ function submitForm(action, formId, leavingPage) {
   }
 
 function validate(leavingPage){
-  //alert(leavingPage);
+
   switch (leavingPage) {
     case 1: return validateLeavingPage1(); break;
     case 2: return validateLeavingPage2(); break;
@@ -110,14 +110,14 @@ function validateLeavingPage2(){
       break;
     }
   }
-  
+
   for (let i = 0; i < laptopChecks.length; i++) {
     if (laptopChecks[i].checked) {
       laptopSelected = true;
       break;
     }
   }
-  
+
   for (let i = 0; i < smartpChecks.length; i++) {
     if (smartpChecks[i].checked) {
       smartpSelected = true;
@@ -232,14 +232,14 @@ function validateLeavingPage3(){
       break;
     }
   }
-  
+
   for (let i = 0; i < laptopRadios.length; i++) {
     if (laptopRadios[i].checked) {
       laptopSelected = true;
       break;
     }
   }
-  
+
   for (let i = 0; i < smartpRadios.length; i++) {
     if (smartpRadios[i].checked) {
       smartpSelected = true;
@@ -345,14 +345,14 @@ function validateLeavingPage4(){
       break;
     }
   }
-  
+
   for (let i = 0; i < laptopRadios.length; i++) {
     if (laptopRadios[i].checked) {
       laptopSelected = true;
       break;
     }
   }
-  
+
   for (let i = 0; i < smartpRadios.length; i++) {
     if (smartpRadios[i].checked) {
       smartpSelected = true;

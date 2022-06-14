@@ -64,22 +64,22 @@ function validateLeavingPage1(){
 
 
   if(!geschlechtSelected){
-    alert("Geschlecht fehlt");
+    alert("Bitte geben Sie ein Geschlecht an.");
     return false;
   }
 
   if(!alterSelected){
-    alert("Altersbereich fehlt");
+    alert("Bitte geben Sie einen Altersbereich an.");
     return false;
   }
 
   if(!arbeitSelected){
-    alert("Berufsbereich fehlt");
+    alert("Bitte geben Sie einen Berufsbereich an.");
     return false;
   }
 
   if(!familieSelected){
-    alert("Familiäre Situation fehlt");
+    alert("Bitte wählen Sie eine Familiäre Situation aus.");
     return false;
   }
 
@@ -417,7 +417,7 @@ function validateLeavingPage4(){
   };
 
   if(!browserSelected){
-    alert("Browser fehlt");
+    alert("Bitte geben Sie einen Browser an.");
     return false;
   }
 
@@ -473,12 +473,12 @@ function validateLeavingPage5(){
   }
 
   if(!mailprogrammSelected){
-    alert("mindestens 1 Mailprogramm auswählen");
+    alert("Bitte wählen Sie mindestens 1 Mailprogramm aus.");
     return false;
   }
 
   if(!verschluesselungPrivatSelected){
-    alert("Verschlüsselung (Privat) fehlt");
+    alert("Bitte geben Sie an, ob Sie private E-Mails verschlüsseln.");
     return false;
   }
 
@@ -488,7 +488,7 @@ function validateLeavingPage5(){
   }
 
   if(!verschluesselungDienstlichSelected){
-    alert("Verschlüsselung (Dienstlich) fehlt");
+    alert("Bitte geben Sie an, ob Sie dienstliche E-Mails verschlüsseln.");
     return false;
   }
 
@@ -511,7 +511,7 @@ function validateLeavingPage6(){
   };
 
   if(!bewertungSelected){
-    alert("Bewertung fehlt");
+    alert("Bitte geben Sie eine Bewertung ab.");
     return false;
   }
 

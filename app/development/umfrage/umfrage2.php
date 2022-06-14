@@ -295,6 +295,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="text" name="taetigkeitenSpielekonsoleSonstiges" id="anderes" <?php if(isset($_SESSION['taetigkeitenSpielekonsoleSonstiges']) ){echo 'value="'.$_SESSION['taetigkeitenSpielekonsoleSonstiges'].'"';} ?> />
         </section>
       </div>
+      <input type="hidden" name="fromPage2" />
       <div class="vorher">
         <button type="button" name="umfrage" id="aendern" onclick="submitForm('umfrage1.php', 'form2', 2)">Vorherige Seite</button>
       </div>

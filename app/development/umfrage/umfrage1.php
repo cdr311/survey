@@ -1,8 +1,13 @@
 <?php
 
+require_once '../phpfunctions/dbfunctions.php';
 require_once '../phpfunctions/sessionfunctions.php';
 
 session_start();
+if(!isset($_POST['fromPage2'])){
+  generateSessionID();
+}
+
 saveIntoSessionVariablesPage1();
 printSessionVariables();
 

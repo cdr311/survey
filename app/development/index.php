@@ -1,13 +1,10 @@
 <?php
 
-  require_once './phpfunctions/dbfunctions.php';
   require_once './phpfunctions/sessionfunctions.php';
 
+  //alle Eingaben zurueksetzen
   session_start();
   session_destroy();
-  session_start();
-  generateSessionID();
-  echo "SESSION ID: ".$_SESSION['id'];
 
  ?>
 

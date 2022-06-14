@@ -322,16 +322,16 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     var foot = document.getElementById('footing');
     var k = 700;
 
-      var acc = document.getElementsByClassName("schieben");
-      var foot = document.getElementById('footing');
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-            k += 170;
-            foot.style['top'] = k + "px";
-        });
-      }
+    var acc = document.getElementsByClassName("schieben");
+    var foot = document.getElementById('footing');
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        k += 170;
+        foot.style['top'] = k + "px";
+      });
+    }
   </script>
 </body>
 </html>

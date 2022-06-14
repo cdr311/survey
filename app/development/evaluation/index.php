@@ -953,7 +953,7 @@ echo "        <hr />\n";
 echo "        <summary>Infos zur E-Mail-Verschlüsselung</summary>\n";
 echo "        Keine Verschlüsselung: " . 100 - $perc_verschluesselungprivat - $perc_verschluesselungdienstlich . "%<br />\n";
 echo "        Privat verschlüsselte Mails: $perc_verschluesselungprivat%<br />\n";
-echo "        Dienstlich verschlüsselte Mails: $perc_verschluesselungdienstlich%<br />\n";
+echo "        Dienstlich verschlüsselte Mails: $perc_verschluesselungdienstlich%\n";
 echo "      </details>\n";
 
 echo "      <details id='infos-mailverschluesselung-privat'>\n";
@@ -961,7 +961,7 @@ echo "        <hr />\n";
 echo "        <summary>Private Verschlüsselungstechnologien</summary>\n";
 echo "        PGP: $perc_verschluesselungsartprivat_0%<br />\n";
 echo "        S/MIME: $perc_verschluesselungsartprivat_1%<br />\n";
-echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartprivat_2%<br />\n";
+echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartprivat_2%\n";
 echo "      </details>\n";
 
 echo "      <details id='infos-mailverschluesselung-dienstlich'>\n";
@@ -969,7 +969,7 @@ echo "        <hr />\n";
 echo "        <summary>Dienstliche Verschlüsselungstechnologien</summary>\n";
 echo "        PGP: $perc_verschluesselungsartdienstlich_0%<br />\n";
 echo "        S/MIME: $perc_verschluesselungsartdienstlich_1%<br />\n";
-echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartdienstlich_2%<br />\n";
+echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartdienstlich_2%\n";
 echo "      </details>\n";
 ?>
     </main>

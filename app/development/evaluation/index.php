@@ -540,107 +540,147 @@ $sum_bewertung = $num_bewertung_0 + $num_bewertung_1 + $num_bewertung_2 + $num_b
 ?>
 <?php
 // Anteile ermitteln
-$perc_geschlecht_0 = round(($num_geschlecht_0 / $num_participants) * 100, 2);
-$perc_geschlecht_1 = round(($num_geschlecht_1 / $num_participants) * 100, 2);
-$perc_geschlecht_2 = round(($num_geschlecht_2 / $num_participants) * 100, 2);
+if ($num_participants > 0) {
+  $perc_geschlecht_0 = round(($num_geschlecht_0 / $num_participants) * 100, 2);
+  $perc_geschlecht_1 = round(($num_geschlecht_1 / $num_participants) * 100, 2);
+  $perc_geschlecht_2 = round(($num_geschlecht_2 / $num_participants) * 100, 2);
 
-$perc_altersbereich_0 = round(($num_altersbereich_0 / $num_participants) * 100, 2);
-$perc_altersbereich_1 = round(($num_altersbereich_1 / $num_participants) * 100, 2);
-$perc_altersbereich_2 = round(($num_altersbereich_2 / $num_participants) * 100, 2);
-$perc_altersbereich_3 = round(($num_altersbereich_3 / $num_participants) * 100, 2);
-$perc_altersbereich_4 = round(($num_altersbereich_4 / $num_participants) * 100, 2);
-$perc_altersbereich_5 = round(($num_altersbereich_5 / $num_participants) * 100, 2);
-$perc_altersbereich_6 = round(($num_altersbereich_6 / $num_participants) * 100, 2);
+  $perc_altersbereich_0 = round(($num_altersbereich_0 / $num_participants) * 100, 2);
+  $perc_altersbereich_1 = round(($num_altersbereich_1 / $num_participants) * 100, 2);
+  $perc_altersbereich_2 = round(($num_altersbereich_2 / $num_participants) * 100, 2);
+  $perc_altersbereich_3 = round(($num_altersbereich_3 / $num_participants) * 100, 2);
+  $perc_altersbereich_4 = round(($num_altersbereich_4 / $num_participants) * 100, 2);
+  $perc_altersbereich_5 = round(($num_altersbereich_5 / $num_participants) * 100, 2);
+  $perc_altersbereich_6 = round(($num_altersbereich_6 / $num_participants) * 100, 2);
 
-$perc_berufsfeld_0 = round(($num_berufsfeld_0 / $num_participants) * 100, 2);
-$perc_berufsfeld_1 = round(($num_berufsfeld_1 / $num_participants) * 100, 2);
-$perc_berufsfeld_2 = round(($num_berufsfeld_2 / $num_participants) * 100, 2);
-$perc_berufsfeld_3 = round(($num_berufsfeld_3 / $num_participants) * 100, 2);
-$perc_berufsfeld_4 = round(($num_berufsfeld_4 / $num_participants) * 100, 2);
-$perc_berufsfeld_5 = round(($num_berufsfeld_5 / $num_participants) * 100, 2);
+  $perc_berufsfeld_0 = round(($num_berufsfeld_0 / $num_participants) * 100, 2);
+  $perc_berufsfeld_1 = round(($num_berufsfeld_1 / $num_participants) * 100, 2);
+  $perc_berufsfeld_2 = round(($num_berufsfeld_2 / $num_participants) * 100, 2);
+  $perc_berufsfeld_3 = round(($num_berufsfeld_3 / $num_participants) * 100, 2);
+  $perc_berufsfeld_4 = round(($num_berufsfeld_4 / $num_participants) * 100, 2);
+  $perc_berufsfeld_5 = round(($num_berufsfeld_5 / $num_participants) * 100, 2);
 
-$perc_familienstand_0 = round(($num_familienstand_0 / $num_participants) * 100, 2);
-$perc_familienstand_1 = round(($num_familienstand_1 / $num_participants) * 100, 2);
-$perc_familienstand_2 = round(($num_familienstand_2 / $num_participants) * 100, 2);
-$perc_familienstand_3 = round(($num_familienstand_3 / $num_participants) * 100, 2);
-$perc_familienstand_4 = round(($num_familienstand_4 / $num_participants) * 100, 2);
+  $perc_familienstand_0 = round(($num_familienstand_0 / $num_participants) * 100, 2);
+  $perc_familienstand_1 = round(($num_familienstand_1 / $num_participants) * 100, 2);
+  $perc_familienstand_2 = round(($num_familienstand_2 / $num_participants) * 100, 2);
+  $perc_familienstand_3 = round(($num_familienstand_3 / $num_participants) * 100, 2);
+  $perc_familienstand_4 = round(($num_familienstand_4 / $num_participants) * 100, 2);
 
-$perc_bildungsstand_0 = round(($num_bildungsstand_0 / $num_participants) * 100, 2);
-$perc_bildungsstand_1 = round(($num_bildungsstand_1 / $num_participants) * 100, 2);
-$perc_bildungsstand_2 = round(($num_bildungsstand_2 / $num_participants) * 100, 2);
-$perc_bildungsstand_3 = round(($num_bildungsstand_3 / $num_participants) * 100, 2);
-$perc_bildungsstand_4 = round(($num_bildungsstand_4 / $num_participants) * 100, 2);
-$perc_bildungsstand_5 = round(($num_bildungsstand_5 / $num_participants) * 100, 2);
-$perc_bildungsstand_6 = round(($num_bildungsstand_6 / $num_participants) * 100, 2);
-$perc_bildungsstand_7 = round(($num_bildungsstand_7 / $num_participants) * 100, 2);
-$perc_bildungsstand_8 = round(($num_bildungsstand_8 / $num_participants) * 100, 2);
-$perc_bildungsstand_9 = round(($num_bildungsstand_9 / $num_participants) * 100, 2);
-$perc_bildungsstand_10 = round(($num_bildungsstand_10 / $num_participants) * 100, 2);
+  $perc_bildungsstand_0 = round(($num_bildungsstand_0 / $num_participants) * 100, 2);
+  $perc_bildungsstand_1 = round(($num_bildungsstand_1 / $num_participants) * 100, 2);
+  $perc_bildungsstand_2 = round(($num_bildungsstand_2 / $num_participants) * 100, 2);
+  $perc_bildungsstand_3 = round(($num_bildungsstand_3 / $num_participants) * 100, 2);
+  $perc_bildungsstand_4 = round(($num_bildungsstand_4 / $num_participants) * 100, 2);
+  $perc_bildungsstand_5 = round(($num_bildungsstand_5 / $num_participants) * 100, 2);
+  $perc_bildungsstand_6 = round(($num_bildungsstand_6 / $num_participants) * 100, 2);
+  $perc_bildungsstand_7 = round(($num_bildungsstand_7 / $num_participants) * 100, 2);
+  $perc_bildungsstand_8 = round(($num_bildungsstand_8 / $num_participants) * 100, 2);
+  $perc_bildungsstand_9 = round(($num_bildungsstand_9 / $num_participants) * 100, 2);
+  $perc_bildungsstand_10 = round(($num_bildungsstand_10 / $num_participants) * 100, 2);
+} else {
+  die("Bisher hat noch niemand teilgenommen.");
+}
 
-$perc_geraeteart_0 = round(($num_geraeteart_0 / $sum_geraeteart) * 100, 2);
-$perc_geraeteart_1 = round(($num_geraeteart_1 / $sum_geraeteart) * 100, 2);
-$perc_geraeteart_2 = round(($num_geraeteart_2 / $sum_geraeteart) * 100, 2);
-$perc_geraeteart_3 = round(($num_geraeteart_3 / $sum_geraeteart) * 100, 2);
-$perc_geraeteart_4 = round(($num_geraeteart_4 / $sum_geraeteart) * 100, 2);
-$perc_geraeteart_5 = round(($num_geraeteart_5 / $sum_geraeteart) * 100, 2);
-$perc_geraeteart_6 = round(($num_geraeteart_6 / $sum_geraeteart) * 100, 2);
+if ($sum_geraeteart > 0) {
+  $perc_geraeteart_0 = round(($num_geraeteart_0 / $sum_geraeteart) * 100, 2);
+  $perc_geraeteart_1 = round(($num_geraeteart_1 / $sum_geraeteart) * 100, 2);
+  $perc_geraeteart_2 = round(($num_geraeteart_2 / $sum_geraeteart) * 100, 2);
+  $perc_geraeteart_3 = round(($num_geraeteart_3 / $sum_geraeteart) * 100, 2);
+  $perc_geraeteart_4 = round(($num_geraeteart_4 / $sum_geraeteart) * 100, 2);
+  $perc_geraeteart_5 = round(($num_geraeteart_5 / $sum_geraeteart) * 100, 2);
+  $perc_geraeteart_6 = round(($num_geraeteart_6 / $sum_geraeteart) * 100, 2);
+} else {
+  die ("Bisher hat noch kein Teilnehmer ein Gerät angegeben.");
+}
 
-$perc_nutzungsgebiet_0 = round(($num_nutzungsgebiet_0 / $sum_nutzungsgebiet) * 100, 2);
-$perc_nutzungsgebiet_1 = round(($num_nutzungsgebiet_1 / $sum_nutzungsgebiet) * 100, 2);
-$perc_nutzungsgebiet_2 = round(($num_nutzungsgebiet_2 / $sum_nutzungsgebiet) * 100, 2);
-$perc_nutzungsgebiet_3 = round(($num_nutzungsgebiet_3 / $sum_nutzungsgebiet) * 100, 2);
-$perc_nutzungsgebiet_4 = round(($num_nutzungsgebiet_4 / $sum_nutzungsgebiet) * 100, 2);
-$perc_nutzungsgebiet_5 = round(($num_nutzungsgebiet_5 / $sum_nutzungsgebiet) * 100, 2);
+if ($sum_nutzungsgebiet > 0) {
+  $perc_nutzungsgebiet_0 = round(($num_nutzungsgebiet_0 / $sum_nutzungsgebiet) * 100, 2);
+  $perc_nutzungsgebiet_1 = round(($num_nutzungsgebiet_1 / $sum_nutzungsgebiet) * 100, 2);
+  $perc_nutzungsgebiet_2 = round(($num_nutzungsgebiet_2 / $sum_nutzungsgebiet) * 100, 2);
+  $perc_nutzungsgebiet_3 = round(($num_nutzungsgebiet_3 / $sum_nutzungsgebiet) * 100, 2);
+  $perc_nutzungsgebiet_4 = round(($num_nutzungsgebiet_4 / $sum_nutzungsgebiet) * 100, 2);
+  $perc_nutzungsgebiet_5 = round(($num_nutzungsgebiet_5 / $sum_nutzungsgebiet) * 100, 2);
+} else {
+  die("Bisher hat noch kein Teilnehmer ein Nutzungsgebiet für eines seiner Geräte angegeben.");
+}
 
-$perc_nutzungsdauer_0 = round(($num_nutzungsdauer_0 / $sum_nutzungsdauer) * 100, 2);
-$perc_nutzungsdauer_1 = round(($num_nutzungsdauer_1 / $sum_nutzungsdauer) * 100, 2);
-$perc_nutzungsdauer_2 = round(($num_nutzungsdauer_2 / $sum_nutzungsdauer) * 100, 2);
-$perc_nutzungsdauer_3 = round(($num_nutzungsdauer_3 / $sum_nutzungsdauer) * 100, 2);
-$perc_nutzungsdauer_4 = round(($num_nutzungsdauer_4 / $sum_nutzungsdauer) * 100, 2);
-$perc_nutzungsdauer_5 = round(($num_nutzungsdauer_5 / $sum_nutzungsdauer) * 100, 2);
+if ($sum_nutzungsdauer > 0) {
+  $perc_nutzungsdauer_0 = round(($num_nutzungsdauer_0 / $sum_nutzungsdauer) * 100, 2);
+  $perc_nutzungsdauer_1 = round(($num_nutzungsdauer_1 / $sum_nutzungsdauer) * 100, 2);
+  $perc_nutzungsdauer_2 = round(($num_nutzungsdauer_2 / $sum_nutzungsdauer) * 100, 2);
+  $perc_nutzungsdauer_3 = round(($num_nutzungsdauer_3 / $sum_nutzungsdauer) * 100, 2);
+  $perc_nutzungsdauer_4 = round(($num_nutzungsdauer_4 / $sum_nutzungsdauer) * 100, 2);
+  $perc_nutzungsdauer_5 = round(($num_nutzungsdauer_5 / $sum_nutzungsdauer) * 100, 2);
+} else {
+  die("Bisher hat noch kein Teilnehmer die Nutzungsdauer für eines seiner Geräte angegeben.");
+}
 
-$perc_betriebssystem_0 = round(($num_betriebssystem_0 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_1 = round(($num_betriebssystem_1 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_2 = round(($num_betriebssystem_2 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_3 = round(($num_betriebssystem_3 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_4 = round(($num_betriebssystem_4 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_5 = round(($num_betriebssystem_5 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_6 = round(($num_betriebssystem_6 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_7 = round(($num_betriebssystem_7 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_8 = round(($num_betriebssystem_8 / $sum_betriebssystem) * 100, 2);
-$perc_betriebssystem_9 = round(($num_betriebssystem_9 / $sum_betriebssystem) * 100, 2);
+if ($sum_betriebssystem > 0) {
+  $perc_betriebssystem_0 = round(($num_betriebssystem_0 / $sum_betriebssystem) * 100, 2);
+  $perc_betriebssystem_1 = round(($num_betriebssystem_1 / $sum_betriebssystem) * 100, 2);
+  $perc_betriebssystem_2 = round(($num_betriebssystem_2 / $sum_betriebssystem) * 100, 2);
+  $perc_betriebssystem_3 = round(($num_betriebssystem_3 / $sum_betriebssystem) * 100, 2);
+  $perc_betriebssystem_4 = round(($num_betriebssystem_4 / $sum_betriebssystem) * 100, 2);
+  $perc_betriebssystem_5 = round(($num_betriebssystem_5 / $sum_betriebssystem) * 100, 2);
+  $perc_betriebssystem_6 = round(($num_betriebssystem_6 / $sum_betriebssystem) * 100, 2);
+  $perc_betriebssystem_7 = round(($num_betriebssystem_7 / $sum_betriebssystem) * 100, 2);
+  $perc_betriebssystem_8 = round(($num_betriebssystem_8 / $sum_betriebssystem) * 100, 2);
+  $perc_betriebssystem_9 = round(($num_betriebssystem_9 / $sum_betriebssystem) * 100, 2);
+} else {
+  die("Bisher hat noch kein Teilnehmer ein Betriebssystem für eines seiner Geräte angegeben.");
+}
 
-$perc_browser_0 = round(($num_browser_0 / $sum_browser) * 100, 2);
-$perc_browser_1 = round(($num_browser_1 / $sum_browser) * 100, 2);
-$perc_browser_2 = round(($num_browser_2 / $sum_browser) * 100, 2);
-$perc_browser_3 = round(($num_browser_3 / $sum_browser) * 100, 2);
-$perc_browser_5 = round(($num_browser_5 / $sum_browser) * 100, 2);
-$perc_browser_8 = round(($num_browser_8 / $sum_browser) * 100, 2);
-$perc_browser_9 = round(($num_browser_9 / $sum_browser) * 100, 2);
-$perc_browser_10 = round(($num_browser_10 / $sum_browser) * 100, 2);
+if ($sum_browser > 0) {
+  $perc_browser_0 = round(($num_browser_0 / $sum_browser) * 100, 2);
+  $perc_browser_1 = round(($num_browser_1 / $sum_browser) * 100, 2);
+  $perc_browser_2 = round(($num_browser_2 / $sum_browser) * 100, 2);
+  $perc_browser_3 = round(($num_browser_3 / $sum_browser) * 100, 2);
+  $perc_browser_5 = round(($num_browser_5 / $sum_browser) * 100, 2);
+  $perc_browser_8 = round(($num_browser_8 / $sum_browser) * 100, 2);
+  $perc_browser_9 = round(($num_browser_9 / $sum_browser) * 100, 2);
+  $perc_browser_10 = round(($num_browser_10 / $sum_browser) * 100, 2);
+} else {
+  die("Bisher hat noch kein Teilnehmer einen Browser angegeben.");
+}
 
-$perc_mailclient_6 = round(($num_mailclient_6 / $sum_mailclient) * 100, 2);
-$perc_mailclient_8 = round(($num_mailclient_8 / $sum_mailclient) * 100, 2);
-$perc_mailclient_9 = round(($num_mailclient_9 / $sum_mailclient) * 100, 2);
-$perc_mailclient_10 = round(($num_mailclient_10 / $sum_mailclient) * 100, 2);
-$perc_mailclient_11 = round(($num_mailclient_11 / $sum_mailclient) * 100, 2);
+if ($sum_mailclient > 0) {
+  $perc_mailclient_6 = round(($num_mailclient_6 / $sum_mailclient) * 100, 2);
+  $perc_mailclient_8 = round(($num_mailclient_8 / $sum_mailclient) * 100, 2);
+  $perc_mailclient_9 = round(($num_mailclient_9 / $sum_mailclient) * 100, 2);
+  $perc_mailclient_10 = round(($num_mailclient_10 / $sum_mailclient) * 100, 2);
+  $perc_mailclient_11 = round(($num_mailclient_11 / $sum_mailclient) * 100, 2);
+} else {
+  die("Bisher hat noch kein Teilnehmer einen Mailclient angegeben.");
+}
 
-$perc_verschluesselungprivat = round(($num_verschluesselungprivat / $num_participants) * 100, 2);
-$perc_verschluesselungdienstlich = round(($num_verschluesselungdienstlich / $num_participants) * 100, 2);
+if ($num_participants > 0) {
+  $perc_verschluesselungprivat = round(($num_verschluesselungprivat / $num_participants) * 100, 2);
+  $perc_verschluesselungdienstlich = round(($num_verschluesselungdienstlich / $num_participants) * 100, 2);
+} else {
+  die("Bisher hat noch niemand teilgenommen.");
+}
 
-$perc_verschluesselungsartprivat_0 = round(($num_verschluesselungsartprivat_0 / $sum_verschluesselungsartprivat) * 100, 2);
-$perc_verschluesselungsartprivat_1 = round(($num_verschluesselungsartprivat_1 / $sum_verschluesselungsartprivat) * 100, 2);
-$perc_verschluesselungsartprivat_2 = round(($num_verschluesselungsartprivat_2 / $sum_verschluesselungsartprivat) * 100, 2);
+if ($sum_verschluesselungsartprivat > 0) {
+  $perc_verschluesselungsartprivat_0 = round(($num_verschluesselungsartprivat_0 / $sum_verschluesselungsartprivat) * 100, 2);
+  $perc_verschluesselungsartprivat_1 = round(($num_verschluesselungsartprivat_1 / $sum_verschluesselungsartprivat) * 100, 2);
+  $perc_verschluesselungsartprivat_2 = round(($num_verschluesselungsartprivat_2 / $sum_verschluesselungsartprivat) * 100, 2);
+}
 
-$perc_verschluesselungsartdienstlich_0 = round(($num_verschluesselungsartdienstlich_0 / $sum_verschluesselungsartdienstlich) * 100, 2);
-$perc_verschluesselungsartdienstlich_1 = round(($num_verschluesselungsartdienstlich_1 / $sum_verschluesselungsartdienstlich) * 100, 2);
-$perc_verschluesselungsartdienstlich_2 = round(($num_verschluesselungsartdienstlich_2 / $sum_verschluesselungsartdienstlich) * 100, 2);
+if ($sum_verschluesselungsartdienstlich > 0) {
+  $perc_verschluesselungsartdienstlich_0 = round(($num_verschluesselungsartdienstlich_0 / $sum_verschluesselungsartdienstlich) * 100, 2);
+  $perc_verschluesselungsartdienstlich_1 = round(($num_verschluesselungsartdienstlich_1 / $sum_verschluesselungsartdienstlich) * 100, 2);
+  $perc_verschluesselungsartdienstlich_2 = round(($num_verschluesselungsartdienstlich_2 / $sum_verschluesselungsartdienstlich) * 100, 2);
+}
 
-$perc_bewertung_0 = round(($num_bewertung_0 / $sum_bewertung) * 100, 2);
-$perc_bewertung_1 = round(($num_bewertung_1 / $sum_bewertung) * 100, 2);
-$perc_bewertung_2 = round(($num_bewertung_2 / $sum_bewertung) * 100, 2);
-$perc_bewertung_3 = round(($num_bewertung_3 / $sum_bewertung) * 100, 2);
-$perc_bewertung_4 = round(($num_bewertung_4 / $sum_bewertung) * 100, 2);
+if ($sum_bewertung > 0) {
+  $perc_bewertung_0 = round(($num_bewertung_0 / $sum_bewertung) * 100, 2);
+  $perc_bewertung_1 = round(($num_bewertung_1 / $sum_bewertung) * 100, 2);
+  $perc_bewertung_2 = round(($num_bewertung_2 / $sum_bewertung) * 100, 2);
+  $perc_bewertung_3 = round(($num_bewertung_3 / $sum_bewertung) * 100, 2);
+  $perc_bewertung_4 = round(($num_bewertung_4 / $sum_bewertung) * 100, 2);
+} else {
+  die("Bisher hat noch kein Teilnehmer eine Bewertung abgegeben.");
+}
 
 $greatest_bewertung_int = max($num_bewertung_0, $num_bewertung_1, $num_bewertung_2, $num_bewertung_3, $num_bewertung_4);
 $greatest_bewertung = "";
@@ -798,21 +838,25 @@ echo "        Privat verschlüsselte Mails: $perc_verschluesselungprivat%<br />\
 echo "        Dienstlich verschlüsselte Mails: $perc_verschluesselungdienstlich%\n";
 echo "      </details>\n";
 
-echo "      <details id='infos-mailverschluesselung-privat'>\n";
-echo "        <hr />\n";
-echo "        <summary>Private Verschlüsselungstechnologien</summary>\n";
-echo "        PGP: $perc_verschluesselungsartprivat_0%<br />\n";
-echo "        S/MIME: $perc_verschluesselungsartprivat_1%<br />\n";
-echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartprivat_2%\n";
-echo "      </details>\n";
+if (isset($perc_verschluesselungsartprivat_0)) {
+  echo "      <details id='infos-mailverschluesselung-privat'>\n";
+  echo "        <hr />\n";
+  echo "        <summary>Private Verschlüsselungstechnologien</summary>\n";
+  echo "        PGP: $perc_verschluesselungsartprivat_0%<br />\n";
+  echo "        S/MIME: $perc_verschluesselungsartprivat_1%<br />\n";
+  echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartprivat_2%\n";
+  echo "      </details>\n";
+}
 
-echo "      <details id='infos-mailverschluesselung-dienstlich'>\n";
-echo "        <hr />\n";
-echo "        <summary>Dienstliche Verschlüsselungstechnologien</summary>\n";
-echo "        PGP: $perc_verschluesselungsartdienstlich_0%<br />\n";
-echo "        S/MIME: $perc_verschluesselungsartdienstlich_1%<br />\n";
-echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartdienstlich_2%\n";
-echo "      </details>\n";
+if (isset($perc_verschluesselungsartdienstlich_0)) {
+  echo "      <details id='infos-mailverschluesselung-dienstlich'>\n";
+  echo "        <hr />\n";
+  echo "        <summary>Dienstliche Verschlüsselungstechnologien</summary>\n";
+  echo "        PGP: $perc_verschluesselungsartdienstlich_0%<br />\n";
+  echo "        S/MIME: $perc_verschluesselungsartdienstlich_1%<br />\n";
+  echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartdienstlich_2%\n";
+  echo "      </details>\n";
+}
 ?>
     </main>
     <footer class="mittig" id="footing">

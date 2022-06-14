@@ -6,7 +6,6 @@ function submitForm(action, formId, leavingPage) {
       form.submit();
     }
 
-
   }
 
 function validate(leavingPage){
@@ -23,7 +22,6 @@ function validate(leavingPage){
     default: alert("switch error");
 
   }
-
 
 }
 

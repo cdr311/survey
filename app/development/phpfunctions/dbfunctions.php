@@ -26,7 +26,7 @@
     closeDatabaseConnection($db);
   }
 
-//Convenience Funktionen
+//----- Convenience Funktionen
 
   function printTable($tableName){
     $results = executeQuery("SELECT * FROM $tableName;");

@@ -1,9 +1,9 @@
 <?php
 
-  require_once '../phpfunctions/sessionfunctions.php';
+require_once '../phpfunctions/sessionfunctions.php';
 
-  session_start();
-  saveIntoSessionVariablesPage3();
+session_start();
+saveIntoSessionVariablesPage3();
 
 ?>
 

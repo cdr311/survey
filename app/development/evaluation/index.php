@@ -45,63 +45,6 @@ try {
       <h1>Auswertung</h1>
       <p>Auf dieser Seite finden Sie einige interessante Statistiken zur Umfrage.</p>
 <?php
-// Persistente Verbindung, welche auch nach Ende des Skripts nicht geschlossen wird
-// Wenn die Verbindung öfter benötigt wird, resultiert dies in einer schnelleren Anwendung
-/* try {
-  $dbh = new PDO('mysql:host=' . $_ENV['MYSQL_HOST'] . ';dbname=' . $_ENV['MYSQL_DATABASE'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], array(
-    PDO::ATTR_PERSISTENT => true
-  ));
-} catch (PDOException $e) {
-  print "Error!: " . $e->getMessage() . "<br/>";
-  die();
-} */
-
-// Prepared Statement
-/* $stmt = $dbh->prepare("SELECT * FROM BSDVarianteKey WHERE BSDVarianteName = ?");
-$stmt->execute(['OpenBSD']);
-//print_r($_GET);
-foreach ($stmt as $row) {
-  print_r($row);
-} */
-
-// Prepared Statement mit Platzhalter
-/* $stmt = $dbh->prepare("SELECT * FROM BetriebssystemKey WHERE BetriebssystemName LIKE ?");
-$stmt->execute(["%acO%"]);
-//print_r($_GET);
-foreach ($stmt as $row) {
-  print_r($row);
-} */
-?>
-<?php
-// Alle Tabellen in der Datenbank survey anzeigen
-/* $query = $dbh->query("SHOW TABLES;");
-print_r($query);
-foreach ($query as $row) {
-  print_r($row);
-} */
-
-// Struktur der Tabelle TeilnehmerDaten anzeigen
-/* $query = $dbh->query("DESCRIBE TeilnehmerDaten;");
-print_r($query);
-foreach ($query as $row) {
-  print_r($row);
-} */
-
-// Spalten der Tabelle Mailclient anzeigen
-/* $query = $dbh->query("SHOW COLUMNS FROM Mailclient;");
-print_r($query);
-foreach ($query as $row) {
-  print_r($row);
-} */
-
-// Alle Daten aus der Tabelle Mailclient ausgeben
-/* $query = $dbh->query("SELECT * FROM Mailclient;");
-print_r($query);
-foreach ($query as $row) {
-  print_r($row);
-} */
-?>
-<?php
 $num_geschlecht_0 = 0;
 $num_geschlecht_1 = 0;
 $num_geschlecht_2 = 0;

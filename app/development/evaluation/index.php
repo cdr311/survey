@@ -972,35 +972,6 @@ echo "        S/MIME: $perc_verschluesselungsartdienstlich_1%<br />\n";
 echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartdienstlich_2%<br />\n";
 echo "      </details>\n";
 ?>
-<?php
-// Anzahl der genutzten Smartphones anzeigen und ermitteln
-echo "      <h3>Anzahl Smartphone-Benutzer:</h3>\n";
-echo "      <p>$num_geraeteart_2</p>\n";
-
-// Prozentsatz der Smartphones anteilsmäßig von allen Geräten
-if ($num_devices > 0) {
-  $perc_geraeteart_2 = round(($num_geraeteart_2 / $num_devices) * 100, 2);
-
-  echo "      <p>$perc_geraeteart_2% der Teilnehmer benutzen ein Smartphone.\n";
-} else {
-  echo "      <p class='error'>Bisher hat niemand an dieser Umfrage teilgenommen, der ein digitales Gerät benutzt.</p>\n";
-}
-?>
-<?php
-// Anzahl und Anteil der Benutzer von Linux-Distributionen und BSD-Varianten ermitteln und anzeigen
-$perc_linux = 0;
-$perc_bsd = 0;
-
-if ($num_devices > 0) {
-  $perc_linux = round(($num_betriebssystem_2 / $num_devices) * 100, 2);
-  $perc_bsd = round(($num_betriebssystem_3 / $num_devices) * 100, 2);
-
-  echo "      <p>Linux-Benutzer: $num_betriebssystem_2 / $perc_linux%</p>\n";
-  echo "      <p>BSD-Benutzer: $num_betriebssystem_3 / $perc_bsd%</p>\n";
-} else {
-  echo "      <p class='error'>Bisher hat niemand an dieser Umfrage teilgenommen, der ein digitales Gerät benutzt.</p>\n";
-}
-?>
     </main>
     <footer class="mittig" id="footing">
       <p>Die gesamte Umfrage wurde von Alexander Eigler, Jonas Kraus und Matthias Seitz entworfen.</p>

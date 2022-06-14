@@ -322,12 +322,21 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     var k = 700;
     var acc = document.getElementsByClassName("schieben");
     var foot = document.getElementById('footing');
+    var klickpc = false;
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
-        k += 170;
-        foot.style['top'] = k + "px";
+        if(!klickpc){
+          k += 170;
+          foot.style['top'] = k + "px";
+          klickpc = true;
+        }
+        else {
+          k -= 170;
+          foot.style['top'] = k + "px";
+          klickpc = false;
+        }
       });
     }
   </script>

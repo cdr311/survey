@@ -322,21 +322,111 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     var k = 700;
     var acc = document.getElementsByClassName("schieben");
     var foot = document.getElementById('footing');
-    var klickpc = false;
+    // var klickpc = false;
+    // var klicklaptop = false;
+    // var klicksmartp = false;
+    // var klicktab = false;
+    // var klicksmartt = false;
+    // var klicksmartw = false;
+    // var klickspiel = false;
+
+    var arraybool = new Array(acc.length);
+    for(i = 0;i<arraybool.length; i++)
+      arraybool[i] = 0;
+      // arraybool[i] = false;
+
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
-        if(!klickpc){
+        arraybool[i] = arraybool[i] + 1;
+        if(arraybool[i] % 2 === 1){
           k += 170;
           foot.style['top'] = k + "px";
-          klickpc = true;
         }
         else {
           k -= 170;
           foot.style['top'] = k + "px";
-          klickpc = false;
         }
+
+        // if(klickpc){
+        //   k -= 170;
+        //   foot.style['top'] = k + "px";
+        //   klickpc = false;
+        // }
+        // else {
+          // k += 170;
+          // foot.style['top'] = k + "px";
+        //   klickpc = true;
+        // }
+
+        // if (!arraybool[i]) {
+        //   k += 170;
+        //   foot.style['top'] = k + "px";
+        //   arraybool[i] = true;
+        // }
+        // else{
+        //   k -= 170;
+        //   foot.style['top'] = k + "px";
+        //   arraybool[i] = false;
+        // }
+        // if(sessionStorage.getItem("pc")){
+        //   k += 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // else{
+        //   k -= 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // if(sessionStorage.getItem("laptop")){
+        //   k += 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // else{
+        //   k -= 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // if(sessionStorage.getItem("smartp")){
+        //   k += 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // else{
+        //   k -= 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // if(sessionStorage.getItem("tab")){
+        //   k += 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // else{
+        //   k -= 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // if(sessionStorage.getItem("smartt")){
+        //   k += 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // else{
+        //   k -= 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // if(sessionStorage.getItem("smartw")){
+        //   k += 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // else{
+        //   k -= 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // if(sessionStorage.getItem("spiel")){
+        //   k += 170;
+        //   foot.style['top'] = k + "px";
+        // }
+        // else{
+        //   k -= 170;
+        //   foot.style['top'] = k + "px";
+        // }
+
       });
     }
   </script>

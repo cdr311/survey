@@ -81,14 +81,12 @@ div.main{
   top:70px;
   left: 25%;
   width: 100%;
-  /* height: 101%; */
   box-shadow: 8px 8px 8px 10px grey;
   background-color: #A4A4A4;
   text-align: center;
   padding-bottom: 25px;
 }
 div.auswahl1{
-  /* position: absolute; */
   position: relative;
   display: block;
   left:5%;
@@ -97,7 +95,6 @@ div.auswahl1{
   text-align: center;
 }
 div.auswahl2{
-  /* position: absolute; */
   position: relative;
   display: block;
   width: 85%;
@@ -107,7 +104,6 @@ div.auswahl2{
   text-align: center;
 }
 div.vorher{
-  /* position: absolute; */
   float: left;
   padding-bottom: 10px;
   text-align: center;
@@ -115,7 +111,6 @@ div.vorher{
   padding-left: 8px;
 }
 div.naechste{
-  /* position: absolute; */
   float: right;
   padding-bottom: 10px;
   text-align: center;
@@ -266,35 +261,11 @@ span.droppen{
   height: 100%;
 }
 @media screen and (max-height: 620px) {
-  div.auswahl2{
-    top:28%;
-  }
-  div.naechste{
-    top: 110%;
-  }
-  div.vorher{
-    top: 110%;
-  }
-  div.main{
-    height: 120%;
-  }
   footer{
     top:125%;
   }
 }
 @media screen and (max-height: 550px) {
-  div.auswahl2{
-    top:28%;
-  }
-  div.naechste{
-    top: 130%;
-  }
-  div.vorher{
-    top: 130%;
-  }
-  div.main{
-    height: 140%;
-  }
   footer{
     top:135%;
   }

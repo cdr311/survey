@@ -4,7 +4,7 @@
 
   session_start();
   saveIntoSessionVariablesPage2();
-  
+
 ?>
 
 <!DOCTYPE html>
@@ -155,19 +155,19 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welche der folgenden Geräte haben Sie schon benutzt?</h2>
         <section>
-          <input type="checkbox" name="benutzteGeraete[]" id="pc" value="0" onchange="writeToSessionStorage(this, 'pc', true, 'a2')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("0", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="pc" class="schieben" value="0" onchange="writeToSessionStorage(this, 'pc', true, 'a2')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("0", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="pc">Desktop PC</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="laptop" value="1" onchange="writeToSessionStorage(this, 'laptop', true, 'a3')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("1", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="laptop" class="schieben" value="1" onchange="writeToSessionStorage(this, 'laptop', true, 'a3')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("1", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="laptop">Laptop</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="smartp" value="2" onchange="writeToSessionStorage(this, 'smartp', true, 'a4')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("2", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="smartp" class="schieben" value="2" onchange="writeToSessionStorage(this, 'smartp', true, 'a4')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("2", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="smartp">Smartphone</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="tab" value="3" onchange="writeToSessionStorage(this, 'tab', true, 'a5')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("3", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="tab" class="schieben" value="3" onchange="writeToSessionStorage(this, 'tab', true, 'a5')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("3", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="tab">Tablet</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="smartt" value="4" onchange="writeToSessionStorage(this, 'smartt', true, 'a6')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("4", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="smartt" class="schieben" value="4" onchange="writeToSessionStorage(this, 'smartt', true, 'a6')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("4", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="smartt">Smart TV</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="smartw" value="5" onchange="writeToSessionStorage(this, 'smartw', true, 'a7')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("5", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="smartw" class="schieben" value="5" onchange="writeToSessionStorage(this, 'smartw', true, 'a7')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("5", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="smartw">Smartwatch</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="spiel" value="6" onchange="writeToSessionStorage(this, 'spiel', true, 'a8')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("6", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="spiel" class="schieben" value="6" onchange="writeToSessionStorage(this, 'spiel', true, 'a8')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("6", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiel">Spielekonsole</label><br />
         </section>
       </div>
@@ -311,21 +311,27 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
 
   <script type="text/javascript" src="../scripte/umfrage.js"></script>
   <script type="text/javascript">
-    if (sessionStorage.getItem("pc"))     { document.getElementById("a2").style.display = "block"; schieben();}
-    if (sessionStorage.getItem("laptop")) { document.getElementById("a3").style.display = "block"; schieben();}
-    if (sessionStorage.getItem("smartp")) { document.getElementById("a4").style.display = "block"; schieben();}
-    if (sessionStorage.getItem("tab"))    { document.getElementById("a5").style.display = "block"; schieben();}
-    if (sessionStorage.getItem("smartt")) { document.getElementById("a6").style.display = "block"; schieben();}
-    if (sessionStorage.getItem("smartw")) { document.getElementById("a7").style.display = "block"; schieben();}
-    if (sessionStorage.getItem("spiel"))  { document.getElementById("a8").style.display = "block"; schieben();}
+    if (sessionStorage.getItem("pc"))     { document.getElementById("a2").style.display = "block";}
+    if (sessionStorage.getItem("laptop")) { document.getElementById("a3").style.display = "block";}
+    if (sessionStorage.getItem("smartp")) { document.getElementById("a4").style.display = "block";}
+    if (sessionStorage.getItem("tab"))    { document.getElementById("a5").style.display = "block";}
+    if (sessionStorage.getItem("smartt")) { document.getElementById("a6").style.display = "block";}
+    if (sessionStorage.getItem("smartw")) { document.getElementById("a7").style.display = "block";}
+    if (sessionStorage.getItem("spiel"))  { document.getElementById("a8").style.display = "block";}
+    var acc = document.getElementsByClassName("schieben");
+    var foot = document.getElementById('footing');
+    var k = 700;
 
-    function schieben(){
-      let foot = document.getElementById('footing');
-      let k = 220;
+      var acc = document.getElementsByClassName("schieben");
+      var foot = document.getElementById('footing');
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
           var panel = this.nextElementSibling;
-          k += 1650;
-          foot.style['top'] = k + "px";
-    }
+            k += 170;
+            foot.style['top'] = k + "px";
+        });
+      }
   </script>
 </body>
 </html>

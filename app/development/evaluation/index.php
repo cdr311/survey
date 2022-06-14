@@ -15,7 +15,7 @@ try {
     <meta name="description" content="Online Umfrage zur Nutzung und Verwendung von digitalen Geräten"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>survey — Auswertung</title>
+    <title>Umfrage zur Nutzung digitaler Geräte</title>
 
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg"/>
     <!-- Die Emoji-Grafik (https://github.com/twitter/twemoji/blob/master/assets/svg/1f4cb.svg) stammt vom Projekt Twemoji (https://twemoji.twitter.com/). Sie ist Copyright von Twitter und anderen Mitwirkenden und unter der CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) lizensiert. Es wurden keine Veränderungen am Material vorgenommen. -->
@@ -804,9 +804,10 @@ switch ($greatest_bewertung_int) {
 <?php
 echo "      <p>
         Bisher haben insgesamt <em>$num_participants</em> Personen teilgenommen,
-        mit einer Gesamtzahl von <em>$num_devices</em> Geräten.
-        Die Umfrage wurde am öftesten mit <em>" . $greatest_bewertung . "</em> bewertet.
+        mit einer Gesamtzahl von <em>$num_devices</em> Geräten.<br />
+        Die Umfrage wurde am häufigsten mit <em>" . $greatest_bewertung . "</em> bewertet.
       </p>\n";
+echo "      <p>Sie können die folgenden Info-Boxen ausklappen, um mehr über die abgefragten Bereiche zu erfahren.";
 
 echo "      <details id='infos-teilnehmer' open>\n";
 echo "        <hr />\n";

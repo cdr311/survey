@@ -4,7 +4,7 @@
 
   session_start();
   saveIntoSessionVariablesPage2();
-  
+
 ?>
 
 <!DOCTYPE html>
@@ -318,19 +318,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     if (sessionStorage.getItem("smartt")) { document.getElementById("a6").style.display = "block";}
     if (sessionStorage.getItem("smartw")) { document.getElementById("a7").style.display = "block";}
     if (sessionStorage.getItem("spiel"))  { document.getElementById("a8").style.display = "block";}
-
-    // var k = 700;
-    // function schieben(){
-    //   let foot = document.getElementById('footing');
-    //   // let k = 220;
-    //       // var panel = this.nextElementSibling;
-    //       // k += 1650;
-    //       let ke = k + 300;
-    //       // foot.style['top'] = ke + "px";
-    //       foot.style.top = ke;
-    //       k = ke;
-    // }
-
     var acc = document.getElementsByClassName("schieben");
     var foot = document.getElementById('footing');
     var k = 700;
@@ -341,7 +328,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         acc[i].addEventListener("click", function() {
           this.classList.toggle("active");
           var panel = this.nextElementSibling;
-          // if(sessionStorage.getItem(acc[i].id))
             k += 170;
             foot.style['top'] = k + "px";
         });

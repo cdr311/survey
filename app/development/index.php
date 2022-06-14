@@ -59,7 +59,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       </section>
       <section class="rechts">
         <table>
-          <th><a href="./umfrage/umfrage1.php" title="Umfrage" class="unter"><span>Umfrage</span></a></th>
+          <th><a href="./umfrage/umfrage1.php" title="Umfrage" class="unter" onclick="alert('Für die ordnungsgemäße Funktionalität der Umfrage dürfen nur die Knöpfe am Ende jeder Umfragenseite verwendet werden. Werden beispielsweise die Vor- und Zurück-Knöpfe des Browsers verwendet, können Daten verloren gehen.')"><span>Umfrage</span></a></th>
           <th><a href="./infopage/index.php" title="Über Uns" class="unter"><span>Infos</span></a></th>
           <th><a href="./linkpage/index.php" title="Links" class="unter"><span>Links</span></a></th>
           <th><a href="./index.php" title="Home" class="unter"><span>Home</span></a></th>
@@ -112,7 +112,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   </main>
 
   <aside>
-    <a href="../umfrage/umfrage1.php" title="Umfrage starten" class="unter"><button type="button" name="umfrage" class="umfrage">Umfrage</button></a>
+    <a href="../umfrage/umfrage1.php" title="Umfrage starten" class="unter"><button type="button" name="umfrage" class="umfrage" onclick="alert('Für die ordnungsgemäße Funktionalität der Umfrage dürfen nur die Knöpfe am Ende jeder Umfragenseite verwendet werden. Werden beispielsweise die Vor- und Zurück-Knöpfe des Browsers verwendet, können Daten verloren gehen.')">Umfrage</button></a>
   </aside>
 
   <footer class="mittig" id="footing">

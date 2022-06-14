@@ -155,19 +155,19 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <div class="auswahl1">
         <h2>Welche der folgenden Geräte haben Sie schon benutzt?</h2>
         <section>
-          <input type="checkbox" name="benutzteGeraete[]" id="pc" class="schieben" value="0" onchange="writeToSessionStorage(this, 'pc', true, 'a2')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("0", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="pc" value="0" onchange="writeToSessionStorage(this, 'pc', true, 'a2')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("0", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="pc">Desktop PC</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="laptop" class="schieben" value="1" onchange="writeToSessionStorage(this, 'laptop', true, 'a3')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("1", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="laptop" value="1" onchange="writeToSessionStorage(this, 'laptop', true, 'a3')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("1", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="laptop">Laptop</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="smartp" class="schieben" value="2" onchange="writeToSessionStorage(this, 'smartp', true, 'a4')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("2", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="smartp" value="2" onchange="writeToSessionStorage(this, 'smartp', true, 'a4')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("2", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="smartp">Smartphone</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="tab" class="schieben" value="3" onchange="writeToSessionStorage(this, 'tab', true, 'a5')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("3", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="tab" value="3" onchange="writeToSessionStorage(this, 'tab', true, 'a5')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("3", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="tab">Tablet</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="smartt" class="schieben" value="4" onchange="writeToSessionStorage(this, 'smartt', true, 'a6')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("4", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="smartt" value="4" onchange="writeToSessionStorage(this, 'smartt', true, 'a6')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("4", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="smartt">Smart TV</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="smartw" class="schieben" value="5" onchange="writeToSessionStorage(this, 'smartw', true, 'a7')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("5", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="smartw" value="5" onchange="writeToSessionStorage(this, 'smartw', true, 'a7')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("5", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="smartw">Smartwatch</label><br />
-          <input type="checkbox" name="benutzteGeraete[]" id="spiel" class="schieben" value="6" onchange="writeToSessionStorage(this, 'spiel', true, 'a8')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("6", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
+          <input type="checkbox" name="benutzteGeraete[]" id="spiel" value="6" onchange="writeToSessionStorage(this, 'spiel', true, 'a8')" <?php if(isset($_SESSION['benutzteGeraete']) && in_array("6", $_SESSION['benutzteGeraete'])){echo "checked=\"checked\" ";} ?> />
           <label for="spiel">Spielekonsole</label><br />
         </section>
       </div>

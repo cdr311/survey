@@ -796,10 +796,10 @@ switch ($greatest_bewertung_int) {
 ?>
 <?php
 echo "      <p>
-                Bisher haben insgesamt <em>$num_participants</em> Personen teilgenommen,
-                mit einer Gesamtzahl von <em>$num_devices</em> Geräten.
-                Die Umfrage wurde am öftesten mit <em>" . $greatest_bewertung . "</em> bewertet.
-            </p>";
+        Bisher haben insgesamt <em>$num_participants</em> Personen teilgenommen,
+        mit einer Gesamtzahl von <em>$num_devices</em> Geräten.
+        Die Umfrage wurde am öftesten mit <em>" . $greatest_bewertung . "</em> bewertet.
+      </p>\n";
 
 echo "      <details id='infos-teilnehmer' open>\n";
 echo "        <hr />\n";

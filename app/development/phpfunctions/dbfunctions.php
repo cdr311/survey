@@ -2,8 +2,13 @@
 
 //----- grundlegende Datenbank-Funktionen
   function connectToDatabase(){
-    $db = new PDO('mysql:dbname=survey;host=mysql', 'webdev', 'secret', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
-    return $db;
+    try {
+      $db = new PDO('mysql:host=' . $_ENV['MYSQL_HOST'] . ';dbname=' . $_ENV['MYSQL_DATABASE'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD']);
+      return $db;
+    } catch (PDOException $e) {
+      print "Error!: " . $e->getMessage() . "<br/>";
+      die();
+    }
   }
 
   function closeDatabaseConnection($db){

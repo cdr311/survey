@@ -254,7 +254,6 @@ INSERT INTO BrowserKey VALUES (7, 'Konqueror');
 INSERT INTO BrowserKey VALUES (8, 'Opera');
 INSERT INTO BrowserKey VALUES (9, 'Safari');
 INSERT INTO BrowserKey VALUES (10, 'Tor Browser');
-INSERT INTO BrowserKey VALUES (11, 'Vivaldi');
 INSERT INTO MailclientKey VALUES (0, 'Apple Mail');
 INSERT INTO MailclientKey VALUES (1, 'Claws Mail');
 INSERT INTO MailclientKey VALUES (2, 'eM Client');

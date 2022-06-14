@@ -1,0 +1,234 @@
+body{
+  background-color: #E0ECF8;
+  margin:0;
+}
+.darkmode{
+    background-color: grey;
+}
+button{
+  background-color: grey;
+  border-radius: 30px;
+  height: 30px;
+}
+article{
+  background-color: lightgrey;
+  height: 45px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+header{
+  position: absolute;
+  height: 8%;
+  width: 100%;
+  z-index: 2;
+}
+section.links{
+  float: left;
+}
+section.rechts{
+  float: right;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+div.ueberschrift{
+  float: left;
+  font-family: monospace;
+  font-size: 50px;
+  padding-left: 5px;
+  text-align: center;
+  justify-content: center;
+}
+main{
+  background-color: #A4A4A4;
+  border:2px double black;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  text-align:  center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.genauer1{
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #6E6E6E;
+  padding-bottom: 20px;
+  width: 60%;
+  top: 25%;
+  left: 20%;
+  height: 30%;
+  margin-top: 10px;
+}
+.genauer2{
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #6E6E6E;
+  padding-bottom: 20px;
+  width: 60%;
+  top: 60%;
+  left: 20%;
+  height: 30%;
+  margin-top: 10px;
+}
+span:hover {
+  background-color: #62bcf5;
+}
+a.unter:link {
+  color: black;
+}
+a.unter:visited {
+  color: black;
+}
+a.unter:hover {
+  color: white;
+}
+a.unter:active {
+  color: red;
+}
+a.quelle:link{
+  color: black;
+}
+a.quelle:visited{
+  color: #DF7401;
+}
+a.quelle:hover{
+  color: green;
+}
+a.quelle:active{
+  color: red;
+}
+a.unter{
+  text-decoration: none;
+}
+footer{
+  border-top: 1px solid black;
+  border-radius: 20px;
+  background-color: lightgray;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: absolute;
+  top: 83%;
+  width: 100%;
+}
+span {
+  background-color: #fffff0;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.mittig {
+  text-align: center;
+}
+#cookie-popup {
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top: 0px;
+  left: 30%;
+  right: 30%;
+  width: 40%;
+  z-index: 9999;
+  font-size:17px;
+  line-height:20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+#cookie-popup.hidden {
+  display: none;
+}
+#abstand1{
+  padding-right: 5px;
+}
+#abstand2{
+  padding-right: 5px;
+  font-size: 20px;
+}
+@media screen and (max-width: 1050px) {
+  main{
+    height: 65%;
+  }
+  .genauer1{
+    top: 20%;
+  }
+  .genauer2{
+    top:55%;
+  }
+  footer{
+    top:95%;
+  }
+}
+@media screen and (max-width: 800px) {
+  main{
+    top: 12%;
+    height: 80%;
+  }
+  .genauer1{
+    height: 30%;
+    top: 28%;
+  }
+  .genauer2{
+    top:65%;
+    height: 26%;
+  }
+  footer{
+    top:140%;
+  }
+}
+@media screen and (max-height: 600px) {
+  main{
+    height: 65%;
+  }
+  .genauer1{
+    height: 28%;
+    top: 28%;
+  }
+  .genauer2{
+    top:62%;
+    height: 28%;
+  }
+  footer{
+    top:100%;
+  }
+}
+@media screen and (max-height: 450px) {
+  main{
+    top: 12%;
+    height: 80%;
+  }
+  .genauer1{
+    height: 30%;
+    top: 28%;
+  }
+  .genauer2{
+    top:65%;
+    height: 26%;
+  }
+  footer{
+    top:140%;
+  }
+}
+@media screen and (max-height: 800px) and (max-height:600px) {
+  main{
+    top: 12%;
+    height: 85%;
+  }
+  .genauer1{
+    height: 40%;
+    top: 28%;
+  }
+  .genauer2{
+    top:75%;
+    height: 30%;
+  }
+  footer{
+    top:150%;
+  }
+}

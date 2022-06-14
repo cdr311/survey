@@ -1,0 +1,195 @@
+body{
+  background-color: #E0ECF8;
+  margin:0;
+}
+.darkmode{
+    background-color: grey;
+}
+button{
+  background-color: grey;
+  border-radius: 30px;
+  height: 30px;
+}
+article{
+  background-color: lightgrey;
+  height: 45px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+header{
+  position: absolute;
+  height: 8%;
+  width: 100%;
+  z-index: 2;
+}
+section.links{
+  float: left;
+}
+section.rechts{
+  float: right;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+div.ueberschrift{
+  float: left;
+  font-family: monospace;
+  font-size: 50px;
+  padding-left: 5px;
+  text-align: center;
+  justify-content: center;
+}
+nav{
+  position: absolute;
+  top:55px;
+  width: 60%;
+  left: 20%;
+  height:70%;
+  text-align: center;
+  justify-content: center;
+  border: 3px;
+  border-style: dashed;
+  border-color: green;
+  border-radius: 10px;
+}
+h4{
+  font-size: 20px;
+}
+h3{
+  font-size: 22px;
+}
+.umfrage{
+  top: 8%;
+  left: 10%;
+  color: black;
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 40px;
+  size: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92%;
+  height: 50%;
+  font-family: monospace;
+}
+span:hover {
+  background-color: #62bcf5;
+}
+a.unter:link {
+  color: black;
+}
+a.unter:visited {
+  color: black;
+}
+a.unter:hover {
+  color: white;
+}
+a.unter:active {
+  color: red;
+}
+a.quelle:link{
+  color: black;
+}
+a.quelle:visited{
+  color: #DF7401;
+}
+a.quelle:hover{
+  color: green;
+}
+a.quelle:active{
+  color: red;
+}
+a.unter{
+  text-decoration: none;
+}
+footer{
+  border-top: 1px solid black;
+  background-color: lightgray;
+  padding-top: 4px;;
+  padding-bottom: 4px;
+  position: absolute;
+  top: 82%;
+  width: 100%;
+}
+span {
+  background-color: #fffff0;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.mittig {
+  text-align: center;
+}
+#cookie-popup {
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top: 0px;
+  left: 30%;
+  right: 30%;
+  width: 40%;
+  z-index: 9999;
+  font-size:17px;
+  line-height:20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+#cookie-popup.hidden {
+  display: none;
+}
+#abstand1{
+  padding-right: 5px;
+}
+#abstand2{
+  padding-right: 5px;
+  font-size: 20px;
+}
+.meineSlides{
+  display: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.bild-inhalt{
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+.linksunten{
+  position: absolute;
+  bottom: -25px;
+  left: 12px;
+  font-family: cursive;
+  font-size: 40px;
+  background-color: lightgrey;
+}
+.zugeordnet {
+  background-color: #81DAF5;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  height: 55px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  font-family: monospace;
+}
+.active, .zugeordnet:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  font-size: 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}

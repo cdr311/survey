@@ -31,7 +31,6 @@ function carousel() {
 
 var acc = document.getElementsByClassName("zugeordnet");
 var foot = document.getElementById('footing');
-var zaehler = 0;
 var i;
 let k = 1000;
 
@@ -41,12 +40,10 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
-      zaehler -= 1;
       k -= 130;
       foot.style['top'] = k + "px";
     } else {
       panel.style.display = "block";
-      zaehler +=1;
       k += 130;
       foot.style['top'] = k + "px";
     }

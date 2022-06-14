@@ -256,5 +256,10 @@ $showPopup = true;
 
   <script type="text/javascript" src="../scripte/umfrage.js"></script>
 
+  <script type="text/javascript">
+    alert('Für die ordnungsgemäße Funktionalität der Umfrage,\n dürfen nur die Knöpfe am Ende jeder Umfrageseite verwendet werden.\n
+    Werden beispielsweise die Vor- und Zurück-Knöpfe des Browsers verwendet,\n können Daten verloren gehen!')
+  </script>
+
 </body>
 </html>

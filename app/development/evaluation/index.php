@@ -659,6 +659,8 @@ $num_verschluesselungsart_2 = $num_verschluesselungsartprivat_2 + $num_verschlue
 $num_verschluesselungsart_3 = $num_verschluesselungsartprivat_3 + $num_verschluesselungsartdienstlich_3;
 ?>
 <?php
+$num_verschluesselungsartprivat = $num_verschluesselungsartprivat_0 + $num_verschluesselungsartprivat_1 + $num_verschluesselungsartprivat_2;
+$num_verschluesselungsartdienstlich = $num_verschluesselungsartdienstlich_0 + $num_verschluesselungsartdienstlich_1 + $num_verschluesselungsartdienstlich_2;
 $num_bewertung = $num_bewertung_0 + $num_bewertung_1 + $num_bewertung_2 + $num_bewertung_3 + $num_bewertung_4;
 ?>
 <?php
@@ -765,14 +767,14 @@ $perc_mailclient_12 = round(($num_mailclient_12 / $num_participants) * 100, 2);
 $perc_verschluesselungprivat = round(($num_verschluesselungprivat / $num_participants) * 100, 2);
 $perc_verschluesselungdienstlich = round(($num_verschluesselungdienstlich / $num_participants) * 100, 2);
 
-$perc_verschluesselungsartprivat_0 = round(($num_verschluesselungsartprivat_0 / $num_participants) * 100, 2);
-$perc_verschluesselungsartprivat_1 = round(($num_verschluesselungsartprivat_1 / $num_participants) * 100, 2);
-$perc_verschluesselungsartprivat_2 = round(($num_verschluesselungsartprivat_2 / $num_participants) * 100, 2);
+$perc_verschluesselungsartprivat_0 = round(($num_verschluesselungsartprivat_0 / $num_verschluesselungsartprivat) * 100, 2);
+$perc_verschluesselungsartprivat_1 = round(($num_verschluesselungsartprivat_1 / $num_verschluesselungsartprivat) * 100, 2);
+$perc_verschluesselungsartprivat_2 = round(($num_verschluesselungsartprivat_2 / $num_verschluesselungsartprivat) * 100, 2);
 $perc_verschluesselungsartprivat_3 = round(($num_verschluesselungsartprivat_3 / $num_participants) * 100, 2);
 
-$perc_verschluesselungsartdienstlich_0 = round(($num_verschluesselungsartdienstlich_0 / $num_participants) * 100, 2);
-$perc_verschluesselungsartdienstlich_1 = round(($num_verschluesselungsartdienstlich_1 / $num_participants) * 100, 2);
-$perc_verschluesselungsartdienstlich_2 = round(($num_verschluesselungsartdienstlich_2 / $num_participants) * 100, 2);
+$perc_verschluesselungsartdienstlich_0 = round(($num_verschluesselungsartdienstlich_0 / $num_verschluesselungsartdienstlich) * 100, 2);
+$perc_verschluesselungsartdienstlich_1 = round(($num_verschluesselungsartdienstlich_1 / $num_verschluesselungsartdienstlich) * 100, 2);
+$perc_verschluesselungsartdienstlich_2 = round(($num_verschluesselungsartdienstlich_2 / $num_verschluesselungsartdienstlich) * 100, 2);
 $perc_verschluesselungsartdienstlich_3 = round(($num_verschluesselungsartdienstlich_3 / $num_participants) * 100, 2);
 
 $perc_bewertung_0 = round(($num_bewertung_0 / $num_bewertung) * 100, 2);
@@ -780,9 +782,25 @@ $perc_bewertung_1 = round(($num_bewertung_1 / $num_bewertung) * 100, 2);
 $perc_bewertung_2 = round(($num_bewertung_2 / $num_bewertung) * 100, 2);
 $perc_bewertung_3 = round(($num_bewertung_3 / $num_bewertung) * 100, 2);
 $perc_bewertung_4 = round(($num_bewertung_4 / $num_bewertung) * 100, 2);
+
+$greatest_bewertung_int = max($num_bewertung_0, $num_bewertung_1, $num_bewertung_2, $num_bewertung_3, $num_bewertung_4);
+$greatest_bewertung = "";
+switch ($greatest_bewertung_int) {
+  case $num_bewertung_0: $greatest_bewertung = "Sehr gut"; break;
+  case $num_bewertung_1: $greatest_bewertung = "Gut"; break;
+  case $num_bewertung_2: $greatest_bewertung = "Befriedigend"; break;
+  case $num_bewertung_3: $greatest_bewertung = "Schlecht"; break;
+  case $num_bewertung_4: $greatest_bewertung = "Unbrauchbar"; break;
+  default: "Keine Bewertung vorhanden"; break;
+}
 ?>
 <?php
-echo "      <p>Bisher haben insgesamt <em>$num_participants</em> Personen teilgenommen, mit einer Gesamtzahl von <em>$num_devices</em> Geräten.";
+echo "      <p>
+                Bisher haben insgesamt <em>$num_participants</em> Personen teilgenommen,
+                mit einer Gesamtzahl von <em>$num_devices</em> Geräten.
+                Die Umfrage wurde am öftesten mit <em>" . $greatest_bewertung . "</em> bewertet.
+            </p>";
+
 echo "      <details id='infos-teilnehmer' open>\n";
 echo "        <hr />\n";
 echo "        <summary>Infos zu den Teilnehmern</summary>\n";
@@ -800,7 +818,151 @@ echo "        21 – 29 Jahre: $perc_altersbereich_2%<br />\n";
 echo "        30 – 39 Jahre: $perc_altersbereich_3%<br />\n";
 echo "        40 – 49 Jahre: $perc_altersbereich_4%<br />\n";
 echo "        50 – 59 Jahre: $perc_altersbereich_5%<br />\n";
-echo "        60 Jahre oder älter: $perc_altersbereich_6%<br />\n";
+echo "        60 Jahre oder älter: $perc_altersbereich_6%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-berufsfelder'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zu den Berufsfeldern</summary>\n";
+echo "        Labor: $perc_berufsfeld_0%<br />\n";
+echo "        Handwerk: $perc_berufsfeld_1%<br />\n";
+echo "        IT & Elektronik: $perc_berufsfeld_2%<br />\n";
+echo "        Kaufmännisch: $perc_berufsfeld_3%<br />\n";
+echo "        Gesundheit & Pflege: $perc_berufsfeld_4%<br />\n";
+echo "        Sonstiges: $perc_berufsfeld_5%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-familienstand'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zum Familienstand</summary>\n";
+echo "        Ledig: $perc_familienstand_0%<br />\n";
+echo "        Getrennt: $perc_familienstand_1%<br />\n";
+echo "        Geschieden: $perc_familienstand_2%<br />\n";
+echo "        Verwitwet: $perc_familienstand_3%<br />\n";
+echo "        Verheiratet: $perc_familienstand_4%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-bildungsstand'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zum Bildungsstand</summary>\n";
+echo "        Kein Abschluss: $perc_bildungsstand_0%<br />\n";
+echo "        Qualifizierter Hauptschulabschluss: $perc_bildungsstand_1%<br />\n";
+echo "        Mittlere Reife: $perc_bildungsstand_2%<br />\n";
+echo "        Fachabitur: $perc_bildungsstand_3%<br />\n";
+echo "        Allgemeines Abitur: $perc_bildungsstand_4%<br />\n";
+echo "        Studium ohne Abschluss: $perc_bildungsstand_5%<br />\n";
+echo "        Bachelor: $perc_bildungsstand_6%<br />\n";
+echo "        Diplom: $perc_bildungsstand_7%<br />\n";
+echo "        Master: $perc_bildungsstand_8%<br />\n";
+echo "        Promotion: $perc_bildungsstand_9%<br />\n";
+echo "        Professur: $perc_bildungsstand_10%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-geraetearten'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zu den Gerätearten</summary>\n";
+echo "        Desktop PC: $perc_geraeteart_0%<br />\n";
+echo "        Laptop: $perc_geraeteart_1%<br />\n";
+echo "        Smartphone: $perc_geraeteart_2%<br />\n";
+echo "        Tablet: $perc_geraeteart_3%<br />\n";
+echo "        Smart TV: $perc_geraeteart_4%<br />\n";
+echo "        Smartwatch: $perc_geraeteart_5%<br />\n";
+echo "        Spielekonsole: $perc_geraeteart_6%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-nutzungsgebiete'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zu den Nutzungsgebieten der Geräte</summary>\n";
+echo "        Arbeit: $perc_nutzungsgebiet_0%<br />\n";
+echo "        Surfen im Internet: $perc_nutzungsgebiet_1%<br />\n";
+echo "        Online-Shopping: $perc_nutzungsgebiet_2%<br />\n";
+echo "        Videos/Filme/Serien schauen: $perc_nutzungsgebiet_3%<br />\n";
+echo "        Spielen: $perc_nutzungsgebiet_4%<br />\n";
+echo "        Gesundheitsmonitoring: $perc_nutzungsgebiet_5%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-nutzungsdauer'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zur Nutzungsdauer der Geräte</summary>\n";
+echo "        Unter 1 Stunde: $perc_nutzungsdauer_0%<br />\n";
+echo "        1-3 Stunden: $perc_nutzungsdauer_1%<br />\n";
+echo "        3-5 Stunden: $perc_nutzungsdauer_2%<br />\n";
+echo "        5-7 Stunden: $perc_nutzungsdauer_3%<br />\n";
+echo "        7-8 Stunden: $perc_nutzungsdauer_4%<br />\n";
+echo "        Über 8 Stunden: $perc_nutzungsdauer_5%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-betriebssysteme'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zu den Betriebssystemen</summary>\n";
+echo "        Windows: $perc_betriebssystem_0%<br />\n";
+echo "        macOS: $perc_betriebssystem_1%<br />\n";
+echo "        Linux: $perc_betriebssystem_2%<br />\n";
+echo "        BSD: $perc_betriebssystem_3%<br />\n";
+echo "        iOS: $perc_betriebssystem_4%<br />\n";
+echo "        iPadOS: $perc_betriebssystem_5%<br />\n";
+echo "        Android: $perc_betriebssystem_6%<br />\n";
+echo "        Firefox OS: $perc_betriebssystem_7%<br />\n";
+echo "        Windows Phone: $perc_betriebssystem_8%<br />\n";
+echo "        Tizen OS: $perc_betriebssystem_9%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-browser'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zu den Browsern</summary>\n";
+echo "        Brave: $perc_browser_0%<br />\n";
+echo "        Chrome: $perc_browser_1%<br />\n";
+echo "        Chromium: $perc_browser_2%<br />\n";
+echo "        Edge: $perc_browser_3%<br />\n";
+echo "        Epiphany (GNOME Web): $perc_browser_4%<br />\n";
+echo "        Firefox: $perc_browser_5%<br />\n";
+echo "        Internet Explorer: $perc_browser_6%<br />\n";
+echo "        Konqueror: $perc_browser_7%<br />\n";
+echo "        Opera: $perc_browser_8%<br />\n";
+echo "        Safari: $perc_browser_9%<br />\n";
+echo "        Tor Browser: $perc_browser_10%<br />\n";
+echo "        Vivaldi: $perc_browser_11%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-mailclients'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zu den Mailclients</summary>\n";
+echo "        Apple Mail: $perc_mailclient_0%<br />\n";
+echo "        Claws Mail: $perc_mailclient_1%<br />\n";
+echo "        eM Client: $perc_mailclient_2%<br />\n";
+echo "        Evolution: $perc_mailclient_3%<br />\n";
+echo "        FairEmail: $perc_mailclient_4%<br />\n";
+echo "        Geary: $perc_mailclient_5%<br />\n";
+echo "        Google Mail-App: $perc_mailclient_6%<br />\n";
+echo "        K-9 Mail: $perc_mailclient_7%<br />\n";
+echo "        Outlook: $perc_mailclient_8%<br />\n";
+echo "        Spark: $perc_mailclient_9%<br />\n";
+echo "        Thunderbird: $perc_mailclient_10%<br />\n";
+echo "        Weboberfläche: $perc_mailclient_11%\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-mailverschluesselung'>\n";
+echo "        <hr />\n";
+echo "        <summary>Infos zur E-Mail-Verschlüsselung</summary>\n";
+echo "        Keine Verschlüsselung: " . 100 - $perc_verschluesselungprivat - $perc_verschluesselungdienstlich . "%<br />\n";
+echo "        Privat verschlüsselte Mails: $perc_verschluesselungprivat%<br />\n";
+echo "        Dienstlich verschlüsselte Mails: $perc_verschluesselungdienstlich%<br />\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-mailverschluesselung-privat'>\n";
+echo "        <hr />\n";
+echo "        <summary>Private Verschlüsselungstechnologien</summary>\n";
+echo "        PGP: $perc_verschluesselungsartprivat_0%<br />\n";
+echo "        S/MIME: $perc_verschluesselungsartprivat_1%<br />\n";
+echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartprivat_2%<br />\n";
+echo "      </details>\n";
+
+echo "      <details id='infos-mailverschluesselung-dienstlich'>\n";
+echo "        <hr />\n";
+echo "        <summary>Dienstliche Verschlüsselungstechnologien</summary>\n";
+echo "        PGP: $perc_verschluesselungsartdienstlich_0%<br />\n";
+echo "        S/MIME: $perc_verschluesselungsartdienstlich_1%<br />\n";
+echo "        Spezialisierter E-Mail-Provider: $perc_verschluesselungsartdienstlich_2%<br />\n";
 echo "      </details>\n";
 ?>
 <?php

@@ -190,7 +190,8 @@ footer{
   padding-top: 4px;
   padding-bottom: 4px;
   position: absolute;
-  top:700px;
+  /* top:700px; */
+  top: 1400px !important;
   width: 100%;
 }
 span {

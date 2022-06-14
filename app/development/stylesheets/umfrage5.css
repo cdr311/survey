@@ -81,52 +81,65 @@ header{
     top:70px;
     left: 25%;
     width: 100%;
-    height: 143%;
+    /* height: 143%; */
     box-shadow: 8px 8px 8px 10px grey;
     background-color: #A4A4A4;
+    padding-bottom: 25px;
   }
-h2{
+/* h2{
   text-align: center;
-}
+} */
 div.auswahl1{
-  position: absolute;
+  /* position: absolute; */
+  display: block;
+  position: relative;
   left:5%;
   top:5%;
   padding-bottom: 10px;
 }
 div.auswahl2{
-  position: absolute;
+  /* position: absolute; */
+  display: block;
+  position: relative;
   left:5%;
   top:40%;
   padding-bottom: 10px;
 }
 div.auswahl3{
-  position: absolute;
+  /* position: absolute; */
+  display: block;
+  position: relative;
   left:5%;
   top:88%;
   padding-bottom: 10px;
 }
 div.auswahl4{
-  position: absolute;
+  /* position: absolute; */
+  display: block;
+  position: relative;
   left:5%;
   top:61%;
   padding-bottom: 10px;
 }
 div.auswahl5{
-  position: absolute;
+  /* position: absolute; */
+  display: block;
+  position: relative;
   left: 5%;
   top:108%;
   padding-bottom: 10px;
 }
 div.vorher{
-  position: absolute;
+  /* position: absolute; */
+  float: left;
   padding-bottom: 10px;
   text-align: center;
   top: 133%;
   padding-left: 8px;
 }
 div.naechste{
-  position: absolute;
+  float: right;
+  /* position: absolute; */
   padding-bottom: 10px;
   text-align: center;
   top: 133%;
@@ -264,55 +277,18 @@ span.droppen{
 #aendern{
   height: 100%;
 }
-@media screen and (max-height: 620px) {
-  div.auswahl2{
-    top:45%;
-  }
-  div.auswahl3{
-    top:93%;
-  }
-  div.auswahl4{
-    top:65%;
-  }
-  div.auswahl5{
-    top:114%;
-  }
-  div.naechste{
-    top: 144%;
-  }
-  div.vorher{
-    top: 144%;
-  }
-  div.main{
-    height: 155%;
-  }
+@media screen and (max-height: 650px) {
   footer{
     top:150%;
   }
 }
-@media screen and (max-height: 550px) {
-  div.auswahl2{
-    top:48%;
-  }
-  div.auswahl3{
-    top:98%;
-  }
-  div.auswahl4{
-    top:69%;
-  }
-  div.auswahl5{
-    top:119%;
-  }
-  div.naechste{
-    top: 152%;
-  }
-  div.vorher{
-    top: 152%;
-  }
-  div.main{
-    height: 163%;
-  }
+@media screen and (max-height: 560px) {
   footer{
-    top:150%;
+    top:180%;
+  }
+}
+@media screen and (max-height: 460px) {
+  footer{
+    top:220%;
   }
 }

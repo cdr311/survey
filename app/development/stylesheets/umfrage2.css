@@ -201,7 +201,7 @@ footer{
   padding-top: 4px;
   padding-bottom: 4px;
   position: absolute;
-  top:700px;
+  top:300%;
   width: 100%;
 }
 span {
@@ -273,4 +273,20 @@ span.droppen{
 }
 #aendern{
   height: 100%;
+}
+
+@media screen and (max-height: 620px) {
+  footer{
+    top:360%;
+  }
+}
+@media screen and (max-height: 520px) {
+  footer{
+    top:390%;
+  }
+}
+@media screen and (max-height: 480px) {
+  footer{
+    top:420%;
+  }
 }

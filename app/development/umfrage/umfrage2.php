@@ -318,10 +318,8 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     if (sessionStorage.getItem("smartt")) { document.getElementById("a6").style.display = "block";}
     if (sessionStorage.getItem("smartw")) { document.getElementById("a7").style.display = "block";}
     if (sessionStorage.getItem("spiel"))  { document.getElementById("a8").style.display = "block";}
-    var acc = document.getElementsByClassName("schieben");
-    var foot = document.getElementById('footing');
-    var k = 700;
 
+    var k = 700;
     var acc = document.getElementsByClassName("schieben");
     var foot = document.getElementById('footing');
     for (i = 0; i < acc.length; i++) {

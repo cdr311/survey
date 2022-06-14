@@ -60,7 +60,7 @@ $showPopup = true;
       <section class="links">
           <div><img src="../images/statistik.png" alt="Statistikbild" width="110px" height="50px" title="iStock" /></div>
       </section>
-      <section class="mitte">
+      <section>
         <div class="ueberschrift">Umfrage</div>
       </section>
       <section class="rechts">

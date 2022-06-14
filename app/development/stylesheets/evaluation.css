@@ -57,9 +57,16 @@ details {
 summary {
     font-size: 1.25em;
     font-weight: bold;
+    color: #444;
+}
+em {
+    font-weight: bold;
 }
 span:hover {
     background-color: #62bcf5;
+}
+details[open] summary {
+    color: #000;
 }
 section.links {
     float: left;

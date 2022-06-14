@@ -33,7 +33,7 @@ footer {
     padding-top: 4px;
     padding-bottom: 4px;
     position: absolute;
-    top: 420%;
+    top: 3100px;
     width: 100%;
 }
 span {
@@ -52,7 +52,7 @@ details {
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 5px;
-    width: fit-content;
+    width: 99%;
 }
 summary {
     font-size: 1.25em;
@@ -169,4 +169,9 @@ a.unter:active {
     display: none;
     background-color: white;
     overflow: hidden;
+}
+#infos {
+    position: absolute;
+    left: 5%;
+    width: 90%;
 }

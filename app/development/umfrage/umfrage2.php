@@ -312,14 +312,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
   <script type="text/javascript" src="../scripte/umfrage.js"></script>
   <script type="text/javascript">
 
-  // var klickpc = false;
-  // var klicklaptop = false;
-  // var klicksmartp = false;
-  // var klicktab = false;
-  // var klicksmartt = false;
-  // var klicksmartw = false;
-  // var klickspiel = false;
-
     if (sessionStorage.getItem("pc"))     { document.getElementById("a2").style.display = "block"; }
     if (sessionStorage.getItem("laptop")) { document.getElementById("a3").style.display = "block"; }
     if (sessionStorage.getItem("smartp")) { document.getElementById("a4").style.display = "block"; }
@@ -328,116 +320,6 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     if (sessionStorage.getItem("smartw")) { document.getElementById("a7").style.display = "block"; }
     if (sessionStorage.getItem("spiel"))  { document.getElementById("a8").style.display = "block"; }
 
-    var k = 700;
-    // var acc = document.getElementsByClassName("schieben");
-    var acc = document.getElementsByName('benutzteGeraete[]');
-    var foot = document.getElementById('footing');
-
-    // var arraybool = new Array(acc.length);
-    // for(i = 0;i<arraybool.length; i++)
-    // //   arraybool[i] = 0;
-    //   arraybool[i] = false;
-
-    var arrayele = new Array();
-    arrayele = document.getElementsByName('benutzteGeraete[]');
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-
-        if(arrayele[i].checked){
-          k -= 170;
-          foot.style['top'] = k + "px";
-        }
-        else {
-          k += 170;
-          foot.style['top'] = k + "px";
-        }
-
-        // arraybool[i] = arraybool[i] + 1;
-        // if(arraybool[i] % 2 === 0){
-
-        // var arrayele = new Array();
-        // arrayele = document.getElementsByName('benutzteGeraete[]');
-        // // for(i = 0;i<arrayele.length; i++){
-        //   if(arrayele[i].checked){
-        //     console.log("Test bestanden");
-        //   }
-        // }
-
-        // if(arrayele[i].style.display === "block"){
-
-
-        // if (!arraybool[i]) {
-        //   k += 170;
-        //   foot.style['top'] = k + "px";
-        //   arraybool[i] = true;
-        // }
-        // else{
-        //   k -= 170;
-        //   foot.style['top'] = k + "px";
-        //   arraybool[i] = false;
-        // }
-        // if(sessionStorage.getItem("pc")){
-        //   k += 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // else{
-        //   k -= 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // if(sessionStorage.getItem("laptop")){
-        //   k += 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // else{
-        //   k -= 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // if(sessionStorage.getItem("smartp")){
-        //   k += 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // else{
-        //   k -= 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // if(sessionStorage.getItem("tab")){
-        //   k += 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // else{
-        //   k -= 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // if(sessionStorage.getItem("smartt")){
-        //   k += 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // else{
-        //   k -= 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // if(sessionStorage.getItem("smartw")){
-        //   k += 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // else{
-        //   k -= 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // if(sessionStorage.getItem("spiel")){
-        //   k += 170;
-        //   foot.style['top'] = k + "px";
-        // }
-        // else{
-        //   k -= 170;
-        //   foot.style['top'] = k + "px";
-        // }
-
-      });
-    }
   </script>
 </body>
 </html>

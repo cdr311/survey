@@ -5,22 +5,10 @@ require_once '../phpfunctions/dbfunctions.php';
 
 session_start();
 saveIntoSessionVariablesPage7();
-printSessionVariables();
 
 saveSessionVariablesIntoDB();
 
 session_destroy();
-
-printTable("TeilnehmerDaten");
-printTable("Geraeteart");
-printTable("Nutzungsgebiet");
-printTable("Nutzungsdauer");
-printTable("Betriebssystem");
-printTable("Browser");
-printTable("Mailclient");
-printTable("VerschluesselungPrivat");
-printTable("VerschluesselungDienstlich");
-printTable("Bewertung");
 
 ?>
 

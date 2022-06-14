@@ -9,7 +9,6 @@ if(!isset($_POST['fromPage2'])){
 }
 
 saveIntoSessionVariablesPage1();
-printSessionVariables();
 
 ?>
 

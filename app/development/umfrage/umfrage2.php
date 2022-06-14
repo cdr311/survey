@@ -4,10 +4,7 @@
 
   session_start();
   saveIntoSessionVariablesPage2();
-  printSessionVariables();
-
-
-
+  
 ?>
 
 <!DOCTYPE html>

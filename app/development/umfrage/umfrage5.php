@@ -4,7 +4,6 @@ require_once '../phpfunctions/sessionfunctions.php';
 
 session_start();
 saveIntoSessionVariablesPage5();
-printSessionVariables();
 
 ?>
 

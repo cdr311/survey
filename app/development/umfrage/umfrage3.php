@@ -4,7 +4,6 @@
 
   session_start();
   saveIntoSessionVariablesPage3();
-  printSessionVariables();
 
 ?>
 

@@ -153,7 +153,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <form method="post" id="form3">
     <div class="main">
       <div class="auswahl1" id="aus1">
-        <h2>Wie viel Stunden benutzen Sie ihren Desktop PC pro Tag?</h2>
+        <h2>Wie viel Stunden benutzen Sie Ihren Desktop PC pro Tag?</h2>
         <section>
           <input type="radio" name="nutzungszeitDesktop" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitDesktop']) && $_SESSION['nutzungszeitDesktop'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
@@ -171,7 +171,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl2" id="aus2">
-        <h2>Wie viel Stunden benutzen Sie ihren Laptop pro Tag?</h2>
+        <h2>Wie viel Stunden benutzen Sie Ihren Laptop pro Tag?</h2>
         <section>
           <input type="radio" name="nutzungszeitLaptop" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitLaptop']) && $_SESSION['nutzungszeitLaptop'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
@@ -189,7 +189,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl3" id="aus3">
-        <h2>Wie viel Stunden benutzen Sie ihr Smartphone pro Tag?</h2>
+        <h2>Wie viel Stunden benutzen Sie Ihr Smartphone pro Tag?</h2>
         <section>
           <input type="radio" name="nutzungszeitSmartphone" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitSmartphone']) && $_SESSION['nutzungszeitSmartphone'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
@@ -207,7 +207,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl4"  id="aus4">
-        <h2>Wie viel Stunden benutzen Sie ihr Tablet pro Tag?</h2>
+        <h2>Wie viel Stunden benutzen Sie Ihr Tablet pro Tag?</h2>
         <section>
           <input type="radio" name="nutzungszeitTablet" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitTablet']) && $_SESSION['nutzungszeitTablet'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
@@ -225,7 +225,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl5"  id="aus5">
-        <h2>Wie viel Stunden benutzen Sie ihren SmartTV pro Tag?</h2>
+        <h2>Wie viel Stunden benutzen Sie Ihren Smart TV pro Tag?</h2>
         <section>
           <input type="radio" name="nutzungszeitSmartTV" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitSmartTV']) && $_SESSION['nutzungszeitSmartTV'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
@@ -243,7 +243,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl6" id="aus6">
-        <h2>Wie viel Stunden benutzen Sie ihre Smartwatch pro Tag?</h2>
+        <h2>Wie viel Stunden benutzen Sie Ihre Smartwatch pro Tag?</h2>
         <section>
           <input type="radio" name="nutzungszeitSmartwatch" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitSmartwatch']) && $_SESSION['nutzungszeitSmartwatch'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">
@@ -261,7 +261,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl7"  id="aus7">
-        <h2>Wie viel Stunden benutzen Sie ihre Spielekonsole pro Tag?</h2>
+        <h2>Wie viel Stunden benutzen Sie Ihre Spielekonsole pro Tag?</h2>
         <section>
           <input type="radio" name="nutzungszeitSpielekonsole" id="zwei" value="0" <?php if(isset($_SESSION['nutzungszeitSpielekonsole']) && $_SESSION['nutzungszeitSpielekonsole'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="zwei">

@@ -94,7 +94,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <button class="zugeordnet">Warum sollten Sie teilnehmen?</button>
     <div class="panel">
       <ul>
-        <li>Sie sollten Teilnehmen, da Sie selbst danach einen besseren Überblick haben, welche digitalen Geräten bei Ihnen im Einsatz sind.</li>
+        <li>Sie sollten teilnehmen, da Sie selbst danach einen besseren Überblick haben, welche digitalen Geräten bei Ihnen im Einsatz sind.</li>
         <li>Sie helfen den Entwicklern der Umfrage, um eine bessere Auswertung erstellen zu können.</li>
         <li>Diese Umfrage hat eine geringe Bearbeitungsdauer.</li>
       </ul>

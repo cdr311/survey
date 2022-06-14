@@ -153,7 +153,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
     <form method="post" id="form4">
     <div class="main">
       <div class="auswahl1">
-        <h2>Welches Betriebssystem benutzen Sie auf ihrem Desktop PC?</h2>
+        <h2>Welches Betriebssystem benutzen Sie auf Ihrem Desktop PC?</h2>
         <section>
           <input type="radio" name="OSDesktop" id="win" value="0" <?php if(isset($_SESSION['OSDesktop']) && $_SESSION['OSDesktop'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="bs">Windows</label><br />
@@ -172,7 +172,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl2">
-        <h2>Welches Betriebssystem benutzen Sie auf ihrem Laptop?</h2>
+        <h2>Welches Betriebssystem benutzen Sie auf Ihrem Laptop?</h2>
         <section>
           <input type="radio" name="OSLaptop" id="win" value="0" <?php if(isset($_SESSION['OSLaptop']) && $_SESSION['OSLaptop'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="bs">Windows</label><br />
@@ -191,7 +191,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl3">
-        <h2>Welches Betriebssystem benutzen Sie auf ihrem Smartphone?</h2>
+        <h2>Welches Betriebssystem benutzen Sie auf Ihrem Smartphone?</h2>
         <section>
           <input type="radio" name="OSSmartphone" id="and" value="6" <?php if(isset($_SESSION['OSSmartphone']) && $_SESSION['OSSmartphone'] == "6"){echo "checked=\"checked\" ";} ?> />
           <label for="and">Android</label><br />
@@ -208,7 +208,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl4">
-        <h2>Welches Betriebssystem benutzen Sie auf ihrem Tablet?</h2>
+        <h2>Welches Betriebssystem benutzen Sie auf Ihrem Tablet?</h2>
         <section>
           <input type="radio" name="OSTablet" id="and" value="6" <?php if(isset($_SESSION['OSTablet']) && $_SESSION['OSTablet'] == "6"){echo "checked=\"checked\" ";} ?> />
           <label for="and">Android</label><br />
@@ -223,7 +223,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl5">
-        <h2>Welches Betriebssystem benutzen Sie auf ihrem SmartTV?</h2>
+        <h2>Welches Betriebssystem benutzen Sie auf Ihrem SmartTV?</h2>
         <section>
           <input type="radio" name="OSSmartTV" id="tiz" value="9" <?php if(isset($_SESSION['OSSmartTV']) && $_SESSION['OSSmartTV'] == "9"){echo "checked=\"checked\" ";} ?> />
           <label for="tiz">Tizen OS</label><br />

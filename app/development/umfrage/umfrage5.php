@@ -162,7 +162,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
           <input type="checkbox" name="mailprogramm[]" id="spark" value="9" <?php if(isset($_SESSION['mailprogramm']) && in_array("9", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="spark">Spark</label><br />
           <input type="checkbox" name="mailprogramm[]" id="gmail" value="6" <?php if(isset($_SESSION['mailprogramm']) && in_array("6", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
-          <label for="gmail">GoogleMail-App</label><br />
+          <label for="gmail">Google Mail-App</label><br />
           <input type="checkbox" name="mailprogramm[]" id="brow" value="11" <?php if(isset($_SESSION['mailprogramm']) && in_array("11", $_SESSION['mailprogramm'])){echo "checked=\"checked\" ";} ?> />
           <label for="brow">Weboberfläche</label><br />
           <label for="sonst">Sonstige:</label>
@@ -170,7 +170,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl2">
-        <h2>Verschlüsseln Sie ihre <b>privaten</b> E-Mails?</h2>
+        <h2>Verschlüsseln Sie Ihre <b>privaten</b> E-Mails?</h2>
         <section>
           <input type="radio" name="verschluesselungPrivat" id="privatja" value="1" <?php if(isset($_SESSION['verschluesselungPrivat']) && $_SESSION['verschluesselungPrivat'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="privatja">Ja</label><br />
@@ -190,7 +190,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl3">
-        <h2>Verschlüsseln Sie ihre <b>dienstlichen</b> E-Mails?</h2>
+        <h2>Verschlüsseln Sie Ihre <b>dienstlichen</b> E-Mails?</h2>
         <section>
           <input type="radio" name="verschluesselungDienstlich" id="dienstja" value="1" <?php if(isset($_SESSION['verschluesselungDienstlich']) && $_SESSION['verschluesselungDienstlich'] == "1"){echo "checked=\"checked\" ";} ?> />
           <label for="dienstja">Ja</label><br />

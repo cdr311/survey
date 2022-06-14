@@ -71,7 +71,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
       <p>HföD: <a href="https://www.aiv.hfoed.de/de/startseite.html">Hochschule für den öffentlichen Dienst</a></p>
     </article>
     <article class="genauer2">
-      <h1>Für genauer Details zu unserem Studium:</h1>
+      <h1>Für genauere Details zu unserem Studium:</h1>
       <p>Duales Studium: <a href="https://www.verwaltungsinformatiker.de/de/startseite.html">Diplom-Verwaltungsinformatiker</a></p>
     </article>
   </main>

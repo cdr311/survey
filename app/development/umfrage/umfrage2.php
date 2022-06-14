@@ -172,7 +172,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl2" id="a2">
-        <h2>Für welche Tätigkeiten verwenden Sie ihren Desktop PC?</h2>
+        <h2>Für welche Tätigkeiten verwenden Sie Ihren Desktop PC?</h2>
         <section>
           <input type="checkbox" name="taetigkeitenDesktop[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenDesktop']) && in_array("0", $_SESSION['taetigkeitenDesktop'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
@@ -189,7 +189,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl3" id="a3">
-        <h2>Für welche Tätigkeiten verwenden Sie ihren Laptop?</h2>
+        <h2>Für welche Tätigkeiten verwenden Sie Ihren Laptop?</h2>
         <section>
           <input type="checkbox" name="taetigkeitenLaptop[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenLaptop']) && in_array("0", $_SESSION['taetigkeitenLaptop'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
@@ -206,7 +206,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl4" id="a4">
-        <h2>Für welche Tätigkeiten verwenden Sie ihr Smartphone?</h2>
+        <h2>Für welche Tätigkeiten verwenden Sie Ihr Smartphone?</h2>
         <section>
           <input type="checkbox" name="taetigkeitenSmartphone[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenSmartphone']) && in_array("0", $_SESSION['taetigkeitenSmartphone'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
@@ -223,7 +223,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl5" id="a5">
-        <h2>Für welche Tätigkeiten verwenden Sie ihr Tablet?</h2>
+        <h2>Für welche Tätigkeiten verwenden Sie Ihr Tablet?</h2>
         <section>
           <input type="checkbox" name="taetigkeitenTablet[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenTablet']) && in_array("0", $_SESSION['taetigkeitenTablet'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
@@ -240,7 +240,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl6"id="a6">
-        <h2>Für welche Tätigkeiten verwenden Sie ihren Smart TV?</h2>
+        <h2>Für welche Tätigkeiten verwenden Sie Ihren Smart TV?</h2>
         <section>
           <input type="checkbox" name="taetigkeitenSmartTV[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenSmartTV']) && in_array("0", $_SESSION['taetigkeitenSmartTV'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
@@ -257,7 +257,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl7" id="a7">
-        <h2>Für welche Tätigkeiten verwenden Sie ihre Smartwatch?</h2>
+        <h2>Für welche Tätigkeiten verwenden Sie Ihre Smartwatch?</h2>
         <section>
           <input type="checkbox" name="taetigkeitenSmartwatch[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenSmartwatch']) && in_array("0", $_SESSION['taetigkeitenSmartwatch'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />
@@ -276,7 +276,7 @@ if( isset($_COOKIE['setCookieHinweis']) ) {
         </section>
       </div>
       <div class="auswahl8" id="a8">
-        <h2>Für welche Tätigkeiten verwenden Sie ihre Spielekonsole?</h2>
+        <h2>Für welche Tätigkeiten verwenden Sie Ihre Spielekonsole?</h2>
         <section>
           <input type="checkbox" name="taetigkeitenSpielekonsole[]" id="arbeit" value="0" <?php if(isset($_SESSION['taetigkeitenSpielekonsole']) && in_array("0", $_SESSION['taetigkeitenSpielekonsole'])){echo "checked=\"checked\" ";} ?> />
           <label for="arbeit">Arbeit</label><br />

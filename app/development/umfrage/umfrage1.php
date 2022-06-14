@@ -169,7 +169,7 @@ $showPopup = true;
         </section>
       </div>
       <div class="auswahl2">
-        <h2>In welchen Altersbereich befinden Sie sich?</h2>
+        <h2>In welchem Altersbereich befinden Sie sich?</h2>
         <section class="breite">
           <input type="radio" name="alter" id="jugend" value="0" <?php if(isset($_SESSION['alter']) && $_SESSION['alter'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="jugend">17 oder jünger</label><br />
@@ -188,7 +188,7 @@ $showPopup = true;
         </section>
       </div>
       <div class="auswahl3">
-        <h2>In welchen Berufsbereich sind Sie tätig?</h2>
+        <h2>In welchem Berufsbereich sind Sie tätig?</h2>
         <section>
           <input type="radio" name="arbeit" id="labor" value="0" <?php if(isset($_SESSION['arbeit']) && $_SESSION['arbeit'] == "0"){echo "checked=\"checked\" ";} ?> />
           <label for="jugend">Laborberufe</label>
@@ -221,10 +221,10 @@ $showPopup = true;
         </section>
       </div>
       <div class="auswahl5">
-        <h2>Was ist ihr höchster Bildungssbschluss?</h2>
+        <h2>Was ist Ihr höchster Bildungssbschluss?</h2>
         <section>
           <select name="bildung" class="dropdownfeld">
-            <option value="0" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "0"){echo "selected=\"selected\" ";} ?> >Keinen Abschluss</option>
+            <option value="0" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "0"){echo "selected=\"selected\" ";} ?> >Kein Abschluss</option>
             <option value="1" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "1"){echo "selected=\"selected\" ";} ?> >Qualifizierter Hauptschulabschluss</option>
             <option value="2" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "2"){echo "selected=\"selected\" ";} ?> >Mittlere Reife</option>
             <option value="3" <?php if(isset($_SESSION['bildung']) && $_SESSION['bildung'] == "3"){echo "selected=\"selected\" ";} ?> >Fachabitur</option>
